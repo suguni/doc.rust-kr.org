@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>싱글 스레드 서버를 멀티스레드 서버로 바꾸기 - The Rust Programming Language</title>
+        <title>Turning Our Single-Threaded Server into a Multithreaded Server - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html" class="active"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html" class="active"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -163,36 +171,45 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="서버를-싱글-스레드에서-멀티-스레드로-바꾸기"><a class="header" href="#서버를-싱글-스레드에서-멀티-스레드로-바꾸기">서버를 싱글 스레드에서 멀티 스레드로 바꾸기</a></h2>
-<p>현재, 서버는 한번에 하나의 요청만 처리할 것입니다.
-즉 첫번째 요청에 대한 작업이 끝나기 전에 두번째 요청이 들어온다면
-앞선 작업이 끝날때까지 대기하게 됩니다. 만약 서버가 훨씬 더 많은
-요청을 받게 된다면, 처리는 점점 더 늦어지게 됩니다.
-나중에 들어온 요청은 앞선 요청보다 더 빠르게 처리 될 수 있더라도
-긴 시간을 기다려야 할 것입니다.
-우린 이 문제를 해결해야 합니다만, 먼저 현재 우리의 문제를 살펴보도록 하죠.</p>
-<h3 id="현재-서버에서-느린-요청을-시뮬레이팅하기"><a class="header" href="#현재-서버에서-느린-요청을-시뮬레이팅하기">현재 서버에서 느린 요청을 시뮬레이팅하기</a></h3>
-<p>우린 현재의 우리가 만든 서버에서 느린 요청이 어떻게
-다른 요청들에게 영향을 미칠 수 있는지 살펴 볼 것입니다.
-Listing 20-10은 <code>/sleep</code> 요청을 처리할때 응답하기 전에
-5초간 서버를 멈추도록 하여 느린 요청을 시뮬레이션 합니다.</p>
-<p><span class="filename">파일명: src/main.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
+                        <h2 id="turning-our-single-threaded-server-into-a-multithreaded-server"><a class="header" href="#turning-our-single-threaded-server-into-a-multithreaded-server">Turning Our Single-Threaded Server into a Multithreaded Server</a></h2>
+<p>Right now, the server will process each request in turn, meaning it won’t
+process a second connection until the first is finished processing. If the
+server received more and more requests, this serial execution would be less and
+less optimal. If the server receives a request that takes a long time to
+process, subsequent requests will have to wait until the long request is
+finished, even if the new requests can be processed quickly. We’ll need to fix
+this, but first, we’ll look at the problem in action.</p>
+<h3 id="simulating-a-slow-request-in-the-current-server-implementation"><a class="header" href="#simulating-a-slow-request-in-the-current-server-implementation">Simulating a Slow Request in the Current Server Implementation</a></h3>
+<p>We’ll look at how a slow-processing request can affect other requests made to
+our current server implementation. Listing 20-10 implements handling a request
+to <em>/sleep</em> with a simulated slow response that will cause the server to sleep
+for 5 seconds before responding.</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><pre class="playground"><code class="language-rust no_run"><span class="boring">use std::fs;
+</span><span class="boring">use std::io::prelude::*;
+</span><span class="boring">use std::net::TcpListener;
+</span><span class="boring">use std::net::TcpStream;
 </span>use std::thread;
 use std::time::Duration;
-<span class="boring">use std::io::prelude::*;
-</span><span class="boring">use std::net::TcpStream;
-</span><span class="boring">use std::fs::File;
-</span>// --생략--
-
+// --snip--
+<span class="boring">
+</span><span class="boring">fn main() {
+</span><span class="boring">    let listener = TcpListener::bind(&quot;127.0.0.1:7878&quot;).unwrap();
+</span><span class="boring">
+</span><span class="boring">    for stream in listener.incoming() {
+</span><span class="boring">        let stream = stream.unwrap();
+</span><span class="boring">
+</span><span class="boring">        handle_connection(stream);
+</span><span class="boring">    }
+</span><span class="boring">}
+</span>
 fn handle_connection(mut stream: TcpStream) {
-<span class="boring">    let mut buffer = [0; 512];
-</span><span class="boring">    stream.read(&amp;mut buffer).unwrap();
-</span>    // --생략--
+    // --snip--
 
-    let get = b&quot;GET / HTTP/1.1\r\n&quot;;
+<span class="boring">    let mut buffer = [0; 1024];
+</span><span class="boring">    stream.read(&amp;mut buffer).unwrap();
+</span><span class="boring">
+</span>    let get = b&quot;GET / HTTP/1.1\r\n&quot;;
     let sleep = b&quot;GET /sleep HTTP/1.1\r\n&quot;;
 
     let (status_line, filename) = if buffer.starts_with(get) {
@@ -204,76 +221,84 @@ fn handle_connection(mut stream: TcpStream) {
         (&quot;HTTP/1.1 404 NOT FOUND\r\n\r\n&quot;, &quot;404.html&quot;)
     };
 
-    // --생략--
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-10: <code>/sleep</code> 요청을 인식할시 5초간
-멈춤으로써 느린 요청을 시뮬레이션 하기</span></p>
-<p>이 코드는 좀 지저분하지만 시뮬레이션 용도로는 충분합니다.
-우리는 우리 서버가 인식할 두번째 요청인 <code>sleep</code> 을 생성하고.
-<code>/sleep</code> 으로의 요청을 처리할 <code>else if</code> 를
-<code>if</code> 블록 뒤에 추가했습니다. 만약 요청이 들어오면,
-서버는 HTML 페이지를 렌더링 하기 전에 5초간 대기할 것입니다.</p>
-<p>여러분은 우리 서버가 얼마나 부족한지 알 수 있습니다:
-실제 라이브러리들은 훨씬 간단한 방법으로 여러개의 요청을 구분할 것입니다!</p>
-<p><code>cargo run</code> 를 이용해 서버를 실행시키고, 두 브라우저 창을 엽니다:
-하나는 <code>http://localhost:7878/</code> 로 접속하고 다른 하나는 <code>http://localhost:7878/sleep</code> 으로 접속합니다.
-만약 여러분이 <code>/</code> URI로 몇번 접속하시면 기존 처럼
-빠른 응답을 보실 수 있으실 테지만, <code>/sleep</code> 으로 접속하고 <code>/</code> 로 접속한다면
-<code>sleep</code> 이 5초동안의 로딩을 끝내고 나서야 <code>/</code> 에 대한 응답을 보실 수 있을겁니다.</p>
-<p>우리 웹 서버가 모든 요청들을 느린 요청 뒤에 처리하도록 하는것을
-피하는 방법은 여러가지가 있지만, 그중 우리가 사용할 방법은
-스레드 풀 (thread pool) 입니다.</p>
-<h3 id="스레드-풀을-이용한-처리량-증진"><a class="header" href="#스레드-풀을-이용한-처리량-증진">스레드 풀을 이용한 처리량 증진</a></h3>
-<p><em>스레드 풀</em> 은 대기중이거나 작업을 처리할 준비가 되어 있는
-스레드들의 그룹입니다. 프로그램이 새 작업을 받았을때,
-스레드 풀은 작업을 풀(pool) 안에 있는 스레드중 하나에게 맡기고
-해당 스레드가 작업을 처리하도록 합니다. 남은 스레드들은
-첫번째 스레드가 처리중인 동안 들어온 작업을 언제든지 처리할 수
-있도록 합니다. 첫번째 스레드가 작업을 끝마치면 풀로 돌아와
-작업 대기상태가 됩니다. 스레드 풀은 우리가 여러 커넥션들을
-동시에 처리할 수 있게 해주고 우리 서버의 처리량을 증가시킵니다.</p>
-<p>우린 DoS (Denial of Service) 공격을 막기 위해 풀 안의
-스레드 개수에 대한 제한을 작게 둘 것입니다;
-만약 우리 프로그램이 각각의 요청이 들어올때마다 새 스레드를 생성한다면
-누군가 우리 서버에 10만개의 요청을 보냈을때 우리 서버는
-서버의 모든 리소스를 사용하고 모든 요청이 끝날때까지 처리가 계속될 것입니다.</p>
-<p>우린 스레드를 제한없이 생성하는것이 아닌 풀 안에서 대기할
-고정된 개수의 스레드를 가질 것입니다. 요청이 들어온다면,
-요청들은 처리를 위해 풀로 보내지고, 풀에선 들어오는 요청들에
-대한 큐(queue) 를 유지할 것입니다. 풀 내의 각 스레드들은 이 큐에서
-요청을 꺼내서 처리하고 또 다른 요청이 있는지 큐에 물어봅니다.
-우린 이 형태를 이용해 동시에 <code>N</code> 개의 요청을 처리할 수 있습니다. 여기서 <code>N</code> 은 스레드의 개수입니다.
-만약 각각의 스레드가 응답하는데 오래 걸리는 요청을 처리하게되면
-그 다음의 요청들은 여전히 큐에 남아있게 됩니다만,
-이전보다 처리할 수 있는 요청은 늘어났습니다</p>
-<p>이 기술은 우리 웹서버의 처리량을 증가시킬 수많은 방법중 하나일 뿐입니다.
-여러분이 찾으실 다른 방법들은 fork/join 모델과 싱글 스레드 기반
-비동기 I/O 모델 등일 것입니다. 만약 여러분이 이러한 내용에 관심이
-있으시다면, 다른 해결책들에 대해 좀 더 자세히 찾아보시고 Rust로 구현해 보세요;
-Rust같은 저레벨 언어로는 이와 같은 방법들이 전부 가능합니다.</p>
-<p>스레드 풀을 구현하기 전에, 풀이 어떻게 쓰여야 할지 이야기 해 봅시다.
-여러분이 코드를 디자인할때, 클라이언트 인터페이스를 먼저 작성해 보는건
-여러분의 디자인에 도움이 될 수 있습니다.
-코드의 API 를 작성하여 원하는 방식으로 구성한 다음
-기능을 구현하고 공개 API를 디자인하는 대신
-해당 구조 내에서 기능을 구현하세요.</p>
-<p>12장의 프로젝트에서 테스트 주도 개발을 할때와 흡사하게,
-우린 여기서 컴파일러 주도 개발을 할 것입니다. 이는 우리가 원하는대로
-기능을 호출하는 코드를 작성하고, 컴파일러로부터의 에러를 조사하여
-어떻게 코드를 변화시켜야 작동시킬 수 있을지 알아내는 과정을 말합니다.</p>
-<h4 id="요청마다-스레드를-생성할-수-있는-코드-구조"><a class="header" href="#요청마다-스레드를-생성할-수-있는-코드-구조">요청마다 스레드를 생성할 수 있는 코드 구조</a></h4>
-<p>먼저, 모든 연결에 대해 스레드를 새로 생성했을때의 코드는 어떤 모습이 될지 알아봅시다.
-물론 앞에서 말했듯이, 이는 스레드들을 무한대로 만들어낼 수 있기 때문에
-문제를 해결하기 위한 최종적인 대책은 될 수 없습니다만,
-그에 대한 출발점 정도로는 볼 수 있습니다.
-Listing 20-11는 <code>main</code> 함수의 <code>for</code> 반복문을 모든 요청에 대해 새 스레드를 생성하도록 변경한 모습을 보여줍니다.</p>
-<p><span class="filename">파일명: src/main.rs</span></p>
-<pre><pre class="playground"><code class="language-rust no_run"><span class="boring">use std::thread;
+    // --snip--
+<span class="boring">
+</span><span class="boring">    let contents = fs::read_to_string(filename).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let response = format!(&quot;{}{}&quot;, status_line, contents);
+</span><span class="boring">
+</span><span class="boring">    stream.write(response.as_bytes()).unwrap();
+</span><span class="boring">    stream.flush().unwrap();
+</span>}
+</code></pre></pre>
+<p><span class="caption">Listing 20-10: Simulating a slow request by recognizing
+<em>/sleep</em> and sleeping for 5 seconds</span></p>
+<p>This code is a bit messy, but it’s good enough for simulation purposes. We
+created a second request <code>sleep</code>, whose data our server recognizes. We added an
+<code>else if</code> after the <code>if</code> block to check for the request to <em>/sleep</em>. When that
+request is received, the server will sleep for 5 seconds before rendering the
+successful HTML page.</p>
+<p>You can see how primitive our server is: real libraries would handle the
+recognition of multiple requests in a much less verbose way!</p>
+<p>Start the server using <code>cargo run</code>. Then open two browser windows: one for
+<em>http://127.0.0.1:7878/</em> and the other for <em>http://127.0.0.1:7878/sleep</em>. If
+you enter the <em>/</em> URI a few times, as before, you’ll see it respond quickly.
+But if you enter <em>/sleep</em> and then load <em>/</em>, you’ll see that <em>/</em> waits until
+<code>sleep</code> has slept for its full 5 seconds before loading.</p>
+<p>There are multiple ways we could change how our web server works to avoid
+having more requests back up behind a slow request; the one we’ll implement is
+a thread pool.</p>
+<h3 id="improving-throughput-with-a-thread-pool"><a class="header" href="#improving-throughput-with-a-thread-pool">Improving Throughput with a Thread Pool</a></h3>
+<p>A <em>thread pool</em> is a group of spawned threads that are waiting and ready to
+handle a task. When the program receives a new task, it assigns one of the
+threads in the pool to the task, and that thread will process the task. The
+remaining threads in the pool are available to handle any other tasks that come
+in while the first thread is processing. When the first thread is done
+processing its task, it’s returned to the pool of idle threads, ready to handle
+a new task. A thread pool allows you to process connections concurrently,
+increasing the throughput of your server.</p>
+<p>We’ll limit the number of threads in the pool to a small number to protect us
+from Denial of Service (DoS) attacks; if we had our program create a new thread
+for each request as it came in, someone making 10 million requests to our
+server could create havoc by using up all our server’s resources and grinding
+the processing of requests to a halt.</p>
+<p>Rather than spawning unlimited threads, we’ll have a fixed number of threads
+waiting in the pool. As requests come in, they’ll be sent to the pool for
+processing. The pool will maintain a queue of incoming requests. Each of the
+threads in the pool will pop off a request from this queue, handle the request,
+and then ask the queue for another request. With this design, we can process
+<code>N</code> requests concurrently, where <code>N</code> is the number of threads. If each thread
+is responding to a long-running request, subsequent requests can still back up
+in the queue, but we’ve increased the number of long-running requests we can
+handle before reaching that point.</p>
+<p>This technique is just one of many ways to improve the throughput of a web
+server. Other options you might explore are the fork/join model and the
+single-threaded async I/O model. If you’re interested in this topic, you can
+read more about other solutions and try to implement them in Rust; with a
+low-level language like Rust, all of these options are possible.</p>
+<p>Before we begin implementing a thread pool, let’s talk about what using the
+pool should look like. When you’re trying to design code, writing the client
+interface first can help guide your design. Write the API of the code so it’s
+structured in the way you want to call it; then implement the functionality
+within that structure rather than implementing the functionality and then
+designing the public API.</p>
+<p>Similar to how we used test-driven development in the project in Chapter 12,
+we’ll use compiler-driven development here. We’ll write the code that calls the
+functions we want, and then we’ll look at errors from the compiler to determine
+what we should change next to get the code to work.</p>
+<h4 id="code-structure-if-we-could-spawn-a-thread-for-each-request"><a class="header" href="#code-structure-if-we-could-spawn-a-thread-for-each-request">Code Structure If We Could Spawn a Thread for Each Request</a></h4>
+<p>First, let’s explore how our code might look if it did create a new thread for
+every connection. As mentioned earlier, this isn’t our final plan due to the
+problems with potentially spawning an unlimited number of threads, but it is a
+starting point. Listing 20-11 shows the changes to make to <code>main</code> to spawn a
+new thread to handle each stream within the <code>for</code> loop.</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><pre class="playground"><code class="language-rust no_run"><span class="boring">use std::fs;
 </span><span class="boring">use std::io::prelude::*;
 </span><span class="boring">use std::net::TcpListener;
 </span><span class="boring">use std::net::TcpStream;
+</span><span class="boring">use std::thread;
+</span><span class="boring">use std::time::Duration;
 </span><span class="boring">
 </span>fn main() {
     let listener = TcpListener::bind(&quot;127.0.0.1:7878&quot;).unwrap();
@@ -286,32 +311,51 @@ Listing 20-11는 <code>main</code> 함수의 <code>for</code> 반복문을 모�
         });
     }
 }
-<span class="boring">fn handle_connection(mut stream: TcpStream) {}
+<span class="boring">
+</span><span class="boring">fn handle_connection(mut stream: TcpStream) {
+</span><span class="boring">    let mut buffer = [0; 1024];
+</span><span class="boring">    stream.read(&amp;mut buffer).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let get = b&quot;GET / HTTP/1.1\r\n&quot;;
+</span><span class="boring">    let sleep = b&quot;GET /sleep HTTP/1.1\r\n&quot;;
+</span><span class="boring">
+</span><span class="boring">    let (status_line, filename) = if buffer.starts_with(get) {
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else if buffer.starts_with(sleep) {
+</span><span class="boring">        thread::sleep(Duration::from_secs(5));
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else {
+</span><span class="boring">        (&quot;HTTP/1.1 404 NOT FOUND\r\n\r\n&quot;, &quot;404.html&quot;)
+</span><span class="boring">    };
+</span><span class="boring">
+</span><span class="boring">    let contents = fs::read_to_string(filename).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let response = format!(&quot;{}{}&quot;, status_line, contents);
+</span><span class="boring">
+</span><span class="boring">    stream.write(response.as_bytes()).unwrap();
+</span><span class="boring">    stream.flush().unwrap();
+</span><span class="boring">}
 </span></code></pre></pre>
-<p><span class="caption">Listing 20-11: 매 요청마다
-새 스레드 생성</span></p>
-<p>여러분이 16장에서 배우신대로, <code>thread::spawn</code> 은 새 스레드를 생성하고,
-내부에 있는 클로저의 코드를 실행합니다.
-만약 여러분이 이 코드를 실행하고 브라우저로 <code>/sleep</code> 으로 접속하신 후,
-둘 이상의 브라우저 탭으로 <code>/</code> 에 접속하신다면, <code>/</code> 로의 요청이
-<code>/sleep</code> 이 끝나길 기다리지 않고 완료 되는 것을 보실 수 있을 것입니다.
-하지만 말했듯이, 스레드를 무한정 생성하는 것은 결국 시스템의 과부화를 일으킬 것입니다.</p>
-<h4 id="유한-스레드-수를-위한-인터페이스-만들기"><a class="header" href="#유한-스레드-수를-위한-인터페이스-만들기">유한 스레드 수를 위한 인터페이스 만들기</a></h4>
-<p>우린 스레드 풀을 비슷하고 익숙하게 작동하도록 만들어서
-스레드 풀 방식으로 변경할때 우리 API를 사용하는
-코드를 크게 변경할 필요가 없도록 하고자 합니다.
-Listing 20-12는 <code>thread::spawn</code> 대신 이용하고자 하는 <code>ThreadPool</code> 이라는 가상의 인터페이스를 보여줍니다.</p>
-<p><span class="filename">파일명: src/main.rs</span></p>
-<pre><pre class="playground"><code class="language-rust no_run"><span class="boring">use std::thread;
+<p><span class="caption">Listing 20-11: Spawning a new thread for each
+stream</span></p>
+<p>As you learned in Chapter 16, <code>thread::spawn</code> will create a new thread and then
+run the code in the closure in the new thread. If you run this code and load
+<em>/sleep</em> in your browser, then <em>/</em> in two more browser tabs, you’ll indeed see
+that the requests to <em>/</em> don’t have to wait for <em>/sleep</em> to finish. But as we
+mentioned, this will eventually overwhelm the system because you’d be making
+new threads without any limit.</p>
+<h4 id="creating-a-similar-interface-for-a-finite-number-of-threads"><a class="header" href="#creating-a-similar-interface-for-a-finite-number-of-threads">Creating a Similar Interface for a Finite Number of Threads</a></h4>
+<p>We want our thread pool to work in a similar, familiar way so switching from
+threads to a thread pool doesn’t require large changes to the code that uses
+our API. Listing 20-12 shows the hypothetical interface for a <code>ThreadPool</code>
+struct we want to use instead of <code>thread::spawn</code>.</p>
+<p><span class="filename">Filename: src/main.rs</span></p>
+<pre><code class="language-rust ignore does_not_compile"><span class="boring">use std::fs;
 </span><span class="boring">use std::io::prelude::*;
 </span><span class="boring">use std::net::TcpListener;
 </span><span class="boring">use std::net::TcpStream;
-</span><span class="boring">struct ThreadPool;
-</span><span class="boring">impl ThreadPool {
-</span><span class="boring">   fn new(size: u32) -&gt; ThreadPool { ThreadPool }
-</span><span class="boring">   fn execute&lt;F&gt;(&amp;self, f: F)
-</span><span class="boring">       where F: FnOnce() + Send + 'static {}
-</span><span class="boring">}
+</span><span class="boring">use std::thread;
+</span><span class="boring">use std::time::Duration;
 </span><span class="boring">
 </span>fn main() {
     let listener = TcpListener::bind(&quot;127.0.0.1:7878&quot;).unwrap();
@@ -325,39 +369,66 @@ Listing 20-12는 <code>thread::spawn</code> 대신 이용하고자 하는 <code>
         });
     }
 }
-<span class="boring">fn handle_connection(mut stream: TcpStream) {}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-12: 우리의 이상적인 <code>ThreadPool</code> 인터페이스</span></p>
-<p>우린 새로운 스레드 풀을 만들때 <code>ThreadPool::new</code> 를
-설정할 스레드의 개수를 나타내는 수(이 경우는 4)와 함께 사용했습니다.
-그 후 <code>for</code> 반복문에선 <code>thread::spawn</code> 과 비슷한 인터페이스를 가진 <code>pool.execute</code> 에
-풀이 각각의 스트림에 대해 실행해야 할 클로저를 넘겨줍니다.
-우린 이제  <code>pool.execute</code> 를 클로저를 받고 풀 안의 스레드에게 넘겨주어서 실행하도록 구현해야 합니다.
-이 코드는 아직 컴파일 되지 않지만 컴파일러가 문제를 해결하는 방법을 안내 할 수 있도록 노력할 것입니다.</p>
-<h4 id="threadpool-구조체를-컴파일러-주도-개발을-이용해-제작"><a class="header" href="#threadpool-구조체를-컴파일러-주도-개발을-이용해-제작"><code>ThreadPool</code> 구조체를 컴파일러 주도 개발을 이용해 제작</a></h4>
-<p><em>src/main.rs</em> 를 Listing 20-12와 같이 변경하고, <code>cargo check</code> 로 얻은
-컴파일러 에러를 이용해 개발을 진행해 봅시다.
-여기 우리가 얻은 첫번째 에러가 있습니다.</p>
-<pre><code class="language-text">$ cargo check
-   Compiling hello v0.1.0 (file:///projects/hello)
-error[E0433]: failed to resolve. Use of undeclared type or module `ThreadPool`
-  --&gt; src\main.rs:10:16
+<span class="boring">
+</span><span class="boring">fn handle_connection(mut stream: TcpStream) {
+</span><span class="boring">    let mut buffer = [0; 1024];
+</span><span class="boring">    stream.read(&amp;mut buffer).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let get = b&quot;GET / HTTP/1.1\r\n&quot;;
+</span><span class="boring">    let sleep = b&quot;GET /sleep HTTP/1.1\r\n&quot;;
+</span><span class="boring">
+</span><span class="boring">    let (status_line, filename) = if buffer.starts_with(get) {
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else if buffer.starts_with(sleep) {
+</span><span class="boring">        thread::sleep(Duration::from_secs(5));
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else {
+</span><span class="boring">        (&quot;HTTP/1.1 404 NOT FOUND\r\n\r\n&quot;, &quot;404.html&quot;)
+</span><span class="boring">    };
+</span><span class="boring">
+</span><span class="boring">    let contents = fs::read_to_string(filename).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let response = format!(&quot;{}{}&quot;, status_line, contents);
+</span><span class="boring">
+</span><span class="boring">    stream.write(response.as_bytes()).unwrap();
+</span><span class="boring">    stream.flush().unwrap();
+</span><span class="boring">}
+</span></code></pre>
+<p><span class="caption">Listing 20-12: Our ideal <code>ThreadPool</code> interface</span></p>
+<p>We use <code>ThreadPool::new</code> to create a new thread pool with a configurable number
+of threads, in this case four. Then, in the <code>for</code> loop, <code>pool.execute</code> has a
+similar interface as <code>thread::spawn</code> in that it takes a closure the pool should
+run for each stream. We need to implement <code>pool.execute</code> so it takes the
+closure and gives it to a thread in the pool to run. This code won’t yet
+compile, but we’ll try so the compiler can guide us in how to fix it.</p>
+<h4 id="building-the-threadpool-struct-using-compiler-driven-development"><a class="header" href="#building-the-threadpool-struct-using-compiler-driven-development">Building the <code>ThreadPool</code> Struct Using Compiler Driven Development</a></h4>
+<p>Make the changes in Listing 20-12 to <em>src/main.rs</em>, and then let’s use the
+compiler errors from <code>cargo check</code> to drive our development. Here is the first
+error we get:</p>
+<pre><code class="language-console">$ cargo check
+    Checking hello v0.1.0 (file:///projects/hello)
+error[E0433]: failed to resolve: use of undeclared type `ThreadPool`
+  --&gt; src/main.rs:10:16
    |
 10 |     let pool = ThreadPool::new(4);
-   |                ^^^^^^^^^^^^^^^ Use of undeclared type or module
-   `ThreadPool`
+   |                ^^^^^^^^^^ use of undeclared type `ThreadPool`
 
 error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0433`.
+error: could not compile `hello`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p>훌륭합니다. 이 에러는 우리가 <code>ThreadPool</code> 타입이나 모듈이 필요하다고 알려주고 있으니 지금 하나 만들어 봅시다.
-우리가 만들 <code>ThreadPool</code> 은 우리의 웹 서버가 하는 일의 성향과는
-독립되어 있어야 합니다.
-그러니 <code>hello</code> 크레이트를 바이너리 크레이트에서
-라이브러리 크레이트로 변경하여 <code>ThreadPool</code> 구현을 유지합시다.
-라이브러리 크레이트로 변경한 뒤에는, 우린 분리된 스레드 풀 라이브러리를 웹 요청을 처리하는것 만이 아닌
-우리가 스레드 풀을 사용하길 원하는 어떤 작업에서든 사용할 수 있습니다.</p>
-<p>가장 간단한 <code>ThreadPool</code> 구조체 정의가 포함된
-<em>src/lib.rs</em> 를 생성합니다.</p>
+<p>Great! This error tells us we need a <code>ThreadPool</code> type or module, so we’ll
+build one now. Our <code>ThreadPool</code> implementation will be independent of the kind
+of work our web server is doing. So, let’s switch the <code>hello</code> crate from a
+binary crate to a library crate to hold our <code>ThreadPool</code> implementation. After
+we change to a library crate, we could also use the separate thread pool
+library for any work we want to do using a thread pool, not just for serving
+web requests.</p>
+<p>Create a <em>src/lib.rs</em> that contains the following, which is the simplest
+definition of a <code>ThreadPool</code> struct that we can have for now:</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
@@ -365,309 +436,354 @@ error: aborting due to previous error
 </span>pub struct ThreadPool;
 <span class="boring">}
 </span></code></pre></pre>
-<p>그 후 <em>src/bin</em> 이라는 새 디렉토리를 생성하고
-<em>src/main.rs</em> 바이너리 크레이트를 <em>src/bin/main.rs</em> 의 위치로 이동시킵니다.
-이로써 <em>hello</em> 디렉토리 안의 라이브러리 크레이트가 주요 크레이트가 될 것입니다;
-우린 여전히 <em>src/bin/main.rs</em> 바이너리 크레이트를 <code>cargo run</code> 명령어를 이용해 실행시킬 수 있습니다.
-<em>main.rs</em> 파일을 이동시킨 후 라이브러리 크레이트를 가져와서
-<em>src/bin/main.rs</em> 상단에 다음 코드를 추가하여 <code>ThreadPool</code> 을 스코프 내로 가져옵니다:</p>
-<p><span class="filename">파일명: src/bin/main.rs</span></p>
-<pre><code class="language-rust ignore">extern crate hello;
-use hello::ThreadPool;
-</code></pre>
-<p>이 코드는 여전히 작동하지 않지만,
-다음 오류를 확인하기 위해 다시 확인해 보겠습니다.</p>
-<pre><code class="language-text">$ cargo check
-   Compiling hello v0.1.0 (file:///projects/hello)
-error[E0599]: no function or associated item named `new` found for type
-`hello::ThreadPool` in the current scope
- --&gt; src/bin/main.rs:13:16
-   |
-13 |     let pool = ThreadPool::new(4);
-   |                ^^^^^^^^^^^^^^^ function or associated item not found in
-   `hello::ThreadPool`
-</code></pre>
-<p>이 에러는 우리가 <code>ThreadPool</code> 의 <code>new</code> 함수를 생성해야 한다는 것을 나타냅니다.
-우리는 <code>new</code> 가 <code>4</code> 를 인수로 받을 수 있도록 하나의 인자를 가져야 하고
-<code>ThreadPool</code> 객체를 반환해야 한다는 것을 알고 있으니
-해당하는 특성을 가진 가장 간단한 <code>new</code> 함수를
-구현해 봅시다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
+<p>Then create a new directory, <em>src/bin</em>, and move the binary crate rooted in
+<em>src/main.rs</em> into <em>src/bin/main.rs</em>. Doing so will make the library crate the
+primary crate in the <em>hello</em> directory; we can still run the binary in
+<em>src/bin/main.rs</em> using <code>cargo run</code>. After moving the <em>main.rs</em> file, edit it
+to bring the library crate in and bring <code>ThreadPool</code> into scope by adding the
+following code to the top of <em>src/bin/main.rs</em>:</p>
+<p><span class="filename">Filename: src/bin/main.rs</span></p>
+<pre><code class="language-rust ignore">use hello::ThreadPool;
+<span class="boring">use std::fs;
+</span><span class="boring">use std::io::prelude::*;
+</span><span class="boring">use std::net::TcpListener;
+</span><span class="boring">use std::net::TcpStream;
+</span><span class="boring">use std::thread;
+</span><span class="boring">use std::time::Duration;
+</span><span class="boring">
 </span><span class="boring">fn main() {
-</span>pub struct ThreadPool;
+</span><span class="boring">    let listener = TcpListener::bind(&quot;127.0.0.1:7878&quot;).unwrap();
+</span><span class="boring">    let pool = ThreadPool::new(4);
+</span><span class="boring">
+</span><span class="boring">    for stream in listener.incoming() {
+</span><span class="boring">        let stream = stream.unwrap();
+</span><span class="boring">
+</span><span class="boring">        pool.execute(|| {
+</span><span class="boring">            handle_connection(stream);
+</span><span class="boring">        });
+</span><span class="boring">    }
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">fn handle_connection(mut stream: TcpStream) {
+</span><span class="boring">    let mut buffer = [0; 1024];
+</span><span class="boring">    stream.read(&amp;mut buffer).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let get = b&quot;GET / HTTP/1.1\r\n&quot;;
+</span><span class="boring">    let sleep = b&quot;GET /sleep HTTP/1.1\r\n&quot;;
+</span><span class="boring">
+</span><span class="boring">    let (status_line, filename) = if buffer.starts_with(get) {
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else if buffer.starts_with(sleep) {
+</span><span class="boring">        thread::sleep(Duration::from_secs(5));
+</span><span class="boring">        (&quot;HTTP/1.1 200 OK\r\n\r\n&quot;, &quot;hello.html&quot;)
+</span><span class="boring">    } else {
+</span><span class="boring">        (&quot;HTTP/1.1 404 NOT FOUND\r\n\r\n&quot;, &quot;404.html&quot;)
+</span><span class="boring">    };
+</span><span class="boring">
+</span><span class="boring">    let contents = fs::read_to_string(filename).unwrap();
+</span><span class="boring">
+</span><span class="boring">    let response = format!(&quot;{}{}&quot;, status_line, contents);
+</span><span class="boring">
+</span><span class="boring">    stream.write(response.as_bytes()).unwrap();
+</span><span class="boring">    stream.flush().unwrap();
+</span><span class="boring">}
+</span></code></pre>
+<p>This code still won’t work, but let’s check it again to get the next error that
+we need to address:</p>
+<pre><code class="language-console">$ cargo check
+    Checking hello v0.1.0 (file:///projects/hello)
+error[E0599]: no function or associated item named `new` found for struct `ThreadPool` in the current scope
+  --&gt; src/bin/main.rs:11:28
+   |
+11 |     let pool = ThreadPool::new(4);
+   |                            ^^^ function or associated item not found in `ThreadPool`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `hello`
+
+To learn more, run the command again with --verbose.
+</code></pre>
+<p>This error indicates that next we need to create an associated function named
+<code>new</code> for <code>ThreadPool</code>. We also know that <code>new</code> needs to have one parameter
+that can accept <code>4</code> as an argument and should return a <code>ThreadPool</code> instance.
+Let’s implement the simplest <code>new</code> function that will have those
+characteristics:</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground">pub struct ThreadPool;
 
 impl ThreadPool {
     pub fn new(size: usize) -&gt; ThreadPool {
         ThreadPool
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>스레드의 개수가 음수라는 것은 말이 안되기 때문에
-<code>size</code> 인자의 타입을 <code>usize</code> 로 정했습니다.
-3장의 &quot;정수 타입&quot; 절에서 설명했듯이 이 4 라는 숫자를
-<code>usize</code> 타입의 용도에 걸맞게 스레드 컬렉션 요소의 개수로 사용합니다.</p>
-<p>코드를 다시한번 체크해 봅시다:</p>
-<pre><code class="language-text">$ cargo check
-   Compiling hello v0.1.0 (file:///projects/hello)
-warning: unused variable: `size`
- --&gt; src/lib.rs:4:16
-  |
-4 |     pub fn new(size: usize) -&gt; ThreadPool {
-  |                ^^^^
-  |
-  = note: #[warn(unused_variables)] on by default
-  = note: to avoid this warning, consider using `_size` instead
-
-error[E0599]: no method named `execute` found for type `hello::ThreadPool` in the current scope
-  --&gt; src/bin/main.rs:18:14
-   |
-18 |         pool.execute(|| {
-   |              ^^^^^^^
 </code></pre>
-<p>이제 경고와 에러가 발생합니다. 경고는 잠시 무시하고,
-에러는 <code>ThreadPool</code> 에 <code>execute</code> 메소드가 없기 때문에 발생한 것을 볼 수 있습니다.
-&quot;유한 스레드 수를 위한 인터페이스 만들기&quot; 절에서 우리가 만들 스레드 풀이
-<code>thread::spawn</code> 과 비슷한 인터페이스를 가져야 한다고 결정했던걸 기억하세요.
-또한 <code>execute</code> 함수를 구현하여 전달된 클로저를
-풀의 유휴 스레드로 전달할 것입니다.</p>
-<p><code>ThreadPool</code> 에 <code>execute</code> 메소드를 매개변수로 클로저를 전달받도록 정의합시다.
-13장의 &quot;제네릭 파라미터와 <code>Fn</code> 트레잇을 사용하여 클로저 저장하기&quot; 절에서
-클로저를 매개변수로 받을때 <code>Fn</code> , <code>FnMut</code> , <code>FnOnce</code> 3가지의 트레잇이
-있다고 했던걸 상기하세요.
-우린 여기서 어떤 종류의 클로저를 사용할지 결정해야 합니다.
-우린 표준 라이브러리인 <code>thread::spawn</code> 구현체와 비슷하게 만들것이기 때문에
-<code>thread::spawn</code> 의 매개변수가 어떻게 되어 있는지 참고할 수 있습니다.
-문서는 다음과 같은 내용입니다.</p>
+<p>We chose <code>usize</code> as the type of the <code>size</code> parameter, because we know that a
+negative number of threads doesn’t make any sense. We also know we’ll use this
+4 as the number of elements in a collection of threads, which is what the
+<code>usize</code> type is for, as discussed in the <a href="ch03-02-data-types.html#integer-types">“Integer Types”</a><!--
+ignore --> section of Chapter 3.</p>
+<p>Let’s check the code again:</p>
+<pre><code class="language-console">$ cargo check
+    Checking hello v0.1.0 (file:///projects/hello)
+error[E0599]: no method named `execute` found for struct `ThreadPool` in the current scope
+  --&gt; src/bin/main.rs:16:14
+   |
+16 |         pool.execute(|| {
+   |              ^^^^^^^ method not found in `ThreadPool`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `hello`
+
+To learn more, run the command again with --verbose.
+</code></pre>
+<p>Now the error occurs because we don’t have an <code>execute</code> method on <code>ThreadPool</code>.
+Recall from the <a href="#creating-a-similar-interface-for-a-finite-number-of-threads">“Creating a Similar Interface for a Finite Number of
+Threads”</a><!--
+ignore --> section that we decided our thread pool should have an interface
+similar to <code>thread::spawn</code>. In addition, we’ll implement the <code>execute</code> function
+so it takes the closure it’s given and gives it to an idle thread in the pool
+to run.</p>
+<p>We’ll define the <code>execute</code> method on <code>ThreadPool</code> to take a closure as a
+parameter. Recall from the <a href="ch13-01-closures.html#storing-closures-using-generic-parameters-and-the-fn-traits">“Storing Closures Using Generic Parameters and the
+<code>Fn</code> Traits”</a><!--
+ignore --> section in Chapter 13 that we can take closures as parameters with
+three different traits: <code>Fn</code>, <code>FnMut</code>, and <code>FnOnce</code>. We need to decide which
+kind of closure to use here. We know we’ll end up doing something similar to
+the standard library <code>thread::spawn</code> implementation, so we can look at what
+bounds the signature of <code>thread::spawn</code> has on its parameter. The documentation
+shows us the following:</p>
 <pre><code class="language-rust ignore">pub fn spawn&lt;F, T&gt;(f: F) -&gt; JoinHandle&lt;T&gt;
     where
         F: FnOnce() -&gt; T + Send + 'static,
         T: Send + 'static
 </code></pre>
-<p><code>F</code> 타입 인자가 바로 우리가 찾는 녀석입니다.
-<code>T</code> 타입 인자는 반환값과 연관된 인자니 관심을 가지지 않아도 됩니다.
-우린 <code>spawn</code> 이 <code>F</code> 의 트레잇으로 <code>FnOnce</code> 를 사용하는 것을 알 수 있는데,
-이게 바로 우리가 찾는 내용입니다.
-왜냐하면 우린 결국 <code>spawn</code> 에 <code>execute</code> 인수를 전달해야하니까요.
-또한 스레드가 요청을 처리할때 요청 클로저를 한번만 실행할 것이기 때문에
-<code>Once</code> 에 매치되는 <code>FnOnce</code> 가 우리가 원하던 트레잇이라고 확신할 수 있습니다.</p>
-<p><code>F</code> 타입 인자는 <code>Send</code> 트레잇과 <code>'static</code> 생명주기가 바인딩되어 있습니다.
-한 스레드에서 다른 스레드로 클로저를 전달해야하기에 <code>Send</code> 가 필요하고 스레드가
-언제 파괴될지 모르기 때문에 <code>'static'</code> 이 필요합니다.
-<code>execute</code> 메소드를 <code>ThreadPool</code> 에 생성하고 이들이 바인딩된 <code>F</code> 타입
-제네릭 인자를 받도록 합시다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span><span class="boring">pub struct ThreadPool;
+<p>The <code>F</code> type parameter is the one we’re concerned with here; the <code>T</code> type
+parameter is related to the return value, and we’re not concerned with that. We
+can see that <code>spawn</code> uses <code>FnOnce</code> as the trait bound on <code>F</code>. This is probably
+what we want as well, because we’ll eventually pass the argument we get in
+<code>execute</code> to <code>spawn</code>. We can be further confident that <code>FnOnce</code> is the trait we
+want to use because the thread for running a request will only execute that
+request’s closure one time, which matches the <code>Once</code> in <code>FnOnce</code>.</p>
+<p>The <code>F</code> type parameter also has the trait bound <code>Send</code> and the lifetime bound
+<code>'static</code>, which are useful in our situation: we need <code>Send</code> to transfer the
+closure from one thread to another and <code>'static</code> because we don’t know how long
+the thread will take to execute. Let’s create an <code>execute</code> method on
+<code>ThreadPool</code> that will take a generic parameter of type <code>F</code> with these bounds:</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground"><span class="boring">pub struct ThreadPool;
+</span><span class="boring">
 </span>impl ThreadPool {
     // --snip--
-
-    pub fn execute&lt;F&gt;(&amp;self, f: F)
-        where
-            F: FnOnce() + Send + 'static
+<span class="boring">    pub fn new(size: usize) -&gt; ThreadPool {
+</span><span class="boring">        ThreadPool
+</span><span class="boring">    }
+</span><span class="boring">
+</span>    pub fn execute&lt;F&gt;(&amp;self, f: F)
+    where
+        F: FnOnce() + Send + 'static,
     {
-
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>우린 클로저가 인자를 받지 않고 반환값도 없기 때문에
-<code>FnOnce</code> 뒤에 <code>()</code> 를 사용합니다.
-이처럼 함수의 반환값은 생략될 수 있습니다.
-하지만 인자가 없더라도 괄호는 필요합니다.</p>
-<p>이는 <code>execute</code> 메소드의 가장 간단한 구현입니다. 이 코드는 아무것도 하지 않지만,
-우리 코드를 컴파일 시도해 볼 순 있습니다. 다시 한번 체크해봅시다.</p>
-<pre><code class="language-text">$ cargo check
-   Compiling hello v0.1.0 (file:///projects/hello)
-warning: unused variable: `size`
- --&gt; src/lib.rs:4:16
-  |
-4 |     pub fn new(size: usize) -&gt; ThreadPool {
-  |                ^^^^
-  |
-  = note: #[warn(unused_variables)] on by default
-  = note: to avoid this warning, consider using `_size` instead
-
-warning: unused variable: `f`
- --&gt; src/lib.rs:8:30
-  |
-8 |     pub fn execute&lt;F&gt;(&amp;self, f: F)
-  |                              ^
-  |
-  = note: to avoid this warning, consider using `_f` instead
 </code></pre>
-<p>이제 경고만 받았으니, 컴파일에 성공했다는 뜻입니다!
-하지만 여러분이 만약 <code>cargo run</code> 을 실행하고 브라우저로 요청을 보내보시면,
-이 장의 초반에서 본 에러를 받게되실겁니다. 우리 라이브러리는 <code>execute</code> 로
-전달된 클로저를 실행하지 않기 때문입니다.</p>
+<p>We still use the <code>()</code> after <code>FnOnce</code> because this <code>FnOnce</code> represents a closure
+that takes no parameters and returns the unit type <code>()</code>. Just like function
+definitions, the return type can be omitted from the signature, but even if we
+have no parameters, we still need the parentheses.</p>
+<p>Again, this is the simplest implementation of the <code>execute</code> method: it does
+nothing, but we’re trying only to make our code compile. Let’s check it again:</p>
+<pre><code class="language-console">$ cargo check
+    Checking hello v0.1.0 (file:///projects/hello)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.24s
+</code></pre>
+<p>It compiles! But note that if you try <code>cargo run</code> and make a request in the
+browser, you’ll see the errors in the browser that we saw at the beginning of
+the chapter. Our library isn’t actually calling the closure passed to <code>execute</code>
+yet!</p>
 <blockquote>
-<p>Note: 여러분이 만약 하스켈이나 러스트같이 엄격한 컴파일러를 사용하는 언어를 사용하신다면,
-&quot;코드가 컴파일이 되면, 작동한단 뜻입니다.&quot; 라는 말이 통용됩니다. 하지만 이게 항상
-적용되는게 아닌것이, 우리 프로젝트는 컴파일 되었지만 아무것도 하지 않습니다. 만약
-우리가 실제 완성을 목표로 프로젝트를 제작중이었다면 이 상황은 코드가 컴파일되는지
-체크하는것에 <em>더해서</em> 우리가 원하는 기능이 구현됐는지 확인하기 위해 유닛테스트를
-진행하기 시작할 좋은 기회가 될 것입니다.</p>
+<p>Note: A saying you might hear about languages with strict compilers, such as
+Haskell and Rust, is “if the code compiles, it works.” But this saying is not
+universally true. Our project compiles, but it does absolutely nothing! If we
+were building a real, complete project, this would be a good time to start
+writing unit tests to check that the code compiles <em>and</em> has the behavior we
+want.</p>
 </blockquote>
-<h4 id="new-의-스레드-개수에-대한-유효성-검사"><a class="header" href="#new-의-스레드-개수에-대한-유효성-검사"><code>new</code> 의 스레드 개수에 대한 유효성 검사</a></h4>
-<p><code>new</code> 와 <code>execute</code> 의 파라미터로 아무것도 하지 않기 때문에 여전히 경고가 나타납니다.
-이제 우리가 원하는 기능을 이 함수의 몸체부분에 구현해봅시다. 시작하기 전에,
-<code>new</code> 에 대해서 생각해보죠. 이전에 우리가 스레드풀의 스레드 개수가 음수라는건
-말이 안되기 때문에 <code>size</code> 인자를 양수형 타입으로 정한것을 기억하시나요?
-어쨋든, 스레드가 하나도 없는것도 말이 안되는건 마찬가지입니다.
-<code>usize</code> 타입엔 0이 들어갈 수 있으므로, 우린 예시 20-13 처럼
-<code>ThreadPool</code> 인스턴스를 반환하기 이전에 <code>size</code> 가 0보다 큰지 검사하고,
-0일 경우 <code>assert!</code> 매크로를 이용해
-프로그램 패닉을 일으키는 코드를 추가할 것입니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span><span class="boring">pub struct ThreadPool;
+<h4 id="validating-the-number-of-threads-in-new"><a class="header" href="#validating-the-number-of-threads-in-new">Validating the Number of Threads in <code>new</code></a></h4>
+<p>We aren’t doing anything with the parameters to <code>new</code> and <code>execute</code>. Let’s
+implement the bodies of these functions with the behavior we want. To start,
+let’s think about <code>new</code>. Earlier we chose an unsigned type for the <code>size</code>
+parameter, because a pool with a negative number of threads makes no sense.
+However, a pool with zero threads also makes no sense, yet zero is a perfectly
+valid <code>usize</code>. We’ll add code to check that <code>size</code> is greater than zero before
+we return a <code>ThreadPool</code> instance and have the program panic if it receives a
+zero by using the <code>assert!</code> macro, as shown in Listing 20-13.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground"><span class="boring">pub struct ThreadPool;
+</span><span class="boring">
 </span>impl ThreadPool {
-    /// 새 스레드풀 생성
+    /// Create a new ThreadPool.
     ///
-    /// size 는 풀 안의 스레드 개수입니다.
+    /// The size is the number of threads in the pool.
     ///
     /// # Panics
     ///
-    /// `new` 함수는 size 가 0일때 패닉을 일으킵니다
+    /// The `new` function will panic if the size is zero.
     pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         ThreadPool
     }
 
-    // --생략--
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-13: <code>ThreadPool::new</code> 를 <code>size</code> 가 0일 경우 패닉을
-일으키도록 구현</span></p>
-<p><code>ThreadPool</code> 에 문서 주석(doc comments)을 좀 추가해 봤습니다.
-14장에서 논의했듯이 우리 함수가 패닉을 일으킬 수 있는 상황을
-설명하는 절을 추가함으로써 좋은 문서화방법을 따랐습니다.
-<code>cargo doc --open</code> 을 입력하고 <code>ThreadPool</code> 구조체를 클릭한 뒤
-<code>new</code> 에 대한 문서가 어떻게 만들어 졌는지 확인해보세요!</p>
-<p>위에서 한 것처럼 <code>assert!</code> 매크로를 추가하는 대신에, <code>new</code> 를
-예제 12-9 의 I/O 프로젝트의 <code>Config::new</code> 처럼 <code>Result</code> 를 반환하도록 바꿔봅시다.
-하지만 이처럼 스레드풀을 스레드 없이 생성하려 하는것은 회복할 수 없는(unrecoverable)
-에러가 되어야 합니다. 만약 여러분이 오기가 생기신다면,
-<code>new</code> 를 다음과 같이 시그니처를 만든 새 버전을 작성해 보시고,
-두 버전을 비교해보세요.</p>
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
+</code></pre>
+<p><span class="caption">Listing 20-13: Implementing <code>ThreadPool::new</code> to panic if
+<code>size</code> is zero</span></p>
+<p>We’ve added some documentation for our <code>ThreadPool</code> with doc comments. Note
+that we followed good documentation practices by adding a section that calls
+out the situations in which our function can panic, as discussed in Chapter 14.
+Try running <code>cargo doc --open</code> and clicking the <code>ThreadPool</code> struct to see what
+the generated docs for <code>new</code> look like!</p>
+<p>Instead of adding the <code>assert!</code> macro as we’ve done here, we could make <code>new</code>
+return a <code>Result</code> like we did with <code>Config::new</code> in the I/O project in Listing
+12-9. But we’ve decided in this case that trying to create a thread pool
+without any threads should be an unrecoverable error. If you’re feeling
+ambitious, try to write a version of <code>new</code> with the following signature to
+compare both versions:</p>
 <pre><code class="language-rust ignore">pub fn new(size: usize) -&gt; Result&lt;ThreadPool, PoolCreationError&gt; {
 </code></pre>
-<h4 id="스레드를-보관하기-위한-공간-생성하기"><a class="header" href="#스레드를-보관하기-위한-공간-생성하기">스레드를 보관하기 위한 공간 생성하기</a></h4>
-<p>이제 우린 스레드풀에 보관할 스레드의 개수가 유효하단 것을 확인했으니,
-반환하기 전에 <code>ThreadPool</code> 구조체에 스레드들을 생성하고 보관해 놓을 수 있습니다.
-그런데, 어떻게 스레드를 &quot;보관&quot; 할까요?
-<code>thread::spawn</code> 의 시그니처를 다시 살펴봅시다.</p>
+<h4 id="creating-space-to-store-the-threads"><a class="header" href="#creating-space-to-store-the-threads">Creating Space to Store the Threads</a></h4>
+<p>Now that we have a way to know we have a valid number of threads to store in
+the pool, we can create those threads and store them in the <code>ThreadPool</code> struct
+before returning it. But how do we “store” a thread? Let’s take another look at
+the <code>thread::spawn</code> signature:</p>
 <pre><code class="language-rust ignore">pub fn spawn&lt;F, T&gt;(f: F) -&gt; JoinHandle&lt;T&gt;
     where
         F: FnOnce() -&gt; T + Send + 'static,
         T: Send + 'static
 </code></pre>
-<p><code>spawn</code> 함수는 <code>JoinHandle&lt;T&gt;</code> 를 반환합니다. 여기서 <code>T</code> 는 클로저가
-반환할 타입입니다. <code>JoinHandle</code> 을 사용해보고 무슨 일이 일어나는지 살펴봅시다.
-우리의 경우, 스레드풀로 전달된 클로저는 커넥션을 다루고
-아무것도 반환하지 않을테니 <code>T</code> 는 <code>()</code> 가 되겠네요.</p>
-<p>Listing 20-14의 코드는 컴파일엔 문제가 없지만 아직 아무 스레드도 만들지 않습니다.
-<code>thread::JoinHandle&lt;()&gt;</code> 객체를 담는 벡터를 취급하도록
-<code>ThreadPool</code> 의 정의를 변경했습니다.
-벡터의 크기를 <code>size</code> 로 초기화하고 <code>for</code> 반목문에서 스레드들을 생성한뒤,
-스레드들을 가진 <code>ThreadPool</code> 객체를 반환할 것입니다.</p>
+<p>The <code>spawn</code> function returns a <code>JoinHandle&lt;T&gt;</code>, where <code>T</code> is the type that the
+closure returns. Let’s try using <code>JoinHandle</code> too and see what happens. In our
+case, the closures we’re passing to the thread pool will handle the connection
+and not return anything, so <code>T</code> will be the unit type <code>()</code>.</p>
+<p>The code in Listing 20-14 will compile but doesn’t create any threads yet.
+We’ve changed the definition of <code>ThreadPool</code> to hold a vector of
+<code>thread::JoinHandle&lt;()&gt;</code> instances, initialized the vector with a capacity of
+<code>size</code>, set up a <code>for</code> loop that will run some code to create the threads, and
+returned a <code>ThreadPool</code> instance containing them.</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><code class="language-rust ignore">use std::thread;
+<pre><code class="language-rust ignore not_desired_behavior">use std::thread;
 
 pub struct ThreadPool {
     threads: Vec&lt;thread::JoinHandle&lt;()&gt;&gt;,
 }
 
 impl ThreadPool {
-    // --생략--
-    pub fn new(size: usize) -&gt; ThreadPool {
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span>    pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         let mut threads = Vec::with_capacity(size);
 
         for _ in 0..size {
-            // 스레드들을 생성하고 벡터 내에 보관합니다
+            // create some threads and store them in the vector
         }
 
-        ThreadPool {
-            threads
-        }
+        ThreadPool { threads }
     }
 
-    // --생략--
-}
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
 </code></pre>
-<p><span class="caption">Listing 20-14: <code>ThreadPool</code> 에 스레드들을 보관하기 위한
-벡터 만들기</span></p>
-<p><code>std::thread</code> 를 라이브러리 크레이트의 스코프 내로 가져왔습니다.
-우리가 <code>thread::JoinHandle</code> 를 <code>ThreadPool</code> 내 벡터 요소의 타입으로
-사용하고 있으니까요.</p>
-<p><code>ThreadPool</code> 은 유효한 숫자를 전달받을 경우 <code>size</code> 크기대로 새로운 벡터를 생성합니다.
-이 책에선 아직 <code>Vec::new</code> 와 비슷한 기능을 하는 <code>with_capacity</code> 함수를 사용하진
-않았습니다:
-다만 이 두 함수는 중요한 차이가 있는데, <code>with_capacity</code> 함수는 벡터의
-공간을 미리 할당합니다. 우린 벡터 안에 들어갈 요소의 개수를 알고 있기 때문에 사전에
-공간을 할당 함으로써 요소의 삽입마다 재할당이 일어나는 <code>Vec::new</code> 를
-사용할 때 보다 효율을 높일 수 있습니다.</p>
-<p><code>cargo check</code> 를 재실행 하시면 몇개의 경고는 발생하겠지만
-문제 없이 성공하실겁니다.</p>
-<h4 id="threadpool-에서-스레드로-코드를-보내는-worker-구조체"><a class="header" href="#threadpool-에서-스레드로-코드를-보내는-worker-구조체"><code>ThreadPool</code> 에서 스레드로 코드를 보내는 <code>Worker</code> 구조체</a></h4>
-<p>Listing 20-14 의 <code>for</code> 반복문에 스레드 생성에 관해 주석을 남겨놨습니다.
-여기서 우리가 스레드들을 실제로 만드는 방법을 알아볼 예정입니다.
-표준 라이브러리는 <code>thread:::spawn</code> 를 이용해 스레드를 생성할 수 있도록 제공하며,
-<code>thread::spawn</code> 은 스레드가 생성되는 즉시 스레드가 실행할 코드를 전달 받도록
-되어있습니다. 하지만 우린 스레드를 생성하고 나중에 코드를 전달받을 때까지
-<code>기다리도록</code> 해야 합니다.
-안타깝게도 표준 라이브러리의 스레드 구현에는 이러한 방법을 지원하지 않아서
-우리가 직접 구현해야합니다.</p>
-<p>우린 이 기능을 <code>ThreadPool</code> 과 스레드들 사이에 새로운 데이터 구조를 도입하여 구현할 것입니다.
-앞으로 이 데이터 구조를 <code>Worker</code> 라고 부르겠습니다.
-이 용어는 풀링 구현에서 흔하게 사용됩니다.
-한번 식당의 부엌에서 일하는 사람들을 예로 들어보죠.
-이 <code>Worker</code> 들은 고객으로부터 주문을 받을 때까지 기다린 다음,
-주문을 받고 일합니다. 뭐 대충 비슷하지 않나요?</p>
-<p>스레드 풀 안에 <code>JoinHandle&lt;()&gt;</code> 인스턴스 벡터 대신,
-<code>Worker</code> 구조체의 인스턴스들을 내장하도록 해 봅시다.
-이때 각각의 <code>Worker</code> 는 단일 <code>JoinHandle&lt;()&gt;</code> 인스턴스를 내장하게 됩니다.
-그리고 실행할 코드의 클로저를 전달받고 스레드에게 전달해 실행하도록 하는 함수를
-<code>Worker</code> 에 구현할 것입니다. 또한 우린 각각의 워커에 <code>id</code> 를 부여해
-로그를 남기거나 디버깅을 할때 서로 다른 워커들을 구별할 수 있게 할 것입니다.</p>
-<p><code>ThreadPool</code> 을 생성할때 일어나는 일을 다음과 같이 변경해 보겠습니다.
-다음과 같은 방법으로 <code>Worker</code> 를 설정하고 스레드에 클로저를 전송하는 코드를
-구현합니다.</p>
+<p><span class="caption">Listing 20-14: Creating a vector for <code>ThreadPool</code> to hold
+the threads</span></p>
+<p>We’ve brought <code>std::thread</code> into scope in the library crate, because we’re
+using <code>thread::JoinHandle</code> as the type of the items in the vector in
+<code>ThreadPool</code>.</p>
+<p>Once a valid size is received, our <code>ThreadPool</code> creates a new vector that can
+hold <code>size</code> items. We haven’t used the <code>with_capacity</code> function in this book
+yet, which performs the same task as <code>Vec::new</code> but with an important
+difference: it preallocates space in the vector. Because we know we need to
+store <code>size</code> elements in the vector, doing this allocation up front is slightly
+more efficient than using <code>Vec::new</code>, which resizes itself as elements are
+inserted.</p>
+<p>When you run <code>cargo check</code> again, you’ll get a few more warnings, but it should
+succeed.</p>
+<h4 id="a-worker-struct-responsible-for-sending-code-from-the-threadpool-to-a-thread"><a class="header" href="#a-worker-struct-responsible-for-sending-code-from-the-threadpool-to-a-thread">A <code>Worker</code> Struct Responsible for Sending Code from the <code>ThreadPool</code> to a Thread</a></h4>
+<p>We left a comment in the <code>for</code> loop in Listing 20-14 regarding the creation of
+threads. Here, we’ll look at how we actually create threads. The standard
+library provides <code>thread::spawn</code> as a way to create threads, and
+<code>thread::spawn</code> expects to get some code the thread should run as soon as the
+thread is created. However, in our case, we want to create the threads and have
+them <em>wait</em> for code that we’ll send later. The standard library’s
+implementation of threads doesn’t include any way to do that; we have to
+implement it manually.</p>
+<p>We’ll implement this behavior by introducing a new data structure between the
+<code>ThreadPool</code> and the threads that will manage this new behavior. We’ll call
+this data structure <code>Worker</code>, which is a common term in pooling
+implementations. Think of people working in the kitchen at a restaurant: the
+workers wait until orders come in from customers, and then they’re responsible
+for taking those orders and filling them.</p>
+<p>Instead of storing a vector of <code>JoinHandle&lt;()&gt;</code> instances in the thread pool,
+we’ll store instances of the <code>Worker</code> struct. Each <code>Worker</code> will store a single
+<code>JoinHandle&lt;()&gt;</code> instance. Then we’ll implement a method on <code>Worker</code> that will
+take a closure of code to run and send it to the already running thread for
+execution. We’ll also give each worker an <code>id</code> so we can distinguish between
+the different workers in the pool when logging or debugging.</p>
+<p>Let’s make the following changes to what happens when we create a <code>ThreadPool</code>.
+We’ll implement the code that sends the closure to the thread after we have
+<code>Worker</code> set up in this way:</p>
 <ol>
-<li><code>id</code> 와 <code>JoinHandle&lt;()&gt;</code> 를 갖는 <code>Worker</code> 구조체를 정의 합니다.</li>
-<li><code>ThreadPool</code> 을 <code>Worker</code> 인스턴스들의 벡터를 갖도록 변경합니다.</li>
-<li><code>id</code> 숫자를 받고 전달받은 <code>Worker</code> 인스턴스를 반환하는 <code>Worker::new</code> 함수를
-정의합니다. 반환된 <code>Worker</code> 인스턴스에는 <code>id</code> 와 빈 클로저로 생성된 스레드가
-포함되어 있습니다.</li>
-<li><code>ThreadPool::new</code> 안에서, <code>for</code> 루프 카운터를 이용해 <code>id</code> 를 생성하고 생성된 <code>id</code>
-를 이용해 새 <code>Worker</code> 를 생성한 뒤 해당 워커를 벡터안에 저장합니다.</li>
+<li>Define a <code>Worker</code> struct that holds an <code>id</code> and a <code>JoinHandle&lt;()&gt;</code>.</li>
+<li>Change <code>ThreadPool</code> to hold a vector of <code>Worker</code> instances.</li>
+<li>Define a <code>Worker::new</code> function that takes an <code>id</code> number and returns a
+<code>Worker</code> instance that holds the <code>id</code> and a thread spawned with an empty
+closure.</li>
+<li>In <code>ThreadPool::new</code>, use the <code>for</code> loop counter to generate an <code>id</code>, create
+a new <code>Worker</code> with that <code>id</code>, and store the worker in the vector.</li>
 </ol>
-<p>도전해보실 분은 Listing 20-15 코드를 보기 전에
-직접 구현해보시길 바랍니다.</p>
-<p>준비 되셨나요? 여기 앞선 수정사항들을 구현한 방법중 하나로 Listing 20-15 를 가져와 보았습니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>use std::thread;
+<p>If you’re up for a challenge, try implementing these changes on your own before
+looking at the code in Listing 20-15.</p>
+<p>Ready? Here is Listing 20-15 with one way to make the preceding modifications.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground">use std::thread;
 
 pub struct ThreadPool {
     workers: Vec&lt;Worker&gt;,
 }
 
 impl ThreadPool {
-    // --생략--
-    pub fn new(size: usize) -&gt; ThreadPool {
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span>    pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         let mut workers = Vec::with_capacity(size);
@@ -676,12 +792,16 @@ impl ThreadPool {
             workers.push(Worker::new(id));
         }
 
-        ThreadPool {
-            workers
-        }
+        ThreadPool { workers }
     }
-    // --생략--
-}
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
 
 struct Worker {
     id: usize,
@@ -692,61 +812,54 @@ impl Worker {
     fn new(id: usize) -&gt; Worker {
         let thread = thread::spawn(|| {});
 
-        Worker {
-            id,
-            thread,
-        }
+        Worker { id, thread }
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-15: <code>ThreadPool</code> 을 스레드들을 직접 내장하는 대신
-<code>Worker</code> 인스턴스들을 내장하게 변경</span></p>
-<p>이제 <code>JoinHandle&lt;()&gt;</code> 인스턴스들이 아닌 <code>Worker</code> 인스턴스들을 내장하기 때문에
-<code>ThreadPool</code> 의 필드 이름을 <code>threads</code> 에서 <code>workers</code> 로 변경했습니다.
-우린 <code>for</code> 반복문으로 <code>Worker::new</code> 에 전달된 인자만큼 카운트하고
-각각의 새 <code>Worker</code> 를 <code>workers</code> 벡터에 저장합니다.</p>
-<p>외부 코드 (우리 서버의 <em>src/bin/main.rs</em> 같은) 에선 <code>ThreadPool</code> 내 <code>Worker</code> 구조체의 상세한 구현을 알 필요가 없기에
-<code>Worker</code> 구조체와 <code>new</code> 함수를 <code>private</code> 로 만듭니다.
-<code>Worker::new</code> 함수는 우리가 넘겨준 <code>id</code> 를 사용하고
-새로 생성된 <code>JoinHandle&lt;()&gt;</code> 객체를 저장합니다.
-이때 <code>JoinHandle&lt;()&gt;</code> 객체를 생성한 주체는 빈 클로저를 이용해 생성된 새 스레드입니다.</p>
-<p>이 코드는 컴파일 되고 <code>Thread::new</code> 의 인자로서 지정된 <code>Worker</code> 인스턴스의 개수를 저장합니다.
-하지만 우린 <em>여전히</em> <code>execute</code> 에서 전달받은 클로저를 처리하지 않고 있습니다.
-다음에 그 작업을 수행하는 방법을 살펴 보겠습니다.</p>
-<h4 id="채널을-통해-스레드에-요청-보내기"><a class="header" href="#채널을-통해-스레드에-요청-보내기">채널을 통해 스레드에 요청 보내기</a></h4>
-<p>이제 우린 <code>thread::spawn</code> 에 주어진 클로저가 아무것도 하지 않는다는 문제점을 해결할 겁니다.
-현재 우린 실행하고 싶은 클로저를 <code>execute</code> 메소드로 받고 있습니다.
-하지만 우리가 <code>thread::spawn</code> 에 전달할 클로저는 <code>ThreadPool</code> 의 생성중
-각각의 <code>Worker</code> 가 생성될때 실행할 클로저여야 합니다.</p>
-<p>우리는 방금 생성 한 <code>Worker</code> 구조체가 <code>ThreadPool</code> 에 들어있는 큐에서 실행될
-코드를 가져오고 그 코드를 스레드로 보내 실행하도록 하고자 합니다.</p>
-<p>16장에서, 간단히 두 스레드간에 통신하는 방법인 <em>channels</em> 에 대해 배웠습니다.
-이거 지금 상황에 딱이네요.
-우린 채널을 작업 대기열로 사용하고 <code>execute</code> 는 <code>ThreadPool</code> 에서 <code>Worker</code> 인스턴스로 작업을 보냅니다.
-그러면 작업이 스레드로 전송되겠죠.
-계획은 다음과 같습니다:</p>
+</code></pre>
+<p><span class="caption">Listing 20-15: Modifying <code>ThreadPool</code> to hold <code>Worker</code>
+instances instead of holding threads directly</span></p>
+<p>We’ve changed the name of the field on <code>ThreadPool</code> from <code>threads</code> to <code>workers</code>
+because it’s now holding <code>Worker</code> instances instead of <code>JoinHandle&lt;()&gt;</code>
+instances. We use the counter in the <code>for</code> loop as an argument to
+<code>Worker::new</code>, and we store each new <code>Worker</code> in the vector named <code>workers</code>.</p>
+<p>External code (like our server in <em>src/bin/main.rs</em>) doesn’t need to know the
+implementation details regarding using a <code>Worker</code> struct within <code>ThreadPool</code>,
+so we make the <code>Worker</code> struct and its <code>new</code> function private. The
+<code>Worker::new</code> function uses the <code>id</code> we give it and stores a <code>JoinHandle&lt;()&gt;</code>
+instance that is created by spawning a new thread using an empty closure.</p>
+<p>This code will compile and will store the number of <code>Worker</code> instances we
+specified as an argument to <code>ThreadPool::new</code>. But we’re <em>still</em> not processing
+the closure that we get in <code>execute</code>. Let’s look at how to do that next.</p>
+<h4 id="sending-requests-to-threads-via-channels"><a class="header" href="#sending-requests-to-threads-via-channels">Sending Requests to Threads via Channels</a></h4>
+<p>Now we’ll tackle the problem that the closures given to <code>thread::spawn</code> do
+absolutely nothing. Currently, we get the closure we want to execute in the
+<code>execute</code> method. But we need to give <code>thread::spawn</code> a closure to run when we
+create each <code>Worker</code> during the creation of the <code>ThreadPool</code>.</p>
+<p>We want the <code>Worker</code> structs that we just created to fetch code to run from a
+queue held in the <code>ThreadPool</code> and send that code to its thread to run.</p>
+<p>In Chapter 16, you learned about <em>channels</em>—a simple way to communicate between
+two threads—that would be perfect for this use case. We’ll use a channel to
+function as the queue of jobs, and <code>execute</code> will send a job from the
+<code>ThreadPool</code> to the <code>Worker</code> instances, which will send the job to its thread.
+Here is the plan:</p>
 <ol>
-<li><code>ThreadPool</code> 은 채널을 생성하고
-채널의 송신단을 유지합니다.</li>
-<li>각 <code>Worker</code> 는 채널의 수신단을 유지합니다.</li>
-<li>우린 채널로 전송하려는 클로저를 저장할
-새로운 <code>Job</code> 구조체를 생성할 겁니다.</li>
-<li><code>execute</code> 메소드는 채널의 송신단으로 실행하려는
-작업을 전송합니다.</li>
-<li>스레드에선 <code>Worker</code> 가 채널의 수신단에서 반복되며
-수신되는 모든 작업의 클로저를 실행합니다.</li>
+<li>The <code>ThreadPool</code> will create a channel and hold on to the sending side of
+the channel.</li>
+<li>Each <code>Worker</code> will hold on to the receiving side of the channel.</li>
+<li>We’ll create a new <code>Job</code> struct that will hold the closures we want to send
+down the channel.</li>
+<li>The <code>execute</code> method will send the job it wants to execute down the sending
+side of the channel.</li>
+<li>In its thread, the <code>Worker</code> will loop over its receiving side of the channel
+and execute the closures of any jobs it receives.</li>
 </ol>
-<p><code>ThreadPool::new</code> 안에 채널을 생성하고 <code>ThreadPool</code> 객체에 송신단을
-내장하도록 하는것부터 시작해봅시다.
-Listing 20-16에 보이는 것처럼 <code>Job</code> 구조체는 아직은 아무것도 들어있지 않지만,
-우리가 채널에 보낼 요소의 타입이 될 것입니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span><span class="boring">use std::thread;
-</span>// --생략--
+<p>Let’s start by creating a channel in <code>ThreadPool::new</code> and holding the sending
+side in the <code>ThreadPool</code> instance, as shown in Listing 20-16. The <code>Job</code> struct
+doesn’t hold anything for now but will be the type of item we’re sending down
+the channel.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground"><span class="boring">use std::thread;
+</span>// --snip--
 use std::sync::mpsc;
 
 pub struct ThreadPool {
@@ -757,8 +870,15 @@ pub struct ThreadPool {
 struct Job;
 
 impl ThreadPool {
-    // --생략--
-    pub fn new(size: usize) -&gt; ThreadPool {
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span>    pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         let (sender, receiver) = mpsc::channel();
@@ -769,13 +889,16 @@ impl ThreadPool {
             workers.push(Worker::new(id));
         }
 
-        ThreadPool {
-            workers,
-            sender,
-        }
+        ThreadPool { workers, sender }
     }
-    // --생략--
-}
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
 <span class="boring">
 </span><span class="boring">struct Worker {
 </span><span class="boring">    id: usize,
@@ -786,26 +909,39 @@ impl ThreadPool {
 </span><span class="boring">    fn new(id: usize) -&gt; Worker {
 </span><span class="boring">        let thread = thread::spawn(|| {});
 </span><span class="boring">
-</span><span class="boring">        Worker {
-</span><span class="boring">            id,
-</span><span class="boring">            thread,
-</span><span class="boring">        }
+</span><span class="boring">        Worker { id, thread }
 </span><span class="boring">    }
 </span><span class="boring">}
+</span></code></pre>
+<p><span class="caption">Listing 20-16: Modifying <code>ThreadPool</code> to store the
+sending end of a channel that sends <code>Job</code> instances</span></p>
+<p>In <code>ThreadPool::new</code>, we create our new channel and have the pool hold the
+sending end. This will successfully compile, still with warnings.</p>
+<p>Let’s try passing a receiving end of the channel into each worker as the thread
+pool creates the channel. We know we want to use the receiving end in the
+thread that the workers spawn, so we’ll reference the <code>receiver</code> parameter in
+the closure. The code in Listing 20-17 won’t quite compile yet.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust ignore does_not_compile"><span class="boring">use std::sync::mpsc;
+</span><span class="boring">use std::thread;
+</span><span class="boring">
+</span><span class="boring">pub struct ThreadPool {
+</span><span class="boring">    workers: Vec&lt;Worker&gt;,
+</span><span class="boring">    sender: mpsc::Sender&lt;Job&gt;,
 </span><span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-16: <code>ThreadPool</code> 이 <code>Job</code> 객제를 전송하는
-채널의 송신 측을 저장하도록 변경</span></p>
-<p><code>ThreadPool::new</code> 에서 우린 새 채널을 만들고 풀에 송신단을 저장합니다.
-이 소스는 경고 몇개와 함께 성공적으로 컴파일됩니다.</p>
-<p>한번 스레드풀이 생성한 각각의 <em>worker</em> 에 채널의 수신단을 넘겨봅시다.
-우린 <em>worker</em> 가 생성한 스레드에서 수신단을 사용할 수 있게 만들기 위해,
-클로저의 <code>receiver</code> 매개변수를 참조 할 것입니다.
-Listing 20-17의 코드는 아직 컴파일 되지 않습니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><code class="language-rust ignore">impl ThreadPool {
-    // --생략--
-    pub fn new(size: usize) -&gt; ThreadPool {
+</span><span class="boring">
+</span><span class="boring">struct Job;
+</span><span class="boring">
+</span>impl ThreadPool {
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span>    pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         let (sender, receiver) = mpsc::channel();
@@ -816,80 +952,96 @@ Listing 20-17의 코드는 아직 컴파일 되지 않습니다.</p>
             workers.push(Worker::new(id, receiver));
         }
 
-        ThreadPool {
-            workers,
-            sender,
-        }
+        ThreadPool { workers, sender }
     }
-    // --생략--
-}
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
 
-// --생략--
+// --snip--
 
-impl Worker {
+<span class="boring">
+</span><span class="boring">struct Worker {
+</span><span class="boring">    id: usize,
+</span><span class="boring">    thread: thread::JoinHandle&lt;()&gt;,
+</span><span class="boring">}
+</span><span class="boring">
+</span>impl Worker {
     fn new(id: usize, receiver: mpsc::Receiver&lt;Job&gt;) -&gt; Worker {
         let thread = thread::spawn(|| {
             receiver;
         });
 
-        Worker {
-            id,
-            thread,
-        }
+        Worker { id, thread }
     }
 }
 </code></pre>
-<p><span class="caption">Listing 20-17: <em>worker</em> 에
-채널의 송신단을 전달</span></p>
-<p>작고 간단한 변경사항을 만들었습니다: <code>Worker::new</code> 에 채널의 수신단을
-전달하고, 클로저 안에서 사용합니다.</p>
-<p>이 코드를 <code>check</code> 해보면, 다음과 같은 에러가 나타날 겁니다:</p>
-<pre><code class="language-text">$ cargo check
-   Compiling hello v0.1.0 (file:///projects/hello)
+<p><span class="caption">Listing 20-17: Passing the receiving end of the channel
+to the workers</span></p>
+<p>We’ve made some small and straightforward changes: we pass the receiving end of
+the channel into <code>Worker::new</code>, and then we use it inside the closure.</p>
+<p>When we try to check this code, we get this error:</p>
+<pre><code class="language-console">$ cargo check
+    Checking hello v0.1.0 (file:///projects/hello)
 error[E0382]: use of moved value: `receiver`
   --&gt; src/lib.rs:27:42
    |
+22 |         let (sender, receiver) = mpsc::channel();
+   |                      -------- move occurs because `receiver` has type `std::sync::mpsc::Receiver&lt;Job&gt;`, which does not implement the `Copy` trait
+...
 27 |             workers.push(Worker::new(id, receiver));
-   |                                          ^^^^^^^^ value moved here in
-   previous iteration of loop
-   |
-   = note: move occurs because `receiver` has type
-   `std::sync::mpsc::Receiver&lt;Job&gt;`, which does not implement the `Copy` trait
+   |                                          ^^^^^^^^ value moved here, in previous iteration of loop
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `hello`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p>이 코드는 <code>receiver</code> 을 여러개의 <code>Worker</code> 객체에 넘기는 시도를 하는데, 이는 작동하지 않습니다.
-16장에서 배운걸 떠올려보세요: 러스트가 제공하는 채널 구현은
-여러 <em>producer</em> , 하나의 <em>consumer</em> 를 제공합니다.
-즉 이 코드를 수정하기 위해 채널의 소비측 끝을 복제할 수는 없습니다.
-만약 가능하더라도 우리가 원하는 기법은 아닙니다;
-우린 대신에 하나의 <code>receiver</code> 을 모든 <code>worker</code> 들이 공유하도록
-만들어 스레드간 작업을 분산하고자 합니다.</p>
-<p>또한, 채널 큐에서 작업을 가져오는 작업은 <code>receiver</code> 을 이용하는데, 이 과정에서 <code>receiver</code> 이 변화할 수도 있습니다.
-따라서 스레드들은 <code>receiver</code> 을 공유하고 수정하기 위한 안전한 방법이 필요합니다.
-그렇지 않다면, 경쟁 조건 (관련 내용은 16장에서 다뤘습니다) 이 발생하게 될 것 입니다.</p>
-<p>16장에서 설명한 스레드-안전 스마트 포인터를 생각해 보세요:
-이는 여러 스레드 간에 소유권을 공유하고 스레드가 값을 변경하도록 허용합니다.
-우린 <code>Arc&lt;Mutex&lt;T&gt;&gt;</code> 를 사용해야 하는데, 이 <code>Arc</code> 타입은 여러 <em>worker</em> 들이 <em>receiver</em> 를 소유하는 걸 허용해줍니다.
-그리고 <code>Mutex</code> 는 한번에 하나의 <em>worker</em> 만이 <em>receiver</em> 로부터 작업을 가져가도록 보장합니다.
-Listing 20-18 은 위 내용대로 수정한 모습입니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
+<p>The code is trying to pass <code>receiver</code> to multiple <code>Worker</code> instances. This
+won’t work, as you’ll recall from Chapter 16: the channel implementation that
+Rust provides is multiple <em>producer</em>, single <em>consumer</em>. This means we can’t
+just clone the consuming end of the channel to fix this code. Even if we could,
+that is not the technique we would want to use; instead, we want to distribute
+the jobs across threads by sharing the single <code>receiver</code> among all the workers.</p>
+<p>Additionally, taking a job off the channel queue involves mutating the
+<code>receiver</code>, so the threads need a safe way to share and modify <code>receiver</code>;
+otherwise, we might get race conditions (as covered in Chapter 16).</p>
+<p>Recall the thread-safe smart pointers discussed in Chapter 16: to share
+ownership across multiple threads and allow the threads to mutate the value, we
+need to use <code>Arc&lt;Mutex&lt;T&gt;&gt;</code>. The <code>Arc</code> type will let multiple workers own the
+receiver, and <code>Mutex</code> will ensure that only one worker gets a job from the
+receiver at a time. Listing 20-18 shows the changes we need to make.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground"><span class="boring">use std::sync::mpsc;
 </span><span class="boring">use std::thread;
-</span><span class="boring">use std::sync::mpsc;
 </span>use std::sync::Arc;
 use std::sync::Mutex;
-// --생략--
+// --snip--
 
 <span class="boring">pub struct ThreadPool {
 </span><span class="boring">    workers: Vec&lt;Worker&gt;,
 </span><span class="boring">    sender: mpsc::Sender&lt;Job&gt;,
 </span><span class="boring">}
+</span><span class="boring">
 </span><span class="boring">struct Job;
 </span><span class="boring">
 </span>impl ThreadPool {
-    // --생략--
-    pub fn new(size: usize) -&gt; ThreadPool {
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span>    pub fn new(size: usize) -&gt; ThreadPool {
         assert!(size &gt; 0);
 
         let (sender, receiver) = mpsc::channel();
@@ -902,14 +1054,19 @@ use std::sync::Mutex;
             workers.push(Worker::new(id, Arc::clone(&amp;receiver)));
         }
 
-        ThreadPool {
-            workers,
-            sender,
-        }
+        ThreadPool { workers, sender }
     }
 
-    // --생략--
-}
+    // --snip--
+<span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">    }
+</span>}
+
+// --snip--
 
 <span class="boring">struct Worker {
 </span><span class="boring">    id: usize,
@@ -918,51 +1075,71 @@ use std::sync::Mutex;
 </span><span class="boring">
 </span>impl Worker {
     fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
-        // --생략--
+        // --snip--
 <span class="boring">        let thread = thread::spawn(|| {
-</span><span class="boring">           receiver;
+</span><span class="boring">            receiver;
 </span><span class="boring">        });
 </span><span class="boring">
-</span><span class="boring">        Worker {
-</span><span class="boring">            id,
-</span><span class="boring">            thread,
-</span><span class="boring">        }
+</span><span class="boring">        Worker { id, thread }
 </span>    }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 20-18: <code>Arc</code> 와 <code>Mutex</code> 를 이용해 채널의
-를 <em>worker</em> 들이 공유하도록 변경</span></p>
-<p><code>ThreadPool::new</code> 에서, <code>Arc</code> 와 <code>Mutex</code> 를 이용해 채널의 수신단을 감싸고,
-새로운 <em>worker</em> 각각에 <code>Arc</code> 를 복제해 참조 카운트를 늘려서 <em>worker</em> 들이
-소유권을 공유할 수 있도록 합니다.</p>
-<p>이렇게 변경하고 나면 컴파일이 될 겁니다! 우리가 해냈내요!</p>
-<h4 id="execute-메소드-구현"><a class="header" href="#execute-메소드-구현"><code>execute</code> 메소드 구현</a></h4>
-<p>이제 마지막으로 <code>ThreadPool</code> 의 <code>execute</code> 메소드를 구현해 봅시다.
-우린 <code>execute</code> 가 받는 클로저 타입을 포함할 트레잇 오브젝트를 위해 <code>Job</code> 을 구조체에서 타입 별칭으로 변경할 겁니다.
-19장의 “Type Aliases Create Type Synonyms” 부문에서 이야기한 대로,
-타입 별칭은 긴 이름을 가진 타입을 짧게 만들 수 있게 해줍니다.
-Listing 20-19에서 확인해 보세요.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>// --생략--
-<span class="boring">pub struct ThreadPool {
+</code></pre>
+<p><span class="caption">Listing 20-18: Sharing the receiving end of the channel
+among the workers using <code>Arc</code> and <code>Mutex</code></span></p>
+<p>In <code>ThreadPool::new</code>, we put the receiving end of the channel in an <code>Arc</code> and a
+<code>Mutex</code>. For each new worker, we clone the <code>Arc</code> to bump the reference count so
+the workers can share ownership of the receiving end.</p>
+<p>With these changes, the code compiles! We’re getting there!</p>
+<h4 id="implementing-the-execute-method"><a class="header" href="#implementing-the-execute-method">Implementing the <code>execute</code> Method</a></h4>
+<p>Let’s finally implement the <code>execute</code> method on <code>ThreadPool</code>. We’ll also change
+<code>Job</code> from a struct to a type alias for a trait object that holds the type of
+closure that <code>execute</code> receives. As discussed in the <a href="ch19-04-advanced-types.html#creating-type-synonyms-with-type-aliases">“Creating Type Synonyms
+with Type Aliases”</a><!-- ignore -->
+section of Chapter 19, type aliases allow us to make long types shorter. Look
+at Listing 20-19.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust noplayground"><span class="boring">use std::sync::mpsc;
+</span><span class="boring">use std::sync::Arc;
+</span><span class="boring">use std::sync::Mutex;
+</span><span class="boring">use std::thread;
+</span><span class="boring">
+</span><span class="boring">pub struct ThreadPool {
 </span><span class="boring">    workers: Vec&lt;Worker&gt;,
 </span><span class="boring">    sender: mpsc::Sender&lt;Job&gt;,
 </span><span class="boring">}
-</span><span class="boring">use std::sync::mpsc;
-</span><span class="boring">struct Worker {}
-</span>
-type Job = Box&lt;FnOnce() + Send + 'static&gt;;
+</span><span class="boring">
+</span>// --snip--
+
+type Job = Box&lt;dyn FnOnce() + Send + 'static&gt;;
 
 impl ThreadPool {
-    // --생략--
-
+    // --snip--
+<span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span><span class="boring">    pub fn new(size: usize) -&gt; ThreadPool {
+</span><span class="boring">        assert!(size &gt; 0);
+</span><span class="boring">
+</span><span class="boring">        let (sender, receiver) = mpsc::channel();
+</span><span class="boring">
+</span><span class="boring">        let receiver = Arc::new(Mutex::new(receiver));
+</span><span class="boring">
+</span><span class="boring">        let mut workers = Vec::with_capacity(size);
+</span><span class="boring">
+</span><span class="boring">        for id in 0..size {
+</span><span class="boring">            workers.push(Worker::new(id, Arc::clone(&amp;receiver)));
+</span><span class="boring">        }
+</span><span class="boring">
+</span><span class="boring">        ThreadPool { workers, sender }
+</span><span class="boring">    }
+</span>
     pub fn execute&lt;F&gt;(&amp;self, f: F)
-        where
-            F: FnOnce() + Send + 'static
+    where
+        F: FnOnce() + Send + 'static,
     {
         let job = Box::new(f);
 
@@ -970,181 +1147,160 @@ impl ThreadPool {
     }
 }
 
-// --생략--
+// --snip--
+<span class="boring">
+</span><span class="boring">struct Worker {
+</span><span class="boring">    id: usize,
+</span><span class="boring">    thread: thread::JoinHandle&lt;()&gt;,
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">impl Worker {
+</span><span class="boring">    fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
+</span><span class="boring">        let thread = thread::spawn(|| {
+</span><span class="boring">            receiver;
+</span><span class="boring">        });
+</span><span class="boring">
+</span><span class="boring">        Worker { id, thread }
+</span><span class="boring">    }
+</span><span class="boring">}
+</span></code></pre>
+<p><span class="caption">Listing 20-19: Creating a <code>Job</code> type alias for a <code>Box</code>
+that holds each closure and then sending the job down the channel</span></p>
+<p>After creating a new <code>Job</code> instance using the closure we get in <code>execute</code>, we
+send that job down the sending end of the channel. We’re calling <code>unwrap</code> on
+<code>send</code> for the case that sending fails. This might happen if, for example, we
+stop all our threads from executing, meaning the receiving end has stopped
+receiving new messages. At the moment, we can’t stop our threads from
+executing: our threads continue executing as long as the pool exists. The
+reason we use <code>unwrap</code> is that we know the failure case won’t happen, but the
+compiler doesn’t know that.</p>
+<p>But we’re not quite done yet! In the worker, our closure being passed to
+<code>thread::spawn</code> still only <em>references</em> the receiving end of the channel.
+Instead, we need the closure to loop forever, asking the receiving end of the
+channel for a job and running the job when it gets one. Let’s make the change
+shown in Listing 20-20 to <code>Worker::new</code>.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">use std::sync::mpsc;
+</span><span class="boring">use std::sync::Arc;
+</span><span class="boring">use std::sync::Mutex;
+</span><span class="boring">use std::thread;
+</span><span class="boring">
+</span><span class="boring">pub struct ThreadPool {
+</span><span class="boring">    workers: Vec&lt;Worker&gt;,
+</span><span class="boring">    sender: mpsc::Sender&lt;Job&gt;,
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">type Job = Box&lt;dyn FnOnce() + Send + 'static&gt;;
+</span><span class="boring">
+</span><span class="boring">impl ThreadPool {
+</span><span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span><span class="boring">    pub fn new(size: usize) -&gt; ThreadPool {
+</span><span class="boring">        assert!(size &gt; 0);
+</span><span class="boring">
+</span><span class="boring">        let (sender, receiver) = mpsc::channel();
+</span><span class="boring">
+</span><span class="boring">        let receiver = Arc::new(Mutex::new(receiver));
+</span><span class="boring">
+</span><span class="boring">        let mut workers = Vec::with_capacity(size);
+</span><span class="boring">
+</span><span class="boring">        for id in 0..size {
+</span><span class="boring">            workers.push(Worker::new(id, Arc::clone(&amp;receiver)));
+</span><span class="boring">        }
+</span><span class="boring">
+</span><span class="boring">        ThreadPool { workers, sender }
+</span><span class="boring">    }
+</span><span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">        let job = Box::new(f);
+</span><span class="boring">
+</span><span class="boring">        self.sender.send(job).unwrap();
+</span><span class="boring">    }
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">struct Worker {
+</span><span class="boring">    id: usize,
+</span><span class="boring">    thread: thread::JoinHandle&lt;()&gt;,
+</span><span class="boring">}
+</span><span class="boring">
+</span>// --snip--
+
+impl Worker {
+    fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
+        let thread = thread::spawn(move || loop {
+            let job = receiver.lock().unwrap().recv().unwrap();
+
+            println!(&quot;Worker {} got a job; executing.&quot;, id);
+
+            job();
+        });
+
+        Worker { id, thread }
+    }
+}
 <span class="boring">}
 </span></code></pre></pre>
-<p><span class="caption">예제 20-19: 각 클로저를 내장한 <code>Box</code> 에 대한 타입 별칭인
-<code>Job</code> 을 만들고 채널에 작업 전송하기</span></p>
-<p><code>execute</code> 로 얻은 클로저를 사용하여 새 <code>Job</code> 객체를 생성하고 나면,
-생성된 작업을 채널의 송신 측으로 보냅니다. <code>send</code> 가 실패할 경우엔 <code>unwrap</code> 을 호출합니다.
-예를 들어 실행중인 모든 스레드가 중지되면 수신단이
-새로운 메시지를 수신하지 못하게 될 수 있습니다.
-현재, 우린 실행중인 스레드들을 멈출 수 없습니다:
-스레드들은 풀이 존재하는 한 계속 실행 될 겁니다.
-<code>unwrap</code> 을 사용하는 이유는 실패 사례가 발생하지 않을 것이란걸
-우린 알고 있지만 컴파일러는 모르기 때문입니다.</p>
-<p>아직 끝나지 않았습니다! <em>worker</em> 에서,
-우리 클로저는 <code>thread::spawn</code> 에 전달되어 여전히 채널의 수신단만 <em>참조</em> 합니다.
-대신에 클로저가 계속 반복되며 채널의 수신단에 작업을 요청하고
-받은 작업을 실행해야 합니다.
-Listin 20-20에서 <code>Worker::new</code> 를 봅시다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><code class="language-rust ignore">// --생략--
-
-impl Worker {
-    fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
-        let thread = thread::spawn(move || {
-            loop {
-                let job = receiver.lock().unwrap().recv().unwrap();
-
-                println!(&quot;Worker {} got a job; executing.&quot;, id);
-
-                (*job)();
-            }
-        });
-
-        Worker {
-            id,
-            thread,
-        }
-    }
-}
-</code></pre>
-<p><span class="caption">Listing 20-20: <em>worker</em> 스레드에서 작업을 수신하고
-실행하기</span></p>
-<p>맨 처음, 뮤텍스를 얻기 위해 <code>receiver</code> 의 <code>lock</code> 을 호출 하였고,
-그 뒤 <code>unwrap</code> 을 이용해 어떤 에러든 패닉을 일으키도록 하였습니다.
-만약 어떤 스레드에서 잠금을 걸고 나서 해제하기 전에 패닉 상태가 되어 뮤텍스가
-<em>poisoned</em> 상태가 되었을 경우 뮤텍스를 얻는데 실패할 수 있기 때문에,
-이 경우 <code>unwrap</code> 을 호출해 스레드 패닉을 발생시키는 것이 취해야 할 올바른 행동 입니다.
-원하실 경우 <code>unwrap</code> 을 여러분에게 의미있는 에러 메세지와 함께
-<code>expect</code> 로 바꾸어 보세요.</p>
-<p>만약 우리가 뮤텍스의 잠금을 얻게 된다면,
-채널로부터 <code>Job</code> 을 얻기 위해 <code>recv</code> 를 호출합니다.
-마지막 <code>unwrap</code> 은 송신단을 유지하는 스레드가 종료 되었을 경우 발생할 수 있는 에러를 지나쳐서 이동합니다.
-<code>send</code> 메소드가 수신단이 종료되면 <code>Err</code> 을 리턴하는 것과 비슷합니다.</p>
-<p>아직 아무 작업도 없어서 <code>recv</code> 에 대한 호출이 막힌다면,
-현재 스레드는 작업이 가능해질 때까지 대기합니다. <code>Mutex&lt;T&gt;</code> 가 한번에
-오직 하나의 <code>Worker</code> 스레드가 작업을 요청할 수 있도록 보장합니다.</p>
-<p>이론적으론 이 코드는 컴파일 되어야 합니다.
-하지만 불행하게도 러스트 컴파일러는 아직 완벽하지 않습니다. 나타나는 에러는 다음과 같습니다:</p>
-<pre><code class="language-text">error[E0161]: cannot move a value of type std::ops::FnOnce() +
-std::marker::Send: the size of std::ops::FnOnce() + std::marker::Send cannot be
-statically determined
-  --&gt; src/lib.rs:63:17
-   |
-63 |                 (*job)();
-   |                 ^^^^^^
-</code></pre>
-<p>문제가 상당히 난해하기 때문에 이 오류는 상당히 수수께끼스럽습니다. <code>Box&lt;T&gt;</code> (<code>Job</code> 가 가르키는 그것)
-안에 저장되어 있는 <code>FnOnce</code> 클로저를 호출하기 위해선,
-클로저는 <code>Box&lt;T&gt;</code> 에서 스스로 벗어나야 합니다.
-우리가 호출할때 클로저는 <code>self</code> 의 소유권을 가지기 때문이죠.
-보편적으로, 러스트는 <code>Box&lt;T&gt;</code> 의 값을 옯기는 것을 허용하지 않습니다.
-러스트에서 <code>Box&lt;T&gt;</code> 안에 얼마나 큰 값이 들어갈지 알 수 없기 때문입니다:
-15장에서 우리가 박스에 저장하고자 하는 알수없는 크기의 무언가를
-알고있는 크기의 값으로 얻어내기 위해 <code>Box&lt;T&gt;</code> 를 사용했던 걸 떠올려 보세요.</p>
-<p>여러분이 Listing 17-15에서 보신 것처럼 우린 <code>self: Box&lt;Self&gt;</code>
-구문을 이용하는 메소드를 작성할 수 있습니다.
-<code>Box&lt;T&gt;</code> 에 저장된 <code>Self</code> 값의 소유권을 다룰 수 있도록 허용된 메소드 말이죠.
-우리가 지금 하고 싶은 것 그 자체네요.
-그런데 불행히도 러스트가 우릴 놓아주지 않네요: 러스트의 구현체중 클로저가
-호출될 때의 구현체 부분은 <code>self: Box&lt;Self&gt;</code> 방식을 사용하지 않았습니다.
-따라서 러스트는 이 상황에서 <code>self: Box&lt;Self&gt;</code> 를 사용할 수 있다는 것을 아직 이해하지 못합니다.</p>
-<p>러스트의 컴파일러는 여전히 개선중입니다.
-따라서 언젠가 Listing 20-20 의 코드는 정상적으로 작동할 거예요.
-여러분 같은 사람들이 이런 문제를 해결하기 위해 노력중입니다!
-여러분이 이 책을 끝내고 나서 참여하신다면 우린 환영할 겁니다.</p>
-<p>하지만 지금 당장은, 편리한 트릭을 이용해 이 문제를 해결하도록 하겠습니다.
-우린 러스트에게 명시적으로 이러한 경우에 우린 <code>self: Box&lt;Self&gt;</code> 를 이용해
-<code>Box&lt;T&gt;</code> 내부의 값에 대한 소유권을 가질 수 있다고 말할 수 있습니다;
-클로저에 대한 소유권을 가진 뒤에는 호출할 수 있습니다.
-이는 <code>call_box</code> 메소드로 새로운 트레잇인 <code>FnBox</code> 를 정의하는 것입니다.
-<code>call_box</code> 는 시그니처로 <code>self: Box&lt;Self&gt;</code> 를 사용하고 <code>FnOnce()</code> 를 구현하는 모든 타입에 <code>FnBox</code> 를 정의하고
-타입 별명을 새 트레잇으로 변경하고 <code>Worker</code>를 <code>call_box</code> 메소드를 사용하도록 변경할 것 입니다.
-이 내용들을 Listing 20-21 에서 보실 수 있습니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><code class="language-rust ignore">trait FnBox {
-    fn call_box(self: Box&lt;Self&gt;);
-}
-
-impl&lt;F: FnOnce()&gt; FnBox for F {
-    fn call_box(self: Box&lt;F&gt;) {
-        (*self)()
-    }
-}
-
-type Job = Box&lt;FnBox + Send + 'static&gt;;
-
-// --snip--
-
-impl Worker {
-    fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
-        let thread = thread::spawn(move || {
-            loop {
-                let job = receiver.lock().unwrap().recv().unwrap();
-
-                println!(&quot;Worker {} got a job; executing.&quot;, id);
-
-                job.call_box();
-            }
-        });
-
-        Worker {
-            id,
-            thread,
-        }
-    }
-}
-</code></pre>
-<p><span class="caption">Listing 20-21: <code>Box&lt;FnOnce()&gt;</code> 의 한계를 해결하기 위한
-새 트레잇 <code>FnBox</code> 추가</span></p>
-<p>먼저, <code>FnBox</code> 라는 이름의 새 트레잇을 생성합니다.
-이 트레잇은 <code>call_box</code> 메소드를 하나 가집니다.
-이 메소드는 <code>self</code> 의 소유권을 다루고 <code>Box&lt;T&gt;</code> 에서 값을 제외하기 위해
-<code>self: Box&lt;Self&gt;</code> 를 다룬다는 점 외에는 다른 <code>Fn*</code> 트레잇들의 <code>call</code> 메소드와 흡사합니다.</p>
-<p>다음으로, <code>FnOnce()</code> 트레잇을 구현하는 <code>F</code> 타입에 대한 <code>FnBox</code> 트레잇을
-구현합니다. 효과적으로, 이는 <code>FnOnce()</code> 클로저가 우리의 <code>call_box</code> 메소드를
-사용할 수 있다는 뜻입니다. <code>call_box</code> 의 구현은 <code>(*self)()</code> 를 사용하여
-클로저를 <code>Box&lt;T&gt;</code> 밖으로 빼내고 호출합니다.</p>
-<p>우리는 이제 <code>Job</code> 타입 별명이 새로운 트레잇 인 <code>FnBox</code> 를 구현하는 <code>Box</code> 가 될
-필요가 있습니다. 이는 클로저를 직접 호출하는 대신 <code>Job</code> 값을 얻을 때 <code>Worker</code>
-에서 <code>call_box</code> 를 사용할 수 있게 해줍니다. 어떤 <code>FnOnce()</code> 클로저에 대한
-<code>FnBox</code> 트레잇을 구현한다는 것은 채널을 보내고있는 실제 값에 대해서는 아무것도
-변경할 필요가 없다는 것을 의미합니다. 이제 러스트는 우리가 하고자 하는 일이
-문제 없단걸 정상적으로 인식할 수 있습니다.</p>
-<p>이 트릭은 매우 복잡하고 교활합니다. 정확히 이해가 되지 않아도 걱정하지 마세요;
-언젠가 완전히 필요 없어질 겁니다.</p>
-<p>이 트릭을 구현함으로써, 우리의 스레드 풀은 작동합니다.
-<code>cargo run</code> 을 실행하고, 몇가지 요청을 해보세요.</p>
-<pre><code class="language-text">$ cargo run
+<p><span class="caption">Listing 20-20: Receiving and executing the jobs in the
+worker’s thread</span></p>
+<p>Here, we first call <code>lock</code> on the <code>receiver</code> to acquire the mutex, and then we
+call <code>unwrap</code> to panic on any errors. Acquiring a lock might fail if the mutex
+is in a <em>poisoned</em> state, which can happen if some other thread panicked while
+holding the lock rather than releasing the lock. In this situation, calling
+<code>unwrap</code> to have this thread panic is the correct action to take. Feel free to
+change this <code>unwrap</code> to an <code>expect</code> with an error message that is meaningful to
+you.</p>
+<p>If we get the lock on the mutex, we call <code>recv</code> to receive a <code>Job</code> from the
+channel. A final <code>unwrap</code> moves past any errors here as well, which might occur
+if the thread holding the sending side of the channel has shut down, similar to
+how the <code>send</code> method returns <code>Err</code> if the receiving side shuts down.</p>
+<p>The call to <code>recv</code> blocks, so if there is no job yet, the current thread will
+wait until a job becomes available. The <code>Mutex&lt;T&gt;</code> ensures that only one
+<code>Worker</code> thread at a time is trying to request a job.</p>
+<p>With the implementation of this trick, our thread pool is in a working state!
+Give it a <code>cargo run</code> and make some requests:</p>
+<!-- manual-regeneration
+cd listings/ch20-web-server/listing-20-20
+cargo run
+make some requests to 127.0.0.1:7878
+Can't automate because the output depends on making requests
+-->
+<pre><code class="language-console">$ cargo run
    Compiling hello v0.1.0 (file:///projects/hello)
-warning: field is never used: `workers`
+warning: field is never read: `workers`
  --&gt; src/lib.rs:7:5
   |
 7 |     workers: Vec&lt;Worker&gt;,
   |     ^^^^^^^^^^^^^^^^^^^^
   |
-  = note: #[warn(dead_code)] on by default
+  = note: `#[warn(dead_code)]` on by default
 
-warning: field is never used: `id`
-  --&gt; src/lib.rs:61:5
+warning: field is never read: `id`
+  --&gt; src/lib.rs:48:5
    |
-61 |     id: usize,
+48 |     id: usize,
    |     ^^^^^^^^^
-   |
-   = note: #[warn(dead_code)] on by default
 
-warning: field is never used: `thread`
-  --&gt; src/lib.rs:62:5
+warning: field is never read: `thread`
+  --&gt; src/lib.rs:49:5
    |
-62 |     thread: thread::JoinHandle&lt;()&gt;,
+49 |     thread: thread::JoinHandle&lt;()&gt;,
    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |
-   = note: #[warn(dead_code)] on by default
 
-    Finished dev [unoptimized + debuginfo] target(s) in 0.99 secs
-     Running `target/debug/hello`
+warning: 3 warnings emitted
+
+    Finished dev [unoptimized + debuginfo] target(s) in 1.40s
+     Running `target/debug/main`
 Worker 0 got a job; executing.
 Worker 2 got a job; executing.
 Worker 1 got a job; executing.
@@ -1156,15 +1312,71 @@ Worker 3 got a job; executing.
 Worker 0 got a job; executing.
 Worker 2 got a job; executing.
 </code></pre>
-<p>성공했습니다! 우린 이제 비동기적으로 커넥션을 실행하는 스레드 풀을 가지게
-되었습니다. 스레드는 4개 이상 만들어지지 않을 겁니다. 따라서 우리 시스템은
-서버가 수많은 요청을 받더라도 과부하 될 일이 없습니다.
-만약 우리가 <code>/sleep</code> 요청을 하더라도,
-다른 스레드가 작동함으로써 다른 요청에 문제 없이 작동합니다.</p>
-<p>18장에서 <code>while let</code> 반복문을 배우셨다면, 아마 제가 왜 Listing 20-22와 같이
-<em>worker</em> 스레드의 코드를 작성하지 않았는지 궁금해 하실 겁니다.</p>
-<p><span class="filename">파일명: src/lib.rs</span></p>
-<pre><code class="language-rust ignore">// --생략--
+<p>Success! We now have a thread pool that executes connections asynchronously.
+There are never more than four threads created, so our system won’t get
+overloaded if the server receives a lot of requests. If we make a request to
+<em>/sleep</em>, the server will be able to serve other requests by having another
+thread run them.</p>
+<blockquote>
+<p>Note: if you open <em>/sleep</em> in multiple browser windows simultaneously, they
+might load one at a time in 5 second intervals. Some web browsers execute
+multiple instances of the same request sequentially for caching reasons. This
+limitation is not caused by our web server.</p>
+</blockquote>
+<p>After learning about the <code>while let</code> loop in Chapter 18, you might be wondering
+why we didn’t write the worker thread code as shown in Listing 20-21.</p>
+<p><span class="filename">Filename: src/lib.rs</span></p>
+<pre><code class="language-rust ignore not_desired_behavior"><span class="boring">use std::sync::mpsc;
+</span><span class="boring">use std::sync::Arc;
+</span><span class="boring">use std::sync::Mutex;
+</span><span class="boring">use std::thread;
+</span><span class="boring">
+</span><span class="boring">pub struct ThreadPool {
+</span><span class="boring">    workers: Vec&lt;Worker&gt;,
+</span><span class="boring">    sender: mpsc::Sender&lt;Job&gt;,
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">type Job = Box&lt;dyn FnOnce() + Send + 'static&gt;;
+</span><span class="boring">
+</span><span class="boring">impl ThreadPool {
+</span><span class="boring">    /// Create a new ThreadPool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// The size is the number of threads in the pool.
+</span><span class="boring">    ///
+</span><span class="boring">    /// # Panics
+</span><span class="boring">    ///
+</span><span class="boring">    /// The `new` function will panic if the size is zero.
+</span><span class="boring">    pub fn new(size: usize) -&gt; ThreadPool {
+</span><span class="boring">        assert!(size &gt; 0);
+</span><span class="boring">
+</span><span class="boring">        let (sender, receiver) = mpsc::channel();
+</span><span class="boring">
+</span><span class="boring">        let receiver = Arc::new(Mutex::new(receiver));
+</span><span class="boring">
+</span><span class="boring">        let mut workers = Vec::with_capacity(size);
+</span><span class="boring">
+</span><span class="boring">        for id in 0..size {
+</span><span class="boring">            workers.push(Worker::new(id, Arc::clone(&amp;receiver)));
+</span><span class="boring">        }
+</span><span class="boring">
+</span><span class="boring">        ThreadPool { workers, sender }
+</span><span class="boring">    }
+</span><span class="boring">
+</span><span class="boring">    pub fn execute&lt;F&gt;(&amp;self, f: F)
+</span><span class="boring">    where
+</span><span class="boring">        F: FnOnce() + Send + 'static,
+</span><span class="boring">    {
+</span><span class="boring">        let job = Box::new(f);
+</span><span class="boring">
+</span><span class="boring">        self.sender.send(job).unwrap();
+</span><span class="boring">    }
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">struct Worker {
+</span><span class="boring">    id: usize,
+</span><span class="boring">    thread: thread::JoinHandle&lt;()&gt;,
+</span><span class="boring">}
+</span>// --snip--
 
 impl Worker {
     fn new(id: usize, receiver: Arc&lt;Mutex&lt;mpsc::Receiver&lt;Job&gt;&gt;&gt;) -&gt; Worker {
@@ -1172,36 +1384,31 @@ impl Worker {
             while let Ok(job) = receiver.lock().unwrap().recv() {
                 println!(&quot;Worker {} got a job; executing.&quot;, id);
 
-                job.call_box();
+                job();
             }
         });
 
-        Worker {
-            id,
-            thread,
-        }
+        Worker { id, thread }
     }
 }
 </code></pre>
-<p><span class="caption">Listing 20-22: <code>while let</code> 을 이용한
-<code>Worker::new</code> 의 대안 구현체</span></p>
-<p>이 코드는 컴파일 될 것이나 원하던 스레딩 동작은 하지 않습니다.
-느린 요청은 여전히 다른 요청들이 처리되길 기다립니다.
-이유는 다소 미묘합니다:
-<code>Mutex</code> 구조체는 공개된(public) <code>unlock</code> 메소드를 가지고 있지 않습니다.
-lock 의 소유권은 <code>LockResult&lt;MutexGuard&lt;T&gt;&gt;</code> 에 있는 <code>MutexGuard&lt;T&gt;</code> 의
-라이프타임에 기반을 두고 있기 때문입니다.
-컴파일시, 빌림 검사기 (borrow checker) 는 잠금을 유지하지 않으면 <code>Mutex</code> 에
-의해 보호받는 리소스에 접근할 수 없다는 규칙을 적용할 수 있습니다.
-그러나 이러한 구현은 <code>MutexGuard&lt;T&gt;</code> 의 라이프타임을 주의 깊게 생각하지 않았을
-경우 잠금이 의도보다 오래 지속되는 결과를 초래할 수 있습니다.
-<code>while</code> 식 안의 값은 블록의 지속 시간동안 남아있기 때문에,
-잠금은 <code>job.call_box()</code> 호출 기간동안 유지되어 다른 <em>worker</em> 들이 작업을 수신할 수 없음을 뜻합니다.</p>
-<p>대신에 <code>loop</code> 를 사용하고 잠금과 작업을 얻음으로써
-외부가 아닌 블록 내에서 얻음으로써,
-<code>lock</code> 메소드에서 반환 된 <code>MutexGuard</code> 는 <code>let job</code> 문이 끝나자 마자 사라지게됩니다.
-이렇게하면 잠금이 <code>recv</code>에 대한 호출 중에 해제되지만,
-<code>job.call_box()</code> 호출 이전에 해제되어 여러 요청을 동시에 처리 할 수 있습니다.</p>
+<p><span class="caption">Listing 20-21: An alternative implementation of
+<code>Worker::new</code> using <code>while let</code></span></p>
+<p>This code compiles and runs but doesn’t result in the desired threading
+behavior: a slow request will still cause other requests to wait to be
+processed. The reason is somewhat subtle: the <code>Mutex</code> struct has no public
+<code>unlock</code> method because the ownership of the lock is based on the lifetime of
+the <code>MutexGuard&lt;T&gt;</code> within the <code>LockResult&lt;MutexGuard&lt;T&gt;&gt;</code> that the <code>lock</code>
+method returns. At compile time, the borrow checker can then enforce the rule
+that a resource guarded by a <code>Mutex</code> cannot be accessed unless we hold the
+lock. But this implementation can also result in the lock being held longer
+than intended if we don’t think carefully about the lifetime of the
+<code>MutexGuard&lt;T&gt;</code>.</p>
+<p>The code in Listing 20-20 that uses <code>let job = receiver.lock().unwrap().recv().unwrap();</code> works because with <code>let</code>, any
+temporary values used in the expression on the right hand side of the equals
+sign are immediately dropped when the <code>let</code> statement ends. However, <code>while let</code> (and <code>if let</code> and <code>match</code>) does not drop temporary values until the end of
+the associated block. In Listing 20-21, the lock remains held for the duration
+of the call to <code>job()</code>, meaning other workers cannot receive jobs.</p>
 
                     </main>
 
@@ -1265,6 +1472,8 @@ lock 의 소유권은 <code>LockResult&lt;MutexGuard&lt;T&gt;&gt;</code> 에 있
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>소유권이 뭔가요? - The Rust Programming Language</title>
+        <title>What is Ownership? - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html" class="active"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html" class="active"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -164,417 +172,469 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="소유권이-뭔가요"><a class="header" href="#소유권이-뭔가요">소유권이 뭔가요?</a></h2>
-<p>러스트의 핵심 기능은 바로 소유권입니다. 이 기능은 직관적으로 설명할 수 있지만, 언어의 나머지 부분에
-깊은 영향을 끼칩니다.</p>
-<p>모든 프로그램은 실행하는 동안 컴퓨터의 메모리를 사용하는 방법을 관리해야 합니다. 몇몇 언어들은 프로그램이
-실행될 때 더이상 사용하지 않는 메모리를 끊임없이 찾는 가비지 콜렉션을 갖고 있습니다; 다른 언어들에서는
-프로그래머가 직접 명시적으로 메모리를 할당하고 해제해야 합니다. 러스트는 제 3의 접근법을 이용합니다:
-메모리는 컴파일 타임에 컴파일러가 체크할 규칙들로 구성된 소유권 시스템을 통해 관리됩니다. 소유권 기능들의
-어떤 것도 런타임 비용이 발생하지 않습니다.</p>
-<p>소유권이란 개념이 많은 프로그래머들에게 새로운 것이기 때문에, 이해하고 사용하는 데에는 약간의 시간이
-걸립니다만, 좋은 소식은 여러분이 러스트와 소유권 시스템의 규칙에 더 많은 경험을 할수록, 여러분은 더
-안전하고 더 효율적인 코드를 자연스럽게 개발할 수 있게될 것이라는 거죠. 견뎌내세요!</p>
-<p>여러분이 소유권을 이해했을 때, 여러분은 러스트를 유니크하게 만드는 기능들을 이해하기 위한 견고한 기초를
-가지게 될 것입니다. 이 장에서, 여러분은 매우 흔한 데이터 구조인 문자열에 집중된 몇가지 예제를 통해
-소유권에 대해 배우게 될 것입니다.</p>
-<!-- PROD: START BOX -->
+<p>소유권은 러스트의 핵심 기능으로, 기능 자체는 단순하지만
+러스트 언어의 전반적인 요소에 많은 영향을 미치는 기능입니다.</p>
+<p>모든 프로그램은 작동하는 동안 컴퓨터의 메모리 사용 방법을 관리해야 합니다.
+몇몇 언어는 가비지 컬렉션으로 프로그램에서 더 이상 사용하지 않는 메모리를
+끊임없이 찾는 방식을 채용했고, 다른 언어는 프로그래머가 직접 명시적으로
+메모리를 할당하고 해제하는 방식을 택했습니다.
+이때 러스트는 제 3의 방식을 택했습니다. '소유권(ownership)' 이라는 시스템을 만들고,
+컴파일러가 컴파일 중 검사할 여러 규칙을 정해 메모리를 관리하는 방식이죠.
+이 방식은 프로그램 실행 속도에 악영향을 줄 일이 없습니다. 컴파일 타임에 전부 해결하니까요.</p>
+<p>소유권은 상당히 생소한 개념이기 때문에
+이해하고 사용하는 데 시간이 좀 걸릴 겁니다.
+하지만 여러분이 러스트라는 언어와, 소유권 시스템 규칙에 익숙해질수록
+더 안정적이고 더 효율적인 코드를 술술 작성할 수 있게 될 테니 포기하지 마세요!</p>
+<p>소유권을 이해하고 나면,
+러스트라는 언어를 특별한 존재로 만든 나머지 기능들도 이해할 수 있을 겁니다.
+이번 장에선 흔한 자료구조인 문자열 위주 예제로
+소유권을 배워보겠습니다.</p>
 <blockquote>
-<h3 id="스택과-힙"><a class="header" href="#스택과-힙">스택과 힙</a></h3>
-<p>많은 프로그래밍 언어들 안에서, 우리는 그렇게 자주 스택과 힙에 대한 생각을 할 필요가 없습니다. 그렇지만
-러스트와 같은 시스템 프로그래밍 언어에서는, 값이 스택에 있는지 힙에 있는지의 여부가 언어의 동작 방식과
-우리의 결단에 더 큰 영향을 줍니다. 우리는 이 장의 뒤쪽에서 스택과 힙에 관계된 소유권의 일부분을 기술할
-것이기에, 여기서는 준비 삼아 간략한 설명만 하겠습니다.</p>
-<p>스택과 힙 둘다 여러분의 코드상에서 런타임에 사용할 수 있는 메모리의 부분입니다만, 이들은 각기 다른
-방식으로 구조화 되어 있습니다. 스택은 값을 받아들인 순서대로 값을 저장하고 반대 방향으로 값을 지웁니다.
-이것을 <em>last in, first out</em>이라고 하죠. 쌓여있는 접시를 생각해보세요; 여러분이 접시를 더 추가하려면
-접시더미의 꼭대기에 쌓아올리고, 여러분이 접시가 필요해지면 꼭대기에서부터 한장 꺼내게 됩니다. 중간이나
-밑에서부터 접시를 추가하거나 제거하는 건 잘 안될겁니다! 데이터를 추가하는 것을 <em>스택에 푸시하기</em>
-(<em>pushing on the stack</em>)라고 부르고, 데이터를 제거하는 것을 <em>스택을 팝하기</em> (<em>popping off
-the stack</em>)라고 부릅니다.</p>
-<p>스택은 데이터에 접근하는 방식 덕택에 빠릅니다: 이 방식은 새로운 데이터를 넣어두기 위한 공간 혹은 데이터를
-가져올 공간을 검색할 필요가 전혀 없는데, 바로 그 공간이 항상 스택의 꼭대기(top)이기 때문입니다. 스택을
-빠르게 해주는 또다른 특성은 스택에 담긴 모든 데이터가 결정되어 있는 고정된 크기를 갖고 있어야 한다는
-점입니다.</p>
-<p>컴파일 타임에 크기가 결정되어 있지 않거나 크기가 변경될 수 있는 데이터를 위해서는, 힙에 데이터를 저장할
-수 있습니다. 힙은 조금 더 복잡합니다: 데이터를 힙에 넣을때, 먼저 저장할 공간이 있는지 물어봅니다. 그러면
-운영체제가 충분히 커다란 힙 안의 빈 어떤 지점을 찾아서 이 곳을 사용중이라고 표시하고, 해당 지점의 포인터를
-우리에게 돌려주죠. 이 절차를 <em>힙 공간 할당하기</em>(<em>allocating on the heap</em>)라고 부르고, 종종 그냥
-&quot;할당(allocating)&quot;으로 줄여 부릅니다. 스택에 포인터를 푸싱하는 것은 할당에 해당되지 않습니다. 포인터는
-결정되어 있는 고정된 크기의 값이므로, 우리는 스택에 포인터를 저장할 수 있지만, 실제 데이터를 사용하고자
-할 때는 포인터를 따라가야 합니다.</p>
-<p>힙에 저장된 데이터에 접근하는 것은 스택에 저장된 데이터에 접근하는 것보다 느린데, 그 이유는 포인터가
-가리킨 곳을 따라가야 하기 때문입니다. 현대 프로세서들은 메모리 내부를 덜 뛰어다닐 때 더 빨라집니다. 유사한
-예로, 여러 테이블로부터 주문을 받는 레스토랑의 웨이터를 생각해보세요. 다음 테이블로 움직이기 전에 지금
-테이블에서 모든 주문을 다 받는 것이 가장 효율적이겠죠. A 테이블에서 하나 주문 받고, 다시 B 테이블로
-가서 하나 주문 받고, 다시 A로, 다시 B로 가며 하나씩 주문을 받으면 훨씬 느려질 겁니다. 이와 마찬가지로,
-프로세서는 (힙에 있는 데이터와 같이) 멀리 떨어져 있는 데이터들 보다는 (스택에 있는 것과 같이) 붙어있는
-데이터들에 대한 작업을 하면 더 빨라집니다. 힙으로부터 큰 공간을 할당받는것 또한 시간이 걸릴 수 있습니다.</p>
-<p>코드의 어느 부분이 힙의 어떤 데이터를 사용하는지 추적하는 것, 힙의 중복된 데이터의 양을 최소화하는 것,
-그리고 힙 내에 사용하지 않는 데이터를 제거하여 공간이 모자라지 않게 하는 것은 모두 소유권과 관계된
-문제들입니다. 여러분이 소유권을 이해하고 나면, 여러분은 더이상 스택과 힙에 대한 생각이 자주 필요치 않게
-될겁니다만, 힙 데이터를 관리하는 것이 곧 소유권의 존재 이유임을 알게 되는 것은 이것이 어떤 방식으로
-작동하는지 설명하는데 도움을 줄 수 있습니다.</p>
+<h3 id="스택-힙-영역"><a class="header" href="#스택-힙-영역">스택, 힙 영역</a></h3>
+<p>대부분의 프로그래밍 언어에서는
+스택, 힙 영역을 주제로 고민할 필요가 많지 않습니다.
+하지만 러스트 같은 시스템 프로그래밍 언어에서는
+값을 스택에 저장하느냐 힙에 저장하느냐의 차이가
+프로그램의 동작 및 프로그래머의 의사 결정에 훨씬 큰 영향을 미칩니다.
+소유권과 스택, 힙을 엮은 설명은 후술해뒀기에 여기서는 각 영역에 대해서만 간략히 설명하겠습니다.</p>
+<p>스택, 힙 둘 다 여러분이 작성한 프로그램이 런타임 중 이용할
+메모리 영역이라는 공통점이 있지만 구조는 각각 다릅니다.
+스택은 값이 들어온 순서대로 저장하고, 역순으로 제거합니다.
+이를 <em>last in, fist out</em> 이라 하죠. 쌓여 있는 접시로 예를 들어 보겠습니다.
+여러분이 접시 더미에 접시를 추가할 땐 접시 더미의 꼭대기에 쌓고, 반대로 접시를 꺼낼 땐
+꼭대기에서 한 장 꺼낼 겁니다. 중간이나 맨 아래에 끼워 넣는 건 쉽지 않겠죠.
+이런 식으로 접시 더미, 즉 스택에 데이터를 추가하는 행위를 <em>푸시(push)</em> 라고 하며,
+반대로 스택에서 데이터를 제거하는 행위는 <em>팝(pop)</em> 이라 합니다.</p>
+<p>스택에 저장되는 데이터는 모두 명확하고 크기가 정해져 있어야 합니다.
+컴파일 타임에 크기를 알 수 없거나, 크기가 변경될 수 있는 데이터는
+스택 대신 힙에 저장됩니다. 힙은 스택보다 복잡합니다.
+데이터를 힙에 넣을때 먼저 저장할 공간이 있는지 운영체제한테 물어봅니다.
+그럼 메모리 할당자는 커다란 힙 영역 안에서 어떤 빈 지점을 찾고,
+이 지점은 사용 중이라고 표시한 뒤 해당 지점을 가리키는 <em>포인터(pointer)</em> 를 우리한테 반환합니다.
+이 과정을 <em>힙 공간 할당(allocating on the heap)</em>, 줄여서 <em>할당(allocationg)</em> 이라 합니다
+(스택에 값을 푸시하는 것은 할당이라 부르지 않습니다). 포인터는 크기가 정해져 있어
+스택에 저장할 수 있으나, 포인터가 가르키는 실제 데이터를 사용하고자 할 때는
+포인터를 참조해 해당 포인터가 가리키는 위치로 이동하는 과정을 거쳐야 합니다.</p>
+<p>힙 구조는 레스토랑에서 자리에 앉는 과정으로 비교할 수 있습니다.
+레스토랑에 입장하면, 직원에게 인원수를 알립니다.
+그러면 직원은 인원수에 맞는 빈 테이블을 찾아 안내하겠죠.
+이후에 온 일행이 우리 테이블을 찾을 땐 직원에게 물어 안내받을 겁니다.</p>
+<p>스택 영역은 데이터에 접근하는 방식상 힙 영역보다 속도가 빠릅니다.
+메모리 할당자가 새로운 데이터를 저장할 공간을 찾을 필요가 없이
+항상 스택의 가장 위에 데이터를 저장하면 되기 때문이죠.
+반면에 힙에 공간을 할당하는 작업은 좀 더 많은 작업을 요구하는데,
+메모리 할당자가 데이터를 저장하기에 충분한 공간을 먼저 찾고
+다음 할당을 위한 준비를 위해 예약을 수행해야 하기 때문입니다.</p>
+<p>힙 영역은 포인터가 가리키는 곳을 찾아가는 과정으로 인해 느려집니다.
+현대 프로세서는 메모리 내부를 이리저리 왔다 갔다 하는 작업이 적을수록 속도가 빨라지는데,
+힙에 있는 데이터들은 서로 멀리 떨어져 있어 프로세서가 계속해서 돌아다녀야 하기 때문이죠.
+앞서 예로 든 레스토랑을 다시 한번 생각해봅시다.
+여러분이 웨이터라면, 다른 테이블로 이동하기 전에 지금 있는 테이블의 주문을 모두 다
+받고 나서 이동하는 게 가장 효율적일 겁니다. 반대로 A 테이블에서 하나 주문받고,
+B 테이블로 이동해서 하나 주문받고, 다시 A로, 다시 B로 이동해가며 주문받으면 훨씬 느려지겠죠.
+프로세서도 마찬가지입니다. 힙 영역처럼 데이터가 서로 멀리 떨어져 있으면 작업이 느려지고,
+반대로 스택 영역처럼 데이터가 서로 붙어있으면 작업이 빨라집니다.
+이외에도, 큰 공간을 할당하는 작업도 힙 영역의 속도를 늦추는 요인입니다.</p>
+<p>여러분이 함수를 호출하면,
+호출한 함수에 넘겨준 값(값 중엔 힙 영역의 데이터를 가르키는 포인터도 있을 수 있습니다)과
+해당 함수의 지역 변수들이 스택에 푸시됩니다.
+그리고 이 데이터들은 함수가 종료될 때 pop 됩니다.</p>
+<p>코드 어느 부분에서 힙의 어떤 데이터를 사용하는지 추적하고,
+힙에서 중복되는 데이터를 최소화하고, 쓰지 않는 데이터를 힙에서 정리해
+영역을 확보하는 등의 작업은 모두 소유권과 관련되어 있습니다.
+반대로 말하면 여러분이 소유권을 한번 이해하고 나면 스택, 힙 영역으로
+고민할 일이 줄어들 거란 뜻이지만, 소유권의 존재 이유가 힙 데이터의 관리라는
+점을 알고 있으면 소유권의 동작 방식을 이해하는데에 도움이 됩니다.</p>
 </blockquote>
-<!-- PROD: END BOX -->
 <h3 id="소유권-규칙"><a class="header" href="#소유권-규칙">소유권 규칙</a></h3>
-<p>먼저, 소유권 규칙을 알아봅시다. 이것들을 설명할 예제들을 보는 내내 다음의 소유권 규칙들을 명심하세요:</p>
-<blockquote>
-<ol>
-<li>러스트의 각각의 값은 해당값의 <em>오너</em>(<em>owner</em>)라고 불리우는 변수를 갖고 있다.</li>
-<li>한번에 딱 하나의 오너만 존재할 수 있다.</li>
-<li>오너가 스코프 밖으로 벗어나는 때, 값은 버려진다(dropped).</li>
-</ol>
-</blockquote>
-<h3 id="변수의-스코프"><a class="header" href="#변수의-스코프">변수의 스코프</a></h3>
-<p>우리는 이미 2장에서 완성된 형태의 러스트 프로그램 예제를 살펴봤습니다. 이제 과거의 기초 문법 형태로
-돌아가서, <code>fn main() {</code> 코드를 예제에 붙이지 않을테니, 여러분들이 코드를 따라하려면 <code>main</code> 함수에
-직접 예제들을 넣어야 할 겁니다. 결과적으로, 우리의 예제들은 좀더 간략해저셔 보일러 플레이트 코드에 비해
-실제 디테일에 초점을 맞출 수 있도록 해줄 것입니다.</p>
-<p>소유권에 대한 첫 예제로서, 변수들의 스코프를 보겠습니다. 스코프란 프로그램 내에서 아이템이 유효함을
-표시하기 위한 범위입니다. 아래처럼 생긴 변수가 있다고 해봅시다:</p>
+<p>소유권 규칙부터 알아보겠습니다.
+앞으로 나올 내용을 보는 동안 다음 규칙을 명심하세요:</p>
+<ul>
+<li>러스트에서, 각각의 값은 <em>소유자(owner)</em> 라는 변수가 정해져 있다.</li>
+<li>한 값의 소유자는 동시에 여럿 존재할 수 없다.</li>
+<li>소유자가 스코프 밖으로 벗어날 때, 값은 버려진다(dropped).</li>
+</ul>
+<h3 id="변수의-스코프scope"><a class="header" href="#변수의-스코프scope">변수의 스코프(Scope)</a></h3>
+<p>기본 문법은 2장에서 이미 살펴봤으므로,
+예제를 좀 더 간략화하고 여러분이 핵심 내용에 더 집중할 수 있도록
+앞으로는 예제에서 <code>fn main() {</code> 코드를 생략하겠습니다.
+따라서, 앞으로 예제를 따라 하실 땐
+직접 <code>main</code> 함수에 코드를
+작성해주셔야 하니 주의해주세요.</p>
+<p>소유권 첫 예제로는 변수의 스코프를 다뤄보도록 하겠습니다.
+스코프란, 프로그램 내에서 개체가 유효한 범위를 말합니다.
+한번 다음과 같은 변수가 있다고 가정해 봅시다.</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>let s = &quot;hello&quot;;
 <span class="boring">}
 </span></code></pre></pre>
-<p>변수 <code>s</code>는 스트링 리터럴을 나타내는데, 스트링 리터럴의 값은 우리의 프로그램의 텍스트 내에 하드코딩되어
-있습니다. 변수는 선언된 시점부터 현재의 <em>스코프</em>가 끝날 때까지 유효합니다. 아래 예제 Listing 4-1은
-변수 <code>s</code>가 유효한 지점을 주석으로 표시했습니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>{                      // s는 유효하지 않습니다. 아직 선언이 안됐거든요.
-    let s = &quot;hello&quot;;   // s는 이 지점부터 유효합니다.
+<p>변수 <code>s</code>는 문자열 리터럴을 나타내며,
+문자열 리터럴의 값은 코드 내에 하드코딩되어 있습니다.
+이 변수는 선언된 시점부터 현재의 <em>스코프</em>를 벗어날 때까지 유효합니다.
+Listing 4-1에 변수 <code>s</code>가 유효한 지점을 주석으로 표시했습니다:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    {                      // s is not valid here, it’s not yet declared
+        let s = &quot;hello&quot;;   // s is valid from this point forward
 
-    // s를 가지고 뭔가 합니다.
-}                      // 이 스코프는 이제 끝이므로, s는 더이상 유효하지 않습니다.
+        // do stuff with s
+    }                      // this scope is now over, and s is no longer valid
 <span class="boring">}
 </span></code></pre></pre>
-<p><span class="caption">Listing 4-1: 변수와 이 변수가 유효한 스코프</span></p>
-<p>바꿔 말하면, 두가지 중요한 지점이 있습니다:</p>
+<p><span class="caption">Listing 4-1: 변수와,
+해당 변수가 유효한 스코프</span></p>
+<p>중요한 점은 두 가지입니다.</p>
 <ol>
-<li>스코프 <em>안에서</em> <code>s</code>가 등장하면, 유효합니다.</li>
-<li>이 유효기간은 스코프 <em>밖으로</em> 벗어날 때까지 지속됩니다.</li>
+<li><code>s</code> 가 <em>스코프 내에</em> 나타나면 유효합니다.</li>
+<li>유효기간은 <em>스코프 밖으로</em> 벗어나기 전까지 입니다.</li>
 </ol>
-<p>이 지점에서, 스코프와 변수가 유효한 시점 간의 관계는 다른 프로그래밍 언어와 비슷합니다. 이제 우리는
-이에 대한 이해를 기초로 하여 <code>String</code> 타입을 소개함으로써 계속 쌓아나갈 것입니다.</p>
+<p>여기까지 보면 변수의 유효성과 스코프는 다른 프로그래밍 언어와 비슷합니다.
+이제, <code>String</code> 타입을 탐구해가며 본격적으로
+소유권을 이해해봅시다.</p>
 <h3 id="string-타입"><a class="header" href="#string-타입"><code>String</code> 타입</a></h3>
-<p>소유권 규칙을 설명하기 위하여, 우리는 3장에서 다룬 바 있는 타입보다 더 복잡한 데이터 타입이
-필요합니다. 우리가 이전에 봐온 모든 데이터 타입들은 스택에 저장되었다가 스코프를 벗어날 때
-스택으로부터 팝 됩니다만, 우리는 이제 힙에 저장되는 데이터를 관찰하고 러스트는 과연 어떻게 이
-데이터를 비워내는지 설명할 필요가 있습니다.</p>
-<p>우리는 여기서 <code>String</code>을 예제로 활용하되, 소유권과 관련된 <code>String</code> 내용의 일부분에 집중할
-것입니다. 이러한 관점은 표준 라이브러리나 여러분들이 만들 다른 복잡한 데이터 타입에도 적용됩니다.
-<code>String</code>에 대해서는 8장에서 더 자세히 다루겠습니다.</p>
-<p>스트링 리터럴을 이미 봤는데, 이 값은 프로그램 안에 하드코딩 되어 있습니다. 문자열 값은 편리하지만,
-여러분이 텍스트를 필요로 하는 모든 경우에 대해 항상 적절하진 않습니다. 그 중 한가지 이유로, 문자열
-값은 불변입니다(immutable). 또다른 이유는 모든 문자열이 우리가 프로그래밍 하는 시점에서 다 알수
-있는 것이 아니란 점입니다: 예를 들면, 사용자의 입력을 받아 저장하고 싶다면요? 이러한 경우들에 대해서,
-러스트는 두번째 문자열 타입인 <code>String</code>을 제공합니다. 이 타입은 힙에 할당되고 그런고로 컴파일 타임에는
-우리가 알 수 없는 양의 텍스트를 저장할 수 있습니다. 여러분은 스트링 리터럴로부터 <code>from</code>이라는 함수를
-이용해서 <code>String</code>을 아래처럼 만들 수 있습니다:</p>
+<p>소유권 규칙을 설명하려면
+3장 <a href="ch03-02-data-types.html#data-types">&quot;데이터 타입들&quot;</a><!-- ignore -->
+에서 다룬 타입보다 복잡한 타입이 필요합니다.
+앞서 다룬 것들은 전부 스택에 저장되고 스코프를 벗어날 때 pop 되는 타입이지만,
+이번에 필요한 건 힙에 저장되면서, 러스트의 데이터 정리과정을 알아보는 데
+적합한 타입이거든요.</p>
+<p>따라서 <code>String</code> 타입을 예제로 활용하되,
+여기서 <code>String</code> 타입을 전부 설명할 순 없으므로 자세한 내용은 8장에서 다루고,
+이번 장에선 소유권 관련 부분에만 집중하겠습니다.
+이러한 관점은 다른 표준 라이브러리나 여러분이 만들 복잡한 데이터 타입에도 적용됩니다.</p>
+<p>여태 보아온 문자열은 코드 내에 하드코딩하는 방식의 '문자열 리터럴(string literal)'이었습니다.
+문자열 리터럴은 쓰기 편리하지만, 만능은 아닙니다.
+그 이유는 문자열 리터럴이 불변성(immutable)을 지니기에 변경할 수 없다는 점과,
+프로그램에 필요한 모든 문자열을 우리가 프로그래밍하는 시점에 알 수는 없다는 점 때문입니다.
+사용자한테 문자열을 입력받아 저장하는 기능 등을
+만들어야 하는 상황에선 문자열 리터럴을 사용할 수 없죠.
+따라서 러스트는 또 다른 문자열 타입인 <code>String</code> 을 제공합니다.
+이 타입은 힙에 할당되기 때문에, 컴파일 타임에 크기를 알 수 없는 텍스트도 저장할 수 있습니다.
+<code>String</code> 타입은 다음과 같이 <code>from</code> 함수와 문자열 리터럴을 이용해 생성 가능합니다.</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>let s = String::from(&quot;hello&quot;);
 <span class="boring">}
 </span></code></pre></pre>
-<p>더블 콜론(<code>::</code>)은 우리가 <code>string_from</code>과 같은 이름을 쓰기 보다는 <code>String</code> 타입 아래의
-<code>from</code> 함수를 특정지을 수 있도록 해주는 네임스페이스 연산자입니다. 우리는 이러한 문법에 대해 5장의
-&quot;메소드 문법&quot; 부분에서 더 자세히 다룰 것이고, 모듈에서의 네임스페이스와 관련한 이야기는 7장에서 할
-것입니다.</p>
-<p>이러한 종류의 문자열은 변경 가능합니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let mut s = String::from(&quot;hello&quot;);
+<p>이중 콜론(<code>::</code>)은 우리가 함수를 사용할 때,
+<code>string_from</code> 같은 함수명 대신 <code>String</code> 타입 하위라는 것을 특정해서
+함수를 호출할 수 있도록 하려고 사용하는 네임스페이스 연산자입니다.
+메소드 관련 문법은 5장 <a href="ch05-03-method-syntax.html#method-syntax">“메소드 문법”</a><!-- ignore --> 에서 자세히 다루며,
+모듈 및 네임스페이스는 7장 <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the Module Tree”</a><!-- ignore -->
+에서 다루고 있습니다.</p>
+<p>이 <code>String</code> 문자열은 변경 가능합니다:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    let mut s = String::from(&quot;hello&quot;);
 
-s.push_str(&quot;, world!&quot;); // push_str()은 해당 스트링 리터럴을 스트링에 붙여줍니다.
+    s.push_str(&quot;, world!&quot;); // push_str() appends a literal to a String
 
-println!(&quot;{}&quot;, s); // 이 부분이 `hello, world!`를 출력할 겁니다.
+    println!(&quot;{}&quot;, s); // This will print `hello, world!`
 <span class="boring">}
 </span></code></pre></pre>
-<p>그러니까, 여기서 어떤게 달라졌나요?, 왜 <code>String</code>은 변할 수 있는데 스트링 리터럴은 안될까요?
-차이점은 두 타입이 메모리를 쓰는 방식에 있습니다.</p>
+<p>하지만, 문자열 리터럴과 <code>String</code> 에 무슨 차이가 있길래 어떤 것은 변경할 수 있고
+어떤 것은 변경할 수 없을까요? 차이점은 각 타입의 메모리 사용 방식에 있습니다.</p>
 <h3 id="메모리와-할당"><a class="header" href="#메모리와-할당">메모리와 할당</a></h3>
-<p>스트링 리터럴의 경우, 우리는 내용물을 컴파일 타임에 알 수 있으므로 텍스트가 최종
-실행파일에 직접 하드코딩 되었고, 이렇게 하면 스트링 리터럴이 빠르고 효율적이 됩니다.
-그러나 이는 문자열이 변경되지 않는 것을 전재로 하는 특성입니다. 불행하게도, 우리는
-컴파일 타임에 크기를 알 수 없는 경우 및 실행 중 크기가 변할 수도 있는 경우의 텍스트
-조각을 바이너리 파일에 집어넣을 수 없습니다.</p>
-<p><code>String</code> 타입은 변경 가능하고 커질 수 있는 텍스트를 지원하기 위해 만들어졌고, 우리는
-힙에서 컴파일 타임에는 알 수 없는 어느 정도 크기의 메모리 공간을 할당받아 내용물을
-저장할 필요가 있습니다. 이는 즉 다음을 의미합니다:</p>
-<ol>
-<li>런타임에 운영체제로부터 메모리가 요청되어야 한다.</li>
-<li><code>String</code>의 사용이 끝났을 때 운영체제에게 메모리를 반납할 방법이 필요하다.</li>
-</ol>
-<p>첫번째는 우리가 직접 수행합니다: 우리가 <code>String::from</code>을 호출하면, 구현부분에서
-필요한 만큼의 메모리를 요청합니다. 이는 프로그래밍 언어들 사이에서 매우 일반적입니다.</p>
-<p>하지만, 두번째는 다릅니다. <em>가비지 콜렉터(GC)</em> 를 갖고 있는 언어들의 경우, GC가
-더이상 사용하지 않는 메모리 조각을 계속해서 찾고 지워주며, 우리는 프로그래머로서
-이와 관련한 생각을 안해도 됩니다. GC가 없을 경우, 할당받은 메모리가 더 필요없는
-시점을 알아서 명시적으로 이를 반납하는 코드를 호출하는 것은 프로그래머의 책임입니다.
-이를 올바르게 하는 것은 역사적으로 어려운 문제로 취급받았습니다. 우리가 잊어먹으면?
-메모리를 낭비하는 것이죠. 너무 빨리 반납해버리면? 유효하지 않은 변수를 갖게 될 겁니다.
-만일 반납을 두번하면? 이것도 버그죠. 우리는 딱 한번의 <code>allocate</code>와 한번의 <code>free</code> 쌍을
-사용해야 합니다.</p>
-<p>러스트는 다른 방식으로 이 문제를 다룹니다: 메모리는 변수가 소속되어 있는 스코프 밖으로
-벗어나는 순간 자동으로 반납됩니다. 여기 스트링 리터럴 대신 <code>String</code>을 사용한 Listing
-4-1의 스코프 예제가 있습니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>{
-    let s = String::from(&quot;hello&quot;); // s는 여기서부터 유효합니다
-
-    // s를 가지고 뭔가 합니다
-}                                  // 이 스코프는 끝났고, s는 더 이상 
-                                   // 유효하지 않습니다
-<span class="boring">}
-</span></code></pre></pre>
-<p><code>String</code>이 요구한 메모리를 운영체제에게 반납하는 자연스러운 지점이 있죠: <code>s</code>가 스코프
-밖으로 벗어날 때입니다. 변수가 스코프 밖으로 벗어나면, 러스트는 우리를 위해 특별한 함수를
-호출합니다. 이 함수를 <code>drop</code>이라고 부르고, <code>String</code>의 개발자가 메모리를 반환하도록 하는
-코드를 집어넣을 수 있습니다. 러스트는 <code>}</code> 괄호가 닫힐때 자동적으로 <code>drop</code>을 호출합니다.</p>
-<blockquote>
-<p>노트: C++에서는 이렇게 아이템의 수명주기의 끝나는 시점에 자원을 해제하는 패턴을 종종
-<em>자원 습득이 곧 초기화</em> (<em>Resource Acquisition Is Initialization, RAII</em>) 라고
-부릅니다. 러스트의 <code>drop</code> 함수는 여러분이 RAII 패턴을 경험해본 적 있다면 익숙할
-것입니다.</p>
-</blockquote>
-<p>이 패턴은 러스트 코드가 작성되는 방법에 깊은 영향을 줍니다. 지금은 단순해 보이시겠지만,
-우리가 힙에 할당시킨 데이터를 사용하는 여러 개의 변수를 사용하고자 할 경우와 같이 좀더
-복잡한 상황에서, 코드의 동작은 예기치 못할 수 있습니다. 이제 그런 경우들을 좀더
-탐험해봅시다.</p>
-<h4 id="변수와-데이터가-상호작용하는-방법-이동move"><a class="header" href="#변수와-데이터가-상호작용하는-방법-이동move">변수와 데이터가 상호작용하는 방법: 이동(move)</a></h4>
-<p>여러 개의 변수들은 러스트에서 서로 다른 방식으로 같은 데이터에 대해 상호작용을 할 수
-있습니다. Listing 4-2의 정수형을 이용한 예제를 한번 보겠습니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let x = 5;
-let y = x;
-<span class="boring">}
-</span></code></pre></pre>
-<p><span class="caption">Listing 4-2: 변수 <code>x</code>의 정수값을 <code>y</code>에 대입하기</span></p>
-<p>우리는 아마도 다른 언어들에서의 경험을 토대로 어떤 일이 벌어지는지 추측할 수 있습니다:
-“정수값 <code>5</code>를 <code>x</code>에 묶어놓고; <code>x</code>의 값의 복사본을 만들어 <code>y</code>에 묶는다.” 우리는 이제
-<code>x</code>와 <code>y</code> 두 개의 변수를 갖게 되었고, 둘 다 <code>5</code>와 같습니다. 정수값이 결정되어 있는
-고정된 크기의 단순한 값이고, <code>5</code>라는 값들이 스택에 푸쉬되기 때문에, 실제로도 이렇게
-됩니다.</p>
-<p>이제 <code>String</code> 버전을 봅시다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let s1 = String::from(&quot;hello&quot;);
-let s2 = s1;
-<span class="boring">}
-</span></code></pre></pre>
-<p>이 코드는 이전의 코드와 매우 유사해 보여서, 동작하는 방식도 동일할 것이라고 가정할지도
-모르겠습니다: 즉, 두번째 줄이 <code>s1</code>의 복사본을 만들어서 <code>s2</code>에 묶어놓는 식으로 말이죠.
-그렇지만 이는 실제 동작과 다른 생각입니다.</p>
-<p>좀 더 완전히 설명하기 위해, <code>String</code>이 Figure 4-3에서와 같이 생겼다는 것을 주목합시다.
-<code>String</code>은 그림의 왼쪽과 같이 세 개의 부분으로 이루어져 있습니다: 문자열의 내용물을
-담고 있는 메모리의 포인터, 길이, 그리고 용량입니다. 이 데이터의 그룹은 스택에 저장됩니다.
-내용물을 담은 오른쪽의 것은 힙 메모리에 있습니다.</p>
-<img alt="String in memory" src="img/trpl04-01.svg" class="center" style="width: 50%;" />
-<p><span class="caption">Figure 4-3: <code>s1</code> 변수에 <code>&quot;hello&quot;</code>값이 저장된 <code>String</code>의
-메모리 구조</span></p>
-<p>길이값은 바이트 단위로 <code>String</code>의 내용물이 얼마나 많은 메모리를 현재 사용하고 있는지를
-말합니다. 용량값은 바이트 단위로 <code>String</code>이 운영체제로부터 얼마나 많은 양의 메모리를
-할당 받았는지를 말합니다. 길이와 용량의 차이는 중요합니다만, 이번 내용에서는 아닙니다.
-그러니까 현재로서는 용량값을 무시하셔도 좋겠습니다.</p>
-<p><code>s2</code>에 <code>s1</code>을 대입하면, <code>String</code> 데이터가 복사되는데, 이는 스택에 있는 포인터, 길이값,
-그리고 용량값이 복사된다는 의미입니다. 포인터가 가리키고 있는 힙 메모리 상의 데이터는
-복사되지 않습니다. 달리 말하면, 메모리 내의 데이터 구조는 Figure 4-4와 같이 됩니다.</p>
-<img alt="s1 and s2 pointing to the same value" src="img/trpl04-02.svg" class="center" style="width: 50%;" />
-<p><span class="caption">Figure 4-4: <code>s1</code>의 포인터, 길이값, 용량값이 복사된 <code>s2</code> 변수의
-메모리 구조</span></p>
-<p>메모리 구조는 Figure 4-5와 같지 <em>않는데</em>, 이 그림은 러스트가 힙 메모리 상의 데이터까지도
-복사한다면 벌어질 일입니다. 만일 러스트가 이렇게 동작한다면, 힙 안의 데이터가 클 경우
-<code>s2 = s1</code> 연산은 런타임 상에서 매우 느려질 가능성이 있습니다.</p>
-<img alt="s1 and s2 to two places" src="img/trpl04-03.svg" class="center" style="width: 50%;" />
-<p><span class="caption">Figure 4-5: 러스트가 힙 데이터까지 복사하게 될 경우 <code>s2 = s1</code>가
-만들 또다른 가능성</span></p>
-<p>앞서 우리는 변수가 스코프 밖으로 벗어날 때, 러스트는 자동적으로 <code>drop</code>함수를 호출하여
-해당 변수가 사용하는 힙 메모리를 제거한다고 했습니다. 하지만 Figure 4-4에서는 두 데이터
-포인터가 모두 같은 곳을 가리키고 있는 것이 보입니다. 이는 곧 문제가 됩니다: <code>s2</code>와 <code>s1</code>이
-스코프 밖으로 벗어나게 되면, 둘 다 같은 메모리를 해제하려 할 것입니다. 이는 <em>두번 해제</em>
-(<em>double free</em>) 오류라고 알려져 있으며 이전에 언급한 바 있는 메모리 안정성 버그들 중
-하나입니다. 메모리를 두번 해제하는 것은 메모리 손상(memory corruption)의 원인이 되는데,
-이는 보안 취약성 문제를 일으킬 가능성이 있습니다.</p>
-<p>메모리 안정성을 보장하기 위해서, 러스트에서는 이런 경우 어떤 일이 일어나는지 한가지 더
-디테일이 있습니다. 할당된 메모리를 복사하는 것을 시도하는 대신, 러스트에서는 <code>s1</code>이
-더이상 유효하지 않다고 간주하고, 그러므로 러스트는 <code>s1</code>가 스코프 밖으로 벗어났을 때
-이무것도 해제할 필요가 없어집니다. <code>s1</code>을 <code>s2</code>가 만들어진 후에 사용하려고 할때 어떤
-일이 벌어지는지 확인해 봅시다:</p>
-<pre><code class="language-rust ignore">let s1 = String::from(&quot;hello&quot;);
-let s2 = s1;
-
-println!(&quot;{}, world!&quot;, s1);
-</code></pre>
-<p>여러분은 아래와 같은 에러 메세지를 보게 될텐데, 그 이유는 러스트가 여러분으로부터
-유효하지 않은 참조자를 사용하는 것을 막기 때문입니다:</p>
-<pre><code class="language-text">error[E0382]: use of moved value: `s1`
- --&gt; src/main.rs:4:27
-  |
-3 |     let s2 = s1;
-  |         -- value moved here
-4 |     println!(&quot;{}, world!&quot;, s1);
-  |                            ^^ value used here after move
-  |
-  = note: move occurs because `s1` has type `std::string::String`,
-which does not implement the `Copy` trait
-</code></pre>
-<p>만일 여러분이 다른 언어로 프로그래밍 하는 동안 “얕은 복사(shallow copy)”와 “깊은
-복사(deep copy)”라는 용어를 들어보셨다면, 데이터의 복사 없이 포인터와 길이값 및
-용량값만 복사한다는 개념이 얕은 복사와 비슷하게 들릴지도 모르겠습니다. 하지만
-러스트는 첫번째 변수를 무효화 시키기도 하기 때문에, 이를 얕은 복사라고 부르는 대신
-<em>이동</em>(<em>move</em>)이라 말합니다. 여기서 우리는 <code>s1</code>이 <code>s2</code>로 <em>이동되었다</em>라고 말하는
-식으로 위 코드를 읽을 것입니다. 그러므로 실제로 일어낸 일은 Figure 4-6과 같습니다.</p>
-<img alt="s1 moved to s2" src="img/trpl04-04.svg" class="center" style="width: 50%;" />
-<p><span class="caption">Figure 4-6: <code>s1</code>이 무효화된 후의 메모리 구조</span></p>
-<p>이것이 우리 문제를 해결해줍니다! 오직 <code>s2</code>만 유효한 상황에서, 스코프 밖으로 벗어나면
-혼자 메모리를 해제할 것이고, 일이 잘 처리되겠습니다.</p>
-<p>여기에 더해서, 이러한 경우가 함축하는 디자인 선택이 있습니다: 러스트는 결코 자동적으로
-여러분의 데이터에 대한 “깊은” 복사본을 만들지 않을 것입니다. 그러므로, 어떠한
-<em>자동적인</em> 복사라도 런타임 실행 과정에서 효율적일 것이라 가정할 수 있습니다.</p>
-<h4 id="변수와-데이터가-상호작용하는-방법-클론"><a class="header" href="#변수와-데이터가-상호작용하는-방법-클론">변수와 데이터가 상호작용하는 방법: 클론</a></h4>
-<p>만일 <code>String</code>의 스택 데이터 만이 아니라, 힙 데이터를 깊이 복사하기를 정말 원한다면,
-<code>clone</code>이라 불리우는 공용 메소드를 사용할 수 있습니다. 이 메소드 문법에 대해서는
-5장에서 다루게 될 것입니다만, 이 메소드가 많은 프로그래밍 언어들 사이에서 흔한
-특성이기 때문에, 여려분은 아마도 전에 이런 것들을 본적이 있을지도 모르겠습니다.</p>
-<p><code>clone</code> 메소드가 동작하는 예제를 보겠습니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let s1 = String::from(&quot;hello&quot;);
-let s2 = s1.clone();
-
-println!(&quot;s1 = {}, s2 = {}&quot;, s1, s2);
-<span class="boring">}
-</span></code></pre></pre>
-<p>이 코드는 잘 동작하고 Figure 4-5가 나타내는, 즉 힙 데이터가 <em>정말로</em> 복사되는 동작을
-여러분이 명시적으로 만들어낼 수 있는 방법입니다. </p>
-<p><code>clone</code>을 호출하는 부분을 보면, 어떤 비용이 많이 들어갈지도 모르는 코드가 실행되는
-중이란 것을 알 수 있게 됩니다. 이는 무언가 다른 동작이 수행되는 것을 알려주는 시각적인
-지시자입니다.</p>
-<h4 id="스택에만-있는-데이터-복사"><a class="header" href="#스택에만-있는-데이터-복사">스택에만 있는 데이터: 복사</a></h4>
-<p>우리가 아직 다루지 않은 또다른 부분이 있습니다. 아래 코드는 앞서 Listing 4-2에서
-본 정수값을 이용하는 코드로, 잘 동작하며 유효합니다:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let x = 5;
-let y = x;
-
-println!(&quot;x = {}, y = {}&quot;, x, y);
-<span class="boring">}
-</span></code></pre></pre>
-<p>하지만 이 코드는 우리가 방금 배운 것과 대립되는 것처럼 보입니다: <code>clone</code>을 호출하지
-않았지만, <code>x</code>도 유효하며 <code>y</code>로 이동하지도 않았지요.</p>
-<p>그 이유는 정수형과 같이 컴파일 타임에 결정되어 있는 크기의 타입은 스택에 모두 저장되기
-때문에, 실제 값의 복사본이 빠르게 만들어질 수 있습니다. 이는 변수 <code>y</code>가 생성된 후에
-<code>x</code>가 더 이상 유효하지 않도록 해야할 이유가 없다는 뜻입니다. 바꿔 말하면, 여기서는
-깊은 복사와 얕은 복사 간의 차이가 없다는 것으로, <code>clone</code>을 호출하는 것이 보통의
-얕은 복사와 아무런 차이점이 없어 우리는 이를 그냥 버릴 수 있다는 것입니다.</p>
-<p>러스트는 정수형과 같이 스택에 저장할 수 있는 타입에 대해 달수 있는 <code>Copy</code> 트레잇이라고
-불리우는 특별한 어노테이션(annotation)을 가지고 있습니다 (트레잇에 관해서는 10장에서
-더 자세히 보겠습니다). 만일 어떤 타입이 <code>Copy</code> 트레잇을 갖고 있다면, 대입 과정 후에도
-예전 변수를 계속 사용할 수 있습니다. 러스트는 만일 그 타입 혹은 그 타입이 가지고 있는
-부분 중에서 <code>Drop</code> 트레잇을 구현한 것이 있다면 <code>Copy</code> 트레잇을 어노테이션 할 수 없게끔
-합니다. 만일 어떤 타입이 스코프 밖으로 벗어났을 때 어떤 특수한 동작을 필요로 하고 우리가
-그 타입에 대해 <code>Copy</code> 어노테이션을 추가한다면, 컴파일 타임 오류를 보게 됩니다. <code>Copy</code>
-어노테이션을 여러분의 타입에 어떤 식으로 추가하는지 알고 싶다면, 부록 C의 파생 가능한
-트레잇(Derivable Traits)을 보세요.</p>
-<p>그래서 어떤 타입이 <code>Copy</code>가 될까요? 여러분은 주어진 타입에 대해 확신을 하기 위해 문서를
-확인할 수도 있겠지만, 일반적인 규칙으로서 단순한 스칼라 값들의 묶음은 <code>Copy</code>가
-가능하고, 할당이 필요하거나 어떤 자원의 형태인 경우 <code>Copy</code>를 사용할 수 없습니다.
-<code>Copy</code>가 가능한 몇가지 타입을 나열해 보겠습니다:</p>
+<p>문자열 리터럴은 컴파일 타임에 내용을 알 수 있으므로,
+텍스트가 최종 실행파일에 하드코딩됩니다.
+이 방식은 빠르고 효율적이지만,
+문자열이 변하지 않을 경우에만 사용할 수 있습니다.
+컴파일 타임에 크기를 알 수 없는 텍스트는
+바이너리 파일에 집어넣을 수 없죠.</p>
+<p>반면 <code>String</code> 타입은 힙에 메모리를 할당하는 방식을 사용하기 때문에
+텍스트 내용 및 크기를 변경할 수 있습니다.
+하지만 이는 다음을 의미하기도 합니다:</p>
 <ul>
-<li><code>u32</code>와 같은 모든 정수형 타입들</li>
-<li><code>true</code>와 <code>false</code>값을 갖는 부울린 타입 <code>bool</code></li>
-<li><code>f64</code>와 같은 모든 부동 소수점 타입들</li>
-<li><code>Copy</code>가 가능한 타입만으로 구성된 튜플들. <code>(i32, i32)</code>는 <code>Copy</code>가 되지만,
-<code>(i32, String)</code>은 안됩니다.</li>
+<li>실행 중 메모리 할당자로부터 메모리를 요청해야 합니다.</li>
+<li><code>String</code> 사용을 마쳤을 때 메모리를 해제할 (할당자에게 메모리를 반납할)
+방법이 필요합니다.</li>
+</ul>
+<p>이 중 첫 번째는 이미 우리 손으로 해결했습니다.
+<code>String::from</code> 호출 시, 필요한 만큼 메모리를 요청하도록 구현되어 있거든요.
+프로그래밍 언어 사이에서 일반적으로 사용하는 방식이죠.</p>
+<p>하지만 두 번째는 다릅니다.
+<em>가비지 콜렉터 (garbage collector, GC)</em> 를 갖는 언어에선 GC가
+사용하지 않는 메모리를 찾아 없애주므로 프로그래머가 신경 쓸 필요 없으나,
+GC가 없는 언어에선 할당받은 메모리가 필요 없어지는 지점을
+프로그래머가 직접 찾아 메모리 해제 코드를 작성해야 합니다.
+굉장히 어려운 일이죠. 프로그래머가 놓친 부분이 있다면 메모리 낭비가 발생하고,
+메모리 해제 시점을 잘못 잡으면 버그가 생깁니다. 두 번 해제할 경우도 마찬가지로 버그가 발생하겠죠.
+따라서 우린 <code>할당(allocate)</code> 과 <code>해제(free)</code> 가 하나씩 짝짓도록 만들어야 합니다.</p>
+<p>이 문제를 러스트에선 변수가 자신이 소속된 스코프를 벗어나는 순간
+자동으로 메모리를 해제하는 방식으로 해결했습니다. 예시로 보여드리도록 하죠.
+Listing 4-1 에서 문자열 리터럴을 <code>String</code> 으로 바꿔보았습니다:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    {
+        let s = String::from(&quot;hello&quot;); // s is valid from this point forward
+
+        // do stuff with s
+    }                                  // this scope is now over, and s is no
+                                       // longer valid
+<span class="boring">}
+</span></code></pre></pre>
+<p>보시면 <code>String</code> 에서 사용한 메모리를 자연스럽게 해제하는 지점이 있습니다.
+<code>s</code> 가 스코프 밖으로 벗어날 때인데, 러스트는 변수가 스코프 밖으로 벗어나면 <code>drop</code> 이라는 특별한 함수를 호출합니다.
+이 함수는 개발자가 직접 메모리 해제 코드를 작성해 넣을 수 있게 되어있으며,
+이 경우 <code>String</code> 개발자가 작성한 메모리 해제 코드가 실행되겠죠.
+<code>drop</code> 은 닫힌 중괄호 <code>}</code> 가 나타나는 지점에서 자동으로 호출됩니다.</p>
+<blockquote>
+<p>Note: C++ 에선 이런 식으로 객체의 수명이 끝나는 시점에 리소스를 해제하는 패턴을
+<em>Resource Acquisition Is Initialization (RAII)</em> 라 합니다.
+RAII 패턴에 익숙하신 분들이라면
+러스트의 <code>drop</code> 함수가 친숙할지도 모르겠네요.</p>
+</blockquote>
+<p>이 패턴은 러스트 코드를 작성하는 데 깊은 영향을 미칩니다.
+지금은 단순해 보이지만, 힙 영역을 사용하는 변수가 많아져 상황이 복잡해지면
+코드가 예기치 못한 방향으로 동작할 수도 있죠.
+그러니 이제, 그런 복잡한 상황들을 더 알아보도록 합시다.</p>
+<h4 id="변수와-데이터-간-상호작용-방식-이동move"><a class="header" href="#변수와-데이터-간-상호작용-방식-이동move">변수와 데이터 간 상호작용 방식: 이동(move)</a></h4>
+<p>러스트에선 동일한 데이터에 여러 변수가 서로 다른 방식으로 상호작용할 수 있습니다.
+정수형을 이용한 예제로 살펴보겠습니다.</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    let x = 5;
+    let y = x;
+<span class="boring">}
+</span></code></pre></pre>
+<p><span class="caption">Listing 4-2: 변수 <code>x</code>의 정숫값을
+<code>y</code>에 대입</span></p>
+<p>대충 어떤 일이 일어날지 예상되네요.
+“<code>5</code> 를 <code>x</code> 에 바인드(bind)하고, <code>x</code> 값의 복사본을 만들어 <code>y</code> 에 바인드”
+그럼 <code>x</code>, <code>y</code> 두 변수가 생길 겁니다. 각각의 값은 <code>5</code> 가 되겠죠.
+실제로도 이와 같은데, 정수형 값은 크기가 정해진 단순한 값이기 때문입니다.
+이는 다시 말해, 두 <code>5</code> 값은 스택에 push 된다는 뜻입니다.</p>
+<p>이번엔 앞선 예제를 <code>String</code> 으로 바꿔보았습니다:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    let s1 = String::from(&quot;hello&quot;);
+    let s2 = s1;
+<span class="boring">}
+</span></code></pre></pre>
+<p>이전 코드와 매우 비슷하니, 동작 방식도 같을 거라고 생각하실 수도 있습니다.
+두 번째 줄에서 <code>s1</code> 의 복사본을 생성해 <code>s2</code> 에 바인딩하는 식으로 말이죠.
+하지만 이번엔 전혀 다른 방식으로 동작합니다.</p>
+<p>Figure 4-1 를 참고해주세요. <code>String</code> 은 그림 좌측에서 나타나듯,
+문자열 내용이 들어 있는 메모리를 가리키는 포인터, 문자열 길이, 메모리 용량
+세 부분으로 이루어져 있습니다.
+이 데이터는 스택에 저장되며,
+우측의 문자열 내용은 힙에 저장됩니다.</p>
+<img alt="메모리 속 String 의 모습" src="img/trpl04-01.svg" class="center" style="width: 50%;" />
+<p><span class="caption">Figure 4-1: <code>s1</code> 에 바인드된, <code>&quot;hello&quot;</code> 값을 저장하고 있는
+<code>String</code> 의 메모리 속 모습</span></p>
+<p>문자열 길이와 메모리 용량이 무슨 차이인가 궁금하실 분들을 위해 간단히 설명해드리자면,
+문자열 길이는 <code>String</code> 의 내용이 현재 사용하고 있는 메모리를 바이트 단위로 나타낸 것이고,
+메모리 용량은 메모리 할당자가 <code>String</code> 에 할당한 메모리의 양을 뜻합니다.
+이번 내용에서는 길이, 용량 사이의 차이는 중요한 내용이 아니니,
+이해가 잘 안 되면 용량 값은 무시하셔도 좋습니다.</p>
+<p><code>s2</code> 에 <code>s</code> 을 대입하면 <code>String</code> 데이터가 복사됩니다.
+이때 데이터는 스택에 있는 데이터, 즉 포인터, 길이, 용량 값을 말하며,
+포인터가 가리키는 힙 영역의 데이터는 복사되지 않습니다.
+즉, 다음과 같은 메모리 구조를 갖게 됩니다.</p>
+<img alt="s1, s2 는 동일한 데이터를 가리킵니다" src="img/trpl04-02.svg" class="center" style="width: 50%;" />
+<p><span class="caption">Figure 4-2: 변수 <code>s2</code> 가 <code>s1</code> 의
+포인터, 길이, 용량 값을 복사했을 때 나타나는 메모리 구조</span></p>
+<p>다음 Figure 4-3 은 힙 메모리 상 데이터까지
+복사했을 경우 나타날 구조로, <em>실제로는 이와 다릅니다</em>.
+만약 러스트가 이런 식으로 동작한다면,
+힙 내 데이터가 커질수록 <code>s2 = s1</code> 연산은 굉장히 느려질겁니다.</p>
+<img alt="s1 and s2 to two places" src="img/trpl04-03.svg" class="center" style="width: 50%;" />
+<p><span class="caption">Figure 4-3: 러스트에서 힙 데이터까지 복사할 경우의
+<code>s2 = s1</code> 연산 결과</span></p>
+<p>앞서 언급한 내용 중 변수가 스코프 밖으로 벗어날 때
+러스트에서 자동으로 <code>drop</code> 함수를 호출하여 해당 변수가 사용하는
+힙 메모리를 제거한다는 내용이 있었습니다.
+하지만 Figure 4-2 처럼 두 포인터가 같은 곳을 가리킬 경우에는 어떻게 될까요?
+<code>s2</code>, <code>s1</code> 이 스코프 밖으로 벗어날 때 각각 메모리를 해제하게 되면
+<em>중복 해제(double free)</em> 오류가 발생할 겁니다.
+이는 메모리 안정성 버그 중 하나이며, 보안을 취약하게 만드는 메모리 손상의 원인입니다.</p>
+<p>따라서, 러스트에는 여러 포인터가 한 곳을 가리킬 경우를 대비한 규칙이 존재합니다.
+<code>s1</code> 에 할당한 메모리를 새로 복사하는 대신, 기존의 <code>s1</code> 을 무효화하는 것이죠.
+이로써 러스트는 <code>s1</code> 이 스코프를 벗어나더라도 아무것도 해제할 필요가 없어집니다.
+그럼 <code>s2</code> 가 만들어진 이후에 <code>s1</code> 을 사용하면 어떻게 될까요? 결론부터 말씀드리면,
+사용할 수 없습니다:</p>
+<pre><code class="language-rust ignore does_not_compile"><span class="boring">fn main() {
+</span>    let s1 = String::from(&quot;hello&quot;);
+    let s2 = s1;
+
+    println!(&quot;{}, world!&quot;, s1);
+<span class="boring">}
+</span></code></pre>
+<p>보시는 것과 같이 유효하지 않은 참조자의 사용을 감지했다는 에러가
+발생하네요:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling ownership v0.1.0 (file:///projects/ownership)
+error[E0382]: borrow of moved value: `s1`
+ --&gt; src/main.rs:5:28
+  |
+2 |     let s1 = String::from(&quot;hello&quot;);
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     let s2 = s1;
+  |              -- value moved here
+4 | 
+5 |     println!(&quot;{}, world!&quot;, s1);
+  |                            ^^ value borrowed here after move
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `ownership`
+
+To learn more, run the command again with --verbose.
+</code></pre>
+<p>여러분이 다른 프로그래밍 언어에서 “얕은 복사(shallow copy)”,
+“깊은 복사(deep copy)” 라는 용어를 들어보셨다면, 힙 데이터를 복사하지 않고
+포인터, 길이, 용량 값만 복사하는 것을 얕은 복사라고 생각하셨을 수도 있지만,
+러스트에선 기존의 변수를 무효화하기 때문에
+이를 얕은 복사가 아닌 <em>이동(move)</em> 이라 하고,
+앞선 코드는 <code>s1</code> 이 <code>s2</code> 로 <em>이동되었다</em> 라고 표현합니다.</p>
+<img alt="s1 이 s2 로 이동됨" src="img/trpl04-04.svg" class="center" style="width: 50%;" />
+<p><span class="caption">Figure 4-4: <code>s1</code> 이 무효화 된 후의
+메모리 구조</span></p>
+<p>이로써 문제가 사라졌네요!
+<code>s2</code> 만이 유효하니, 스코프 밖으로 벗어나면 그대로 자신의 메모리를 해제하면 됩니다.</p>
+<p>덧붙이자면, 러스트는 절대 자동으로 “깊은 복사” 로 데이터를 복사하는 일이 없습니다.
+따라서, 러스트가 자동으로 수행하는 모든 복사는
+런타임 성능면에서 효율적이라 할 수 있습니다.</p>
+<h4 id="변수와-데이터-간-상호작용-방식-클론clone"><a class="header" href="#변수와-데이터-간-상호작용-방식-클론clone">변수와 데이터 간 상호작용 방식: 클론(clone)</a></h4>
+<p><code>String</code> 의 힙 데이터까지 깊이 복사하고 싶을 땐
+<code>clone</code> 이라는 공용 메소드를 사용할 수 있습니다.
+메소드 문법은 5장에서 다룰 예정이지만, 메소드라는 개념은
+대부분의 프로그래밍 언어가 갖는 특성이기 때문에 여러분은 이미 다뤄보셨을 겁니다.</p>
+<p>다음은 <code>clone</code> 메소드의 사용 예제입니다:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    let s1 = String::from(&quot;hello&quot;);
+    let s2 = s1.clone();
+
+    println!(&quot;s1 = {}, s2 = {}&quot;, s1, s2);
+<span class="boring">}
+</span></code></pre></pre>
+<p>이 코드의 실행 결과는 힙 데이터까지 복사됐을 때의 메모리 구조를 나타낸
+Figure 4-3 과 정확히 일치합니다.</p>
+<p>여러분은 이 코드에서 <code>clone</code> 호출을 보고,
+이 지점에서 성능에 영향이 갈지도 모르는 코드가 실행될 것을 알 수 있습니다.
+즉, <code>clone</code> 은 해당 위치에서 무언가 다른 일이 수행될 것을 알려주는 시각적 지시자이기도 합니다.</p>
+<h4 id="스택에만-저장된-데이터-복사copy"><a class="header" href="#스택에만-저장된-데이터-복사copy">스택에만 저장된 데이터: 복사(copy)</a></h4>
+<p>아직 다루지 않은 부분이 남았습니다.
+다음 코드는 앞서 Listing 4-2 에서 본 정수형을 이용하는 코드입니다
+(정상적으로 작동합니다):</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span>    let x = 5;
+    let y = x;
+
+    println!(&quot;x = {}, y = {}&quot;, x, y);
+<span class="boring">}
+</span></code></pre></pre>
+<p>하지만 이 코드는 방금 우리가 배운 내용과 맞지 않는 것처럼 보이네요.
+<code>clone</code> 을 호출하지도 않았는데 <code>x</code> 는 계속해서 유효하며 <code>y</code> 로 이동되지도 않았습니다.</p>
+<p>이유는 정수형 등 컴파일 타임에 크기가 고정된 타입은
+모두 스택에 저장되기 때문입니다. 스택에 저장되니, 복사본을 빠르게 만들 수 있고,
+따라서 굳이 <code>y</code> 를 생성하고 나면 <code>x</code> 를 무효화 할 필요가 없습니다.
+다시 말해 이런 경우엔 깊은 복사와 얕은 복사 간 차이가 없습니다.
+여기선 <code>clone</code> 을 호출해도 얕은 복사와 차이가 없으니 생략해도 상관없죠.</p>
+<p>러스트에는 정수형 등 스택에 저장되는 타입에
+달아 놓을 수 있는 <code>Copy</code> 트레잇이 있습니다 (트레잇은 10장에서 자세히 다룹니다).
+만약 어떤 타입에 이 <code>Copy</code> 트레잇이 구현되어 있다면,
+대입 연산 후에도 기존 변수를 사용할 수 있죠. 하지만 구현하려는 타입이나,
+구현하려는 타입 중 일부분에 <code>Drop</code> 트레잇이 구현된 경우엔
+<code>Copy</code> 트레잇을 어노테이션(annotation) 할 수 없습니다.
+즉, 스코프 밖으로 벗어났을 때 특정 동작이 요구되는 타입에
+<code>Copy</code> 어노테이션을 추가하면 컴파일 오류가 발생합니다.
+여러분이 만든 타입에 <code>Copy</code> 어노테이션을 추가하는 방법은
+부록 C의 <a href="appendix-03-derivable-traits.html">“Derivable Traits”</a><!-- ignore --> 을 참고 바랍니다.</p>
+<p>그래서, <code>Copy</code> 가능한 타입은 뭘까요?
+타입마다 문서를 뒤져 정보를 찾아보고 확신을 얻을 수도 있겠지만,
+일반적으로 단순한 스칼라 값의 묶음은 <code>Copy</code> 가능하고,
+할당이 필요하거나 리소스의 일종인 경우엔 불가능합니다.
+<code>Copy</code> 가능한 타입 목록 중 일부를 보여드리겠습니다.</p>
+<ul>
+<li>모든 정수형 타입 (예: <code>u32</code>)</li>
+<li><code>true</code>, <code>false</code> 값을 갖는 논리 자료형 <code>bool</code></li>
+<li>모든 부동 소수점 타입 (예: <code>f64</code>)</li>
+<li>문자 타입 <code>char</code></li>
+<li><code>Copy</code> 가능한 타입만으로 구성된 튜플
+(예를 들어, <code>(i32, i32)</code> 는 <code>Copy</code> 가능하지만 <code>(i32, String)</code> 은 불가능합니다)</li>
 </ul>
 <h3 id="소유권과-함수"><a class="header" href="#소유권과-함수">소유권과 함수</a></h3>
-<p>함수에게 값을 넘기는 의미론(semantics)은 값을 변수에 대입하는 것과 유사합니다.
-함수에게 변수를 넘기는 것은 대입과 마찬가지로 이동하거나 복사될 것입니다. Listing
-4-7은 변수가 스코프 안으로 들어갔다 밖으로 벗어나는 것을 주석과 함께 보여주는 예입니다:</p>
+<p>함수로 값을 전달하는 행위는 변수에 값을 대입하는 행위와 의미가 유사합니다.
+함수에 변수를 전달하면 대입 연산과 마찬가지로 이동이나 복사가 일어나기 때문이죠.
+Listing 4-3 에 변수가 스코프를 벗어나는 부분을
+주석으로 표시해보았습니다.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
-    let s = String::from(&quot;hello&quot;);  // s가 스코프 안으로 들어왔습니다.
+    let s = String::from(&quot;hello&quot;);  // s comes into scope
 
-    takes_ownership(s);             // s의 값이 함수 안으로 이동했습니다...
-                                    // ... 그리고 이제 더이상 유효하지 않습니다.
-    let x = 5;                      // x가 스코프 안으로 들어왔습니다.
+    takes_ownership(s);             // s's value moves into the function...
+                                    // ... and so is no longer valid here
 
-    makes_copy(x);                  // x가 함수 안으로 이동했습니다만,
-                                    // i32는 Copy가 되므로, x를 이후에 계속
-                                    // 사용해도 됩니다.
+    let x = 5;                      // x comes into scope
 
-} // 여기서 x는 스코프 밖으로 나가고, s도 그 후 나갑니다. 하지만 s는 이미 이동되었으므로,
-  // 별다른 일이 발생하지 않습니다.
+    makes_copy(x);                  // x would move into the function,
+                                    // but i32 is Copy, so it’s okay to still
+                                    // use x afterward
 
-fn takes_ownership(some_string: String) { // some_string이 스코프 안으로 들어왔습니다.
+} // Here, x goes out of scope, then s. But because s's value was moved, nothing
+  // special happens.
+
+fn takes_ownership(some_string: String) { // some_string comes into scope
     println!(&quot;{}&quot;, some_string);
-} // 여기서 some_string이 스코프 밖으로 벗어났고 `drop`이 호출됩니다. 메모리는
-  // 해제되었습니다.
+} // Here, some_string goes out of scope and `drop` is called. The backing
+  // memory is freed.
 
-fn makes_copy(some_integer: i32) { // some_integer이 스코프 안으로 들어왔습니다.
+fn makes_copy(some_integer: i32) { // some_integer comes into scope
     println!(&quot;{}&quot;, some_integer);
-} // 여기서 some_integer가 스코프 밖으로 벗어났습니다. 별다른 일은 발생하지 않습니다.
+} // Here, some_integer goes out of scope. Nothing special happens.
 </code></pre></pre>
-<p><span class="caption">Listing 4-7: 소유권과 스코프에 대한 설명이 주석으로 달린 함수들</span></p>
-<p>만일 우리가 <code>s</code>를 <code>takes_ownership</code> 함수를 호출한 이후에 사용하려 한다면, 러스트는
-컴파일 타임 오류를 낼 것입니다. 이러한 정적 확인은 여러 실수들을 방지해 줍니다.
-이후에 변수들을 사용할 수 있는지, 그리고 그러한 것을 소유권 규칙이 막아주는지를
-확인해보려면 <code>main</code> 안에 <code>s</code>와 <code>x</code>에 관한 코드를 추가해보세요.</p>
+<p><span class="caption">Listing 4-3: 소유권, 스코프가 주석으로
+표시된 함수</span></p>
+<p>러스트는 <code>takes_ownership</code> 함수를 호출한 이후에 <code>s</code> 를 사용하려 할 경우,
+컴파일 타입 오류를 발생시킵니다. 이런 정적 검사들이 프로그래머의 여러 실수를 방지해주죠.
+어느 지점에서 변수를 사용할 수 있고, 어느 지점에서 소유권 규칙이 여러분을 제재하는지
+확인해보려면 <code>main</code> 함수에 <code>s</code>, <code>x</code> 변수를 사용하는 코드를 여기저기 추가해보세요.</p>
 <h3 id="반환-값과-스코프"><a class="header" href="#반환-값과-스코프">반환 값과 스코프</a></h3>
-<p>값의 반환 또한 소유권을 이동시킵니다. Listing 4-7과 비슷한 주석이 달린 예제를 하나
-봅시다:</p>
+<p>소유권은 값을 반환하는 과정에서도 이동합니다.
+앞서 본 Listing 4-3 과 비슷한 주석이 달린 유사한 예제를 살펴봅시다:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
-    let s1 = gives_ownership();         // gives_ownership은 반환값을 s1에게
-                                        // 이동시킵니다.
+    let s1 = gives_ownership();         // gives_ownership moves its return
+                                        // value into s1
 
-    let s2 = String::from(&quot;hello&quot;);     // s2가 스코프 안에 들어왔습니다.
+    let s2 = String::from(&quot;hello&quot;);     // s2 comes into scope
 
-    let s3 = takes_and_gives_back(s2);  // s2는 takes_and_gives_back 안으로
-                                        // 이동되었고, 이 함수가 반환값을 s3으로도
-                                        // 이동시켰습니다.
+    let s3 = takes_and_gives_back(s2);  // s2 is moved into
+                                        // takes_and_gives_back, which also
+                                        // moves its return value into s3
+} // Here, s3 goes out of scope and is dropped. s2 goes out of scope but was
+  // moved, so nothing happens. s1 goes out of scope and is dropped.
 
-} // 여기서 s3는 스코프 밖으로 벗어났으며 drop이 호출됩니다. s2는 스코프 밖으로
-  // 벗어났지만 이동되었으므로 아무 일도 일어나지 않습니다. s1은 스코프 밖으로
-  // 벗어나서 drop이 호출됩니다.
+fn gives_ownership() -&gt; String {             // gives_ownership will move its
+                                             // return value into the function
+                                             // that calls it
 
-fn gives_ownership() -&gt; String {             // gives_ownership 함수가 반환 값을
-                                             // 호출한 쪽으로 이동시킵니다.
+    let some_string = String::from(&quot;hello&quot;); // some_string comes into scope
 
-    let some_string = String::from(&quot;hello&quot;); // some_string이 스코프 안에 들어왔습니다.
-
-    some_string                              // some_string이 반환되고, 호출한 쪽의
-                                             // 함수로 이동됩니다.
+    some_string                              // some_string is returned and
+                                             // moves out to the calling
+                                             // function
 }
 
-// takes_and_gives_back 함수는 String을 하나 받아서 다른 하나를 반환합니다.
-fn takes_and_gives_back(a_string: String) -&gt; String { // a_string이 스코프
-                                                      // 안으로 들어왔습니다.
+// takes_and_gives_back will take a String and return one
+fn takes_and_gives_back(a_string: String) -&gt; String { // a_string comes into
+                                                      // scope
 
-    a_string  // a_string은 반환되고, 호출한 쪽의 함수로 이동됩니다.
+    a_string  // a_string is returned and moves out to the calling function
 }
 </code></pre></pre>
-<p>변수의 소유권은 모든 순간 똑같은 패턴을 따릅니다: 어떤 값을 다른 변수에 대입하면
-값이 이동됩니다. 힙에 데이터를 갖고 있는 변수가 스코프 밖으로 벗어나면, 해당 값은
-데이터가 다른 변수에 의해 소유되도록 이동하지 않는한 <code>drop</code>에 의해 제거될 것입니다.</p>
-<p>모든 함수가 소유권을 가졌다가 반납하는 것은 조금 지루해 보입니다.
-만일 함수에게 값을 사용할 수 있도록 하되 소유권은 갖지 않도록 하고 싶다면요?
-함수의 본체로부터 얻어진 결과와 더불어 우리가 넘겨주고자 하는 어떤 값을 다시 쓰고 싶어서
-함께 반환받아야 한다면 꽤나 짜증나겠지요. </p>
-<p>이게 아래와 같이 튜플을 이용하여 여러 값을 돌려받는 식으로 가능하긴 합니다:</p>
+<p><span class="caption">Listing 4-4: 반환 값으로 일어나는
+소유권 이동</span></p>
+<p>상황은 다양할지라도, 변수의 소유권 규칙은 언제나 동일합니다.
+어떤 값을 다른 변수에 대입하면 값이 이동하고,
+힙에 데이터를 갖는 변수가 스코프를 벗어나면, 사전에 해당 데이터가 이동되어
+다른 변수가 소유하고 있지 않은 이상 <code>drop</code> 에 의해 데이터가 제거됩니다.</p>
+<p>모든 함수가 소유권을 가졌다가 반납하는 것은 조금 번거롭습니다.
+함수에 넘겨줄 값을 함수 호출 이후에도 쓰고 싶은데,
+그렇다고 해서 우리가 함수로부터 얻고자 하는 결과에 더해,
+이후 다시 쓰고 싶은 변수까지 같이 반환받아야 한다면 본말전도나 다름없죠.
+그럼, 함수가 값을 사용할 수 있도록 하되 소유권은 가져가지 않도록 하고 싶다면 어떻게 해야 할까요?</p>
+<p>그래도 일단 다음과 같이 튜플을 이용해 여러 값을 돌려받는 게 가능하긴 하다는 걸 알려드리겠습니다:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let s1 = String::from(&quot;hello&quot;);
@@ -585,13 +645,15 @@ fn takes_and_gives_back(a_string: String) -&gt; String { // a_string이 스코�
 }
 
 fn calculate_length(s: String) -&gt; (String, usize) {
-    let length = s.len(); // len()함수는 문자열의 길이를 반환합니다.
+    let length = s.len(); // len() returns the length of a String
 
     (s, length)
 }
 </code></pre></pre>
-<p>하지만 이건 너무 많이 나간 의례절차고 일반적인 개념로서는 과한 작업이 됩니다.
-운좋게도, 러스트는 이를 위한 기능을 갖고 있으며, <em>참조자</em>(<em>references</em>)라고 부릅니다.</p>
+<p><span class="caption">Listing 4-5: 매개변수의 소유권을 되돌려주는 방법</span></p>
+<p>당연하지만 이런 방식으로 매개변수의 소유권을 되돌려받는 것은 좋지 않습니다.
+거추장스럽고, 작업량이 필요 이상으로 많아지죠.
+다행히도, 러스트에는 이 대신 사용할 <em>참조자(references)</em> 라는 기능을 가지고 있습니다.</p>
 
                     </main>
 
@@ -655,6 +717,8 @@ fn calculate_length(s: String) -&gt; (String, usize) {
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

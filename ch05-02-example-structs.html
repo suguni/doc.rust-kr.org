@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>구조체를 이용한 예제 프로그램 - The Rust Programming Language</title>
+        <title>An Example Program Using Structs - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html" class="active"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html" class="active"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -163,48 +171,68 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="구조체를-이용한-예제-프로그램"><a class="header" href="#구조체를-이용한-예제-프로그램">구조체를 이용한 예제 프로그램</a></h2>
-<p>어느 시점에 구조체를 이용하기를 원하게 될지를 이해해보기 위해서, 사각형의 넓이를 계산하는 프로그램을
-작성해봅시다. 단일 변수들로 구성된 프로그램으로 시작한 뒤, 이 대신 구조체를 이용하기까지 프로그램을
-리팩토링해 볼 것입니다.</p>
-<p>Cargo로 픽셀 단위로 명시된 사각형의 길이와 너비를 입력받아서 사각형의 넓이를 계산하는 <em>rectangles</em>라는
-이름의 새로운 바이너리 프로젝트를 만듭시다. Listing 5-7은 우리 프로젝트의 <em>src/main.rs</em> 내에
-설명한 동작을 수행하는 한 방법을 담은 짧은 프로그램을 보여줍니다:</p>
+                        <h2 id="구조체를-사용한-예제-프로그램"><a class="header" href="#구조체를-사용한-예제-프로그램">구조체를 사용한 예제 프로그램</a></h2>
+<p>어떨 때 구조체를 사용하면 좋을지를,
+사각형 넓이를 계산하는 프로그램을 작성하면서 익혀보도록 합시다.
+단일 변수로만 구성된 프로그램으로 시작해 구조체를 사용하기까지 리팩토링하면서 말이죠.</p>
+<p>Cargo 를 사용해 <em>rectangles</em> 라는 새로운 바이너리 프로젝트를 만들어줍시다.
+이 프로그램은 픽셀 단위로 명시된 사각형의 너비와 높이로 넓이를 계산할 겁니다.
+Listing 5-8 은 <em>src/main.rs</em> 에 이 기능을 간단하게 구현한
+모습입니다:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
-    let length1 = 50;
     let width1 = 30;
+    let height1 = 50;
 
     println!(
         &quot;The area of the rectangle is {} square pixels.&quot;,
-        area(length1, width1)
+        area(width1, height1)
     );
 }
 
-fn area(length: u32, width: u32) -&gt; u32 {
-    length * width
+fn area(width: u32, height: u32) -&gt; u32 {
+    width * height
 }
 </code></pre></pre>
-<p><span class="caption">Listing 5-7: 길이와 너비가 각각의 변수에 지정된 사각형의
-넓이 계산하기</span></p>
-<p>이제 이 프로그램을 <code>cargo run</code>으로 실행해보세요:</p>
-<pre><code class="language-text">The area of the rectangle is 1500 square pixels.
+<p><span class="caption">Listing 5-8: 각 변수에 지정된 너비와 높이로
+사각형 넓이 계산</span></p>
+<p><code>cargo run</code> 으로 실행해보죠:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling structs v0.1.0 (file:///projects/structs)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.42s
+     Running `target/debug/structs`
+The area of the rectangle is 1500 square pixels.
 </code></pre>
-<h3 id="튜플을-이용한-리팩터링"><a class="header" href="#튜플을-이용한-리팩터링">튜플을 이용한 리팩터링</a></h3>
-<p>비록 Listing 5-7가 잘 동작하고 각 차원축의 값을 넣은 <code>area</code> 함수를 호출함으로써 사각형의 넓이를
-알아냈을지라도, 이것보다 더 좋게 할 수 있습니다. 길이와 너비는 함께 하나의 사각형을 기술하기 떄문에
-서로 연관되어 있습니다.</p>
-<p>이 방법에 대한 사안은 <code>area</code>의 시그니처에서 여실히 나타납니다:</p>
-<pre><code class="language-rust ignore">fn area(length: u32, width: u32) -&gt; u32 {
-</code></pre>
-<p><code>area</code> 함수는 어떤 사각형의 넓이를 계산하기로 되어있는데, 우리가 작성한 함수는 두 개의 파라미터들을
-가지고 있습니다. 파라미터들은 연관되어 있지만, 우리 프로그램 내의 어디에도 표현된 바 없습니다. 길이와
-너비를 함께 묶는다면 더 읽기 쉽고 관리하기도 좋을 것입니다. 페이지 XX, 3장의 튜플로 값들을 묶기 절에서
-이런 일을 하는 한가지 방법을 이미 다루었습니다: 바로 튜플을 이용하는 것이지요. Listing 5-8은
-튜플을 이용한 우리 프로그램의 또다른 버전을 보여줍니다:</p>
+<p>Listing 5-8 는 <code>area</code> 함수에
+각 치수를 전달하고 호출합니다.
+작동하는 데 문제는 없지만,
+한 걸음 더 나아가보죠.</p>
+<p><code>area</code> 함수의 시그니처를 보면 개선해야 할 점이 여실히 드러납니다:</p>
+<pre><code class="language-rust ignore"><span class="boring">fn main() {
+</span><span class="boring">    let width1 = 30;
+</span><span class="boring">    let height1 = 50;
+</span><span class="boring">
+</span><span class="boring">    println!(
+</span><span class="boring">        &quot;The area of the rectangle is {} square pixels.&quot;,
+</span><span class="boring">        area(width1, height1)
+</span><span class="boring">    );
+</span><span class="boring">}
+</span><span class="boring">
+</span>fn area(width: u32, height: u32) -&gt; u32 {
+<span class="boring">    width * height
+</span><span class="boring">}
+</span></code></pre>
+<p>너비와 높이 값은 둘이 합쳐져서 하나의 사각형을 묘사합니다.
+즉, 서로 연관된 값입니다. 하지만 <code>area</code> 함수의 시그니처를 비롯해,
+코드 내에 이 두 값이 서로 연관돼있다는 것을 표현하는 부분은 찾아볼 수 없군요.
+두 값을 하나로 묶어버리면 코드의 가독성도 높아지고 관리하기도 쉬워질 겁니다.
+앞서 3장 <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> 절에서
+배운 튜플로 해결해 볼까요?</p>
+<h3 id="튜플로-리팩토링하기"><a class="header" href="#튜플로-리팩토링하기">튜플로 리팩토링하기</a></h3>
+<p>다음 Listing 5-9 는 튜플을 사용한 모습입니다.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
-    let rect1 = (50, 30);
+    let rect1 = (30, 50);
 
     println!(
         &quot;The area of the rectangle is {} square pixels.&quot;,
@@ -216,29 +244,34 @@ fn area(dimensions: (u32, u32)) -&gt; u32 {
     dimensions.0 * dimensions.1
 }
 </code></pre></pre>
-<p><span class="caption">Listing 5-8: 튜플을 이용하여 사각형의 길이와 너비를
-명시하기</span></p>
-<p>어떤 면에서는 프로그램이 더 좋아졌습니다. 튜플은 한 조각의 구조체를 추가할 수 있게 해주고, 우리는
-이제 단 하나의 인자만 넘기게 되었습니다. 그러나 다른 한편으로 이 버전은 덜 명확합니다: 튜플은
-요소에 대한 이름이 없어서, 튜플 내의 값을 인덱스로 접근해야 하기 때문에 우리의 계산이 더 혼란스러워
-졌습니다.</p>
-<p>면적 계산에 대해서는 길이와 너비를 혼동하는 것이 큰 문제가 아니겠으나, 만일 우리가 화면에 이 사각형을
-그리고 싶다면, 문제가 됩니다! 우리는 <code>length</code>가 튜플 인덱스 <code>0</code>이고 <code>width</code>가 튜플 인덱스
-<code>1</code>이라는 점을 꼭 기억해야 할 것입니다. 만일 다른 누군가가 이 코드를 이용해서 작업한다면, 그들 또한
-이 사실을 알아내어 기억해야 할테지요. 우리의 코드 내에 데이터의 의미를 전달하지 않았기 때문에,
-이 값들을 잊어먹거나 혼동하여 에러를 발생시키는 일이 쉽게 발생할 것입니다.</p>
-<h3 id="구조체를-이용한-리팩터링-의미를-더-추가하기"><a class="header" href="#구조체를-이용한-리팩터링-의미를-더-추가하기">구조체를 이용한 리팩터링: 의미를 더 추가하기</a></h3>
-<p>우리는 데이터에 이름표를 붙여 의미를 부여하기 위해 구조체를 이용합니다. Listing 5-9에서 보시는 바와
-같이, 우리가 사용중인 튜플은 전체를 위한 이름 뿐만 아니라 부분들을 위한 이름들도 가지고 있는 데이터
-타입으로 변형될 수 있습니다:</p>
+<p><span class="caption">Listing 5-9: 사각형의 너비와 높이를
+튜플로 명시하는 코드</span></p>
+<p>튜플을 사용함으로써 더 짜임새 있는 코드가 됐고,
+인자도 단 하나만 넘기면 된다는 점에선 프로그램이 발전했다고 볼 수 있습니다.
+하지만 각 요소가 이름을 갖지 않는 튜플의 특성 때문에
+값을 인덱스로 접근해야 해서 계산식이 난잡해졌네요.</p>
+<p>다행히 넓이를 계산할 땐 어떤 값이 너비이고 어떤 값이 높이인지 구분하지 못해도 별문제가 없습니다.
+하지만 만들어야 할 프로그램이 화면에 사각형을 그리는 프로그램이라고 가정해보면 어떨까요?
+너비 값인 <code>width</code> 가 튜플 인덱스 <code>0</code> 에 위치하고 높이 값인 <code>height</code> 는
+튜플 인덱스 <code>1</code> 에 위치한다는 걸 꼭 기억하고 있어야 할 겁니다.
+혹여나 다른 사람이 이 코드로 작업할 일이 생기면 그 사람도 이 점을 알아내서 기억해야 하겠죠.
+값을 헷갈리기라도 하면 에러가 발생할 겁니다.
+이런 문제를 방지하기 위해, 코드 내에 데이터의 의미를 담아봅시다.</p>
+<h3 id="구조체로-리팩토링하여-코드에-더-많은-의미를-담기"><a class="header" href="#구조체로-리팩토링하여-코드에-더-많은-의미를-담기">구조체로 리팩토링하여 코드에 더 많은 의미를 담기</a></h3>
+<p>구조체는 데이터에 이름표를 붙여서 의미를 나타낼 수 있습니다.
+Listing 5-10 처럼, 기존에 사용하던 튜플을 구조체로 바꿔
+각 요소에 이름을 지어줍시다.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">struct Rectangle {
-    length: u32,
     width: u32,
+    height: u32,
 }
 
 fn main() {
-    let rect1 = Rectangle { length: 50, width: 30 };
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
     println!(
         &quot;The area of the rectangle is {} square pixels.&quot;,
@@ -247,105 +280,130 @@ fn main() {
 }
 
 fn area(rectangle: &amp;Rectangle) -&gt; u32 {
-    rectangle.length * rectangle.width
+    rectangle.width * rectangle.height
 }
 </code></pre></pre>
-<p><span class="caption">Listing 5-9: <code>Rectangle</code> 구조체 정의하기</span></p>
-<p>여기서 우리는 구조체를 정의하고 이를 <code>Rectangle</code>이라 명명했습니다. <code>{}</code> 안에서 <code>length</code>와
-<code>width</code>를 필드로 정의했는데, 둘 모두 <code>u32</code> 타입입니다. 그런 다음 <code>main</code> 함수 안에서
-길이 50 및 너비 30인 특정한 <code>Rectangle</code> 인스턴스(instance)를 생성했습니다.</p>
-<p>우리의 <code>area</code> 함수는 이제 하나의 파라미터를 갖도록 정의되었는데, 이는 <code>rectangle</code>이라는 이름이고,
-<code>Rectangle</code> 구조체 인스턴스의 불변 참조자 타입입니다. 4장에서 언급했듯이, 우리는 구조체의 소유권을
-얻기 보다는 빌리기를 원합니다. 이 방법으로, <code>main</code>은 그 소유권을 유지하고 <code>rect1</code>을 계속 이용할
-수 있는데, 이는 우리가 함수 시그니처 내에서와 함수 호출시에 <code>&amp;</code>를 사용하게 된 이유입니다.</p>
-<p><code>area</code> 함수는 <code>Rectangle</code> 인스턴스 내의 <code>length</code>와 <code>width</code> 필드에 접근합니다. <code>area</code>에
-대한 우리의 함수 시그니처는 이제 정확히 우리가 의미한 바를 나타냅니다: <code>length</code>와 <code>width</code> 필드를
-사용하여 <code>Rectangle</code>의 넓이를 계산한다는 뜻 말이죠. 이는 길이와 너비가 서로 연관되어 있음을
-잘 전달하며, <code>0</code>과 <code>1</code>을 사용한 튜플 인덱스 값을 이용하는 대신에 값들에 대해서 서술적인 이름을 
-사용합니다 - 명확성 측면에서 승리입니다.</p>
-<h3 id="파생-트레잇derived-trait으로-유용한-기능-추가하기"><a class="header" href="#파생-트레잇derived-trait으로-유용한-기능-추가하기">파생 트레잇(derived trait)으로 유용한 기능 추가하기</a></h3>
-<p>우리가 프로그램을 디버깅하는 동안 구조체 내의 모든 값을 보기 위해서 <code>Rectangle</code>의 인스턴스를 
-출력할 수 있다면 도움이 될 것입니다. Listing 5-10은 우리가 이전 장들에서 해왔던 것처럼
-<code>println!</code> 매크로를 이용한 것입니다:</p>
+<p><span class="caption">Listing 5-10: <code>Rectangle</code> 구조체 정의</span></p>
+<p><code>Rectangle</code> 이라는 구조체를 정의하고,
+중괄호 내에 <code>width</code>, <code>height</code> 필드를 <code>u32</code> 타입으로 정의했습니다.
+이후 <code>main</code> 내에선 너비 30, 높이 50짜리
+<code>Rectangle</code> 구조체의 인스턴스를 생성했습니다.</p>
+<p><code>area</code> 함수의 매개변수는 이제 <code>rectangle</code> 하나뿐입니다.
+단, 구조체의 소유권을 가져와 버리면 <code>main</code> 함수에서
+<code>area</code> 함수 호출 이후에 <code>rect1</code> 을 더 사용할 수 없으므로,
+<code>rectangle</code> 매개변수의 타입을 불변 참조자 타입으로 정하여
+소유권을 빌려오기만 하도록 만들었습니다.
+불변 참조자 타입이니 함수 시그니처와 호출시에 <code>&amp;</code> 를 작성합니다.</p>
+<p><code>area</code> 함수는 <code>Rectangle</code> 인스턴스의
+<code>width</code>, <code>height</code> 필드에 접근하여 <code>area</code>, 즉 넓이를 계산합니다.
+이제 함수 시그니처만 봐도 의미를 정확히 알 수 있네요.
+<code>width</code>, <code>height</code> 가 서로 연관된 값이라는 것도 알 수 있고,
+<code>0</code> 이나 <code>1</code> 대신 필드명을 사용해 더 명확하게
+구분할 수 있습니다.</p>
+<h2 id="트레잇-derive-로-유용한-기능-추가하기"><a class="header" href="#트레잇-derive-로-유용한-기능-추가하기">트레잇 derive 로 유용한 기능 추가하기</a></h2>
+<p>프로그램을 디버깅하는 동안 <code>Rectangle</code> 인스턴스 내
+모든 필드 값을 출력해서 확인할 수 있다면 좋을 것 같군요.
+Listing 5-11 는 앞서 다뤄본 <code>println!</code> 매크로를 사용해본 예시이나,
+작동하진 않습니다.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust ignore">struct Rectangle {
-    length: u32,
+<pre><code class="language-rust ignore does_not_compile">struct Rectangle {
     width: u32,
+    height: u32,
 }
 
 fn main() {
-    let rect1 = Rectangle { length: 50, width: 30 };
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
     println!(&quot;rect1 is {}&quot;, rect1);
 }
 </code></pre>
-<p><span class="caption">Listing 5-10: <code>Rectangle</code> 인스턴스 출력 시도하기</span></p>
-<p>이 코드를 실행시키면, 다음과 같은 핵심 메세지와 함께 에러가 발생합니다:</p>
-<pre><code class="language-text">error[E0277]: the trait bound `Rectangle: std::fmt::Display` is not satisfied
+<p><span class="caption">Listing 5-11: <code>Rectangle</code> 인스턴스
+출력을 시도해본 모습</span></p>
+<p>이 코드를 컴파일하면 다음과 같은 메시지가 나타납니다:</p>
+<pre><code class="language-text">error[E0277]: `Rectangle` doesn't implement `std::fmt::Display`
 </code></pre>
-<p><code>println!</code> 매크로는 다양한 종류의 포맷을 출력할 수 있으며, 기본적으로 <code>{}</code>은 <code>println!</code>에게
-<code>Display</code>라고 알려진 포맷팅을 이용하라고 전달해줍니다: 직접적인 최종 사용자가 사용하도록 의도된
-출력이지요. 여지껏 우리가 봐온 기본 타입들은 <code>Display</code>가 기본적으로 구현되어 있는데, 이는
-<code>1</code> 혹은 다른 기본 타입을 유저에게 보여주고자 하는 방법이 딱 한가지기 때문입니다. 하지만 구조체를
-사용하는 경우, <code>println!</code>이 출력을 형식화하는 방법은 덜 명확한데 이는 표시 방법의 가능성이 더
-많기 때문입니다: 여러분은 쉽표를 이용하길 원하나요, 혹은 그렇지 않은가요? 여러분은 중괄호를 출력하길
-원하나요? 모든 필드들이 다 보여지는 편이 좋은가요? 이러한 모호성 때문에, 러스트는 우리가 원하는
-것을 추론하는 시도를 하지 않으며 구조체는 <code>Display</code>에 대한 기본 제공 되는 구현체를 가지고 있지
-않습니다.</p>
-<p>계속 에러를 읽어나가면, 아래와 같은 도움말을 찾게 될 것입니다:</p>
-<pre><code class="language-text">note: `Rectangle` cannot be formatted with the default formatter; try using
-`:?` instead if you are using a format string
+<p><code>println!</code> 매크로에는 여러 출력 형식을 사용할 수 있습니다.
+그리고 기본 형식인 <code>{}</code> 로 지정할 땐 <code>Display</code> 라는, 최종 사용자를 위한 출력 형식을 사용하죠.
+여태 사용했던 기본 타입들은 <code>Display</code> 가 기본적으로 구현돼있었습니다.
+<code>1</code> 같은 기본 타입들을 사용자에게 보여줄 수 있는 형식은 딱 한 가지뿐이니까요.
+하지만 구조체라면 이야기가 달라집니다.
+중간중간 쉼표를 사용해야 할 수도 있고, 중괄호도 출력해야 할 수도 있고,
+필드 일부를 생략해야 할 수도 있는 등 여러 경우가 있을 수 있습니다.
+러스트는 이런 애매한 상황에 우리가 원하는 걸 임의로 예상해서 제공하려 들지 않기 때문에,
+구조체에는 <code>Display</code> 구현체가 기본 제공되지 않습니다.
+따라서 <code>println!</code> 에서 처리할 수 없죠.</p>
+<p>에러를 더 읽다 보면 다음과 같은 도움말을 찾을 수 있습니다:</p>
+<pre><code class="language-text">   = help: the trait `std::fmt::Display` is not implemented for `Rectangle`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
 </code></pre>
-<p>한번 시도해보죠! <code>println!</code> 매크로 호출은 이제 <code>println!(&quot;rect1 is {:?}&quot;, rect1);</code>처럼
-보이게 될 것입니다. <code>{}</code> 내에 <code>:?</code> 명시자를 집어넣는 것은 <code>println!</code>에게 <code>Debug</code>라 불리우는
-출력 포맷을 사용하고 싶다고 말해줍니다. <code>Debug</code>는 개발자에게 유용한 방식으로 우리의 구조체를 출력할
-수 있도록 해줘서 우리 코드를 디버깅 하는 동안 그 값을 볼수 있게 해주는 트레잇입니다.</p>
-<p>이 변경을 가지고 코드를 실행해보세요. 젠장! 여전히 에러가 납니다:</p>
-<pre><code class="language-text">error: the trait bound `Rectangle: std::fmt::Debug` is not satisfied
+<p><code>{}</code> 대신 <code>{:?}</code> 를 사용해보라네요. 한번 해보죠.
+<code>println!</code> 매크로 호출을 <code>println!(&quot;rect1 is {:?}&quot;, rect1);</code> 으로 바꿔봅시다.
+<code>{}</code> 내에 <code>:?</code> 를 추가하는 건 <code>println!</code> 에 <code>Debug</code> 라는 출력 형식을 사용하고 싶다고 전달하는 것과 같습니다.
+이 <code>Debug</code> 라는 트레잇은 최종 사용자가 아닌, 개발자에게 유용한 방식으로 출력하는,
+즉 디버깅할 때 값을 볼 수 있게 해주는 트레잇입니다.</p>
+<p>변경하고 나서 다시 컴파일해 보면, 어째서인지 여전히 에러가 발생하네요:</p>
+<pre><code class="language-text">error[E0277]: `Rectangle` doesn't implement `Debug`
 </code></pre>
-<p>하지만 또다시, 컴파일러가 우리에게 도움말을 제공합니다:</p>
-<pre><code class="language-text">note: `Rectangle` cannot be formatted using `:?`; if it is defined in your
-crate, add `#[derive(Debug)]` or manually implement it
+<p>그런데 컴파일러가 또 무언가를 알려주네요:</p>
+<pre><code class="language-text">   = help: the trait `Debug` is not implemented for `Rectangle`
+   = note: add `#[derive(Debug)]` or manually implement `Debug`
 </code></pre>
-<p>러스트는 디버깅 정보를 출력하는 기능을 포함하고 있는 것이 <em>맞지만</em>, 우리 구조체에 대하여 해당 기능을
-활성화하도록 명시적인 사전동의를 해주어야 합니다. 그러기 위해서, Listing 5-11에서 보는 바와 같이
-구조체 정의부분 바로 전에 <code>#[derive(Debug)]</code> 어노테이션을 추가합니다:</p>
+<p>러스트는 디버깅 정보를 출력하는 기능을 <em>자체적으로 가지고 있습니다</em>.
+하지만 우리가 만든 구조체에 해당 기능을 적용하려면 명시적인 동의가 필요하므로,
+Listing 5-12 처럼 구조체 정의 바로 이전에 <code>#[derive(Debug)]</code>
+어노테이션을 작성해주어야 합니다.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">#[derive(Debug)]
 struct Rectangle {
-    length: u32,
     width: u32,
+    height: u32,
 }
 
 fn main() {
-    let rect1 = Rectangle { length: 50, width: 30 };
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
     println!(&quot;rect1 is {:?}&quot;, rect1);
 }
 </code></pre></pre>
-<p><span class="caption">Listing5-11: <code>Debug</code> 트레잇을 파생시키기 위한 어노테이션의 추가
-및 디버그 포맷팅을 이용한 <code>Rectangle</code> 인스턴스의 출력</span></p>
-<p>이제 프로그램을 실행시키면, 에러는 사라지고 다음과 같은 출력을 보게될 것입니다:</p>
-<pre><code class="language-text">rect1 is Rectangle { length: 50, width: 30 }
+<p><span class="caption">Listing 5-12: <code>Rectangle</code> 인스턴스를 디버그 출력 형식으로
+사용하기 위해, 어노테이션을 추가하여 <code>Debug</code> 트레잇 derive 하기</span></p>
+<p>이제 프로그램을 실행해 보면 더 이상 에러가 나타나지 않고,
+다음과 같은 출력이 나타날 겁니다:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling structs v0.1.0 (file:///projects/structs)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.48s
+     Running `target/debug/structs`
+rect1 is Rectangle { width: 30, height: 50 }
 </code></pre>
-<p>좋아요! 이게 제일 예쁜 출력은 아니지만, 이 인스턴스를 위한 모든 필드의 값을 보여주는데, 이는 디버깅
-하는 동안 분명히 도움이 될 것입니다. 우리가 더 큰 구조체를 가지게 됐을 때는, 읽기 좀 더 수월한
-출력을 쓰는 것이 유용합니다; 그러한 경우, <code>println!</code> 스트링 내에 <code>{:?}</code> 대신 <code>{:#?}</code>을
-사용할 수 있습니다. 예제 내에서 <code>{:#?}</code> 스타일을 이용하게 되면, 출력이 아래와 같이 생기게 될
-것입니다:</p>
-<pre><code class="language-text">rect1 is Rectangle {
-    length: 50,
-    width: 30
+<p>가장 예쁜 출력 형태라 할 수는 없지만,
+인스턴스 내 모든 필드 값을 보여주므로 디버깅하는 동안에는 확실히 유용할 겁니다.
+필드가 더 많은 구조체라면 이보다 더 읽기 편한 형태가 필요할 텐데요,
+그럴 땐 <code>println!</code> 문자열 내에 <code>{:?}</code> 대신 <code>{:#?}</code> 를 사용하면 됩니다.
+<code>{:#?}</code> 를 사용했을 때의 출력 예시는 다음과 같습니다.</p>
+<pre><code class="language-console">$ cargo run
+   Compiling structs v0.1.0 (file:///projects/structs)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.48s
+     Running `target/debug/structs`
+rect1 is Rectangle {
+    width: 30,
+    height: 50,
 }
 </code></pre>
-<p>러스트는 우리를 위해 <code>derive</code> 어노테이션을 이용한 여러 트레잇을 제공하여 우리의 커스텀 타입에 대해
-유용한 동작을 추가할 수 있도록 해줍니다. 이 트레잇들과 그 동작들은 부록 C에서 그 목록을 찾을 수
-있습니다. 10장에서는 이 트레잇들을 커스터마이징된 동작을 수행하도록 구현하는 방법 뿐만 아니라
-우리만의 트레잇을 만드는 방법에 대해 다룰 것입니다.</p>
-<p>우리의 <code>area</code> 함수는 매우 특정되어 있습니다: 딱 사각형의 면적만 계산합니다. 이 동작을 우리의
-<code>Rectangle</code> 구조체와 더 가까이 묶을 수 있다면 유용할텐데요, 그 이유는 이 함수가 다른 타입과는
-작동하지 않기 때문입니다. <code>area</code> 함수를 <code>Rectangle</code> 타입 내에 정의된 <code>area</code> 메소드로 바꾸어서
-이 코드를 어떻게 더 리팩터링할 수 있는지 살펴봅시다.</p>
+<p>러스트에선 이처럼 <code>derive</code> 어노테이션으로 우리가 만든 타입에
+유용한 동작을 추가할 수 있는 트레잇을 여럿 제공합니다.
+이들 목록 및 각각의 동작은 부록 C에서 확인할 수 있으니 참고해주세요.
+또한, 여러분만의 트레잇을 직접 만들고, 이런 트레잇들의 동작을 원하는 대로 커스터마이징 해서 구현하는 방법은 10장에서 배울 예정입니다.</p>
+<p>본론으로 돌아옵시다.
+우리가 만든 <code>area</code> 함수는 사각형의 면적만을 계산하며,
+<code>Rectangle</code> 구조체를 제외한 다른 타입으로는 작동하지 않습니다.
+그렇다면 아예 <code>Rectangle</code> 구조체와 더 밀접하게 만드는 편이 낫지 않을까요?
+다음에는 <code>area</code> 함수를 <code>Rectangle</code> 타입 내에 <em>메소드(method)</em> 형태로 정의하여 코드를 리팩토링하는 방법을 알아보겠습니다.</p>
 
                     </main>
 
@@ -409,6 +467,8 @@ fn main() {
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

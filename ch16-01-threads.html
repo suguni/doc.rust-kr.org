@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>스레드 - The Rust Programming Language</title>
+        <title>Using Threads to Run Code Simultaneously - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html" class="active"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html" class="active"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -163,65 +171,65 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="스레드를-이용하여-코드를-동시에-실행하기"><a class="header" href="#스레드를-이용하여-코드를-동시에-실행하기">스레드를 이용하여 코드를 동시에 실행하기</a></h2>
-<p>대부분의 요즘 운영 체제에서, 실행되는 프로그램의 코드는 <em>프로세스</em> 내에서 실행되고,
-운영 체제는 한번에 여러 개의 프로세스들을 관리합니다. 여러분의 프로그램 내에서도
-동시에 실행되는 독립적인 부분들을 가질 수 있습니다. 이러한 독립적인 부분들을 실행하는
-기능을 <em>스레드</em>라고 부릅니다.</p>
-<p>여러분의 프로그램 내에 계산 부분을 여러 개의 스레드로 쪼개는 것은 프로그램이
-동시에 여러 개의 일을 할 수 있기 때문에 성능을 향상시킬 수 있지만, 프로그램을
-복잡하게 만들기도 합니다. 스레드가 동시에 실행될 수 있기 때문에, 다른 스레드
-상에서 실행될 여러분의 코드 조각들의 실행 순서에 대한 내재적인 보장이 없습니다.
-이는 다음과 같은 문제들을 야기할 수 있습니다:</p>
+                        <h2 id="using-threads-to-run-code-simultaneously"><a class="header" href="#using-threads-to-run-code-simultaneously">Using Threads to Run Code Simultaneously</a></h2>
+<p>In most current operating systems, an executed program’s code is run in a
+<em>process</em>, and the operating system manages multiple processes at once. Within
+your program, you can also have independent parts that run simultaneously. The
+features that run these independent parts are called <em>threads</em>.</p>
+<p>Splitting the computation in your program into multiple threads can improve
+performance because the program does multiple tasks at the same time, but it
+also adds complexity. Because threads can run simultaneously, there’s no
+inherent guarantee about the order in which parts of your code on different
+threads will run. This can lead to problems, such as:</p>
 <ul>
-<li>여러 스레드들이 일관성 없는 순서로 데이터 혹은 리소스에 접근하게 되는, 경쟁 조건
-(race condition)</li>
-<li>두 스레드가 서로 상대방 스레드가 가지고 있는 리소스의 사용을 끝내길 기다려서
-양쪽 스레드 모두 계속 실행되는 것을 막아버리는, 데드록 (deadlock)</li>
-<li>특정한 상황에서만 발생되어 재현하기와 안정적으로 수정하기가 힘든
-버그들</li>
+<li>Race conditions, where threads are accessing data or resources in an
+inconsistent order</li>
+<li>Deadlocks, where two threads are waiting for each other to finish using a
+resource the other thread has, preventing both threads from continuing</li>
+<li>Bugs that happen only in certain situations and are hard to reproduce and fix
+reliably</li>
 </ul>
-<p>러스트는 스레드 사용의 부정적인 효과를 줄이려는 시도를 하지만, 다중
-스레드 콘텍스트 내에서의 프로그래밍은 여전히 신중하게 생각해야 하고
-단일 스레드 내에서 실행되는 프로그램의 것과는 다른 코드 구조가
-필요합니다.</p>
-<p>프로그래밍 언어들은 몇가지 다른 방식으로 스레드를 구현합니다. 많은 운영 체제들이
-새로운 스레드를 만들기 위한 API를 제공합니다. 언어가 운영 체제의 API를 호출하여
-스레드를 만드는 이러한 구조는 때때로 <em>1:1</em>이라 불리는데, 이는 하나의 운영 체제
-스레드가 하나의 언어 스레드에 대응된다는 의미입니다.</p>
-<p>많은 프로그래밍 언어들은 그들만의 특별한 스레드 구현을 제공합니다. 프로그래밍
-언어가 제공하는 스레드는 <em>그린 (green)</em> 스레드라고 알려져 있으며, 이러한
-그린 스레드를 사용하는 언어들은 다른 숫자의 운영 체제 스레드로 구성된 콘텍스트
-내에서 그린 스레드들을 실행할 것입니다. 이러한 이유로 인하여 그린 스레드 구조는
-<em>M:N</em>이라고 불립니다: <code>M</code> 개의 그린 스레드가 <code>N</code> 개의 시스템 스레드에
-대응되는데, 여기서 <code>M</code>과 <code>N</code>은 굳이 동일한 숫자가 아니어도
-됩니다.</p>
-<p>각각의 구조는 고유한 장점과 트레이드 오프를 가지고 있으며, 러스트에게 있어
-가장 중요한 트레이드 오프는 런타임 지원입니다. <em>런타임</em>은 혼동하기 쉬운 용어이고
-맥락에 따라 다른 의미를 가질 수 있습니다.</p>
-<p>이 글의 맥락에서 <em>런타임</em>이라 하는 것은 언어에 의해 모든 바이너리 내에
-포함되는 코드를 의미합니다. 이 코드는 언어에 따라 크거나 작을 수 있지만,
-모든 어셈블리 아닌 언어들은 어느 정도 크기의 런타임 코드를 가지게 될 것입니다.
-이러한 이유로 인하여, 흔히 사람들이 “런타임이 없다”라고 말할 때는, 종종
-“런타임이 작다”는 것을 의미하는 것입니다. 런타임이 작을 수록 더 적은
-기능을 갖지만 더 작아진 바이너리로 인해 얻어지는 장점을 갖는데, 이는
-더 큰 콘텍스트 내에서 다른 언어들과 조합하기 쉬워진다는 점입니다. 비록
-많은 언어들이 더 많은 기능을 위하여 런타임 크기를 늘리는 거래를 수락하더라도,
-러스트는 거의 런타임이 없을 필요가 있고 성능을 관리하기 위해 C를 호출하는
-것에 대해 타협할 수 없습니다.</p>
-<p>그린 스레드 M:N 구조는 스레드들을 관리하기 위해 더 큰 언어 런타임이
-필요합니다. 그런 이유로 러스트 표준 라이브러리는 오직 1:1 스레드 구현만
-제공합니다. 러스트가 이러한 저수준 언어이기 때문에, 여러분이 예를 들어 어떤
-스레드를 언제 실행시킬지에 대한 더 많은 제어권과 콘텍스트 교환(context
-switching)의 더 저렴한 비용 같은 관점을 위해 오버헤드와 맞바꾸겠다면
-M:N 스레드를 구현한 크레이트도 있습니다.</p>
-<p>이제 러스트에서의 스레드를 정의했으니, 표준 라이브러리가 제공하는 스레드
-관련 API를 어떻게 사용하는지를 탐구해봅시다.</p>
-<h3 id="spawn으로-새로운-스레드-생성하기"><a class="header" href="#spawn으로-새로운-스레드-생성하기"><code>spawn</code>으로 새로운 스레드 생성하기</a></h3>
-<p>새로운 스레드를 생성하기 위해서는 <code>thread::spawn</code> 함수를 호출하고 여기에
-우리가 새로운 스레드 내에서 실행하기를 원하는 코드가 담겨 있는 클로저를 넘깁니다
-(클로저에 대해서는 13장에서 다뤘습니다). Listing 16-1의 예제는 메인 스레드에서
-어떤 텍스트를 출력하고 새로운 스레드에서는 다른 텍스트를 출력합니다:</p>
+<p>Rust attempts to mitigate the negative effects of using threads, but
+programming in a multithreaded context still takes careful thought and requires
+a code structure that is different from that in programs running in a single
+thread.</p>
+<p>Programming languages implement threads in a few different ways. Many operating
+systems provide an API for creating new threads. This model where a language
+calls the operating system APIs to create threads is sometimes called <em>1:1</em>,
+meaning one operating system thread per one language thread.</p>
+<p>Many programming languages provide their own special implementation of threads.
+Programming language-provided threads are known as <em>green</em> threads, and
+languages that use these green threads will execute them in the context of a
+different number of operating system threads. For this reason, the
+green-threaded model is called the <em>M:N</em> model: there are <code>M</code> green threads per
+<code>N</code> operating system threads, where <code>M</code> and <code>N</code> are not necessarily the same
+number.</p>
+<p>Each model has its own advantages and trade-offs, and the trade-off most
+important to Rust is runtime support. <em>Runtime</em> is a confusing term and can
+have different meanings in different contexts.</p>
+<p>In this context, by <em>runtime</em> we mean code that is included by the language in
+every binary. This code can be large or small depending on the language, but
+every non-assembly language will have some amount of runtime code. For that
+reason, colloquially when people say a language has “no runtime,” they often
+mean “small runtime.” Smaller runtimes have fewer features but have the
+advantage of resulting in smaller binaries, which make it easier to combine the
+language with other languages in more contexts. Although many languages are
+okay with increasing the runtime size in exchange for more features, Rust needs
+to have nearly no runtime and cannot compromise on being able to call into C to
+maintain performance.</p>
+<p>The green-threading M:N model requires a larger language runtime to manage
+threads. As such, the Rust standard library only provides an implementation of
+1:1 threading. Because Rust is such a low-level language, there are crates that
+implement M:N threading if you would rather trade overhead for aspects such as
+more control over which threads run when and lower costs of context switching,
+for example.</p>
+<p>Now that we’ve defined threads in Rust, let’s explore how to use the
+thread-related API provided by the standard library.</p>
+<h3 id="creating-a-new-thread-with-spawn"><a class="header" href="#creating-a-new-thread-with-spawn">Creating a New Thread with <code>spawn</code></a></h3>
+<p>To create a new thread, we call the <code>thread::spawn</code> function and pass it a
+closure (we talked about closures in Chapter 13) containing the code we want to
+run in the new thread. The example in Listing 16-1 prints some text from a main
+thread and other text from a new thread:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">use std::thread;
 use std::time::Duration;
@@ -240,12 +248,15 @@ fn main() {
     }
 }
 </code></pre></pre>
-<p><span class="caption">Listing 16-1: 메인 스레드에서 무언가를 출력하는 동안
-다른 것을 출력하는 새로운 스레드 생성하기</span></p>
-<p>이 함수를 가지고, 새로운 스레드는 실행이 종료되었든 혹은 그렇지 않든
-메인 스레드가 종료될 때 멈추게 될 것이라는 점을 주의하세요. 이
-프로그램의 출력은 매번 약간씩 다를지도 모르겠으나, 아래와 비슷하게 보일
-것입니다:</p>
+<p><span class="caption">Listing 16-1: Creating a new thread to print one thing
+while the main thread prints something else</span></p>
+<p>Note that with this function, the new thread will be stopped when the main
+thread ends, whether or not it has finished running. The output from this
+program might be a little different every time, but it will look similar to the
+following:</p>
+<!-- Not extracting output because changes to this output aren't significant;
+the changes are likely to be due to the threads running differently rather than
+changes in the compiler -->
 <pre><code class="language-text">hi number 1 from the main thread!
 hi number 1 from the spawned thread!
 hi number 2 from the main thread!
@@ -256,28 +267,28 @@ hi number 4 from the main thread!
 hi number 4 from the spawned thread!
 hi number 5 from the spawned thread!
 </code></pre>
-<p><code>thread::sleep</code>의 호출은 강제로 스레드가 잠깐 동안 실행을 멈추게 하는데,
-다른 스레드가 실행되는 것을 허용합니다. 스레드들은 아마도 교대로 실행될 것이지만,
-보장되지는 않습니다: 여러분의 운영 체제가 어떻게 스레드를 스케줄링 하는지에 따라
-달린 문제입니다. 위의 실행 예에서는 생성된 스레드로부터의 출력 구문이 코드의
-첫번째에 나타나 있음에도 불구하고 메인 스레드가 먼저 출력하였습니다. 그리고
-생성된 스레드에게 <code>i</code>가 9일때까지 출력하라고 했음에도 불구하고, 메인 스레드가
-멈추기 전까지 고작 5에 도달했습니다.</p>
-<p>만일 여러분이 이 코드를 실행하고 메인 스레드로부터의 출력만 보았다면, 혹은 어떠한
-오버랩도 보지 못했다면, 숫자 범위를 늘려서 운영 체제로 하여금 스레드간의 전환에
-더 많은 기회를 주는 시도를 해보세요.</p>
-<h3 id="join-핸들을-사용하여-모든-스레드들이-끝날때까지-기다리기"><a class="header" href="#join-핸들을-사용하여-모든-스레드들이-끝날때까지-기다리기"><code>join</code> 핸들을 사용하여 모든 스레드들이 끝날때까지 기다리기</a></h3>
-<p>Listing 16-1의 코드는 대개의 경우 메인 스레드가 종료되는 이유로 생성된
-스레드가 조기에 멈출 뿐만 아니라, 생성된 스레드가 모든 코드를 실행할 것임을
-보장해 줄수도 없습니다. 그 이유는 스레드들이 실행되는 순서에 대한 보장이
-없기 때문입니다!</p>
-<p>생성된 스레드가 실행되지 않거나, 전부 실행되지 않는 문제는
-<code>thread::spawn</code>의 반환값을 변수에 저장함으로서 해결할 수 있습니다.
-<code>thread::spawn</code>의 반환 타입은 <code>JoinHandle</code>입니다. <code>JoinHandle</code>은
-이것이 가지고 있는 <code>join</code> 메소드를 호출했을 때 그 스레드가 끝날때까지 기다리는
-소유된 값입니다. Listing 16-2는 어떤식으로 우리가 Listing 16-1에서 만들었던
-스레드의 <code>JoinHandle</code>을 사용하고 <code>join</code>을 호출하여 <code>main</code>이 끝나기 전에
-생성된 스레드가 종료되는 것을 확실하게 하는지를 보여줍니다:</p>
+<p>The calls to <code>thread::sleep</code> force a thread to stop its execution for a short
+duration, allowing a different thread to run. The threads will probably take
+turns, but that isn’t guaranteed: it depends on how your operating system
+schedules the threads. In this run, the main thread printed first, even though
+the print statement from the spawned thread appears first in the code. And even
+though we told the spawned thread to print until <code>i</code> is 9, it only got to 5
+before the main thread shut down.</p>
+<p>If you run this code and only see output from the main thread, or don’t see any
+overlap, try increasing the numbers in the ranges to create more opportunities
+for the operating system to switch between the threads.</p>
+<h3 id="waiting-for-all-threads-to-finish-using-join-handles"><a class="header" href="#waiting-for-all-threads-to-finish-using-join-handles">Waiting for All Threads to Finish Using <code>join</code> Handles</a></h3>
+<p>The code in Listing 16-1 not only stops the spawned thread prematurely most of
+the time due to the main thread ending, but also can’t guarantee that the
+spawned thread will get to run at all. The reason is that there is no guarantee
+on the order in which threads run!</p>
+<p>We can fix the problem of the spawned thread not getting to run, or not getting
+to run completely, by saving the return value of <code>thread::spawn</code> in a variable.
+The return type of <code>thread::spawn</code> is <code>JoinHandle</code>. A <code>JoinHandle</code> is an owned
+value that, when we call the <code>join</code> method on it, will wait for its thread to
+finish. Listing 16-2 shows how to use the <code>JoinHandle</code> of the thread we created
+in Listing 16-1 and call <code>join</code> to make sure the spawned thread finishes before
+<code>main</code> exits:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">use std::thread;
 use std::time::Duration;
@@ -298,13 +309,16 @@ fn main() {
     handle.join().unwrap();
 }
 </code></pre></pre>
-<p><span class="caption">Listing 16-2: 스레드가 완전시 실행되는 것을 보장하기
-위해 <code>thread::spawn</code>으로부터 <code>JoinHandle</code>을 저장하기</span></p>
-<p>핸들에 대해 <code>join</code>을 호출하는 것은 핸들에 대한 스레드가 종료될 때까지 현재
-실행중인 스레드를 블록합니다. 스레드를 <em>블록 (Block)</em> 한다는 것은 그 스레드의
-작업을 수행하거나 종료되는 것이 방지된다는 의미입니다. 우리가 메인 스레드의 <code>for</code>
-루프 이후에 <code>join</code>의 호출을 넣었으므로, Listing 16-2의 실행은 아래와 비슷한
-출력을 만들어야 합니다:</p>
+<p><span class="caption">Listing 16-2: Saving a <code>JoinHandle</code> from <code>thread::spawn</code>
+to guarantee the thread is run to completion</span></p>
+<p>Calling <code>join</code> on the handle blocks the thread currently running until the
+thread represented by the handle terminates. <em>Blocking</em> a thread means that
+thread is prevented from performing work or exiting. Because we’ve put the call
+to <code>join</code> after the main thread’s <code>for</code> loop, running Listing 16-2 should
+produce output similar to this:</p>
+<!-- Not extracting output because changes to this output aren't significant;
+the changes are likely to be due to the threads running differently rather than
+changes in the compiler -->
 <pre><code class="language-text">hi number 1 from the main thread!
 hi number 2 from the main thread!
 hi number 1 from the spawned thread!
@@ -319,10 +333,10 @@ hi number 7 from the spawned thread!
 hi number 8 from the spawned thread!
 hi number 9 from the spawned thread!
 </code></pre>
-<p>두 스레드가 교차를 계속하지만, <code>handle.join()</code>의 호출로 인하여 메인
-스레드는 기다리고 생성된 스레드가 종료되기 전까지 끝나지 않습니다.</p>
-<p>그런데 만일 아래와 같이 <code>main</code>의 <code>for</code> 루프 이전으로 <code>handle.join()</code>을
-이동시키면 어떤 일이 생기는지 봅시다:</p>
+<p>The two threads continue alternating, but the main thread waits because of the
+call to <code>handle.join()</code> and does not end until the spawned thread is finished.</p>
+<p>But let’s see what happens when we instead move <code>handle.join()</code> before the
+<code>for</code> loop in <code>main</code>, like this:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">use std::thread;
 use std::time::Duration;
@@ -343,8 +357,11 @@ fn main() {
     }
 }
 </code></pre></pre>
-<p>메인 스레드는 생성된 스레드가 종료될 때까지 기다릴 것이고 그 다음 자신의 <code>for</code>
-루프를 실행시키게 되어, 아래처럼 출력값이 더 이상 교차되지 않을 것입니다:</p>
+<p>The main thread will wait for the spawned thread to finish and then run its
+<code>for</code> loop, so the output won’t be interleaved anymore, as shown here:</p>
+<!-- Not extracting output because changes to this output aren't significant;
+the changes are likely to be due to the threads running differently rather than
+changes in the compiler -->
 <pre><code class="language-text">hi number 1 from the spawned thread!
 hi number 2 from the spawned thread!
 hi number 3 from the spawned thread!
@@ -359,23 +376,23 @@ hi number 2 from the main thread!
 hi number 3 from the main thread!
 hi number 4 from the main thread!
 </code></pre>
-<p><code>join</code>이 호출되는 위치와 같은 작은 디테일들이 여러분의 스레드가 동시에 실행되는지
-혹은 아닌지에 대해 영향을 미칠 수 있습니다.</p>
-<h3 id="스레드에-move-클로저-사용하기"><a class="header" href="#스레드에-move-클로저-사용하기">스레드에 <code>move</code> 클로저 사용하기</a></h3>
-<p><code>move</code> 클로저는 <code>thread::spawn</code>와 함께 자주 사용되는데 그 이유는 이것이 여러분으로
-하여금 어떤 스레드의 데이터를 다른 스레드 내에서 사용하도록 해주기 때문입니다.</p>
-<p>13장에서는 클로저의 파라미터 목록 앞에 <code>move</code> 키워드를 이용하여
-클로저가 그 환경에서 사용하는 값의 소유권을 강제로 갖게 한다고
-언급했습니다. 이 기술은 값의 소유권을 한 스레드에서 다른 스레드로
-이전하기 위해 새로운 스레드를 생성할 때 특히 유용합니다.</p>
-<p>Listing 16-1에서 우리가 'thread::spawn'에 넘기는 클로저는 아무런 인자도 갖지
-갖지 않는다는 점을 주목하세요: 생성된 스레드의 코드 내에서는 메인 스레드로부터 온 어떤 데이터도
-이용하고 있지 않습니다. 메인 스레드로부터의 데이터를 생성된 스레드 내에서 사용하기 위해서는
-생성된 스레드의 클로저가 필요로 하는 값을 캡처해야 합니다. Listing 16-3은 메인 스레드에서
-백터 생성하여 이를 생성된 스레드 내에서 사용하는 시도를 보여주고 있습니다. 그러나 잠시 후에
-보시게 될 것처럼 아직은 동작하지 않습니다.</p>
+<p>Small details, such as where <code>join</code> is called, can affect whether or not your
+threads run at the same time.</p>
+<h3 id="using-move-closures-with-threads"><a class="header" href="#using-move-closures-with-threads">Using <code>move</code> Closures with Threads</a></h3>
+<p>The <code>move</code> closure is often used alongside <code>thread::spawn</code> because it allows
+you to use data from one thread in another thread.</p>
+<p>In Chapter 13, we mentioned we can use the <code>move</code> keyword before the parameter
+list of a closure to force the closure to take ownership of the values it uses
+in the environment. This technique is especially useful when creating new
+threads in order to transfer ownership of values from one thread to another.</p>
+<p>Notice in Listing 16-1 that the closure we pass to <code>thread::spawn</code> takes no
+arguments: we’re not using any data from the main thread in the spawned
+thread’s code. To use data from the main thread in the spawned thread, the
+spawned thread’s closure must capture the values it needs. Listing 16-3 shows
+an attempt to create a vector in the main thread and use it in the spawned
+thread. However, this won’t yet work, as you’ll see in a moment.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust ignore">use std::thread;
+<pre><code class="language-rust ignore does_not_compile">use std::thread;
 
 fn main() {
     let v = vec![1, 2, 3];
@@ -387,14 +404,15 @@ fn main() {
     handle.join().unwrap();
 }
 </code></pre>
-<p><span class="caption">Listing 16-3: 메인 스레드에서 생성된 벡터를 다른
-스레드 내에서 사용하는 시도</span></p>
-<p>클로저는 <code>v</code>를 사용하므로, <code>v</code>는 캡처되어 클로저의 환경의 일부가 됩니다.
-<code>thread::spawn</code>이 이 클로저를 새로운 스레드 내에서 실행하므로, <code>v</code>는
-새로운 스레드 내에서 접근 가능해야 합니다. 하지만 이 예제를 컴파일하면
-아래와 같은 에러를 얻게 됩니다:</p>
-<pre><code class="language-text">error[E0373]: closure may outlive the current function, but it borrows `v`,
-which is owned by the current function
+<p><span class="caption">Listing 16-3: Attempting to use a vector created by the
+main thread in another thread</span></p>
+<p>The closure uses <code>v</code>, so it will capture <code>v</code> and make it part of the closure’s
+environment. Because <code>thread::spawn</code> runs this closure in a new thread, we
+should be able to access <code>v</code> inside that new thread. But when we compile this
+example, we get the following error:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling threads v0.1.0 (file:///projects/threads)
+error[E0373]: closure may outlive the current function, but it borrows `v`, which is owned by the current function
  --&gt; src/main.rs:6:32
   |
 6 |     let handle = thread::spawn(|| {
@@ -402,20 +420,34 @@ which is owned by the current function
 7 |         println!(&quot;Here's a vector: {:?}&quot;, v);
   |                                           - `v` is borrowed here
   |
-help: to force the closure to take ownership of `v` (and any other referenced
-variables), use the `move` keyword
+note: function requires argument type to outlive `'static`
+ --&gt; src/main.rs:6:18
+  |
+6 |       let handle = thread::spawn(|| {
+  |  __________________^
+7 | |         println!(&quot;Here's a vector: {:?}&quot;, v);
+8 | |     });
+  | |______^
+help: to force the closure to take ownership of `v` (and any other referenced variables), use the `move` keyword
   |
 6 |     let handle = thread::spawn(move || {
   |                                ^^^^^^^
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0373`.
+error: could not compile `threads`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p>러스트는 <code>v</code>를 어떻게 캡처하는지 <em>추론하고</em>, <code>println!</code>이 <code>v</code>의 참조자만
-필요로 하기 때문에, 클로저는 <code>v</code>를 빌리는 시도를 합니다. 하지만 문제가 있습니다:
-러스트는 생성된 스레드가 얼마나 오랫동안 실행될지 말해줄 수 없으므로, <code>v</code>에 대한
-참조자가 항상 유효할 것인지를 알지 못합니다.</p>
-<p>Listing 16-4는 유효하지 않게 된 <code>v</code>의 참조자를 갖게 될 가능성이 더 높은
-시나리오를 제공합니다:</p>
+<p>Rust <em>infers</em> how to capture <code>v</code>, and because <code>println!</code> only needs a reference
+to <code>v</code>, the closure tries to borrow <code>v</code>. However, there’s a problem: Rust can’t
+tell how long the spawned thread will run, so it doesn’t know if the reference
+to <code>v</code> will always be valid.</p>
+<p>Listing 16-4 provides a scenario that’s more likely to have a reference to <code>v</code>
+that won’t be valid:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust ignore">use std::thread;
+<pre><code class="language-rust ignore does_not_compile">use std::thread;
 
 fn main() {
     let v = vec![1, 2, 3];
@@ -429,26 +461,28 @@ fn main() {
     handle.join().unwrap();
 }
 </code></pre>
-<p><span class="caption">Listing 16-4: <code>v</code>를 드롭하는 메인 스레드로부터 <code>v</code>에
-대한 참조자를 캡처하는 시도를 하는 클로저를 갖는 스레드</span></p>
-<p>만약 우리가 이 코드를 실행할 수 있다면, 생성된 스레드가 전혀 실행되지 않고
-즉시 백그라운드에 들어갈 가능성이 있습니다. 생성된 스레드는 내부에 <code>v</code>의
-참조자를 가지고 있지만, 메인 스레드는 우리가 15장에서 다루었던 <code>drop</code>
-함수를 사용하여 <code>v</code>를 즉시 드롭시킵니다. 그러면 생성된 스레드가 실행되기
-시작할 때 <code>v</code>가 더 이상 유효하지 않게 되어, 참조자 또한 유요하지 않게
-됩니다. 이런!</p>
-<p>Listing 16-3의 컴파일 에러를 고치기 위해서는 에러 메세지의 조언을 이용할
-수 있습니다:</p>
-<pre><code class="language-text">help: to force the closure to take ownership of `v` (and any other referenced
-variables), use the `move` keyword
+<p><span class="caption">Listing 16-4: A thread with a closure that attempts to
+capture a reference to <code>v</code> from a main thread that drops <code>v</code></span></p>
+<p>If we were allowed to run this code, there’s a possibility the spawned thread
+would be immediately put in the background without running at all. The spawned
+thread has a reference to <code>v</code> inside, but the main thread immediately drops
+<code>v</code>, using the <code>drop</code> function we discussed in Chapter 15. Then, when the
+spawned thread starts to execute, <code>v</code> is no longer valid, so a reference to it
+is also invalid. Oh no!</p>
+<p>To fix the compiler error in Listing 16-3, we can use the error message’s
+advice:</p>
+<!-- manual-regeneration
+after automatic regeneration, look at listings/ch16-fearless-concurrency/listing-16-03/output.txt and copy the relevant part
+-->
+<pre><code class="language-text">help: to force the closure to take ownership of `v` (and any other referenced variables), use the `move` keyword
   |
 6 |     let handle = thread::spawn(move || {
   |                                ^^^^^^^
 </code></pre>
-<p><code>move</code> 키워드를 클로저 앞에 추가함으로서 우리는 러스트가 값을 빌려와야
-된다고 추론하도록 하는 것이 아니라 사용하는 값의 소유권을 강제로 가지도록
-합니다. Listing 16-3을 Listing 16-5에서 보이는 것처럼 수정하면
-컴파일되어 우리가 원하는 대로 실행됩니다:</p>
+<p>By adding the <code>move</code> keyword before the closure, we force the closure to take
+ownership of the values it’s using rather than allowing Rust to infer that it
+should borrow the values. The modification to Listing 16-3 shown in Listing
+16-5 will compile and run as we intend:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">use std::thread;
 
@@ -462,37 +496,48 @@ fn main() {
     handle.join().unwrap();
 }
 </code></pre></pre>
-<p><span class="caption">Listing 16-5: <code>move</code> 키워드를 사용하여 사용하는 값의
-소유권을 클로저가 갖도록 강제하기</span></p>
-<p>메인 스레드에서 <code>drop</code>을 호출하는 Listing 16-4의 코드에서 <code>move</code> 클로저를
-이용한다면 어떤 일이 벌어질까요? <code>move</code>가 이 경우도 고칠 수 있을까요? 불행하게도,
-아닙니다; Listing 16-4이 시도하고자 하는 것이 다른 이유로 허용되지 않기 때문에
-우리는 다은 에러를 얻게 됩니다. 만일 클로저에 <code>move</code>를 추가하면, <code>v</code>를 클로저의
-환경으로 이동시킬 것이고, 더이상 메인 스레드에서 이것에 대한 <code>drop</code> 호출을 할
-수 없게 됩니다. 대신 우리는 아래와 같은 컴파일 에러를 얻게 됩니다:</p>
-<pre><code class="language-text">error[E0382]: use of moved value: `v`
+<p><span class="caption">Listing 16-5: Using the <code>move</code> keyword to force a closure
+to take ownership of the values it uses</span></p>
+<p>What would happen to the code in Listing 16-4 where the main thread called
+<code>drop</code> if we use a <code>move</code> closure? Would <code>move</code> fix that case? Unfortunately,
+no; we would get a different error because what Listing 16-4 is trying to do
+isn’t allowed for a different reason. If we added <code>move</code> to the closure, we
+would move <code>v</code> into the closure’s environment, and we could no longer call
+<code>drop</code> on it in the main thread. We would get this compiler error instead:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling threads v0.1.0 (file:///projects/threads)
+error[E0382]: use of moved value: `v`
   --&gt; src/main.rs:10:10
    |
+4  |     let v = vec![1, 2, 3];
+   |         - move occurs because `v` has type `Vec&lt;i32&gt;`, which does not implement the `Copy` trait
+5  | 
 6  |     let handle = thread::spawn(move || {
-   |                                ------- value moved (into closure) here
+   |                                ------- value moved into closure here
+7  |         println!(&quot;Here's a vector: {:?}&quot;, v);
+   |                                           - variable moved due to use in closure
 ...
 10 |     drop(v); // oh no!
    |          ^ value used here after move
-   |
-   = note: move occurs because `v` has type `std::vec::Vec&lt;i32&gt;`, which does
-   not implement the `Copy` trait
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `threads`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p>러스트의 소유권 규칙이 다시 한번 우리를 구해주었습니다! Listing 16-3의
-코드로부터 에러를 받은 이유는 러스트가 보수적이고 스레드를 위해 <code>v</code>를 단지
-빌리려고만 했기 때문이었는데, 이는 메인스레드가 이론적으로 생성된 스레드의
-참조자를 무효화할 수 있음을 의미합니다. 러스트에게 <code>v</code>의 소유권을 생성된 스레드로
-이동시키라 말해줌으로서, 우리는 러스트에게 메인 스레드가 <code>v</code>를 더 이상 이용하지
-않음을 보장하고 있습니다. 만일 우리가 Listing 16-4를 같은 방식으로 바꾸면,
-우리가 <code>v</code>를 메인스레드 상에서 사용하고자 할 때 소유권 규칙을 위반하게 됩니다.
-<code>move</code> 키워드는 러스트의 빌림에 대한 보수적인 기본 기준을 무효화합니다;
-즉 우리가 소유권 규칙을 위반하지 않도록 해줍니다.</p>
-<p>스레드와 스레드 API에 대한 기본적인 이해를 하고서, 우리가 스레드를 가지고 어떤 것을
-<em>할 수</em> 있는지 살펴봅시다.</p>
+<p>Rust’s ownership rules have saved us again! We got an error from the code in
+Listing 16-3 because Rust was being conservative and only borrowing <code>v</code> for the
+thread, which meant the main thread could theoretically invalidate the spawned
+thread’s reference. By telling Rust to move ownership of <code>v</code> to the spawned
+thread, we’re guaranteeing Rust that the main thread won’t use <code>v</code> anymore. If
+we change Listing 16-4 in the same way, we’re then violating the ownership
+rules when we try to use <code>v</code> in the main thread. The <code>move</code> keyword overrides
+Rust’s conservative default of borrowing; it doesn’t let us violate the
+ownership rules.</p>
+<p>With a basic understanding of threads and the thread API, let’s look at what we
+can <em>do</em> with threads.</p>
 
                     </main>
 
@@ -556,6 +601,8 @@ fn main() {
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

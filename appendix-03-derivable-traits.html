@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>C - derive 가능한 트레잇 - The Rust Programming Language</title>
+        <title>C - Derivable Traits - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html" class="active"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html" class="active"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -163,142 +171,147 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="부록-c-derive-가능한-트레잇"><a class="header" href="#부록-c-derive-가능한-트레잇">부록 C: derive 가능한 트레잇</a></h2>
-<p>책의 여러 곳에서 구조체나 열거형 정의 시
-적용할 수 있는 <code>derive</code> 속성을 다뤘습니다.
-<code>derive</code> 속성은 여러분이 <code>derive</code> 문법을 명시함으로써
-생성할 수 있는 기본 트레잇 구현체를 생성해줍니다.</p>
-<p>이 부록에선 표준 라이브러리에 존재하는 트레잇 중 <code>derive</code> 로 이용 가능한
-트레잇들의 레퍼런스를 제공합니다. 각 절에서 다루는 내용은 다음과 같습니다:</p>
+                        <h2 id="appendix-c-derivable-traits"><a class="header" href="#appendix-c-derivable-traits">Appendix C: Derivable Traits</a></h2>
+<p>In various places in the book, we’ve discussed the <code>derive</code> attribute, which
+you can apply to a struct or enum definition. The <code>derive</code> attribute generates
+code that will implement a trait with its own default implementation on the
+type you’ve annotated with the <code>derive</code> syntax.</p>
+<p>In this appendix, we provide a reference of all the traits in the standard
+library that you can use with <code>derive</code>. Each section covers:</p>
 <ul>
-<li>어떤 연산자와 메소드가 해당 트레잇에 derive 가능한지</li>
-<li><code>derive</code> 로 제공된 트레잇의 구현체가 하는 일</li>
-<li>타입에 트레잇을 구현한다는 것의 의미</li>
-<li>트레잇을 구현하도록 허용되거나 허용되지 않는 조건</li>
-<li>트레잇이 필수적인 연산들의 예시</li>
+<li>What operators and methods deriving this trait will enable</li>
+<li>What the implementation of the trait provided by <code>derive</code> does</li>
+<li>What implementing the trait signifies about the type</li>
+<li>The conditions in which you’re allowed or not allowed to implement the trait</li>
+<li>Examples of operations that require the trait</li>
 </ul>
-<p><code>derive</code> 속성을 통해 제공되는 것과 다른 동작을 원하신다면,
-표준 라이브러리 문서에서 각 트레잇을 직접 구현하는 법을 찾아보시기
-바랍니다.</p>
-<p>표준 라이브러리의 나머지 트레잇들은 <code>derive</code> 를 통해
-여러분의 타입에 구현 될 수 없습니다.
-이 트레잇들은 적절한 기본 동작을 갖지 않기 때문에,
-여러분이 수행하려는 작업에 맞춰서 직접 구현해야 합니다.</p>
-<p>derive 될 수 없는 트레잇의 대표적인 예는 <code>Display</code> 트레잇입니다.
-이 트레잇의 역할은 최종 사용자(end user) 들을 위한 포맷팅입니다.
-다만 적절한 포맷팅을 만들기 위해선 어느 부분을 보여줘야 할지, 관련성 있는 부분은
-어느 곳인지, 데이터의 형식은 어떤 것이 가장 적절할지 등을 여러분이 직접
-끊임없이 고민해야 합니다. 러스트 컴파일러는 이런 식으로 적절한 포맷팅을
-생성해낼 수 없고, 따라서 derive 를 지원하지 않습니다.</p>
-<p>이 부록에 나온 트레잇들이 derive 가능한 트레잇의 전부는 아닙니다:
-라이브러리에서 자신들의 트레잇에 <code>derive</code> 를 구현할 수도 있기 때문에, 여러분이
-<code>derive</code> 를 사용할 수 있는 트레잇은 사실상 무제한이라고 보셔도 됩니다.
-<code>derive</code> 를 구현하는 법에 관해선 절차 매크로 사용을 포함해 부록 D 에서 다루고 있습니다.</p>
-<h3 id="프로그래머-출력을-위한-debug"><a class="header" href="#프로그래머-출력을-위한-debug">프로그래머 출력을 위한 <code>Debug</code></a></h3>
-<p><code>Debug</code> 트레잇을 사용하면 형식 문자열에서 디버그 포맷팅을 사용할 수 있습니다.
-디버그 포맷팅은 형식 문자열의 <code>{}</code> 변경자 내에 <code>:?</code> 를 추가해서 사용합니다.</p>
-<p><code>Debug</code> 트레잇을 사용하면 해당 타입의 인스턴스를 디버깅 목적으로서 출력 가능합니다.
-이는 여러분들의 타입을 사용하는 다른 프로그래머들이 프로그램의 실행 도중
-인스턴스를 점검할 수 있게 해줍니다.</p>
-<p><code>Debug</code> 트레잇이 필수적인 경우의 예는, <code>assert_eq</code> 매크로를 사용할 때입니다.
-이 매크로는 동치 비교 결과가 거짓일 경우, 프로그래머가 두 인스턴스가 같지 않다는
-것을 확인할 수 있도록 인수로 넘겨받은 인스턴스의 값들을 출력하기 때문입니다.</p>
-<h3 id="동치-비교를-위한-partialeq-와-eq"><a class="header" href="#동치-비교를-위한-partialeq-와-eq">동치 비교를 위한 <code>PartialEq</code> 와 <code>Eq</code></a></h3>
-<p><code>PartialEq</code> 트레잇을 사용하면 타입의 인스턴스를 동치 비교할 수 있고
-<code>==</code> 와 <code>!=</code> 연산자를 사용할 수 있습니다.</p>
-<p><code>PartialEq</code> derive 는 <code>eq</code> 메소드를 구현합니다. <code>PartialEq</code> 가 구조체에 derive
-된다면, 인스턴스를 비교할 때 각 인스턴스의 <em>모든</em> 필드가 서로 동일한 경우에만
-두 인스턴스가 동일하다고 판별하며, 만약 서로 다른 필드가 하나라도 있다면 동일하지
-않다고 판별합니다. 열거형에 derive 될 경우, 각각의 variant 는 자신과 동일하며 그 외의 variant 와는 동일하지 않습니다.</p>
-<p><code>PartialEq</code> 트레잇이 필수적인 경우는 <code>assert_eq!</code> 매크로를 사용할 때 입니다.
-타입의 두 인스턴스가 서로 동일한지 비교할 수 있어야 하기
-때문입니다.</p>
-<p><code>Eq</code> 트레잇은 메소드를 갖지 않습니다. 그저 어노테이션 된 타입의 모든 값에 대해
-값이 그 자체와 동일하다는 것을 알리는 것이 목적이기 때문입니다.
-<code>Eq</code> 트레잇은 <code>PartialEq</code> 를 구현한 타입에만 적용 가능합니다.
-하지만 그렇다고 해서 <code>PartialEq</code> 를 구현한 모든 타입이 <code>Eq</code> 를 구현할 수 있는 것은
-아닌데, 대표적인 예로 부동 소수점 타입이 있습니다: 부동 소수점 숫자의 구현체에
-따르면, 두 비수(<code>NaN</code>, not-a-number) 의 인스턴스는 서로 같지 않습니다.</p>
-<p><code>Eq</code> 가 필수적인 예는 <code>HashMap&lt;K, V&gt;</code> 의 키값으로 사용될 경우입니다.
-<code>HashMap&lt;K, V&gt;</code> 에서 두 키값이 서로 같은지 확인해야 하기 때문입니다.</p>
-<h3 id="순서-비교를-위한-partialord-와-ord"><a class="header" href="#순서-비교를-위한-partialord-와-ord">순서 비교를 위한 <code>PartialOrd</code> 와 <code>Ord</code></a></h3>
-<p><code>PartialOrd</code> 트레잇은 정렬 목적으로 타입의 인스턴스를 비교할 수 있게 해줍니다.
-이를 구현한 타입은 <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code> 등의 연산자를 사용할 수 있습니다.
-<code>PartialOrd</code> 트레잇은 <code>PartialEq</code> 트레잇을 구현한 타입에만
-적용할 수 있습니다.</p>
-<p><code>PartialOrd</code> derive 는 <code>partial_cmp</code> 메소드를 구현해야 합니다.
-이 메소드는 <code>Option&lt;Ordering&gt;</code> 을 반환하며, 주어진 값으로 순서를 비교할 수
-없을때 반환값은 <code>None</code> 이 됩니다. 해당 타입의 대부분의 값은 비교가 가능하지만,
-순서를 비교할수 없는 값의 예는 비수(<code>NaN</code>, not-a-number) 부동 소수점 값입니다.
-아무 부동 소수점 값과 <code>NaN</code> 부동 소수점 값으로 <code>partial_cmp</code> 를 호출하면
-<code>None</code> 이 리턴되는걸 보실 수 있습니다.</p>
-<p>구조체에 derive 될 경우 <code>PartialOrd</code> 는 두 인스턴스의
-각 필드를 구조체 정의에 나타난 순서대로 비교합니다.
-열거형에 derive 될 경우는 해당 열거형 정의문에 먼저 선언한
-variant 가 나중에 선언한 variant 보다 더 적게(less) 평가됩니다.</p>
-<p><code>PartialOrd</code> 트레잇이 필수적인 예는,
-특정 범위 내에서 랜덤한 값을 생성해내는
-<code>rand</code> 크레이트의 <code>gen_range</code> 메소드가 있습니다.</p>
-<p><code>Ord</code> 트레잇은 명시된 해당 타입에 있어서, 이 타입의 어떠한 두 값간에 순서를 비교하는
-것이 가능하다는 것을 나타냅니다. <code>Ord</code> 트레잇은 <code>cmp</code> 메소드를 구현하고, 이 메소드는
-<code>Ordering</code> 을 반환합니다. 어째서 <code>Option&lt;Ordering&gt;</code> 이 아닌 <code>Ordering</code> 을 반환하는가
-함은, 언제나 순서 비교가 가능하다는 것을 보장하기 위해서입니다.
-<code>Ord</code> 트레잇은 <code>PartialOrd</code> 와 <code>Eq</code> (그리고 <code>Eq</code> 는 <code>PartialEq</code> 가 필수적이죠) 를
-구현한 타입에만 적용 가능합니다. 구조체나 열거형에 derive 될 시에는 <code>cmp</code> 가
-<code>PartialOrd</code>  의 <code>partial_cmp</code> 가 derive 되어 구현된 것과 똑같이 작동할 것입니다.</p>
-<p><code>Ord</code> 가 필수적인 예는, 값을 정렬해서 저장하는 자료구조인
-<code>BTreeSet&lt;T&gt;</code> 에 값을 저장할 때입니다.</p>
-<h3 id="값-복제를-위한-clone-와-copy"><a class="header" href="#값-복제를-위한-clone-와-copy">값 복제를 위한 <code>Clone</code> 와 <code>Copy</code></a></h3>
-<p><code>Clone</code> 트레잇은 명시적으로 값의 깊은 복사를 생성할 수 있게 해주며,
-복제 과정은 임의의 코드 실행과 힙 데이터 복사가 포함될 수 있습니다.
-<code>Clone</code> 에 대한 자세한 내용을 원하시는 분은 4-1 장의
-&quot;변수와 데이터가 상호작용하는 방법: 클론&quot; 절을 참고하시기 바랍니다.</p>
-<p><code>Clone</code> derive 는 <code>clone</code> 메소드를 구현합니다.
-유의할 점은 타입의 모든 부분에 <code>clone</code> 메소드가 호출되기 때문에,
-해당 타입의 모든 필드 혹은 값이 <code>Clone</code> 을 derive 하거나 구현해야 한다는 것입니다.</p>
-<p><code>Clone</code> 이 필수적인 예는 슬라이스에 <code>to_vec</code> 메소드를 호출할 경우입니다.
-슬라이스는 자신이 포함하는 타입 인스턴스를 소유하지 않기 때문에,
-<code>to_vec</code> 메소드는 슬라이스의 각 항목에 <code>clone</code> 을 호출하여
-자신이 반환할 벡터가 인스턴스들을 소유할 수 있도록 합니다.</p>
-<p><code>Copy</code> 트레잇은 값을 복제할 때 스택에 저장된 비트들을 복사할 과정만을 거칩니다;
-어떠한 임의의 코드도 실행할 필요가 없습니다. <code>Copy</code> 에 대한 내용을 더
-원하시는 분은 4-1장의 &quot;스택에만 있는 데이터: 복사&quot; 를 참고하시기 바랍니다.</p>
-<p><code>Copy</code> 트레잇은 어떠한 메소드도 정의하지 않음으로써 프로그래머가
-메소드를 오버로딩해 임의의 코드를 실행시키는 경우를 방지합니다.
-따라서 모든 프로그래머들은 값의 복사가
-느려질 것을 염려하지 않아도 됩니다.</p>
-<p><code>Copy</code> derive 는 타입의 모든 부분이 <code>Copy</code> 를 구현한 타입에만 가능합니다.
-<code>Copy</code> 트레잇 적용은 <code>Clone</code> 을 구현하고 있는 타입에만 적용 가능합니다.
-이는 <code>Copy</code> 를 구현하는 타입은 <code>Copy</code> 와 같은 작업을 하는
-<code>Clone</code> 의 간단한 구현을 지니기 때문입니다.</p>
-<p><code>Copy</code> 트레잇을 요구하는 경우는 매우 드뭅니다;
-<code>Copy</code> 를 구현한 타입은 최적화가 가능한데, 즉 여러분이 <code>clone</code> 을
-호출하지 않아도 된다는 의미이며, 이는 코드를 더 간결하게 만들어 줍니다.</p>
-<p><code>Copy</code> 로 할 수 있는 것은 <code>Clone</code> 으로도 할 수 있습니다만,
-이 경우 코드가 좀 느려지거나 코드에서 <code>clone</code> 을 사용해야 할 수도 있습니다.</p>
-<h3 id="값을-고정된-크기의-값으로-매핑하기-위한-hash"><a class="header" href="#값을-고정된-크기의-값으로-매핑하기-위한-hash">값을 고정된 크기의 값으로 매핑하기 위한 <code>Hash</code></a></h3>
-<p><code>Hash</code> 트레잇은 해쉬 함수를 이용해 임의 크기 타입의 인스턴스를
-고정된 크기의 값으로 매핑할 수 있게 해줍니다. <code>Hash</code> derive 는
-<code>hash</code> 메소드를 구현합니다. <code>hash</code> 메소드의 구현 상 타입의 각 부분에
-<code>hash</code> 를 호출하도록 되어 있으므로, <code>Hash</code> 를 derive 하기 위해선
-모든 필드나 값은 <code>Hash</code> 를 구현해야 합니다.</p>
-<p><code>Hash</code> 가 필수적인 예는 <code>HashMap&lt;K, V&gt;</code> 에 효율적으로 데이터를 저장하기 위해
-key 값을 저장하는 경우입니다.</p>
-<h3 id="기본-값을-위한-default"><a class="header" href="#기본-값을-위한-default">기본 값을 위한 <code>Default</code></a></h3>
-<p><code>Default</code> 트레잇은 타입의 기본 값을 생성할 수 있게 해줍니다.
-<code>Default</code> derive 는 <code>default</code> 함수를 구현합니다.
-<code>default</code> 메소드의 구현 상 타입의 각 부분에 <code>default</code> 를
-호출하도록 되어 있으므로, <code>Default</code> 를 derive 하기 위해선
-모든 필드나 값은 <code>Default</code> 를 구현해야 합니다.</p>
-<p><code>Default::default</code> 함수는 5-1 장의 &quot;구조체 갱신법을 이용하여
-기존 구조체 인스턴스로 새 구조체 인스턴스 생성하기&quot; 에서 다룬
-구조체 갱신법과 연계하여 사용하는 것이 일반적입니다. 여러분은
-구조체의 일부 필드를 원하는대로 설정하고 나머지 필드는
-<code>..Default::default()</code> 를 이용해 기본 값으로 설정할 수 있습니다.</p>
-<p><code>Default</code> 트레잇은 <code>Option&lt;T&gt;</code> 인스턴스에 <code>unwrap_or_default</code> 메소드를
-사용할때 필수적입니다. 예를 들어, <code>Option&lt;T&gt;</code> 가 <code>None</code> 일 경우
-<code>unwrap_or_default</code> 메소드는 <code>Option&lt;T&gt;</code> 에 해당하는
-<code>T</code> 형식의 <code>Default::default</code> 호출 결과를 반환합니다.</p>
+<p>If you want different behavior from that provided by the <code>derive</code> attribute,
+consult the <a href="../std/index.html">standard library documentation</a><!-- ignore -->
+for each trait for details of how to manually implement them.</p>
+<p>The rest of the traits defined in the standard library can’t be implemented on
+your types using <code>derive</code>. These traits don’t have sensible default behavior,
+so it’s up to you to implement them in the way that makes sense for what you’re
+trying to accomplish.</p>
+<p>An example of a trait that can’t be derived is <code>Display</code>, which handles
+formatting for end users. You should always consider the appropriate way to
+display a type to an end user. What parts of the type should an end user be
+allowed to see? What parts would they find relevant? What format of the data
+would be most relevant to them? The Rust compiler doesn’t have this insight, so
+it can’t provide appropriate default behavior for you.</p>
+<p>The list of derivable traits provided in this appendix is not comprehensive:
+libraries can implement <code>derive</code> for their own traits, making the list of
+traits you can use <code>derive</code> with truly open-ended. Implementing <code>derive</code>
+involves using a procedural macro, which is covered in the
+<a href="ch19-06-macros.html#macros">“Macros”</a><!-- ignore --> section of Chapter 19.</p>
+<h3 id="debug-for-programmer-output"><a class="header" href="#debug-for-programmer-output"><code>Debug</code> for Programmer Output</a></h3>
+<p>The <code>Debug</code> trait enables debug formatting in format strings, which you
+indicate by adding <code>:?</code> within <code>{}</code> placeholders.</p>
+<p>The <code>Debug</code> trait allows you to print instances of a type for debugging
+purposes, so you and other programmers using your type can inspect an instance
+at a particular point in a program’s execution.</p>
+<p>The <code>Debug</code> trait is required, for example, in use of the <code>assert_eq!</code> macro.
+This macro prints the values of instances given as arguments if the equality
+assertion fails so programmers can see why the two instances weren’t equal.</p>
+<h3 id="partialeq-and-eq-for-equality-comparisons"><a class="header" href="#partialeq-and-eq-for-equality-comparisons"><code>PartialEq</code> and <code>Eq</code> for Equality Comparisons</a></h3>
+<p>The <code>PartialEq</code> trait allows you to compare instances of a type to check for
+equality and enables use of the <code>==</code> and <code>!=</code> operators.</p>
+<p>Deriving <code>PartialEq</code> implements the <code>eq</code> method. When <code>PartialEq</code> is derived on
+structs, two instances are equal only if <em>all</em> fields are equal, and the
+instances are not equal if any fields are not equal. When derived on enums,
+each variant is equal to itself and not equal to the other variants.</p>
+<p>The <code>PartialEq</code> trait is required, for example, with the use of the
+<code>assert_eq!</code> macro, which needs to be able to compare two instances of a type
+for equality.</p>
+<p>The <code>Eq</code> trait has no methods. Its purpose is to signal that for every value of
+the annotated type, the value is equal to itself. The <code>Eq</code> trait can only be
+applied to types that also implement <code>PartialEq</code>, although not all types that
+implement <code>PartialEq</code> can implement <code>Eq</code>. One example of this is floating point
+number types: the implementation of floating point numbers states that two
+instances of the not-a-number (<code>NaN</code>) value are not equal to each other.</p>
+<p>An example of when <code>Eq</code> is required is for keys in a <code>HashMap&lt;K, V&gt;</code> so the
+<code>HashMap&lt;K, V&gt;</code> can tell whether two keys are the same.</p>
+<h3 id="partialord-and-ord-for-ordering-comparisons"><a class="header" href="#partialord-and-ord-for-ordering-comparisons"><code>PartialOrd</code> and <code>Ord</code> for Ordering Comparisons</a></h3>
+<p>The <code>PartialOrd</code> trait allows you to compare instances of a type for sorting
+purposes. A type that implements <code>PartialOrd</code> can be used with the <code>&lt;</code>, <code>&gt;</code>,
+<code>&lt;=</code>, and <code>&gt;=</code> operators. You can only apply the <code>PartialOrd</code> trait to types
+that also implement <code>PartialEq</code>.</p>
+<p>Deriving <code>PartialOrd</code> implements the <code>partial_cmp</code> method, which returns an
+<code>Option&lt;Ordering&gt;</code> that will be <code>None</code> when the values given don’t produce an
+ordering. An example of a value that doesn’t produce an ordering, even though
+most values of that type can be compared, is the not-a-number (<code>NaN</code>) floating
+point value. Calling <code>partial_cmp</code> with any floating point number and the <code>NaN</code>
+floating point value will return <code>None</code>.</p>
+<p>When derived on structs, <code>PartialOrd</code> compares two instances by comparing the
+value in each field in the order in which the fields appear in the struct
+definition. When derived on enums, variants of the enum declared earlier in the
+enum definition are considered less than the variants listed later.</p>
+<p>The <code>PartialOrd</code> trait is required, for example, for the <code>gen_range</code> method
+from the <code>rand</code> crate that generates a random value in the range specified by a
+low value and a high value.</p>
+<p>The <code>Ord</code> trait allows you to know that for any two values of the annotated
+type, a valid ordering will exist. The <code>Ord</code> trait implements the <code>cmp</code> method,
+which returns an <code>Ordering</code> rather than an <code>Option&lt;Ordering&gt;</code> because a valid
+ordering will always be possible. You can only apply the <code>Ord</code> trait to types
+that also implement <code>PartialOrd</code> and <code>Eq</code> (and <code>Eq</code> requires <code>PartialEq</code>). When
+derived on structs and enums, <code>cmp</code> behaves the same way as the derived
+implementation for <code>partial_cmp</code> does with <code>PartialOrd</code>.</p>
+<p>An example of when <code>Ord</code> is required is when storing values in a <code>BTreeSet&lt;T&gt;</code>,
+a data structure that stores data based on the sort order of the values.</p>
+<h3 id="clone-and-copy-for-duplicating-values"><a class="header" href="#clone-and-copy-for-duplicating-values"><code>Clone</code> and <code>Copy</code> for Duplicating Values</a></h3>
+<p>The <code>Clone</code> trait allows you to explicitly create a deep copy of a value, and
+the duplication process might involve running arbitrary code and copying heap
+data. See the <a href="ch04-01-what-is-ownership.html#ways-variables-and-data-interact-clone">“Ways Variables and Data Interact:
+Clone”</a><!-- ignore --> section in
+Chapter 4 for more information on <code>Clone</code>.</p>
+<p>Deriving <code>Clone</code> implements the <code>clone</code> method, which when implemented for the
+whole type, calls <code>clone</code> on each of the parts of the type. This means all the
+fields or values in the type must also implement <code>Clone</code> to derive <code>Clone</code>.</p>
+<p>An example of when <code>Clone</code> is required is when calling the <code>to_vec</code> method on a
+slice. The slice doesn’t own the type instances it contains, but the vector
+returned from <code>to_vec</code> will need to own its instances, so <code>to_vec</code> calls
+<code>clone</code> on each item. Thus, the type stored in the slice must implement <code>Clone</code>.</p>
+<p>The <code>Copy</code> trait allows you to duplicate a value by only copying bits stored on
+the stack; no arbitrary code is necessary. See the <a href="ch04-01-what-is-ownership.html#stack-only-data-copy">“Stack-Only Data:
+Copy”</a><!-- ignore --> section in Chapter 4 for more
+information on <code>Copy</code>.</p>
+<p>The <code>Copy</code> trait doesn’t define any methods to prevent programmers from
+overloading those methods and violating the assumption that no arbitrary code
+is being run. That way, all programmers can assume that copying a value will be
+very fast.</p>
+<p>You can derive <code>Copy</code> on any type whose parts all implement <code>Copy</code>. You can
+only apply the <code>Copy</code> trait to types that also implement <code>Clone</code>, because a
+type that implements <code>Copy</code> has a trivial implementation of <code>Clone</code> that
+performs the same task as <code>Copy</code>.</p>
+<p>The <code>Copy</code> trait is rarely required; types that implement <code>Copy</code> have
+optimizations available, meaning you don’t have to call <code>clone</code>, which makes
+the code more concise.</p>
+<p>Everything possible with <code>Copy</code> you can also accomplish with <code>Clone</code>, but the
+code might be slower or have to use <code>clone</code> in places.</p>
+<h3 id="hash-for-mapping-a-value-to-a-value-of-fixed-size"><a class="header" href="#hash-for-mapping-a-value-to-a-value-of-fixed-size"><code>Hash</code> for Mapping a Value to a Value of Fixed Size</a></h3>
+<p>The <code>Hash</code> trait allows you to take an instance of a type of arbitrary size and
+map that instance to a value of fixed size using a hash function. Deriving
+<code>Hash</code> implements the <code>hash</code> method. The derived implementation of the <code>hash</code>
+method combines the result of calling <code>hash</code> on each of the parts of the type,
+meaning all fields or values must also implement <code>Hash</code> to derive <code>Hash</code>.</p>
+<p>An example of when <code>Hash</code> is required is in storing keys in a <code>HashMap&lt;K, V&gt;</code>
+to store data efficiently.</p>
+<h3 id="default-for-default-values"><a class="header" href="#default-for-default-values"><code>Default</code> for Default Values</a></h3>
+<p>The <code>Default</code> trait allows you to create a default value for a type. Deriving
+<code>Default</code> implements the <code>default</code> function. The derived implementation of the
+<code>default</code> function calls the <code>default</code> function on each part of the type,
+meaning all fields or values in the type must also implement <code>Default</code> to
+derive <code>Default</code>.</p>
+<p>The <code>Default::default</code> function is commonly used in combination with the struct
+update syntax discussed in the <a href="ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax">“Creating Instances From Other Instances With
+Struct Update
+Syntax”</a><!-- ignore -->
+section in Chapter 5. You can customize a few fields of a struct and then
+set and use a default value for the rest of the fields by using
+<code>..Default::default()</code>.</p>
+<p>The <code>Default</code> trait is required when you use the method <code>unwrap_or_default</code> on
+<code>Option&lt;T&gt;</code> instances, for example. If the <code>Option&lt;T&gt;</code> is <code>None</code>, the method
+<code>unwrap_or_default</code> will return the result of <code>Default::default</code> for the type
+<code>T</code> stored in the <code>Option&lt;T&gt;</code>.</p>
 
                     </main>
 
@@ -311,7 +324,7 @@ key 값을 저장하는 경우입니다.</p>
                         
 
                         
-                            <a rel="next" href="appendix-04-macros.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="appendix-04-useful-development-tools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -329,7 +342,7 @@ key 값을 저장하는 경우입니다.</p>
                 
 
                 
-                    <a rel="next" href="appendix-04-macros.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="appendix-04-useful-development-tools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -362,6 +375,8 @@ key 값을 저장하는 경우입니다.</p>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

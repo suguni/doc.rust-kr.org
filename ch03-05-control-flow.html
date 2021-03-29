@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>제어문 - The Rust Programming Language</title>
+        <title>Control Flow - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html" class="active"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html" class="active"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -163,15 +171,18 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="제어문"><a class="header" href="#제어문">제어문</a></h2>
-<p>조건의 상태가 참인지에 따라 어떤 코드의 실행 여부를 결정하거나 조건이 만족되는 동안 반복 수행을 하는 것은
-대부분의 프로그래밍 언어의 기초 문법입니다. 우리가 실행 흐름을 제어할 수 있는 가장 보편적인 작성 방식은
-<code>if</code>표현식과 반복문 입니다.</p>
-<h3 id="if표현식"><a class="header" href="#if표현식"><code>if</code>표현식</a></h3>
-<p><code>if</code>표현식은 우리의 코드가 조건에 따라 분기할 수 있게 합니다. 우리가 조건을 제공하는 것은 다음 서술과 같죠.
-“만약 조건이 충족되면, 이 코드 블럭을 실행하세요. 만약 충족되지 않았다면 코드 블럭을 실행하지 마세요.&quot;</p>
-<p><em>branches</em>로 명명된 새 프로젝트를 우리의 <em>projects</em> 디렉토리에 생성하고 <code>if</code>식을 탐구합시다.
-<em>src/main.rs</em> 파일에 다음의 내용을 기입하세요:</p>
+                        <h2 id="control-flow"><a class="header" href="#control-flow">Control Flow</a></h2>
+<p>Deciding whether or not to run some code depending on if a condition is true
+and deciding to run some code repeatedly while a condition is true are basic
+building blocks in most programming languages. The most common constructs that
+let you control the flow of execution of Rust code are <code>if</code> expressions and
+loops.</p>
+<h3 id="if-expressions"><a class="header" href="#if-expressions"><code>if</code> Expressions</a></h3>
+<p>An <code>if</code> expression allows you to branch your code depending on conditions. You
+provide a condition and then state, “If this condition is met, run this block
+of code. If the condition is not met, do not run this block of code.”</p>
+<p>Create a new project called <em>branches</em> in your <em>projects</em> directory to explore
+the <code>if</code> expression. In the <em>src/main.rs</em> file, input the following:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let number = 3;
@@ -183,35 +194,51 @@
     }
 }
 </code></pre></pre>
-<!-- NEXT PARAGRAPH WRAPPED WEIRD INTENTIONALLY SEE #199 -->
-<p>모든 <code>if</code>표현식은 <code>if</code>란 키워드로 시작하며 뒤이어 조건이 옵니다. 이번 경우에 조건은 변수 <code>number</code>가 
-5보다 작은 값을 가지는지 여부가 됩니다. 조건이 참일 때 실행하는 코드 블록은 조건 바로 뒤 중괄호로 된 블록에 
-배치됩니다. <code>if</code>식의 조건과 관련된 코드 블럭은 우리가 2장의 “비밀번호 추리 게임”에서 다뤘던 <code>match</code>식의 
-갈래(arms)와 마찬가지로 <em>갈래(arms)</em> 로 불립니다. 선택적으로, 우리는 이번 경우에서 처럼 <code>else</code>식을 
-포함시킬 수 있는데, 이는 조건이 거짓으로 산출될 경우 실행시킬 코드 블럭을 프로그램에 제공합니다. 당신이 
-<code>else</code>식을 제공하지 않는데 조건이 거짓이 되면, 프로그램은 <code>if</code>블록을 생략하고 다음 순서의 코드를 실행하게 
-될 겁니다.</p>
-<p>이 코드를 실행해보세요; 다음과 같은 결과를 얻을 수 있을 겁니다:</p>
-<pre><code class="language-text">$ cargo run
+<p>All <code>if</code> expressions start with the keyword <code>if</code>, which is followed by a
+condition. In this case, the condition checks whether or not the variable
+<code>number</code> has a value less than 5. The block of code we want to execute if the
+condition is true is placed immediately after the condition inside curly
+brackets. Blocks of code associated with the conditions in <code>if</code> expressions are
+sometimes called <em>arms</em>, just like the arms in <code>match</code> expressions that we
+discussed in the <a href="ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing the Guess to the Secret
+Number”</a><!-- ignore --> section of
+Chapter 2.</p>
+<p>Optionally, we can also include an <code>else</code> expression, which we chose
+to do here, to give the program an alternative block of code to execute should
+the condition evaluate to false. If you don’t provide an <code>else</code> expression and
+the condition is false, the program will just skip the <code>if</code> block and move on
+to the next bit of code.</p>
+<p>Try running this code; you should see the following output:</p>
+<pre><code class="language-console">$ cargo run
    Compiling branches v0.1.0 (file:///projects/branches)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
+    Finished dev [unoptimized + debuginfo] target(s) in 0.31s
      Running `target/debug/branches`
 condition was true
 </code></pre>
-<p><code>number</code>의 값을 조건을 <code>거짓</code>으로 만들 값으로 변경하면 무슨 일이 일어날지 살펴보도록 합시다:</p>
-<pre><code class="language-rust ignore">let number = 7;
-</code></pre>
-<p>프로그램을 다시 실행시키면, 다음과 같은 결과를 보게 됩니다:</p>
-<pre><code class="language-text">$ cargo run
+<p>Let’s try changing the value of <code>number</code> to a value that makes the condition
+<code>false</code> to see what happens:</p>
+<pre><code class="language-rust ignore"><span class="boring">fn main() {
+</span>    let number = 7;
+<span class="boring">
+</span><span class="boring">    if number &lt; 5 {
+</span><span class="boring">        println!(&quot;condition was true&quot;);
+</span><span class="boring">    } else {
+</span><span class="boring">        println!(&quot;condition was false&quot;);
+</span><span class="boring">    }
+</span><span class="boring">}
+</span></code></pre>
+<p>Run the program again, and look at the output:</p>
+<pre><code class="language-console">$ cargo run
    Compiling branches v0.1.0 (file:///projects/branches)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
+    Finished dev [unoptimized + debuginfo] target(s) in 0.31s
      Running `target/debug/branches`
 condition was false
 </code></pre>
-<p>주의해야 할 중요한 점은 이번 코드의 조건은 <em>반드시</em> <code>bool</code>이어야 합니다. 만약 <code>bool</code>이 아닐 경우 
-어떤 일이 일어나는지는 다음의 코드를 실행하면 알 수 있을 겁니다:</p>
+<p>It’s also worth noting that the condition in this code <em>must</em> be a <code>bool</code>. If
+the condition isn’t a <code>bool</code>, we’ll get an error. For example, try running the
+following code:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust ignore">fn main() {
+<pre><code class="language-rust ignore does_not_compile">fn main() {
     let number = 3;
 
     if number {
@@ -219,20 +246,29 @@ condition was false
     }
 }
 </code></pre>
-<p><code>if</code>의 조건이 <code>3</code>으로 산출되고, Rust는 에러를 발생시킵니다.</p>
-<pre><code class="language-text">error[E0308]: mismatched types
+<p>The <code>if</code> condition evaluates to a value of <code>3</code> this time, and Rust throws an
+error:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling branches v0.1.0 (file:///projects/branches)
+error[E0308]: mismatched types
  --&gt; src/main.rs:4:8
   |
 4 |     if number {
-  |        ^^^^^^ expected bool, found integral variable
-  |
-  = note: expected type `bool`
-             found type `{integer}`
+  |        ^^^^^^ expected `bool`, found integer
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `branches`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p>이 에러가 나타내는 것은 Rust가 <code>bool</code>을 기대하였으나 정수형이 왔다는 겁니다. Rust는 boolean 타입이 
-아닌 것을 boolean 타입으로 자동 변환하지 않습니다. Ruby나 Javascript와는 다르죠. 우리는 반드시 
-명시적으로 <code>boolean</code>을 <code>if</code>의 조건으로 사용해야 합니다. 만약 우리가 <code>if</code>표현식의 코드 블록을 숫자가 
-<code>0</code>이 아닐 시에 실행하고 싶다면, 다음처럼, 우리는 <code>if</code>표현식을 변경할 수 있습니다. </p>
+<p>The error indicates that Rust expected a <code>bool</code> but got an integer. Unlike
+languages such as Ruby and JavaScript, Rust will not automatically try to
+convert non-Boolean types to a Boolean. You must be explicit and always provide
+<code>if</code> with a Boolean as its condition. If we want the <code>if</code> code block to run
+only when a number is not equal to <code>0</code>, for example, we can change the <code>if</code>
+expression to the following:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let number = 3;
@@ -242,10 +278,10 @@ condition was false
     }
 }
 </code></pre></pre>
-<p>이번 코드를 실행시키면 <code>number was something other than zero</code>가 출력 될 겁니다.</p>
-<h4 id="else-if와-다수-조건"><a class="header" href="#else-if와-다수-조건"><code>else if</code>와 다수 조건</a></h4>
-<p>우리는 <code>if</code>와 <code>else</code> 사이에 <code>else if</code>식을 추가 결합하여 다양한 조건을 다룰 수 있습니다. 
-예제를 보시죠:</p>
+<p>Running this code will print <code>number was something other than zero</code>.</p>
+<h4 id="handling-multiple-conditions-with-else-if"><a class="header" href="#handling-multiple-conditions-with-else-if">Handling Multiple Conditions with <code>else if</code></a></h4>
+<p>You can have multiple conditions by combining <code>if</code> and <code>else</code> in an <code>else if</code>
+expression. For example:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let number = 6;
@@ -261,87 +297,99 @@ condition was false
     }
 }
 </code></pre></pre>
-<p>이번 프로그램은 분기할 수 있는 네 개의 경로를 갖습니다. 이를 수행하면, 다음과 같은 결과를 얻게 될 겁니다:</p>
-<pre><code class="language-text">$ cargo run
+<p>This program has four possible paths it can take. After running it, you should
+see the following output:</p>
+<pre><code class="language-console">$ cargo run
    Compiling branches v0.1.0 (file:///projects/branches)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
+    Finished dev [unoptimized + debuginfo] target(s) in 0.31s
      Running `target/debug/branches`
 number is divisible by 3
 </code></pre>
-<p>이 프로그램이 실행될 때, <code>if</code>식을 차례대로 검사하고 검사 조건이 참일 때의 첫 번째 본문을 실행합니다. 주목할 점은 
-6은 2로 나누어 떨어짐에도 불구하고 <code>number is divisible by 2</code>이 출력되지 않는데, <code>else</code>의 
-블럭에 위치한 <code>number is not divisible by 4, 3, or 2</code>도 마찬가지입니다. 이렇게 되는 이유는 
-Rust가 첫 번째로 조건이 참이 되는 블록만 찾아 실행하고, 한번 찾게 되면 나머지는 검사하지 않기 때문입니다. </p>
-<p>너무 많은 <code>else if</code>식의 사용은 당신의 코드를 이해하기 어렵게 하므로, 둘 이상일 경우 코드를 리팩토링하게 
-될 수도 있습니다. 이런 경우를 위해 6장에서 <code>match</code>라 불리는 강력한 분기 생성자를 다룹니다. </p>
-<h4 id="let구문에서-if-사용하기"><a class="header" href="#let구문에서-if-사용하기"><code>let</code>구문에서 <code>if</code> 사용하기</a></h4>
-<p><code>if</code>가 표현식이기 때문에, 항목 3-4에서 처럼, 우리는 이를 <code>let</code> 구문의 우측에 사용할 수 있죠. </p>
+<p>When this program executes, it checks each <code>if</code> expression in turn and executes
+the first body for which the condition holds true. Note that even though 6 is
+divisible by 2, we don’t see the output <code>number is divisible by 2</code>, nor do we
+see the <code>number is not divisible by 4, 3, or 2</code> text from the <code>else</code> block.
+That’s because Rust only executes the block for the first true condition, and
+once it finds one, it doesn’t even check the rest.</p>
+<p>Using too many <code>else if</code> expressions can clutter your code, so if you have more
+than one, you might want to refactor your code. Chapter 6 describes a powerful
+Rust branching construct called <code>match</code> for these cases.</p>
+<h4 id="using-if-in-a-let-statement"><a class="header" href="#using-if-in-a-let-statement">Using <code>if</code> in a <code>let</code> Statement</a></h4>
+<p>Because <code>if</code> is an expression, we can use it on the right side of a <code>let</code>
+statement, as in Listing 3-2.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let condition = true;
-    let number = if condition {
-        5
-    } else {
-        6
-    };
+    let number = if condition { 5 } else { 6 };
 
     println!(&quot;The value of number is: {}&quot;, number);
 }
 </code></pre></pre>
-<p><span class="caption">Listing 3-4: <code>if</code> 표현식의 결과값을 변수에 대입하기</span></p>
-<p>변수 <code>number</code>에는 <code>if</code>식에서 산출된 값이 bound되게 됩니다. 어떤 일이 일어날지 코드를 실행해보죠:</p>
-<pre><code class="language-text">$ cargo run
+<p><span class="caption">Listing 3-2: Assigning the result of an <code>if</code> expression
+to a variable</span></p>
+<p>The <code>number</code> variable will be bound to a value based on the outcome of the <code>if</code>
+expression. Run this code to see what happens:</p>
+<pre><code class="language-console">$ cargo run
    Compiling branches v0.1.0 (file:///projects/branches)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
+    Finished dev [unoptimized + debuginfo] target(s) in 0.30s
      Running `target/debug/branches`
 The value of number is: 5
 </code></pre>
-<p>기억하세요! 코드 블록은 그들의 마지막에 위치한 표현식을 산출하며 숫자는 그 자체로 표현식이라는 것을요. 이 경우 
-전체 <code>if</code>식의 값은 실행되는 코드 블럭에 따라 다릅니다. 그렇기에 <code>if</code>식에 속한 각 갈래의 결과는 반드시 같은 
-타입이여야 합니다. 항목 3-4에서 <code>if</code>갈래와 <code>else</code>갈래는 모두 <code>i32</code> 정수형을 결과 값으로 가집니다. 
-하지만 만약 다음 예제처럼 유형이 다르면 어떻게 될까요?</p>
+<p>Remember that blocks of code evaluate to the last expression in them, and
+numbers by themselves are also expressions. In this case, the value of the
+whole <code>if</code> expression depends on which block of code executes. This means the
+values that have the potential to be results from each arm of the <code>if</code> must be
+the same type; in Listing 3-2, the results of both the <code>if</code> arm and the <code>else</code>
+arm were <code>i32</code> integers. If the types are mismatched, as in the following
+example, we’ll get an error:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
-<pre><code class="language-rust ignore">fn main() {
+<pre><code class="language-rust ignore does_not_compile">fn main() {
     let condition = true;
 
-    let number = if condition {
-        5
-    } else {
-        &quot;six&quot;
-    };
+    let number = if condition { 5 } else { &quot;six&quot; };
 
     println!(&quot;The value of number is: {}&quot;, number);
 }
 </code></pre>
-<p>우리가 이번 코드를 실행시키려고 하면 에러를 얻게 됩니다. <code>if</code>와 <code>else</code> 갈래의 값 타입이 호환되지 않고, 
-Rust는 정확히 프로그램의 어느 지점에 문제가 있는지 보여줍니다. </p>
-<pre><code class="language-text">error[E0308]: if and else have incompatible types
- --&gt; src/main.rs:4:18
+<p>When we try to compile this code, we’ll get an error. The <code>if</code> and <code>else</code> arms
+have value types that are incompatible, and Rust indicates exactly where to
+find the problem in the program:</p>
+<pre><code class="language-console">$ cargo run
+   Compiling branches v0.1.0 (file:///projects/branches)
+error[E0308]: `if` and `else` have incompatible types
+ --&gt; src/main.rs:4:44
   |
-4 |       let number = if condition {
-  |  __________________^
-5 | |         5
-6 | |     } else {
-7 | |         &quot;six&quot;
-8 | |     };
-  | |_____^ expected integral variable, found reference
-  |
-  = note: expected type `{integer}`
-             found type `&amp;str`
+4 |     let number = if condition { 5 } else { &quot;six&quot; };
+  |                                 -          ^^^^^ expected integer, found `&amp;str`
+  |                                 |
+  |                                 expected because of this
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `branches`
+
+To learn more, run the command again with --verbose.
 </code></pre>
-<p><code>if</code> 블록이 정수형을 산출하는 식이고 <code>else</code> 블록은 문자열을 산출하는 식입니다. 이런 경우가 성립하지 않는 
-이유는 변수가 가질 수 있는 타입이 오직 하나이기 때문입니다. Rust는 컴파일 시에 <code>number</code> 변수의 타입이 뭔지 
-확실히! 정의해야 합니다. 그래야 <code>number</code>가 사용되는 모든 곳에서 유효한지 검증할 수 있으니까요. Rust는 
-<code>number</code>의 타입을 실행 시에 정의되도록 할 수 없습니다. 컴파일러가 모든 변수의 다양한 타입을 추적해서 알아내야 
-한다면 컴파일러는 보다 복잡해지고 보증할 수 있는 것은 적어지게 됩니다.</p>
-<h3 id="반복문과-반복"><a class="header" href="#반복문과-반복">반복문과 반복</a></h3>
-<p>코드 블록을 한 번 이상 수행하는 것은 자주 유용합니다. 반복 작업을 위해서, Rust는 몇 가지 <em>반복문</em>을 제공합니다. 
-반복문은 반복문 시작부터 끝까지 수행하고 다시 처음부터 수행합니다. 반복문을 실험해보기 위해 <em>loops</em>으로 명명된 
-새 프로젝트를 작성해 봅시다.</p>
-<p>Rust가 제공하는 세 가지 반복문: <code>loop</code>, <code>while</code>, 그리고 <code>for</code>을 모두 사용해 봅시다.</p>
-<h4 id="loop와-함께-코드의-반복-수행"><a class="header" href="#loop와-함께-코드의-반복-수행"><code>loop</code>와 함께 코드의 반복 수행</a></h4>
-<p><code>loop</code> keyword는 Rust에게 그만두라고 명시하여 알려주기 전까지 코드 블럭을 반복 수행합니다. 
-예제로, 우리의 <em>loops</em>디렉토리에 <em>src/main.rs</em>를 다음처럼 변경하세요:</p>
+<p>The expression in the <code>if</code> block evaluates to an integer, and the expression in
+the <code>else</code> block evaluates to a string. This won’t work because variables must
+have a single type. Rust needs to know at compile time what type the <code>number</code>
+variable is, definitively, so it can verify at compile time that its type is
+valid everywhere we use <code>number</code>. Rust wouldn’t be able to do that if the type
+of <code>number</code> was only determined at runtime; the compiler would be more complex
+and would make fewer guarantees about the code if it had to keep track of
+multiple hypothetical types for any variable.</p>
+<h3 id="repetition-with-loops"><a class="header" href="#repetition-with-loops">Repetition with Loops</a></h3>
+<p>It’s often useful to execute a block of code more than once. For this task,
+Rust provides several <em>loops</em>. A loop runs through the code inside the loop
+body to the end and then starts immediately back at the beginning. To
+experiment with loops, let’s make a new project called <em>loops</em>.</p>
+<p>Rust has three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Let’s try each one.</p>
+<h4 id="repeating-code-with-loop"><a class="header" href="#repeating-code-with-loop">Repeating Code with <code>loop</code></a></h4>
+<p>The <code>loop</code> keyword tells Rust to execute a block of code over and over again
+forever or until you explicitly tell it to stop.</p>
+<p>As an example, change the <em>src/main.rs</em> file in your <em>loops</em> directory to look
+like this:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><code class="language-rust ignore">fn main() {
     loop {
@@ -349,11 +397,18 @@ Rust는 정확히 프로그램의 어느 지점에 문제가 있는지 보여줍
     }
 }
 </code></pre>
-<p>이 프로그램을 실행시키면, 우리는 프로그램을 강제 정지하기 전까지 <code>again!</code>이 반복 출력되는 것을 보게 됩니다.
-대부분의 터미널은 단축키 <span class="keystroke">ctrl-C</span>를 통해서 무한루프에 빠진 프로그램을
-정지시키는 기능을 지원합니다. 한번 시도해 보세요:</p>
-<pre><code class="language-text">$ cargo run
+<p>When we run this program, we’ll see <code>again!</code> printed over and over continuously
+until we stop the program manually. Most terminals support a keyboard shortcut,
+<span class="keystroke">ctrl-c</span>, to interrupt a program that is stuck in
+a continual loop. Give it a try:</p>
+<!-- manual-regeneration
+cd listings/ch03-common-programming-concepts/no-listing-32-loop
+cargo run
+CTRL-C
+-->
+<pre><code class="language-console">$ cargo run
    Compiling loops v0.1.0 (file:///projects/loops)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.29s
      Running `target/debug/loops`
 again!
 again!
@@ -361,18 +416,54 @@ again!
 again!
 ^Cagain!
 </code></pre>
-<p>기호 <code>^C</code>는 우리가 <span class="keystroke">ctrl-C</span>를 눌렀을 때의 위치입니다. 코드가 정지
-신호를 받은 시점에 따라 <code>^C</code> 이후에 <code>again!</code>이 출력될 수도 아닐 수도 있습니다. </p>
-<p>다행스럽게도, Rust는 보다 안정적으로 루프에서 벗어날 수 있는 방법을 제공합니다. 우리는 <code>break</code> keyword
-를 위치시켜 프로그램이 언제 루프를 멈춰야 하는지 알려줄 수 있습니다. 상기시켜 드리자면 2장 “추리 게임”에서 
-사용자가 모든 숫자를 정확히 추리했을 경우 프로그램을 종료시키기 위해 사용했었습니다. </p>
-<h4 id="while와-함께하는-조건부-반복"><a class="header" href="#while와-함께하는-조건부-반복"><code>while</code>와 함께하는 조건부 반복</a></h4>
-<p>반복문 내에서 조건을 산출하는 것은 자주 유용합니다. 조건이 참인 동안 반복문을 수행합니다. 조건이 참이 아니게 된 경우에 
-<code>break</code>을 호출하여 반복을 정지시킵니다. 이런 패턴의 반복문을 구현하자면 <code>loop</code>, <code>if</code>, <code>else</code>, 그리고
-<code>break</code>를 혼합해야 합니다; 원한다면 이렇게 사용해도 됩니다.</p>
-<p>하지만, 이런 패턴은 매우 보편적이기 때문에 이와 동일한 구조자가 Rust에는 내장되어 있으며, 이를 <code>while</code> 
-반복문이라 부릅니다. 다음의 예제를 통해 <code>while</code>을 사용해 봅시다: 프로그램은 세 번 반복되고, 반복 때마다 
-카운트 다운됩니다. 마침내 반복이 끝나면 다른 메시지를 출력하고 종료됩니다:</p>
+<p>The symbol <code>^C</code> represents where you pressed <span class="keystroke">ctrl-c
+</span>. You may or may not see the word <code>again!</code> printed after the <code>^C</code>,
+depending on where the code was in the loop when it received the interrupt
+signal.</p>
+<p>Fortunately, Rust provides another, more reliable way to break out of a loop.
+You can place the <code>break</code> keyword within the loop to tell the program when to
+stop executing the loop. Recall that we did this in the guessing game in the
+<a href="ch02-00-guessing-game-tutorial.html#quitting-after-a-correct-guess">“Quitting After a Correct Guess”</a><!-- ignore
+--> section of Chapter 2 to exit the program when the user won the game by
+guessing the correct number.</p>
+<h4 id="returning-values-from-loops"><a class="header" href="#returning-values-from-loops">Returning Values from Loops</a></h4>
+<p>One of the uses of a <code>loop</code> is to retry an operation you know might fail, such
+as checking whether a thread has completed its job. However, you might need to
+pass the result of that operation to the rest of your code. To do this, you can
+add the value you want returned after the <code>break</code> expression you use to stop
+the loop; that value will be returned out of the loop so you can use it, as
+shown here:</p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!(&quot;The result is {}&quot;, result);
+}
+</code></pre></pre>
+<p>Before the loop, we declare a variable named <code>counter</code> and initialize it to
+<code>0</code>. Then we declare a variable named <code>result</code> to hold the value returned from
+the loop. On every iteration of the loop, we add <code>1</code> to the <code>counter</code> variable,
+and then check whether the counter is equal to <code>10</code>. When it is, we use the
+<code>break</code> keyword with the value <code>counter * 2</code>. After the loop, we use a
+semicolon to end the statement that assigns the value to <code>result</code>. Finally, we
+print the value in <code>result</code>, which in this case is 20.</p>
+<h4 id="conditional-loops-with-while"><a class="header" href="#conditional-loops-with-while">Conditional Loops with <code>while</code></a></h4>
+<p>It’s often useful for a program to evaluate a condition within a loop. While
+the condition is true, the loop runs. When the condition ceases to be true, the
+program calls <code>break</code>, stopping the loop. This loop type could be implemented
+using a combination of <code>loop</code>, <code>if</code>, <code>else</code>, and <code>break</code>; you could try that
+now in a program, if you’d like.</p>
+<p>However, this pattern is so common that Rust has a built-in language construct
+for it, called a <code>while</code> loop. Listing 3-3 uses <code>while</code>: the program loops
+three times, counting down each time, and then, after the loop, it prints
+another message and exits.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let mut number = 3;
@@ -380,17 +471,20 @@ again!
     while number != 0 {
         println!(&quot;{}!&quot;, number);
 
-        number = number - 1;
+        number -= 1;
     }
 
     println!(&quot;LIFTOFF!!!&quot;);
 }
 </code></pre></pre>
-<p>이 구조자는 loop, if, else 및 break를 사용하는 경우 필요한 많은 중첩을 제거하며, 더 깔끔합니다.
-조건이 true인 동안 코드가 실행되고; 그렇지 않으면 루프에서 벗어납니다.</p>
-<h4 id="for와-함께하는-콜렉션-반복하기"><a class="header" href="#for와-함께하는-콜렉션-반복하기"><code>for</code>와 함께하는 콜렉션 반복하기</a></h4>
-<p>우리는 <code>while</code> 구조자를 통해 배열과 같은, 콜렉션의 각 요소에 걸쳐 반복 수행 할 수 있습니다.
-예를 들어서, Listing 3-5을 살펴봅시다:</p>
+<p><span class="caption">Listing 3-3: Using a <code>while</code> loop to run code while a
+condition holds true</span></p>
+<p>This construct eliminates a lot of nesting that would be necessary if you used
+<code>loop</code>, <code>if</code>, <code>else</code>, and <code>break</code>, and it’s clearer. While a condition holds
+true, the code runs; otherwise, it exits the loop.</p>
+<h4 id="looping-through-a-collection-with-for"><a class="header" href="#looping-through-a-collection-with-for">Looping Through a Collection with <code>for</code></a></h4>
+<p>You could use the <code>while</code> construct to loop over the elements of a collection,
+such as an array. For example, let’s look at Listing 3-4.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let a = [10, 20, 30, 40, 50];
@@ -399,16 +493,19 @@ again!
     while index &lt; 5 {
         println!(&quot;the value is: {}&quot;, a[index]);
 
-        index = index + 1;
+        index += 1;
     }
 }
 </code></pre></pre>
-<p><span class="caption">Listing 3-5: <code>while</code> 반복문을 사용해 콜렉션의 각 요소들을 순회하기</span></p>
-<p>여기서, 코드는 배열의 요소에 걸쳐 카운트를 증가시킵니다. 이 색인은 <code>0</code>에서 시작하고, 배열의 마지막 순서까지 반복됩니다
-(즉, <code>index &lt; 5</code>가 참이 아닐 때까지). 이 코드를 수행하면 배열의 모든 요소가 출력되게 됩니다. </p>
+<p><span class="caption">Listing 3-4: Looping through each element of a collection
+using a <code>while</code> loop</span></p>
+<p>Here, the code counts up through the elements in the array. It starts at index
+<code>0</code>, and then loops until it reaches the final index in the array (that is,
+when <code>index &lt; 5</code> is no longer true). Running this code will print every element
+in the array:</p>
 <pre><code class="language-text">$ cargo run
    Compiling loops v0.1.0 (file:///projects/loops)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.32 secs
+    Finished dev [unoptimized + debuginfo] target(s) in 0.32s
      Running `target/debug/loops`
 the value is: 10
 the value is: 20
@@ -416,13 +513,15 @@ the value is: 30
 the value is: 40
 the value is: 50
 </code></pre>
-<p>예상했던 대로, 5개인 배열 모든 값이 터미널에 표시됩니다. <code>index</code> 값이 <code>5</code>에 오는 시점에, 
-그러니까 배열의 6번째 값에 접근하기 전에 반복은 중지되어야 합니다. </p>
-<p>그러나 이런 방식은 에러가 발생하기 쉽습니다; 우리가 정확한 길이의 색인을 사용하지 못하면 프로그램은 패닉을 발생합니다. 
-또한 느린데, 이유는 컴파일러가 실행 간에 반복문을 통해 반복될 때마다 요소에 대한 조건 검사를 수행하는 런타임 코드를 
-추가하기 때문입니다.</p>
-<p>보다 효율적인 대안으로, 우리는 <code>for</code> 반복문을 사용하여 콜렉션의 각 요소에 대한 코드를 수행할 수 있습니다.
-<code>for</code> 반복문은 다음 Listing 3-6과 같습니다:</p>
+<p>All five array values appear in the terminal, as expected. Even though <code>index</code>
+will reach a value of <code>5</code> at some point, the loop stops executing before trying
+to fetch a sixth value from the array.</p>
+<p>But this approach is error prone; we could cause the program to panic if the
+index length is incorrect. It’s also slow, because the compiler adds runtime
+code to perform the conditional check on every element on every iteration
+through the loop.</p>
+<p>As a more concise alternative, you can use a <code>for</code> loop and execute some code
+for each item in a collection. A <code>for</code> loop looks like the code in Listing 3-5.</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     let a = [10, 20, 30, 40, 50];
@@ -432,17 +531,25 @@ the value is: 50
     }
 }
 </code></pre></pre>
-<p><span class="caption">Listing 3-6: <code>for</code> 반복문을 사용해 콜렉션의 각 요소를 순회하기</span></p>
-<p>우리가 이 코드를 수행하면, 항목 3-5와 같은 결과를 볼 수 있습니다. 더 중요한 것은, 우리는 이제 코드의 안전성을 높이고 
-배열의 끝을 넘어가거나 충분한 길이를 지정하지 못해 일부 아이템이 누락되어 발생할 수있는 버그의 가능성을 제거했습니다.</p>
-<p>예를 들어, 코드 3-5의 코드에서 a 배열에서 항목을 제거 했지만 조건을 <code>while index &lt; 4</code>로 업데이트하지 
-않으면 코드는 패닉을 발생합니다. for 반복문을 사용하면, 당신이 배열의 수를 변경한 경우에도 다른 코드를 변경해야 
-할 필요가 없습니다. (역주 : 당신은 살면서 변경한 배열의 수를 기억하고 있는가?)</p>
-<p><code>for</code>반복문이 안전하고 간결하기 때문에 이들은 가장 보편적으로 사용되는 반복문 구조자입니다. 항목 3-5에서처럼 
-<code>while</code>반복문을 사용하여 특정 횟수만큼 코드를 반복하려는 경우에도, 대부분의 Rust 사용자들은 <code>for</code>반복문
-을 사용하고자 할 것 입니다. 이런 사용을 위해 Rust에서 기본 라이브러리로 제공하는 <code>Range</code>를 사용하게 됩니다.
-<code>Range</code>는 한 숫자에서 다른 숫자 전까지 모든 숫자를 차례로 생성합니다. </p>
-<p>여기 <code>for</code>반복문과 아직 설명하지 않은 range를 역순하는 <code>rev</code>메소드를 사용하는 카운트다운 프로그램이 있습니다:</p>
+<p><span class="caption">Listing 3-5: Looping through each element of a collection
+using a <code>for</code> loop</span></p>
+<p>When we run this code, we’ll see the same output as in Listing 3-4. More
+importantly, we’ve now increased the safety of the code and eliminated the
+chance of bugs that might result from going beyond the end of the array or not
+going far enough and missing some items.</p>
+<p>For example, in the code in Listing 3-4, if you changed the definition of the
+<code>a</code> array to have four elements but forgot to update the condition to <code>while index &lt; 4</code>, the code would panic. Using the <code>for</code> loop, you wouldn’t need to
+remember to change any other code if you changed the number of values in the
+array.</p>
+<p>The safety and conciseness of <code>for</code> loops make them the most commonly used loop
+construct in Rust. Even in situations in which you want to run some code a
+certain number of times, as in the countdown example that used a <code>while</code> loop
+in Listing 3-3, most Rustaceans would use a <code>for</code> loop. The way to do that
+would be to use a <code>Range</code>, which is a type provided by the standard library
+that generates all numbers in sequence starting from one number and ending
+before another number.</p>
+<p>Here’s what the countdown would look like using a <code>for</code> loop and another method
+we’ve not yet talked about, <code>rev</code>, to reverse the range:</p>
 <p><span class="filename">Filename: src/main.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">fn main() {
     for number in (1..4).rev() {
@@ -451,17 +558,20 @@ the value is: 50
     println!(&quot;LIFTOFF!!!&quot;);
 }
 </code></pre></pre>
-<p>꽤 괜찮은 코드인것 같죠? </p>
-<h2 id="결론"><a class="header" href="#결론">결론</a></h2>
-<p>해냈어요! 무지 긴 장이었어: 우리는 변수, 스칼라, <code>if</code>식과 반복문까지 배웠어요! 혹시 이번 장에서 나온 내용을
-연습해보고 싶으면 다음을 수행하는 프로그램을 만들어 보세요.</p>
+<p>This code is a bit nicer, isn’t it?</p>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<p>You made it! That was a sizable chapter: you learned about variables, scalar
+and compound data types, functions, comments, <code>if</code> expressions, and loops! If
+you want to practice with the concepts discussed in this chapter, try building
+programs to do the following:</p>
 <ul>
-<li>화씨와 섭씨를 상호 변환.</li>
-<li>n번째 피보나치 수열 생성.</li>
-<li>크리스마스 캐롤 “The Twelve Days of Christmas”의 가사를 반복문을 활용해 출력.</li>
+<li>Convert temperatures between Fahrenheit and Celsius.</li>
+<li>Generate the nth Fibonacci number.</li>
+<li>Print the lyrics to the Christmas carol “The Twelve Days of Christmas,”
+taking advantage of the repetition in the song.</li>
 </ul>
-<p>다음으로 넘어갈 준비가 되셨습니까? 우리는 이제 일반적인 다른 언어에는 존재하지 않는 개념에 대해서 다루고자 합니다
-: 소유권.</p>
+<p>When you’re ready to move on, we’ll talk about a concept in Rust that <em>doesn’t</em>
+commonly exist in other programming languages: ownership.</p>
 
                     </main>
 
@@ -525,6 +635,8 @@ the value is: 50
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

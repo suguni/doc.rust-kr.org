@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>테스트 조직화 - The Rust Programming Language</title>
+        <title>Test Organization - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html" class="active"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html" class="active"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -164,30 +172,34 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="테스트-조직화"><a class="header" href="#테스트-조직화">테스트 조직화</a></h2>
-<p>이 장의 시작 부분에서 언급했듯이, 테스팅은 복잡한 분야이고, 여러 사람들이 서로 다른 용어와 조직화 방식을
-이용합니다. 러스트 커뮤니티에서는 테스트에 대해서 두 개의 주요한 카테고리로 나눠 생각합니다:
-<em>단위 테스트(unit test)</em> 그리고 *통합 테스트(integration test)*입니다. 단위 테스트는 작고
-하나에 더 집중하며, 한 번에 하나의 모듈만 분리하여 테스트하고, 비공개 인터페이스 (private
-interface)를 테스트합니다. 통합 테스트는 완전히 여러분의 라이브러리 외부에 있으며, 공개 인터페이스
-(public interface)를 이용하고 테스트마다 여러 개의 모듈을 잠재적으로 실험함으로써, 다른 외부의 코드가
-하는 방식과 동일한 형태로 여러분의 코드를 이용합니다.</p>
-<p>두 종류의 테스트 작성 모두가 여러분의 라이브러리 코드 조각들이 따로따로 혹은 함께 사용되었을 때 여러분이
-기대하는 바와 같이 작동하는 지를 확신시키는데 중요합니다.</p>
-<h3 id="단위-테스트"><a class="header" href="#단위-테스트">단위 테스트</a></h3>
-<p>단위 테스트의 목적은 각 코드의 단위를 나머지 부분과 분리하여 테스트하는 것인데, 이는 코드가 어디 있고
-어느 부분이 기대한 대로 동작하지 않는지를 빠르게 정확히 찾아낼 수 있도록 하기 위함입니다. 단위 테스트는
-<em>src</em> 디렉토리 내에 넣는데, 각 파일마다 테스트하는 코드를 담고 있습니다. 관례는 각 파일마다 테스트
-함수를 담고 있는 <code>tests</code>라는 이름의 모듈을 만들고, 이 모듈에 <code>cfg(test)</code>라고 어노테이션 하는
-것입니다.</p>
+<p>이번 장의 시작 부분에서 언급했듯, 테스트는 복잡한 분야입니다.
+사람들은 저마다 다른 용어와 구조를 사용합니다.
+러스트 커뮤니티는 테스트를 크게 <em>유닛 테스트(unit test, 단위 테스트라고도 함)</em>, <em>통합 테스트(integration test)</em> 두 종류로 나눕니다.
+유닛 테스트는 작고 더 집중적입니다.
+한 번에 하나의 모듈만 테스트하며, 모듈의 비공개 인터페이스도 테스트할 수 있습니다.
+통합 테스트는 완전히 라이브러리 외부에 위치하며,
+따라서 여러분이 작성한 라이브러리를 외부 코드에서 사용할 때와 똑같은 방식을 사용합니다.
+하나의 테스트에서 잠재적으로 여러 모듈이 사용되기도 합니다.</p>
+<p>여러분의 라이브러리가 각 부분이 따로따로 사용될 때도,
+함께 사용될 때도 제대로 작동할 것을 보장하려면 두 종류의 테스트 모두 작성해야 합니다.</p>
+<h3 id="유닛-테스트"><a class="header" href="#유닛-테스트">유닛 테스트</a></h3>
+<p>유닛 테스트의 목적은 각 코드 단위를 나머지 코드와 분리하여,
+제대로 작동하지 않는 코드가 어느 부분인지 빠르게 파악하는 것입니다.
+유닛 테스트는 <em>src</em> 디렉토리 내의 각 파일에
+테스트 대상이 될 코드와 함께 작성합니다.
+각 파일에 <code>tests</code> 모듈을 만들고 <code>cfg(test)</code> 를 어노테이션하는 게
+일반적인 관례입니다.</p>
 <h4 id="테스트-모듈과-cfgtest"><a class="header" href="#테스트-모듈과-cfgtest">테스트 모듈과 <code>#[cfg(test)]</code></a></h4>
-<p>테스트 모듈 상의 <code>#[cfg(test)]</code> 어노테이션은 러스트에게 우리가 <code>cargo build</code>를 실행시킬 때가
-아니라 <code>cargo test</code>를 실행시킬 때에만 컴파일하고 실행시키라고 말해줍니다. 이는 우리가 오직 라이브러리만
-빌드하고 싶을 때 컴파일 시간을 절약시켜주고, 테스트가 포함되어 있지 않으므로 컴파일 결과물의 크기를
-줄여줍니다. 통합 테스트는 다른 디렉토리에 위치하기 때문에, 여기에는 <code>#[cfg(test)]</code> 어노테이션이
-필요치 않음을 앞으로 보게 될 것입니다. 하지만, 단위 테스트가 해당 코드와 동일한 파일에 위치하기 때문에,
-<code>#[cfg(test)]</code>를 사용하여 컴파일 결과물에 이들이 포함되지 않아야 함을 특정합니다.</p>
-<p>이 장의 첫 번째 절에서 새로운 <code>adder</code> 프로젝트를 생성했을 때, 카고가 우리를 위하여 아래와 같은 코드를
-생성했던 것을 상기하세요:</p>
+<p>테스트 모듈에 어노테이션하는 <code>#[cfg(test)]</code> 은 러스트에게 이 코드는
+<code>cargo build</code> 명령어가 아니라 <code>cargo test</code> 명령어 실행 시에만 컴파일 및 실행하라는 것을 전달합니다.
+라이브러리 빌드 시 테스트 코드는 제외되므로, 컴파일 소요 시간이 짧아지고,
+컴파일 결과물 크기도 줄어듭니다.
+이후에 알게 되겠지만, 통합 테스트는 별도의 디렉토리에 위치하기 때문에
+<code>#[cfg(test)]</code> 어노테이션이 필요 없습니다.
+하지만 유닛 테스트는 일반 코드와 같은 파일에 위치하기 때문에,
+<code>#[cfg(test)]</code> 어노테이션을 작성해 컴파일 결과물에 포함되지 않도록 명시해야 합니다.</p>
+<p>이번 장 첫 번째 절에서 <code>adder</code> 프로젝트를 생성했을 때
+Cargo가 생성했던 코드를 다시 살펴봅시다.</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
@@ -201,23 +213,22 @@ mod tests {
 }
 <span class="boring">}
 </span></code></pre></pre>
-<p>이 코드는 자동으로 생성되는 테스트 모듈입니다. <code>cfg</code> 속성은 <em>환경 설정(configuration)</em> 을 의미하며,
-러스트에게 뒤따르는 아이템이 특정한 환경 값에 대해서만 포함되어야 함을 말해줍니다. 위의 경우, 환경 값이
-<code>test</code>인데, 테스트를 컴파일하고 실행하기 위해 러스트로부터 제공되는 것입니다. 이 속성을 이용함으로써,
-카고는 우리가 능동적으로 <code>cargo test</code>를 이용해서 테스트를 실행시킬 경우에만 우리의 테스트 코드를
-컴파일합니다. 이는 이 모듈 내에 있을지도 모를 어떠한 헬퍼 함수들, 추가적으로 <code>#[test]</code>라고
-어노테이션 된 함수들을 포함합니다.</p>
+<p>이 코드는 자동으로 생성된 테스트 모듈입니다.
+<code>cfg</code> 속성은 <em>설정(configuration)</em> 을 의미하며,
+러스트는 이 요소를 특정 설정 옵션 적용 시에만 포함합니다.
+이 경우 옵션 값은 러스트에서 테스트를 컴파일, 실행하기 위해 제공하는 <code>test</code> 입니다.
+<code>cfg</code> 속성을 사용하면 Cargo는 <code>cargo test</code> 명령어를
+실행할 때만 테스트 코드를 컴파일합니다.
+여기에는 <code>#[test]</code> 어노테이션된 함수뿐만 아니라
+모듈 내 도우미 함수도 포함됩니다.</p>
 <h4 id="비공개-함수-테스트하기"><a class="header" href="#비공개-함수-테스트하기">비공개 함수 테스트하기</a></h4>
-<p>테스팅 커뮤니티 내에서 비공개 함수가 직접적으로 테스트되어야 하는지 혹은 그렇지 않은지에 대한 논쟁이
-있었고, 다른 언어들은 비공개 함수를 테스트하는 것이 어렵거나 불가능하게 만들어두었습니다. 여러분이
-어떤 테스트 이데올로기를 고수하는지와는 상관없이, 러스트의 비공개 규칙은 여러분이 비공개 함수를
-테스트하도록 허용해줍니다. 비공개 함수 <code>internal_adder</code>가 있는 Listing 11-12 내의 코드를
-고려해 보시죠:</p>
+<p>비공개 함수도 직접 테스트해야 하는지에 대해서는 많은 논쟁이 있습니다.
+다른 언어에서는 비공개 함수를 테스트하기 어렵거나, 불가능하게 만들어두었습니다.
+여러분의 테스트 철학이 어떤지는 모르겠지만, 러스트의 프라이버시 규칙은
+비공개 함수를 테스트하도록 허용합니다.
+Listing 11-12는 비공개 함수 <code>internal_adder</code> 를 보여줍니다.</p>
 <p><span class="filename">Filename: src/lib.rs</span></p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>pub fn add_two(a: i32) -&gt; i32 {
+<pre><code class="language-rust noplayground">pub fn add_two(a: i32) -&gt; i32 {
     internal_adder(a, 2)
 }
 
@@ -234,54 +245,56 @@ mod tests {
         assert_eq!(4, internal_adder(2, 2));
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p><span class="caption">Listing 11-12: 비공개 함수 테스트하기</span></p>
-<p><code>internal_adder</code> 함수는 <code>pub</code>으로 표시되어 있지 않지만, 테스트가 그저 러스트 코드일 뿐이고
-<code>tests</code> 모듈도 그냥 또 다른 모듈이기 때문에, <code>internal_adder</code>를 불러들여 호출하는 것이 그냥 되는
-것을 주목하세요. 만약 여러분이 비공개 함수를 테스트해야 한다고 생각하지 않는다면, 러스트에서는 여러분이
-그렇게 하도록 강제할 일은 없습니다.</p>
+<p><code>internal_adder</code> 함수는 <code>pub</code> 으로 표시되지 않았지만,
+테스트도 러스트 코드이며 <code>tests</code> 모듈도 그저 또 다른 모듈이므로,
+테스트 스코프에 <code>internal_adder</code> 를 가져와 호출할 수 있습니다.
+혹시 여러분이 비공개 함수를 테스트해서는 안 된다는 주의라면,
+러스트는 여러분에게 강요하지 않습니다.</p>
 <h3 id="통합-테스트"><a class="header" href="#통합-테스트">통합 테스트</a></h3>
-<p>러스트에서 통합 테스트들은 완전히 여러분의 라이브러리 외부에 있습니다. 이들은 여러분의 라이브러리를
-다른 코드들과 동일한 방식으로 이용하는데, 이는 이 외부 테스트들이 오직 여러분의 라이브러리의 공개
-API 부분에 속하는 함수들만 호출할 수 있다는 의미입니다. 이들의 목적은 여러분의 라이브러리의 수많은
-파트들이 함께 올바르게 동작하는지를 시험하는 것입니다. 그 자체로서는 올바르게 동작하는 코드의 단위들도
-통합되었을 때는 문제를 일으킬 수 있으므로, 통합된 코드의 테스트 커버율 또한 중요합니다. 통합 테스트를
-만들기 위해서는 <em>tests</em> 디렉토리를 먼저 만들 필요가 있습니다.</p>
+<p>통합 테스트는 여러분이 만든 라이브러리와 완전히 분리되어있습니다.
+통합 테스트는 외부 코드와 마찬가지로, 여러분이 만든 라이브러리의 공개 API만 호출 가능합니다.
+통합 테스트의 목적은 라이브러리의 수많은 부분을 함께 사용했을 때
+제대로 작동하는지 확인하는 것입니다.
+각각 따로 사용했을 땐 잘 작동하는 코드도 함께 사용할 땐
+문제가 발생할 수 있기 때문에 통합 테스트도 중요합니다.
+통합 테스트를 작성하려면 먼저 <em>tests</em> 디렉토리를 만들어야 합니다.</p>
 <h4 id="tests-디렉토리"><a class="header" href="#tests-디렉토리"><em>tests</em> 디렉토리</a></h4>
-<p>프로젝트 디렉토리의 최상위, 그러니까 <em>src</em> 옆에 <em>tests</em> 디렉토리를 만듭니다.
-카고는 이 디렉토리 내의 통합 테스트 파일들을 찾을 줄 압니다. 그런 후에는 이 디렉토리에 원하는
-만큼 많은 테스트 파일을 만들 수 있으며, 카고는 각각의 파일들을 개별적인 크레이트처럼 컴파일할 것입니다.</p>
-<p>한 번 통합 테스트를 만들어봅시다. Listing 11-12의 <em>src/lib.rs</em> 코드를 그대로 유지한 채로, <em>tests</em>
-디렉토리를 만들고, <em>tests/integration_test.rs</em>라는 이름의 새 파일을 만든 다음, Listing 11-13의
-코드를 집어넣으세요.</p>
+<p>프로젝트 디렉토리 최상위, 다시말해 <em>src</em> 옆에 <em>tests</em> 디렉토리를 생성합니다.
+Cargo는 디렉토리 내 통합 테스트 파일을 자동으로 인식합니다.
+통합 테스트는 <em>tests</em> 디렉토리 내에 원하는 만큼 작성할 수 있으며,
+Cargo는 각 파일을 각각의 크레이트로 컴파일합니다.</p>
+<p>통합 테스트를 직접 만들어보죠. Listing 11-12 코드를 <em>src/lib.rs</em> 에 작성한 채로
+<em>tests</em> 디렉토리를 만들고, <em>tests/integration_test.rs</em> 파일을 생성해
+Listing 11-13 코드를 작성해봅시다.</p>
 <p><span class="filename">Filename: tests/integration_test.rs</span></p>
-<pre><code class="language-rust ignore">extern crate adder;
+<pre><code class="language-rust ignore">use adder;
 
 #[test]
 fn it_adds_two() {
     assert_eq!(4, adder::add_two(2));
 }
 </code></pre>
-<p><span class="caption">Listing 11-13: <code>adder</code> 크레이트 내의 함수에 대한 통합 테스트
-</span></p>
-<p>코드의 상단에 <code>extern crate adder</code>를 추가했는데, 이는 단위 테스트에서는 필요 없었지요. 이는 <code>tests</code>
-디렉토리 내의 각 테스트가 모두 개별적인 크레이트이라서, 우리의 라이브러리를 각각에 가져올 필요가 있기
-때문입니다.</p>
-<p><em>tests/integration_test.rs</em>에는 <code>#[cfg(test)]</code>를 이용한 어노테이션을 해줄 필요가
-없습니다. 카고는 <code>test</code> 디렉토리를 특별 취급하여 <code>cargo test</code>를 실행시켰을 때에만 이 디렉토리
-내의 파일들을 컴파일합니다. 이제 <code>cargo test</code> 실행을 시도해봅시다:</p>
-<pre><code class="language-text">$ cargo test
+<p><span class="caption">Listing 11-13: <code>adder</code> 크레이트 내 함수를 테스트하는
+통합 테스트</span></p>
+<p>코드 맨 위에 <code>use adder</code> 를 추가했습니다.
+유닛 테스트에서는 이 코드가 필요하지 않지만 <em>tests</em> 디렉토리 내 파일은 별도의 크레이트이므로,
+테스트 크레이트 스코프에 우리가 만든 라이브러리를 가져와야 합니다.</p>
+<p><em>tests/integration_test.rs</em> 내 코드는 <code>#[cfg(test)]</code> 가 필요 없습니다.
+Cargo는 <code>tests</code> 디렉토리를 특별 취급하여, 디렉토리 내 파일을 <code>cargo test</code> 시에만 컴파일합니다.
+<code>cargo test</code> 를 다시 실행시켜보죠.</p>
+<pre><code class="language-console">$ cargo test
    Compiling adder v0.1.0 (file:///projects/adder)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
-     Running target/debug/deps/adder-abcabcabc
+    Finished test [unoptimized + debuginfo] target(s) in 0.73s
+     Running target/debug/deps/adder-92948b65e88960b4
 
 running 1 test
 test tests::internal ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
-     Running target/debug/deps/integration_test-ce99bcc2479f4607
+     Running target/debug/deps/integration_test-92948b65e88960b4
 
 running 1 test
 test it_adds_two ... ok
@@ -293,70 +306,85 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
 </code></pre>
-<p>출력에 세 개의 섹션이 생겼습니다: 단위 테스트, 통합 테스트, 그리고 문서 테스트입니다. 단위 테스트를
-위한 첫 번째 섹션은 우리가 봐오던 것과 동일합니다: 각각의 단위 테스트마다 한 라인 (Listing 11-12에서
-우리가 추가한 <code>intenal</code>이라는 이름의 것이 있었죠), 그다음 단위 테스트들의 정리 라인이 있습니다.</p>
-<p>통합 테스트 섹션은 <code>Running target/debug/deps/integration-test-ce99bcc2479f4607</code>
-이라고 말하는 라인과 함께 시작합니다 (여러분의 출력 값 끝의 해쉬값은 다를 것입니다). 그다음 이 통합
-테스트 안의 각 테스트 함수를 위한 라인이 있고, <code>Doc-tests adder</code> 섹션이 시작되기 직전에
-통합 테스트의 결과를 위한 정리 라인이 있습니다.</p>
-<p>어떠한 <em>src</em> 파일에 단위 테스트 함수를 더 추가하는 것이 단위 테스트 섹션의 테스트 결과 라인을 더
-늘린다는 점을 상기하세요. 통합 테스트 파일에 테스트 함수를 더 추가하는 것은 그 파일의 섹션의 라인을
-더 늘릴 것입니다. 각 통합 테스트 파일은 고유의 섹션을 가지고 있으므로, 만일 우리가 <em>tests</em> 디렉토리에
-파일을 더 추가하면, 통합 테스트 섹션이 더 생길 것입니다.</p>
-<p><code>cargo test</code>의 인자로서 테스트 함수의 이름을 명시하는 식으로 특정 통합 테스트 함수를 실행시키는 것도
-여전히 가능합니다. 특정한 통합 테스트 파일 내의 모든 테스트를 실행시키기 위해서는, <code>cargo test</code>에
-파일 이름을 뒤에 붙인 <code>--test</code> 인자를 사용하세요:</p>
-<pre><code class="language-text">$ cargo test --test integration_test
-    Finished dev [unoptimized + debuginfo] target(s) in 0.0 secs
-     Running target/debug/integration_test-952a27e0126bb565
+<p>출력에 유닛 테스트, 통합 테스트, 문서 테스트 세 가지 절이 만들어졌네요.
+첫 번째 절인 유닛 테스트는 앞서 본 것과 같습니다.
+유닛 테스트가 한 줄씩(<code>internal</code> 은 Listing 11-12 에서 추가했었습니다)
+출력되고, 유닛 테스트 결과 요약 줄이 출력됩니다.</p>
+<p>통합 테스트 절은 <code>Running target/debug/deps/integration_test-ce99bcc2479f4607</code>
+줄로 시작합니다(여러분은 출력 끝의 해쉬값이 다를 겁니다).
+그다음 통합 테스트 내 각각의 테스트 함수가 한 줄씩 출력되고,
+통합 테스트 결과 요약은 <code>Doc-tests adder</code> 절이 시작하기 직전에
+출력됩니다.</p>
+<p>유닛 테스트를 추가하면 유닛 테스트 출력 절이 한 줄씩 늘어나는 것처럼,
+통합 테스트 파일에 테스트 함수를 추가하면
+해당 통합 테스트 파일의 출력 절이 한 줄씩 늘어납니다.
+각각의 통합 테스트 파일은 별도의 출력 절을 생성합니다.
+즉, <em>tests</em> 디렉토리에 파일을 추가하면 여러 통합 테스트 절이 만들어집니다.</p>
+<p>통합 테스트도 마찬가지로 <code>cargo test</code> 명령어에 테스트 함수명을
+인자로 전달해 특정 통합 테스트 함수를 실행할 수 있습니다.
+특정 통합 테스트 파일의 모든 테스트를 실행하려면,
+<code>cargo test</code> 명령어에 <code>--test</code> 인자로 파일명을 전달하면 됩니다.</p>
+<pre><code class="language-console">$ cargo test --test integration_test
+   Compiling adder v0.1.0 (file:///projects/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 0.64s
+     Running target/debug/deps/integration_test-82e7799c1bc62298
 
 running 1 test
 test it_adds_two ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
 </code></pre>
-<p>이 커맨드는 <em>tests/integration_test.rs</em> 내의 테스트만 실행합니다.</p>
-<h4 id="통합-테스트-내의-서브모듈"><a class="header" href="#통합-테스트-내의-서브모듈">통합 테스트 내의 서브모듈</a></h4>
-<p>더 많은 통합 테스트를 추가하게 되면, 이들을 조직화하기 쉽도록 <em>tests</em> 디렉토리 내에 하나 이상의
-파일을 만들고 싶어 할지도 모릅니다; 예를 들면, 여러분은 이들이 테스트하는 기능별로 테스트 함수들을
-묶을 수 있습니다. 앞서 언급했듯이, <em>tests</em> 디렉토리 내의 각 파일은 고유의 개별적인 크레이트인 것처럼
-컴파일됩니다.</p>
-<p>각 통합 테스트 파일을 고유한 크레이트인 것 처럼 다루는 것은 여러분의 크레이트를 이용하게 될
-사용자들의 방식과 더 유사하게 분리된 스코프를 만들어 내기에 유용합니다. 하지만, 이는 <em>src</em> 내의
-파일들이 동일한 동작을 공유하는 것을 <em>tests</em> 디렉토리 내의 파일들에서는 할 수 없음을 의미하는데,
-이는 여러분이 7장에서 코드를 모듈과 파일로 나누는 법에 대해 배웠던 것입니다.</p>
-<p>만일 여러분이 여러 개의 통합 테스트 파일들 내에서 유용하게 사용될 헬퍼 함수들 묶음을 가지고 있으며,
-이들을 공통 모듈로 추출하기 위해 7장의 &quot;모듈을 다른 파일로 옮기기&quot;절에 있는 단계를 따르는 시도를 한다면,
-이러한 <em>tests</em> 디렉토리 내의 파일에 대한 이색적인 동작 방식은 가장 주목할 만 점입니다. 이를테면, 만일
-우리가 <em>tests/common.rs</em> 이라는 파일을 만들어서 그 안에 아래와 같이 <code>setup</code>이라는 이름의 함수를
-위치시키고, 여기에 여러 테스트 파일들 내의 여러 테스트 함수로부터 호출될 수 있기를 원하는 어떤 코드를
-집어넣는다면:</p>
+<p>이 명령어는 <em>tests/integration_test.rs</em> 파일 내의 테스트만 실행합니다.</p>
+<h4 id="통합-테스트-내-서브-모듈"><a class="header" href="#통합-테스트-내-서브-모듈">통합 테스트 내 서브 모듈</a></h4>
+<p>통합 테스트를 추가하다 보면, 조직화를 위해 <em>tests</em> 디렉토리에
+하나 이상의 파일이 필요할 수도 있습니다.
+예를 들어, 테스트 함수가 테스트하는 기능별로 그룹화할 수도 있죠.
+앞서 말했듯, <em>tests</em> 내 각 파일은 각각의 크레이트로 컴파일됩니다.</p>
+<p>여러분이 만든 크레이트를 사용할 실제 사용자처럼 분리된 스코프를
+만들어내는 데에는 각 통합 테스트 파일이 각각의 크레이트로 취급된다는 점이 유용합니다.
+하지만 이는 7장에서 배운대로 <em>src</em> 디렉토리에서 코드를 모듈, 파일로 분리하여
+파일 간 동일한 동작을 공유하는 것을 <em>tests</em> 디렉토리 내 파일에서는 할 수 없음을
+의미합니다.</p>
+<p>여러 통합 테스트 파일에서
+유용하게 사용할 도우미 함수 묶음을
+7장 <a href="ch07-05-separating-modules-into-different-files.html">“Separating Modules into Different Files”</a><!-- ignore -->
+과정대로 공통 모듈로 분리하려 할 때,
+<em>tests</em> 디렉토리 내 파일의 동작 방식은 걸림돌이 됩니다.
+예를 들어, 우리가 <em>tests/common.rs</em> 파일을 생성하고,
+여러 테스트 파일 내 함수에서 호출할 <code>setup</code> 함수를 작성한다고
+가정해봅시다.</p>
 <p><span class="filename">Filename: tests/common.rs</span></p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>pub fn setup() {
-    // 여러분의 라이브러리 테스트에 특화된 셋업 코드가 여기 올 것입니다
+    // setup code specific to your library's tests would go here
 }
 <span class="boring">}
 </span></code></pre></pre>
-<p>만약 테스트를 다시 실행시키면, 비록 이 코드가 어떠한 테스트 함수도 담고 있지 않고, <code>setup</code> 함수를
-다른 어딘가에서 호출하고 있지 않을지라도, <em>common.rs</em> 파일을 위한 테스트 출력 내의 새로운 섹션을
-보게 될 것입니다:</p>
-<pre><code class="language-text">running 1 test
+<p>이제 테스트를 실행하면, 결과 출력에 새로운 절이 <em>common.rs</em> 파일 때문에
+생성된 모습을 볼 수 있습니다. <em>common.rs</em> 파일은 어떤 테스트 함수도 담고 있지 않고,
+다른 곳에서 <code>setup</code> 함수를 호출하지도 않았는데 말이죠.</p>
+<pre><code class="language-console">$ cargo test
+   Compiling adder v0.1.0 (file:///projects/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 0.89s
+     Running target/debug/deps/adder-92948b65e88960b4
+
+running 1 test
 test tests::internal ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
-     Running target/debug/deps/common-b8b07b6f1be2db70
+     Running target/debug/deps/common-92948b65e88960b4
 
 running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
-     Running target/debug/deps/integration_test-d993c68b431d39df
+     Running target/debug/deps/integration_test-92948b65e88960b4
 
 running 1 test
 test it_adds_two ... ok
@@ -368,22 +396,24 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
 </code></pre>
-<p><code>running 0 tests</code>이 표시되는 테스트 출력이 보이는 <code>common</code>을 만드는 건 우리가 원하던 것이
-아닙니다. 우리는 그저 다른 통합 테스트 파일들에서 어떤 코드를 공유할 수 있기를 원했지요.</p>
-<p><code>common</code>이 테스트 출력에 나타나는 것을 막기 위해서는, <em>tests/common.rs</em>을 만드는 대신,
-<em>tests/common/mod.rs</em>를 만듭니다. 7장의 &quot;모듈 파일 시스템의 규칙&quot;절에서 서브모듈을 가지고 있는
-모듈의 파일들을 위해 <em>module_name/mod.rs</em>라는 이름 규칙을 이용했었고, 여기서 <code>common</code>에 대한
-서브모듈을 가지고 있지는 않지만, 이러한 방식으로 파일명을 정하는 것이 러스트에게 <code>common</code> 모듈을
-통합 테스트 파일로 취급하지 않게끔 전달해줍니다. <code>setup</code> 함수 코드를 <em>tests/common/mod.rs</em>로
-옮기고 <em>tests/common.rs</em> 파일을 제거하면, 테스트 출력에서 해당 섹션이 더 이상 나타나지 않을 것입니다.
-<em>tests</em> 디렉토리의 서브 디렉토리 내의 파일들은 개별적인 크레이트처럼 컴파일되지도, 테스트 출력의
-섹션을 갖지도 않습니다.</p>
-<p><em>tests/common/mod.rs</em>를 만든 뒤에는, 어떤 통합 테스트 파일에서라도 이를 모듈처럼 쓸 수 있습니다.
-아래에 <em>tests/integration_test.rs</em> 내에 <code>it_adds_two</code> 테스트로부터 <code>setup</code> 함수를 호출하는
-예제가 있습니다:</p>
+<p>우리가 원했던 건 다른 통합 테스트 파일과 일부 코드를 공유하는 것이지,
+테스트 출력 결과에 <code>common</code> 과 <code>running 0 tests</code> 이 출력되는 게
+아니었죠.</p>
+<p>테스트 출력 결과에서 <code>common</code> 을 제외하려면 <em>tests/common.rs</em> 파일 대신
+<em>tests/common/mod.rs</em> 파일을 생성해야 합니다.
+이는 러스트에서 사용 가능한 대체 명명 규칙(alternate naming convention)입니다.
+러스트는 이 파일명 규칙을 따르는 파일은 통합 테스트 파일로 취급하지 않습니다.
+<code>setup</code> 함수를 <em>tests/common/mod.rs</em> 파일로 옮기고 <em>tests/common.rs</em> 파일을 삭제하면
+더 이상 테스트 결과 출력에 <code>common</code> 이 나타나지 않습니다.
+<em>tests</em> 디렉토리의 서브 디렉토리 내 파일은 별도 크레이트로 컴파일되지 않고,
+테스트 결과 출력에서 별도의 출력 절이 생성되지도 않습니다.</p>
+<p><em>tests/common/mod.rs</em> 파일을 생성하고 나면 다른 통합 테스트 파일에서 모듈처럼 사용할 수 있습니다.
+다음은 <em>tests/integration_test.rs</em> 파일 내 <code>it_adds_two</code> 테스트에서 <code>setup</code> 함수를
+호출하는 예시입니다.</p>
 <p><span class="filename">Filename: tests/integration_test.rs</span></p>
-<pre><code class="language-rust ignore">extern crate adder;
+<pre><code class="language-rust ignore">use adder;
 
 mod common;
 
@@ -393,27 +423,33 @@ fn it_adds_two() {
     assert_eq!(4, adder::add_two(2));
 }
 </code></pre>
-<p><code>mod common;</code> 선언은 Listing 7-4에서 보여주었던 모듈 선언과 동일한 점을 주목하세요. 그런 다음
-테스트 함수 내에서 <code>common::setup()</code> 함수를 호출 할 수 있습니다.</p>
-<h4 id="바이너리-크레이트를-위한-통합-테스트"><a class="header" href="#바이너리-크레이트를-위한-통합-테스트">바이너리 크레이트를 위한 통합 테스트</a></h4>
-<p>만약 우리의 프로젝트가 <em>src/lib.rs</em> 파일이 없고 <em>src/main.rs</em> 파일만 갖고 있는 바이너리 프로젝트라면,
-<em>tests</em> 디렉토리 내에 통합 테스트를 만들어서 <em>src/main.rs</em>에 정의된 함수를 가져오기 위하여
-<code>extern crate</code>를 이용할 수 없습니다. 오직 라이브러리 크레이트만 다른 크레이트에서 호출하고 사용할
-수 있는 함수들을 노출시킵니다; 바이너리 크레이트는 그 스스로 실행될 것으로 여겨집니다.</p>
-<p>이는 바이너리를 제공하는 러스트 프로젝트들이 <em>src/lib.rs</em>에 위치한 로직을 호출하는 간단한 형태의
-<em>src/main.rs</em>를 가지고 있는 이유 중 하나입니다. 이러한 구조와 함께라면, <code>extern crate</code>를
-이용하여 중요한 기능들을 커버하도록 하기 위해 통합 테스트가 라이브러리 크레이트를 <em>테스트할 수 있습니다</em>.
-만일 중요 기능이 작동한다면, <em>src/main.rs</em> 내의 소량의 코드 또한 동작할 것이고, 이 소량의 코드는
-테스트할 필요가 없습니다.</p>
+<p>Listing 7-21에서 배운 모듈 선언대로 <code>mod common;</code> 를 선언했습니다.
+선언하고 나면 <code>common::setup()</code> 함수를 호출할 수
+있습니다.</p>
+<h4 id="바이너리-크레이트에서의-통합-테스트"><a class="header" href="#바이너리-크레이트에서의-통합-테스트">바이너리 크레이트에서의 통합 테스트</a></h4>
+<p><em>src/lib.rs</em> 파일이 없고 <em>src/main.rs</em> 파일만 있는 바이너리 크레이트라면,
+<em>tests</em> 디렉토리에 통합 테스트를 만들어서 <em>src/main.rs</em> 파일에 정의된 함수를
+<code>use</code> 구문으로 가져올 수 없습니다.
+다른 크레이트에서 사용할 수 있도록 함수를 노출하는 건 라이브러리 크레이트 뿐입니다.
+바이너리 크레이트는 자체적으로 실행되게 되어있습니다.</p>
+<p>바이너리를 제공하는 러스트 프로젝트들이
+<em>src/main.rs</em> 파일은 간단하게 작성하고,
+로직은 <em>src/lib.rs</em> 파일에 위치시키는 이유 중 하나가 이 때문입니다.
+이런 구조로 작성하면 중요 기능을 통합 테스트에서
+<code>use</code> 구문으로 가져와 <em>테스트 할 수 있습니다.</em>
+중요 기능이 제대로 작동하면 <em>src/main.rs</em> 파일 내 소량의 코드도 작동할 테니,
+이 소량의 코드는 테스트하지 않아도 됩니다.</p>
 <h2 id="정리"><a class="header" href="#정리">정리</a></h2>
-<p>러스트의 테스트 기능은 코드를 변경하더라도 계속하여 우리가 기대한 대로 동작할 것이라는 확신을 주기 위하여
-코드가 어떻게 기능하는지 명시하는 방법을 제공합니다. 단위 테스트는 라이브러리의 서로 다른 부분을 개별적으로
-시험하며 비공개된 구현 세부사항을 테스트할 수 있습니다. 통합 테스트는 라이브러리의 많은 부분이 함께 작동하는
-사용 상황을 다루며, 외부 코드가 사용하게 될 똑같은 방식대로 테스트하기 위해 그 라이브러리의 공개 API를
-이용합니다. 비록 러스트의 타입 시스템과 소유권 규칙이 몇 가지 종류의 버그를 방지하는데 도움을 줄지라도,
-테스트는 여러분의 코드가 어떻게 동작하기를 기대하는지와 함께 해야 하는 논리 버그를 잡는 일을 도와주는 데에
-있어 여전히 중요합니다.</p>
-<p>이 장과 이전 장들의 지식을 합쳐서 다음 장의 프로젝트 작업을 해봅시다!</p>
+<p>러스트의 테스트 기능을 사용하면 코드가 어떻게 작동해야 하는지 명시하여,
+코드를 변경하더라도 계속하여 우리 의도대로 작동함을 보장할 수 있습니다.
+유닛 테스트는 비공개 세부 구현을 포함한 라이브러리의 각 부분이
+따로따로 잘 작동하는지 확인합니다.
+통합 테스트는 외부 코드가 라이브러리를 사용하는 방식과 동일하게
+라이브러리 공개 API를 이용해 라이브러리의 여러 부분이 함께 사용될 때 제대로 작동하는지 확인합니다.
+러스트의 타입 시스템과 소유권 규칙이 일부 버그를 방지해주긴 하지만,
+여러분이 작성한 코드가 의도대로 작동하지 않는 논리 버그를 제거하려면 테스트도 마찬가지로 중요합니다.</p>
+<p>이번 장에서 배운 지식과 앞서 배워온 지식을 합쳐서 프로젝트를
+한번 진행해 보죠!</p>
 
                     </main>
 
@@ -477,6 +513,8 @@ fn it_adds_two() {
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         

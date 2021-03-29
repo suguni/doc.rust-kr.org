@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>소개 - The Rust Programming Language</title>
+        <title>Introduction - The Rust Programming Language</title>
         
         
 
@@ -42,6 +42,10 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="ferris.css">
+        
+        <link rel="stylesheet" href="theme/2018-edition.css">
         
 
         
@@ -95,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">들어가기 앞서</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html" class="active">소개</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> 시작하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> 설치하기</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> 추리 게임 튜토리얼</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> 보편적인 프로그래밍 개념</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> 변수와 가변성</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> 데이터 타입들</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> 함수 동작 원리</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> 주석</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> 제어문</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> 소유권 이해하기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> 소유권이 뭔가요?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> 참조자와 빌림</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> 슬라이스</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> 연관된 데이터들을 구조체로 다루기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> 구조체를 정의하고 생성하기</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> 구조체를 이용한 예제 프로그램</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> 메소드 문법</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> 열거형과 패턴 매칭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> 열거형 정의하기</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> match 흐름 제어 연산자</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> if let을 사용한 간결한 흐름 제어</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-modules.html"><strong aria-hidden="true">7.</strong> 모듈</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-mod-and-the-filesystem.html"><strong aria-hidden="true">7.1.</strong> mod와 파일 시스템</a></li><li class="chapter-item expanded "><a href="ch07-02-controlling-visibility-with-pub.html"><strong aria-hidden="true">7.2.</strong> pub으로 가시성 제어하기</a></li><li class="chapter-item expanded "><a href="ch07-03-importing-names-with-use.html"><strong aria-hidden="true">7.3.</strong> use로 이름 가져오기</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> 일반적인 컬렉션</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> 벡터</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> 스트링</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> 해쉬맵</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> 에러 처리</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> panic!과 함께하는 복구 불가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Result와 함께하는 복구 가능한 에러</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> panic!이냐, panic!이 아니냐, 그것이 문제로다</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> 제네릭 타입, 트레잇, 그리고 라이프타임</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> 제네릭 데이터 타입</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> 트레잇: 공유 동작을 정의하기</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> 라이프타임을 이용한 참조자 유효화</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> 테스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> 테스트 작성하기</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> 테스트 실행하기</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> 테스트 조직화</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> I/O 프로젝트: 커맨드 라인 프로그램 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> 커맨드 라인 인자 허용하기</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> 파일 읽기</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> 모듈성과 에러처리의 향상을 위한 리팩토링</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> 테스트 주도 개발로 라이브러리의 기능 개발하기</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> 환경 변수들을 활용하기</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> 표준출력 대신 표준에러로 에러메시지 출력하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> 함수형 언어의 특성들: 반복자들과 클로저들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> 클로저: 환경을 캡쳐할 수 있는 익명 함수</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> 반복자로 일련의 항목들 처리하기</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> I/O 프로젝트 개선하기</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> 성능 비교하기: 루프 vs. 반복자</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> Cargo와 Crates.io 더 알아보기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> 릴리즈 프로필을 이용해 빌드 커스터마이징하기</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Crates.io에 크레이트 배포하기</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo 작업공간</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> cargo install을 이용해 Crates.io에서 바이너리 설치하기</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> 커스텀 명령어로 Cargo 확장하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> 스마트 포인터</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Box&lt;T&gt;는 힙에 있는 데이터를 가리키고 알려진 크기를 갖습니다</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Deref 트레잇은 참조자를 통하여 데이터로의 접근을 허용합니다</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Drop 트레잇은 메모리 정리 코드를 실행시킵니다</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, 참조 카운팅 스마트 포인터</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt;와 내부 가변성 패턴</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> 순환 참조를 만드는 것과 메모리 누수는 안전한 것에 해당됩니다</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> 겁없는 동시성</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> 스레드</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> 메세지 패싱</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> 공유 상태</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> 확장 가능한 동시성: Sync와 Send</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> 러스트의 객체 지향 프로그래밍 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> 객체 지향 언어의 특성</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> 트레잇 객체를 사용하여 다른 타입 간의 값 허용하기</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> 객체 지향 디자인 패턴 구현하기</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> 값의 구조와 매칭되는 패턴</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> 패턴이 사용될 수 있는 모든 곳</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> 반증 가능성: 패턴의 매칭이 실패할 수도 있는 경우</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> 패턴 문법의 모든 것</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> 고급 기능들</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> 안전하지 않은 러스트</a></li><li class="chapter-item expanded "><a href="ch19-02-advanced-lifetimes.html"><strong aria-hidden="true">19.2.</strong> 고급 라이프타임</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.3.</strong> 고급 트레잇</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.4.</strong> 고급 타입</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.5.</strong> 고급 함수와 클로저</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> 마지막 프로젝트: 멀티스레드 웹서버 만들기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> 싱글 스레드 웹서버</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> 싱글 스레드 서버를 멀티스레드 서버로 바꾸기</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> 우아한 종료와 정리</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - 키워드</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - 연산자 및 기호</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - derive 가능한 트레잇</a></li><li class="chapter-item expanded "><a href="appendix-04-macros.html"><strong aria-hidden="true">21.4.</strong> D - 매크로</a></li><li class="chapter-item expanded "><a href="appendix-05-translation.html"><strong aria-hidden="true">21.5.</strong> E - 본 책의 번역본 목록</a></li><li class="chapter-item expanded "><a href="appendix-06-newest-features.html"><strong aria-hidden="true">21.6.</strong> F - 새로운 기능</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - 러스트가 만들어지는 과정과 “Nightly Rust”</a></li><li class="chapter-item expanded "><a href="appendix-08-glossary.html"><strong aria-hidden="true">21.8.</strong> H - 번역 용어 정리</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Rust Programming Language</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World!</a></li><li class="chapter-item expanded "><a href="ch01-03-hello-cargo.html"><strong aria-hidden="true">1.3.</strong> Hello, Cargo!</a></li></ol></li><li class="chapter-item expanded "><a href="ch02-00-guessing-game-tutorial.html"><strong aria-hidden="true">2.</strong> Programming a Guessing Game</a></li><li class="chapter-item expanded "><a href="ch03-00-common-programming-concepts.html"><strong aria-hidden="true">3.</strong> Common Programming Concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch03-01-variables-and-mutability.html"><strong aria-hidden="true">3.1.</strong> Variables and Mutability</a></li><li class="chapter-item expanded "><a href="ch03-02-data-types.html"><strong aria-hidden="true">3.2.</strong> Data Types</a></li><li class="chapter-item expanded "><a href="ch03-03-how-functions-work.html"><strong aria-hidden="true">3.3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="ch03-04-comments.html"><strong aria-hidden="true">3.4.</strong> Comments</a></li><li class="chapter-item expanded "><a href="ch03-05-control-flow.html"><strong aria-hidden="true">3.5.</strong> Control Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch04-00-understanding-ownership.html"><strong aria-hidden="true">4.</strong> Understanding Ownership</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch04-01-what-is-ownership.html"><strong aria-hidden="true">4.1.</strong> What is Ownership?</a></li><li class="chapter-item expanded "><a href="ch04-02-references-and-borrowing.html"><strong aria-hidden="true">4.2.</strong> References and Borrowing</a></li><li class="chapter-item expanded "><a href="ch04-03-slices.html"><strong aria-hidden="true">4.3.</strong> The Slice Type</a></li></ol></li><li class="chapter-item expanded "><a href="ch05-00-structs.html"><strong aria-hidden="true">5.</strong> Using Structs to Structure Related Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch05-01-defining-structs.html"><strong aria-hidden="true">5.1.</strong> Defining and Instantiating Structs</a></li><li class="chapter-item expanded "><a href="ch05-02-example-structs.html"><strong aria-hidden="true">5.2.</strong> An Example Program Using Structs</a></li><li class="chapter-item expanded "><a href="ch05-03-method-syntax.html"><strong aria-hidden="true">5.3.</strong> Method Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch06-00-enums.html"><strong aria-hidden="true">6.</strong> Enums and Pattern Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch06-01-defining-an-enum.html"><strong aria-hidden="true">6.1.</strong> Defining an Enum</a></li><li class="chapter-item expanded "><a href="ch06-02-match.html"><strong aria-hidden="true">6.2.</strong> The match Control Flow Operator</a></li><li class="chapter-item expanded "><a href="ch06-03-if-let.html"><strong aria-hidden="true">6.3.</strong> Concise Control Flow with if let</a></li></ol></li><li class="chapter-item expanded "><a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html"><strong aria-hidden="true">7.</strong> Managing Growing Projects with Packages, Crates, and Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch07-01-packages-and-crates.html"><strong aria-hidden="true">7.1.</strong> Packages and Crates</a></li><li class="chapter-item expanded "><a href="ch07-02-defining-modules-to-control-scope-and-privacy.html"><strong aria-hidden="true">7.2.</strong> Defining Modules to Control Scope and Privacy</a></li><li class="chapter-item expanded "><a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"><strong aria-hidden="true">7.3.</strong> Paths for Referring to an Item in the Module Tree</a></li><li class="chapter-item expanded "><a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"><strong aria-hidden="true">7.4.</strong> Bringing Paths Into Scope with the use Keyword</a></li><li class="chapter-item expanded "><a href="ch07-05-separating-modules-into-different-files.html"><strong aria-hidden="true">7.5.</strong> Separating Modules into Different Files</a></li></ol></li><li class="chapter-item expanded "><a href="ch08-00-common-collections.html"><strong aria-hidden="true">8.</strong> Common Collections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch08-01-vectors.html"><strong aria-hidden="true">8.1.</strong> Storing Lists of Values with Vectors</a></li><li class="chapter-item expanded "><a href="ch08-02-strings.html"><strong aria-hidden="true">8.2.</strong> Storing UTF-8 Encoded Text with Strings</a></li><li class="chapter-item expanded "><a href="ch08-03-hash-maps.html"><strong aria-hidden="true">8.3.</strong> Storing Keys with Associated Values in Hash Maps</a></li></ol></li><li class="chapter-item expanded "><a href="ch09-00-error-handling.html"><strong aria-hidden="true">9.</strong> Error Handling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch09-01-unrecoverable-errors-with-panic.html"><strong aria-hidden="true">9.1.</strong> Unrecoverable Errors with panic!</a></li><li class="chapter-item expanded "><a href="ch09-02-recoverable-errors-with-result.html"><strong aria-hidden="true">9.2.</strong> Recoverable Errors with Result</a></li><li class="chapter-item expanded "><a href="ch09-03-to-panic-or-not-to-panic.html"><strong aria-hidden="true">9.3.</strong> To panic! or Not To panic!</a></li></ol></li><li class="chapter-item expanded "><a href="ch10-00-generics.html"><strong aria-hidden="true">10.</strong> Generic Types, Traits, and Lifetimes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch10-01-syntax.html"><strong aria-hidden="true">10.1.</strong> Generic Data Types</a></li><li class="chapter-item expanded "><a href="ch10-02-traits.html"><strong aria-hidden="true">10.2.</strong> Traits: Defining Shared Behavior</a></li><li class="chapter-item expanded "><a href="ch10-03-lifetime-syntax.html"><strong aria-hidden="true">10.3.</strong> Validating References with Lifetimes</a></li></ol></li><li class="chapter-item expanded "><a href="ch11-00-testing.html"><strong aria-hidden="true">11.</strong> Writing Automated Tests</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch11-01-writing-tests.html"><strong aria-hidden="true">11.1.</strong> How to Write Tests</a></li><li class="chapter-item expanded "><a href="ch11-02-running-tests.html"><strong aria-hidden="true">11.2.</strong> Controlling How Tests Are Run</a></li><li class="chapter-item expanded "><a href="ch11-03-test-organization.html"><strong aria-hidden="true">11.3.</strong> Test Organization</a></li></ol></li><li class="chapter-item expanded "><a href="ch12-00-an-io-project.html"><strong aria-hidden="true">12.</strong> An I/O Project: Building a Command Line Program</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch12-01-accepting-command-line-arguments.html"><strong aria-hidden="true">12.1.</strong> Accepting Command Line Arguments</a></li><li class="chapter-item expanded "><a href="ch12-02-reading-a-file.html"><strong aria-hidden="true">12.2.</strong> Reading a File</a></li><li class="chapter-item expanded "><a href="ch12-03-improving-error-handling-and-modularity.html"><strong aria-hidden="true">12.3.</strong> Refactoring to Improve Modularity and Error Handling</a></li><li class="chapter-item expanded "><a href="ch12-04-testing-the-librarys-functionality.html"><strong aria-hidden="true">12.4.</strong> Developing the Library’s Functionality with Test Driven Development</a></li><li class="chapter-item expanded "><a href="ch12-05-working-with-environment-variables.html"><strong aria-hidden="true">12.5.</strong> Working with Environment Variables</a></li><li class="chapter-item expanded "><a href="ch12-06-writing-to-stderr-instead-of-stdout.html"><strong aria-hidden="true">12.6.</strong> Writing Error Messages to Standard Error Instead of Standard Output</a></li></ol></li><li class="chapter-item expanded "><a href="ch13-00-functional-features.html"><strong aria-hidden="true">13.</strong> Functional Language Features: Iterators and Closures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch13-01-closures.html"><strong aria-hidden="true">13.1.</strong> Closures: Anonymous Functions that Can Capture Their Environment</a></li><li class="chapter-item expanded "><a href="ch13-02-iterators.html"><strong aria-hidden="true">13.2.</strong> Processing a Series of Items with Iterators</a></li><li class="chapter-item expanded "><a href="ch13-03-improving-our-io-project.html"><strong aria-hidden="true">13.3.</strong> Improving Our I/O Project</a></li><li class="chapter-item expanded "><a href="ch13-04-performance.html"><strong aria-hidden="true">13.4.</strong> Comparing Performance: Loops vs. Iterators</a></li></ol></li><li class="chapter-item expanded "><a href="ch14-00-more-about-cargo.html"><strong aria-hidden="true">14.</strong> More about Cargo and Crates.io</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch14-01-release-profiles.html"><strong aria-hidden="true">14.1.</strong> Customizing Builds with Release Profiles</a></li><li class="chapter-item expanded "><a href="ch14-02-publishing-to-crates-io.html"><strong aria-hidden="true">14.2.</strong> Publishing a Crate to Crates.io</a></li><li class="chapter-item expanded "><a href="ch14-03-cargo-workspaces.html"><strong aria-hidden="true">14.3.</strong> Cargo Workspaces</a></li><li class="chapter-item expanded "><a href="ch14-04-installing-binaries.html"><strong aria-hidden="true">14.4.</strong> Installing Binaries from Crates.io with cargo install</a></li><li class="chapter-item expanded "><a href="ch14-05-extending-cargo.html"><strong aria-hidden="true">14.5.</strong> Extending Cargo with Custom Commands</a></li></ol></li><li class="chapter-item expanded "><a href="ch15-00-smart-pointers.html"><strong aria-hidden="true">15.</strong> Smart Pointers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch15-01-box.html"><strong aria-hidden="true">15.1.</strong> Using Box&lt;T&gt; to Point to Data on the Heap</a></li><li class="chapter-item expanded "><a href="ch15-02-deref.html"><strong aria-hidden="true">15.2.</strong> Treating Smart Pointers Like Regular References with the Deref Trait</a></li><li class="chapter-item expanded "><a href="ch15-03-drop.html"><strong aria-hidden="true">15.3.</strong> Running Code on Cleanup with the Drop Trait</a></li><li class="chapter-item expanded "><a href="ch15-04-rc.html"><strong aria-hidden="true">15.4.</strong> Rc&lt;T&gt;, the Reference Counted Smart Pointer</a></li><li class="chapter-item expanded "><a href="ch15-05-interior-mutability.html"><strong aria-hidden="true">15.5.</strong> RefCell&lt;T&gt; and the Interior Mutability Pattern</a></li><li class="chapter-item expanded "><a href="ch15-06-reference-cycles.html"><strong aria-hidden="true">15.6.</strong> Reference Cycles Can Leak Memory</a></li></ol></li><li class="chapter-item expanded "><a href="ch16-00-concurrency.html"><strong aria-hidden="true">16.</strong> Fearless Concurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch16-01-threads.html"><strong aria-hidden="true">16.1.</strong> Using Threads to Run Code Simultaneously</a></li><li class="chapter-item expanded "><a href="ch16-02-message-passing.html"><strong aria-hidden="true">16.2.</strong> Using Message Passing to Transfer Data Between Threads</a></li><li class="chapter-item expanded "><a href="ch16-03-shared-state.html"><strong aria-hidden="true">16.3.</strong> Shared-State Concurrency</a></li><li class="chapter-item expanded "><a href="ch16-04-extensible-concurrency-sync-and-send.html"><strong aria-hidden="true">16.4.</strong> Extensible Concurrency with the Sync and Send Traits</a></li></ol></li><li class="chapter-item expanded "><a href="ch17-00-oop.html"><strong aria-hidden="true">17.</strong> Object Oriented Programming Features of Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch17-01-what-is-oo.html"><strong aria-hidden="true">17.1.</strong> Characteristics of Object-Oriented Languages</a></li><li class="chapter-item expanded "><a href="ch17-02-trait-objects.html"><strong aria-hidden="true">17.2.</strong> Using Trait Objects That Allow for Values of Different Types</a></li><li class="chapter-item expanded "><a href="ch17-03-oo-design-patterns.html"><strong aria-hidden="true">17.3.</strong> Implementing an Object-Oriented Design Pattern</a></li></ol></li><li class="chapter-item expanded "><a href="ch18-00-patterns.html"><strong aria-hidden="true">18.</strong> Patterns and Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch18-01-all-the-places-for-patterns.html"><strong aria-hidden="true">18.1.</strong> All the Places Patterns Can Be Used</a></li><li class="chapter-item expanded "><a href="ch18-02-refutability.html"><strong aria-hidden="true">18.2.</strong> Refutability: Whether a Pattern Might Fail to Match</a></li><li class="chapter-item expanded "><a href="ch18-03-pattern-syntax.html"><strong aria-hidden="true">18.3.</strong> Pattern Syntax</a></li></ol></li><li class="chapter-item expanded "><a href="ch19-00-advanced-features.html"><strong aria-hidden="true">19.</strong> Advanced Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch19-01-unsafe-rust.html"><strong aria-hidden="true">19.1.</strong> Unsafe Rust</a></li><li class="chapter-item expanded "><a href="ch19-03-advanced-traits.html"><strong aria-hidden="true">19.2.</strong> Advanced Traits</a></li><li class="chapter-item expanded "><a href="ch19-04-advanced-types.html"><strong aria-hidden="true">19.3.</strong> Advanced Types</a></li><li class="chapter-item expanded "><a href="ch19-05-advanced-functions-and-closures.html"><strong aria-hidden="true">19.4.</strong> Advanced Functions and Closures</a></li><li class="chapter-item expanded "><a href="ch19-06-macros.html"><strong aria-hidden="true">19.5.</strong> Macros</a></li></ol></li><li class="chapter-item expanded "><a href="ch20-00-final-project-a-web-server.html"><strong aria-hidden="true">20.</strong> Final Project: Building a Multithreaded Web Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch20-01-single-threaded.html"><strong aria-hidden="true">20.1.</strong> Building a Single-Threaded Web Server</a></li><li class="chapter-item expanded "><a href="ch20-02-multithreaded.html"><strong aria-hidden="true">20.2.</strong> Turning Our Single-Threaded Server into a Multithreaded Server</a></li><li class="chapter-item expanded "><a href="ch20-03-graceful-shutdown-and-cleanup.html"><strong aria-hidden="true">20.3.</strong> Graceful Shutdown and Cleanup</a></li></ol></li><li class="chapter-item expanded "><a href="appendix-00.html"><strong aria-hidden="true">21.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="appendix-01-keywords.html"><strong aria-hidden="true">21.1.</strong> A - Keywords</a></li><li class="chapter-item expanded "><a href="appendix-02-operators.html"><strong aria-hidden="true">21.2.</strong> B - Operators and Symbols</a></li><li class="chapter-item expanded "><a href="appendix-03-derivable-traits.html"><strong aria-hidden="true">21.3.</strong> C - Derivable Traits</a></li><li class="chapter-item expanded "><a href="appendix-04-useful-development-tools.html"><strong aria-hidden="true">21.4.</strong> D - Useful Development Tools</a></li><li class="chapter-item expanded "><a href="appendix-05-editions.html"><strong aria-hidden="true">21.5.</strong> E - Editions</a></li><li class="chapter-item expanded "><a href="appendix-06-translation.html"><strong aria-hidden="true">21.6.</strong> F - Translations of the Book</a></li><li class="chapter-item expanded "><a href="appendix-07-nightly-rust.html"><strong aria-hidden="true">21.7.</strong> G - How Rust is Made and “Nightly Rust”</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,6 +140,10 @@
                         </a>
                         
                         
+                        <a href="https://github.com/rust-lang/book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -164,141 +172,147 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="소개"><a class="header" href="#소개">소개</a></h1>
-<p><em>러스트 프로그래밍 언어</em>, 러스트 입문서에 오신 것을 환영합니다.</p>
-<p>러스트 프로그래밍 언어는 여러분이 더 빠르고, 더 안정적인 소프트웨어를 작성하도록
-해줍니다. 프로그래밍 언어 디자인에서 고수준의 인간공학과 저수준의 제어는 종종
-조화롭지 못합니다; 러스트는 이러한 갈등에 도전합니다. 강력한 기술적 능력과
-훌륭한 개발자 경험을 조화롭게 하는 것을 통해, 러스트는 (메모리 사용 같은)
-저수준 디테일을 그러한 제어를 하는데 동반되는 전통적으로 귀찮은 것들 없이도
-제어하는 옵션을 제공합니다.</p>
-<h2 id="러스트는-누구를-위한-것인가요"><a class="header" href="#러스트는-누구를-위한-것인가요">러스트는 누구를 위한 것인가요?</a></h2>
-<p>러스트는 다양한 이유로 수많은 사람들에게 이상적입니다. 가장 중요한 그룹 중
-일부를 살펴봅시다.</p>
-<h3 id="개발자-팀"><a class="header" href="#개발자-팀">개발자 팀</a></h3>
-<p>러스트는 시스템 프로그래밍 지식에 대한 다양한 수준을 가진 큰 개발자 팀들 사이에서
-협업을 하기 위한 생산적인 도구라는 것이 밝혀지고 있습니다. 저수준 코드는 다양한
-감지하기 힘든 버그들에 노출되기 쉬운데, 이는 다른 대부분의 언어들에서는 경험 있는
-개발자들에 의한 대규모의 테스트 및 세심한 코드 리뷰를 통해 잡을 수 있습니다.
-러스트에서는, 컴파일러가 동시성 버그를 포함하여 이러한 찾기 어려운 버그를 가진
-코드의 컴파일을 거부함으로써 문지기 역할을 수행합니다. 이 컴파일러와 나란히
-작업을 함으로써, 팀은 버그를 추적하는 것보다는 프로그램의 로직에 집중하는데
-더 많은 시간을 쓸 수 있습니다.</p>
-<p>또한 러스트는 시스템 프로그램 세계로 현대적인 개발자 도구들을 가져옵니다:</p>
+<blockquote>
+<p>Note: 이 책은 <a href="https://nostarch.com/">No Starch Press</a> 에서 ebook 형태로
+무료 제공되는 <a href="https://nostarch.com/rust">The Rust Programming Language</a>
+와 동일한 내용을 원작자의 동의 하에 번역한 것입니다.</p>
+</blockquote>
+<p><em>The Rust Programming Language(보통 줄여서 TRPL이라고 부릅니다)</em> 는 러스트 프로그래밍 언어를 소개하는 책입니다.</p>
+<p>여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며,
+메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다.</p>
+<p>하지만 러스트는 강력한 기술적 능력과 뛰어난 개발자 경험(developer experience)을 통해 이러한 인식을 바꾸는데 도전했습니다.
+즉, 러스트를 사용하면 개발자 친화적인 고수준 문법으로 저수준을 제어할 수 있어 저수준 제어에 동반되는 귀찮은 것들이 사라지고, 프로그래머는 더 빠르고 안정적인 소프트웨어를 만들 수 있습니다.</p>
+<h2 id="러스트는-누구에게-적합할까요"><a class="header" href="#러스트는-누구에게-적합할까요">러스트는 누구에게 적합할까요?</a></h2>
+<p>러스트는 다양한 사람들에게 이상적입니다. 이유도 각각 다양하나,
+대표적인 몇 가지 경우를 살펴보도록 하겠습니다.</p>
+<h3 id="개발팀"><a class="header" href="#개발팀">개발팀</a></h3>
+<p>일반적으로 저수준 코드는 다양한 버그들에 노출되기 쉬워,
+시스템 프로그래밍 지식이 적은 사람부터 많은 사람까지 다양하게 구성된
+보통 개발팀에선 시니어 개발자를 투입해 대규모 테스트 및 상세한 코드 리뷰를 진행하여 버그를 해결하는 것이 일반적입니다.</p>
+<p>하지만 러스트에선 컴파일러가 동시성 버그 등 찾기 어려운 버그가
+숨은 코드는 컴파일하지 않음으로써 버그를 원천봉쇄합니다.
+이는 개발팀이 디버깅보다 프로그램 로직 개발에 집중하게
+만드는 효과를 가져왔으며, 실제로도 생산적인 도구임이 입증되고 있습니다.</p>
+<p>러스트는 시스템 프로그래밍 세계에 현대적인 개발자 도구를 도입하기도 했습니다:</p>
 <ul>
-<li>Cargo라고 불리는 기본 구성에 포함된 의존성(dependency) 관리자 및 빌드
-도구는, 러스트 생태계 상에서 고통 없고 일관되게 의존성을 추가하고, 컴파일하고,
-관리하도록 해줍니다.</li>
-<li>Rustfmt는 개발자들 사이에서 일관된 코딩 스타일을 반드시 따르도록 해줍니다.</li>
-<li>러스트 언어 서버(Rust Language Server)는 코드 자동완성(code completion) 및
-인라인 에러 메시지를 위한 통합 개발 환경(IDE)으로의 결합에 힘을 제공합니다.</li>
+<li>Cargo 라는 기본 구성에 포함된 의존성 관리자 및 빌드 도구로
+손쉽게 러스트 생태계에서 의존성(dependency)을
+추가, 컴파일, 관리할 수 있습니다.</li>
+<li>Rustfmt는 개발자들 사이에서 코딩 스타일을 통일시킵니다.</li>
+<li>러스트 언어 서버(Rust Language Server)는 코드 자동완성과
+인라인 에러 메시지를 결합해 IDE(통합 개발 환경)의 편의성을 높입니다.</li>
 </ul>
-<p>이들 및 러스트 생태계의 다른 툴들을 이용함으로서, 개발자들은 시스템 수준의 코드를
-작성하면서도 생산적일 수 있습니다.</p>
+<p>개발자들은 이 3가지를 포함한 러스트 생태계의 여러 툴들을 이용하여
+생산성을 희생하지 않고 저수준 코드를 작성할 수 있습니다.</p>
 <h3 id="학생"><a class="header" href="#학생">학생</a></h3>
-<p>러스트는 학생들 및 시스템 개념에 대하여 공부하는데 관심이 있는 이들을 위한
-것입니다. 러스트를 사용하여, 많은 사람들이 운영 체제 개발과 같은 주제에
-대해 공부해왔습니다. 커뮤니티는 매우 따뜻하고 기쁘게 학생들을 질문에 대하여
-대답해줍니다. 이 책과 같은 노력들을 통해서, 러스트 팀은 더 많은 사람들,
-특히 프로그래밍에 새로 입문한 사람들이 시스템 개념에 더 접근하기 쉬워지길
-원합니다.</p>
+<p>학생 및 시스템 개념을 공부하려는 분도 환영입니다.
+많은 이들이 러스트로 운영체제 개발 등의 주제를 공부해왔으며,
+커뮤니티 역시 초보자를 환영하고 질문에 친절히 대답해주는 분위기가 형성되어 있습니다.</p>
+<p>러스트 팀은 이 책과 같은 노력을 통해 더 많은 사람,
+특히 프로그래밍 입문자들이 시스템 개념에 접근하기 쉬워지길 바랍니다.</p>
 <h3 id="회사"><a class="header" href="#회사">회사</a></h3>
-<p>크고 작은 수백 개의 회사들이 다양한 작업들을 위해 프로덕션에 러스트를 사용합니다.
-그 작업들에는 커맨드 라인 도구, 웹 서비스, 데브옵스(DevOps) 도구화,
-임베디드 장치, 오디오 및 비디오 분석과 트랜스코딩, 암호화폐, 생물정보학,
-검색 엔진, IOT(internet of things) 애플리케이션, 머신 러닝, 그리고
-심지어는 파이어폭스 웹브라우저의 주요 부분들을 포함합니다.</p>
-<h3 id="오픈-소스-개발자"><a class="header" href="#오픈-소스-개발자">오픈 소스 개발자</a></h3>
-<p>러스트는 러스트 프로그래밍 언어, 커뮤니티, 개발자 도구, 그리고 라이브러리를 만들기를
-원하는 사람들을 위한 것입니다. 우리는 여러분이 러스트 언어에 기여하는 것을 정말
-원합니다.</p>
-<h3 id="속도와-안정성을-소중하게-생각하는-사람"><a class="header" href="#속도와-안정성을-소중하게-생각하는-사람">속도와 안정성을 소중하게 생각하는 사람</a></h3>
-<p>러스트는 언어에서 속도와 안정성을 간절히 기원하는 사람들을 위한 것입니다. 여기서
-속도란, 여러분이 러스트를 가지고 만들 수 있는 프로그램의 속도와 러스트가 여러분들로
-하여금 이를 작성하게 하는 속도를 의미하는 것입니다. 러스트 컴파일러의 검사들은,
-이런 검사들을 가지고 있지 않은 언어라서 개발자들이 고치기를 꺼려하는 불안정한
-레거시 코드들과는 반대로 기능 추가 및 리팩토링을 통해 안정성을 보장해줍니다. 비용
-없는 추상화, 더 낮은 수준의 코드를 수동으로 작성한 코드만큼 빠르게 컴파일해주는
-더 높은 수준의 기능을 위해 고군분투함으로서, 러스트는 안정적인 코드가 또한 빠른
-코드가 되도록 노력합니다.</p>
-<p>비록 모든 이들이 러스트 언어가 지원하기를 바라는 완벽한 리스트를 우리가
-제공하지는 않을지라도, 우리가 언급해온 이들은 가장 큰 이해당사자들의 일부입니다.
-종합적으로, 러스트의 가장 큰 야망은 프로그래머들이 수십 년간 받아들여 온
-트레이드오프의 이분법을 제거하는 것입니다: 안정성<em>과</em> 생산성, 속도<em>와</em>
-인간공학을 말이지요. 러스트에게 기회를 주고, 이 선택이 여러분에게도 작동하는지
-알아보세요.</p>
-<h2 id="이-책은-누구를-위한-것인가요"><a class="header" href="#이-책은-누구를-위한-것인가요">이 책은 누구를 위한 것인가요?</a></h2>
-<p>이 책은 여러분이 다른 프로그래밍 언어로 코드를 작성해 본적은 있다고 가정하지만,
-그게 언어인지에 대해서는 어떠한 가정도 하지 않습니다. 우리는 이 교재가 다양한
-종류의 프로그래밍 배경으로부터 온 이들에게 널리 접근될 수 있도록 시도해 왔습니다.
-우리는 무엇이 프로그래밍인지, 혹은 프로그래밍에 대해 어떻게 생각해야하는지에 대하여
-많은 시간을 쓰지 않습니다. 만일 여러분이 프로그래밍에 대해 완전히 초보라면,
-특별히 프로그래밍에 대한 소개를 제공하는 책을 읽는 것이 더 좋을 것입니다.</p>
-<h2 id="이-책을-이용하는-방법"><a class="header" href="#이-책을-이용하는-방법">이 책을 이용하는 방법</a></h2>
-<p>일반적으로, 이 책은 여러분이 앞에서부터 뒤로 순차적으로 읽고 있음을 가정합니다.
-뒤편의 장들은 그 이전의 장들의 개념 위에서 만들어지고, 그 이전의 장들은 어떤
-주제에 대해 더 깊이 탐구하지 않을 수도 있습니다; 우리는 보통 이후의 장에서
-그 주제에 대해 다시 이야기 합니다.</p>
-<p>여러분은 이 책에서 두 종류의 장들을 발견할 것입니다: 개념 장과 프로젝트 장입니다.
-개념 장에서는 러스트의 관점에 대해 배울 것입니다. 프로젝트 장에서는 여러분이
-여태껏 배운 것을 적용하여, 함께 작은 프로그램을 만들어볼 것입니다. 2, 12,
-20장은 프로젝트 장입니다; 나머지는 개념 장입니다.</p>
-<p>추가적으로, 2장은 러스트 언어에 대한 직접 해 보는 소개입니다. 우리는
-개념들을 높은 수준에서 다루고, 이후 장들에서는 추가적인 디테일을 제공할
-것입니다. 만일 여러분이 바로 손에 흙을 묻히고 싶다면, 2장은 그런 이들을
-위한 장입니다. 여러분은 심지어 처음부터 다른 프로그래밍 언어 특성과
-유사한 러스트 특성을 다루는 3장을 건너뛰고, 러스트의 소유권 시스템을
-배우는 4장으로 직행하고 싶어 할지도 모릅니다. 하지만, 여러분이 만약
-다음으로 넘어가기 전에 모든 디테일을 공부하기를 선호하는 특별히 꼼꼼한
-학습자라면, 여러분은 2장을 건너뛰어 3장으로 곧바로 간 다음, 학습한
-디테일들을 프로젝트에 적용해보기 위해 2장으로 돌아오는 것을 원할 수도
-있습니다.</p>
-<p>5장은 구조체와 메소드를, 6장은 열거형과 <code>match</code> 표현식, 그리고
-<code>if let</code> 흐름 제어문을 다룹니다. 여러분들은 러스트 내에서 커스텀
-타입을 만들기 위해 구조체와 열거형을 이용할 것입니다.</p>
-<p>7장에서는 여러분의 코드와 공개적인 API(Application Programming
-Interface)를 조직화하기 위한 러스트의 모듈 시스템 및 접근 권한 규칙에
-대해 배울 것입니다. 8장에서는 벡터, 스트링, 해쉬맵과 같은 표준 라이브러리에서
-제공하는 일반적인 컬렉션 데이터 구조를 다룹니다. 9장에서는 러스트의 에러
-처리 철학과 기술에 대해 탐구합니다.</p>
-<p>10장에서는 제네릭, 트레잇, 그리고 라이프타임에 대해 깊이 파보는데, 이는
-여러분에게 여러 개의 타입에 대하여 적용되는 코드를 정의하는 힘을 줍니다.
-11장은 테스트에 관한 모든 것을 다루는데, 이는 러스트의 안정성 보장에도
-불구하고 여러분의 프로그램 로직이 옳음을 확실히 하기 위해 여전히 필요합니다.
-12장에서, 우리는 파일 내에서 텍스트를 검색하는 <code>grep</code> 커맨드 라인 도구가
-제공하는 기능의 일부를 직접 구현해 볼 것입니다. 이를 위하여, 우리는 이전 장에서
-다루었던 수많은 개념들을 이용할 것입니다.</p>
-<p>13장에서는 클로저와 반복자에 대해 탐구합니다: 함수형 프로그래밍 언어에서부터
-온 러스트의 특성입니다. 14장에서는 Cargo를 더 깊이 조사하고 여러분의 라이브러리를
-다른 사람들과 공유하는 최고의 관례들에 대해 이야기하겠습니다. 15장에서는
-표준 라이브러리가 제공하는 스마트 포인터와 이 기능을 가능케 하는 트레잇에
-대해 다룹니다.</p>
-<p>16장에서는 동시성 프로그래밍의 서로 다른 모델들을 알아보고 러스트가 어떤
-식으로 다수의 쓰레드를 겁 없이 프로그래밍할 수 있도록 해주는지 이야기
-하겠습니다. 17장에서는 아마도 여러분이 친숙할 수 있는 객체 지향 프로그래밍
-원칙과 러스트의 표현 양식이 어떤 차이가 있는지 보겠습니다.</p>
-<p>18장은 패턴과 패턴 매칭에 대한 참고자료인데, 이 패턴 및 패턴 매칭은 러스트
-프로그램 전체를 통틀어 아이디어를 표현하는 강력한 방식입니다. 19장은 다양한
-고급 주제를 뷔페처럼 담고 있는데, 이를테면 unsafe 러스트와 라이프타임, 트레잇,
-타입, 함수, 그리고 클로저에 대한 추가적인 주제를 포함하고 있습니다.</p>
-<p>20장에서는 저수준 멀티쓰레드 웹서버를 구현하는 것으로 프로젝트를 완성할
-것입니다!</p>
-<p>마지막으로, 몇 개의 부록들은 언어에 대한 유용한 정보들을 참고자료 같은 형식으로
-담고 있습니다. 부록 A는 러스트의 키워드를 다룹니다. 부록 B는 러스트의 연산자와
-심볼을 다룹니다. 부록 C는 표준 라이브러리가 제공하는 추론 가능한 (derivable)
-트레잇들을 다룹니다. 부록 D는 매크로를 다룹니다.</p>
-<p>이 책을 읽는 잘못된 방식이란 없습니다: 만일 여러분이 건너뛰기를 원한다면, 그렇게 하세요!
-만일 여러분이 어떠한 혼란이라도 경험한다면 다시 이전 장들로 돌아와야 할지도 모릅니다.
-하지만 어떻게 하든 여러분 몫입니다.</p>
-<p>러스트를 배우는 과정의 중요한 부분은 컴파일러가 표시해주는 에러 메시지를 어떻게
-읽는지를 배우는 것입니다: 이는 여러분들을 작동하는 코드로 향해 안내해줄 것입니다.
-그렇기 때문에, 우리는 컴파일이 되지 않은 다양한 예제 코드와 함께 그러한 상황에서
-컴파일러가 여러분에게 보여줄 에러 메시지를 제공할 것입니다. 만일 여러분이 입문하여
-임의의 예제를 실행한다면, 그게 컴파일 안 될 수도 있음을 알아두세요! 여러분이
-실행하기를 시도하는 그 예제가 에러를 의도한 것인지를 알아보기 위해서 그 주변의
-텍스트를 읽어주세요. 대부분의 경우, 우리는 컴파일 되지 않는 어떤 코드의 올바른
-버전으로 여러분을 이끌어갈 것입니다.</p>
-<h2 id="소스-코드"><a class="header" href="#소스-코드">소스 코드</a></h2>
-<p>이 책을 제작하도록 하는 소스코드는 <a href="https://github.com/rust-lang/book/tree/master/second-edition/src">GitHub</a>에서 찾을 수 있습니다.</p>
+<p>회사의 규모를 불문하고, 수많은 회사가 이미 웹 서비스, 데브옵스 도구화 등 다양한 작업에 러스트를 사용하고 있습니다.</p>
+<p>그 이외에도 러스트는 커맨드 라인 도구, 임베디드 장치, 오디오 및 비디오 분석,
+암호화폐, 생물정보학, 검색 엔진, IOT 애플리케이션, 머신 러닝,
+심지어 파이어폭스 웹 브라우저의 핵심 부분을 만드는데에도 사용됩니다.</p>
+<h3 id="오픈소스-개발자"><a class="header" href="#오픈소스-개발자">오픈소스 개발자</a></h3>
+<p>러스트는 여러분의 기여가 절실합니다.
+그렇기에 러스트 프로그래밍 언어 자체에 기여하실 분이나 커뮤니티 활동,
+개발자 도구 제작, 라이브러리 개발 등에 참여하실 분께도 정말 적합한 언어입니다.</p>
+<h3 id="속도와-안정성을-중시하는-사람"><a class="header" href="#속도와-안정성을-중시하는-사람">속도와 안정성을 중시하는 사람</a></h3>
+<p>러스트는 속도와 안정성을 중시하는 사람들을 위한 언어입니다
+(이때의 속도란 프로그램을 작성하는 속도 및 만들어진 프로그램의 속도를 지칭합니다).</p>
+<p>개발자가 불안정한 레거시 코드를 수정하길 꺼려하는 타 언어의 컴파일러 검사와는 달리
+러스트 컴파일러의 검사는 기능 추가 및 리팩토링을 통해 안정성을 보장합니다.
+또한 비용 없는 추상화, 즉 컴파일러가 생성하는 저수준 코드를
+개발자가 직접 작성한 만큼 빠르게 만들 수 있도록 노력하여
+안정적인 코드가 빠른 코드도 될 수 있도록 합니다.</p>
+<p>앞서 언급해온 대상도 대표적인 이해관계자 중 일부일 뿐입니다.
+러스트의 최종 목표는, 기존의 안정성<strong>이나</strong> 생산성 중 하나를 택하면 나머지 하나를 잃는 것이 당연시되던, 프로그래머들이 여태 받아들여 온 트레이드오프를 제거하는 것입니다.
+러스트는 안정성<strong>과</strong> 생산성 두 마리 토끼를 모두 잡고, 마찬가지 취급을 받던 성능<strong>과</strong> 개발자 친화성(ergonomics)까지 동시에 끌어안았습니다.</p>
+<p>한번 러스트를 사용해보고, 이 특성이 여러분과도 잘 맞는지 판단해보세요.</p>
+<h2 id="이-책은-어떤-사람을-위한-책인가요"><a class="header" href="#이-책은-어떤-사람을-위한-책인가요">이 책은 어떤 사람을 위한 책인가요?</a></h2>
+<p>이 책은 여러분이 이미 다른 프로그래밍 언어를 배운 적이 있다는
+가정하에 집필되었습니다(어떤 언어를 배웠었는지는 상관하지 않습니다).
+따라서 이 책에선 프로그래밍이라는 게 무엇인지,
+어떤 자세로 코드를 작성해야 하는지 길게 설명하지 않을 겁니다.
+프로그래밍을 처음 배우시는 분은 이 책 이외의 다른
+프로그래밍 입문 서적을 먼저 읽고 오시길 권유 드립니다.</p>
+<h2 id="이-책을-어떻게-읽어야-할까요"><a class="header" href="#이-책을-어떻게-읽어야-할까요">이 책을 어떻게 읽어야 할까요?</a></h2>
+<p>먼저, 이 책은 앞에서부터 뒤 순서대로
+읽는 가정하에 작성되었음을 알려드립니다.
+따라서 보통 앞 장에선 기초 내용을 배우고,
+뒷 장에선 앞서 나온 내용을 기반으로 한 심화 내용을 배웁니다.</p>
+<p>등장하는 내용은 크게 두 종류입니다.
+주된 내용은 러스트 개념을 배우는 내용이며,
+2, 10, 20장에선 앞서 배운 내용을 토대로
+작은 프로그램을 만들어 보는 내용도 등장합니다.</p>
+<p>1장은 러스트를 설치하고 “Hello, world!” 프로그램을 작성하는 방법과
+Cargo(앞서 말한 러스트에서 사용하는 패키지 매니저 및 빌드 도구입니다.) 사용법을 다룹니다.</p>
+<p>2장은 직접 러스트를 실습하는 내용입니다.
+뒷 내용에서 심화적으로 배울 여러 개념을 추상적으로 다뤄볼 수 있죠.
+자신의 손으로 직접 실습해보는 걸 선호하시는 분에게 제격입니다.</p>
+<p>3장은 다른 프로그래밍 언어와 유사한 러스트 특성을 다루는 내용이며, 4장은 소유권 시스템을 다루는 내용입니다.
+이 부분은 여러 방법으로 읽을 수 있습니다. 3장을 건너뛰고 바로 4장 소유권 시스템부터 배우거나,
+하나씩 차근차근 배우는 걸 선호하면 2장을 건너뛰고 3장부터 본 후,
+2장으로 돌아와 배운 내용을 프로젝트에 적용해볼 수도 있죠.</p>
+<p>5장은 구조체 및 메소드를 다루며,
+6장은 열거형과 <code>match</code> 표현식, <code>if let</code> 흐름 제어문을 다룹니다.
+구조체와 열거형은 앞으로 커스텀 타입을 만드는 데 사용할 겁니다.</p>
+<p>7장은 공개 API(Application Programming Interface)를 만들 때,
+작성한 코드와 해당 API를 체계화하기 위한 모듈 시스템 및 접근 권한 규칙을 다루며,
+8장은 벡터, 문자열, 해쉬맵 등 표준 라이브러리가
+제공하는 일반적인 컬렉션 자료구조를 다룹니다.
+9장에선 러스트의 에러 처리 철학 및 기법을 알아보겠습니다.</p>
+<p>10장은 여러 타입을 처리하는 코드를 정의하는 데
+사용하는 제네릭(generic), 트레잇(trait), 라이프타임(lifetime)을 다루며
+11장에선 작성한 프로그램 로직이 잘 작동함을
+확인하는 데 필요한 테스트 관련 내용을 다룹니다.
+12장에선 그때까지 배운 수많은 개념을 이용해
+커맨드 라인 도구 <code>grep</code> 의 일부 기능을
+직접 구현해볼 겁니다.</p>
+<p>13장은 클로저 및 반복자(함수형 프로그래밍 언어에서 넘어온 기능입니다)를 다룹니다.
+14장은 Cargo 심화 내용 및 여러분이 만든 라이브러리를
+남들이 쓸 수 있도록 배포하는 방법을 다룹니다.
+15장은 표준 라이브러리가 제공하는 스마트 포인터와
+스마트 포인터를 구현하는 트레잇을 다룹니다.</p>
+<p>16장에선 여러 동시성 프로그래밍 모델과
+어째서 러스트에선 안심하고 멀티쓰레드 프로그래밍을 할 수 있는지 알아보고,
+17장에선 여러분에게 익숙할 객체 지향 프로그래밍 원칙과
+러스트의 표현 양식 간에 차이를 살펴보겠습니다.</p>
+<p>18장은 러스트에서 자신의 사고를 코드로 구현하는데
+유용한 패턴, 패턴 매칭을 참고자료 형식으로 다룹니다.
+19장은 unsafe 러스트, 매크로, 라이프타임, 트레잇, 타입, 함수, 클로저 등
+다양한 고급 주제를 다룹니다.</p>
+<p>20장에서는 저수준 멀티스레드 웹서버를 직접 구현하는 것으로
+프로젝트 실습을 마칠 예정입니다.</p>
+<p>마지막으로, 부록에는 러스트 관련 유용한 정보를 참고 자료 형식으로 담아두었습니다.
+각각 부록 A에는 러스트에서 사용하는 키워드들을, 부록 B에는 연산자 및 기호를,
+부록 C에는 표준 라이브러리가 제공하는 derivable 트레잇을,
+부록 D에는 여러 유용한 개발 도구에 대한 내용을,
+부록 E에는 러스트 에디션 설명을 담아두었으니 필요할 때 참고해주세요.</p>
+<p>이 책은 어떻게 읽든 상관 없습니다. 일단 넘기고 싶은 부분은 넘긴 뒤,
+뒷부분을 읽다가 내용이 헷갈릴 때 다시 앞으로 돌아와 읽으셔도 됩니다.
+다만, 자신에게 가장 도움이 되는 방식대로 읽으시길 권합니다.</p>
+<p><span id="ferris"></span></p>
+<p>러스트를 배우면서 가장 중요한 건 컴파일러가 보여주는 에러 메시지를 읽는 법입니다.
+에러 메시지만 잘 읽어도 코드 속 오류를 고칠 수 있기 때문이죠.
+따라서, 여러분이 에러 메시지를 읽는 실력을 자연스럽게 늘릴 수 있도록 컴파일되지
+않는 예제 코드와 해당 예제서 발생하는 에러 메시지를 다양하게 보여드릴 겁니다.
+그러니 눈에 보이는 아무 예제나 컴파일을 돌렸더니 에러가 나타나더라도,
+일부러 에러가 나타나게 만든 예제일 수도 있으니 당황하지 마시고 해당 예제 주위의 글을 읽어보세요.
+편의를 위해, 오작동하도록 만든 코드에는 Ferris 가 등장하니 구분하는 데 참고하셔도 좋습니다.</p>
+<table><thead><tr><th>Ferris</th><th>각각의 의미</th></tr></thead><tbody>
+<tr><td><img src="img/ferris/does_not_compile.svg" class="ferris-explain"/></td><td>컴파일되지 않는 코드</td></tr>
+<tr><td><img src="img/ferris/panics.svg" class="ferris-explain"/></td><td>Panic 이 발생하는 코드</td></tr>
+<tr><td><img src="img/ferris/unsafe.svg" class="ferris-explain"/></td><td>unsafe 코드가 포함된 코드</td></tr>
+<tr><td><img src="img/ferris/not_desired_behavior.svg" class="ferris-explain"/></td><td>의도대로 작동하지 않는 코드</td></tr>
+</tbody></table>
+<p>덧붙이자면, 컴파일되지 않는 코드가 등장하는 내용 중 대부분은
+해당 코드가 정상 작동하도록 수정해 나가는 내용입니다.</p>
+<h2 id="소스코드"><a class="header" href="#소스코드">소스코드</a></h2>
+<p>이 책을 만드는데 사용한 원본 파일은
+<a href="https://github.com/rinthel/rust-lang-book-ko/tree/master/src">GitHub(한국어 번역본)</a> 에서 찾아보실 수 있습니다.</p>
 
                     </main>
 
@@ -362,6 +376,8 @@ Interface)를 조직화하기 위한 러스트의 모듈 시스템 및 접근 �
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="ferris.js"></script>
         
 
         
