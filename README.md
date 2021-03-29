@@ -1,14 +1,17 @@
 # 러스트 프로그래밍 언어
 
-### [빌드된 문서 바로가기: https://rinthel.github.io/rust-lang-book-ko](https://rinthel.github.io/rust-lang-book-ko)
-
 ### 환영합니다!
 
-[![빌드 상태](https://api.travis-ci.com/rinthel/rust-lang-book-ko.svg?branch=master)](https://travis-ci.org/rust-lang/book)
+[![빌드 상태](https://api.travis-ci.com/rust-kr/doc.rust-kr.org.svg?branch=master)](https://travis-ci.org/rust-lang/book)
 
-안녕하세요? 한국어를 쓰시는 러스트 유저 여러분들을 환영합니다. 이 저장소는 러스트 프로그래밍 언어
-문서(소위 the book이라고 일컫는)의 2번째 판 및 2018년 판에 대한 번역 작업을 위해 만들어졌습니다.
-2번째 판의 빌드된 문서는 상단의 링크를 통해 읽으실 수 있습니다.
+안녕하세요? 한국어를 쓰시는 러스트 유저 여러분들을 환영합니다.
+이 저장소는 러스트 프로그래밍 언어 문서(소위 the book이라고 일컫는)의 
+2018년 판에 대한 번역 작업을 위해 만들어졌습니다.
+
+2번째 판의 번역을 위한 저장소는 아래 링크를 통해 읽으실 수 있습니다.
+
+- [2판 번역본](https://rinthel.github.io/rust-lang-book-ko)
+- [2판 번역본 저장소](https://github.com/rinthel/rust-lang-book-ko)
 
 혹시 함께 번역에 참여하고 싶으신 분들, 환영합니다! :)
 저에게 메세지를 주시거나 discussions에 요청을 남겨주시면,

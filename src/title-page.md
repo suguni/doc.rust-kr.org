@@ -1,6 +1,13 @@
 # The Rust Programming Language
 
-*이 책의 원문은 Steve Klabnik 와 Carol Nichols 가 집필했으며, 기여해주신 러스트 커뮤니티 여러분과 한국어 번역에 참여해주신 분들께 감사드립니다.*
+> *이 책의 원문은 Steve Klabnik 와 Carol Nichols 가 집필했으며,
+> 기여해주신 러스트 커뮤니티 여러분과 한국어 번역에 참여해주신 분들께 감사드립니다.*
+
+> *이 책은 현재 번역 진행 중입니다.
+> 여러분들의 번역 기여를 환영합니다. 관심있는 분들은
+> "[github 저장소](https://github.com/rust-kr/doc.rust-kr.org)"에서
+> 자세한 내용을 확인해주세요! 모두 번역된 2판 버전은
+> "[여기](https://rinthel.github.io/rust-lang-book-ko)"있습니다*
 
 책을 보시기에 앞서, 현재 버전의 책에서는 Rust(이하 러스트) 1.48 이상 버전을
 사용하며 각 프로젝트는 *Cargo.toml* 에 `edition="2018"` 을 명시하여
@@ -38,7 +45,7 @@
 
 이 책은 온라인, 오프라인 모두 제공됩니다.
 온라인엔 원본(영문) 이외에도 번역본이 존재하며, 각각 [https://doc.rust-lang.org/stable/book/](https://doc.rust-lang.org/stable/book/)(영문)과
-[https://rinthel.github.io/rust-lang-book-ko/](https://rinthel.github.io/rust-lang-book-ko/)(번역본)에서 읽어보실 수 있습니다.
+[https://rinthel.github.io/rust-lang-book-ko/](https://rinthel.github.io/rust-lang-book-ko/)(2판 번역본)에서 읽어보실 수 있습니다.
 오프라인 본(영문)은 설치되어있는 `rustup` 의 `rustup docs --book` 명령어로 열어보실 수 있습니다.
 
 [No Starch Press][nsprust] 에서는 영문 원서가
