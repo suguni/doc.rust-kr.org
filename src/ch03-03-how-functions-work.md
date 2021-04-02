@@ -1,13 +1,13 @@
-## Functions
+## 함수
 
-Functions are pervasive in Rust code. You’ve already seen one of the most
-important functions in the language: the `main` function, which is the entry
-point of many programs. You’ve also seen the `fn` keyword, which allows you to
-declare new functions.
+러스트 코드는 온통 함수로 가득합니다. 여러분은 이미 이 언어에서 가장
+중요한 함수 중 하나인 `main` 함수를 보셨습니다. 이 함수는 많은 프로그램의 
+시작 지점입니다. 또한 새로운 함수를 선언하도록 해주는 `fn` 키워드도
+보셨습니다.
 
-Rust code uses *snake case* as the conventional style for function and variable
-names. In snake case, all letters are lowercase and underscores separate words.
-Here’s a program that contains an example function definition:
+러스트 코드는 함수나 변수 이름을 위한 관례로 *스네이크 케이스 (snake case)* 방식을
+이용합니다. 스네이크 케이스에서는 모든 글자를 소문자로 쓰고 밑줄(underscore)로 단어를
+구분합니다. 다음은 예제로 함수를 정의한 프로그램입니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -15,41 +15,41 @@ Here’s a program that contains an example function definition:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-16-functions/src/main.rs}}
 ```
 
-Function definitions in Rust start with `fn` and have a set of parentheses
-after the function name. The curly brackets tell the compiler where the
-function body begins and ends.
+러스트에서의 함수 정의는 `fn`로 시작하고 함수 이름 뒤에 괄호를
+붙입니다. 중괄호는 함수 본문의 시작과 끝을 컴파일러에게
+알려줍니다.
 
-We can call any function we’ve defined by entering its name followed by a set
-of parentheses. Because `another_function` is defined in the program, it can be
-called from inside the `main` function. Note that we defined `another_function`
-*after* the `main` function in the source code; we could have defined it before
-as well. Rust doesn’t care where you define your functions, only that they’re
-defined somewhere.
+함수의 이름 뒤에 괄호 묶음을 쓰면 우리가 정의해둔 어떤 함수든 호출할 수
+있습니다. `another_function`이 프로그램 내에 정의되어 있으므로, `main`
+함수에서 해당 함수를 호출할 수 있습니다. 소스 코드 내에서 `another_function`이
+`main` 함수 *뒤에* 정의되어 있다는 점을 주목하세요. 이 함수를 `main` 함수 앞에서
+정의할 수도 있습니다. 러스트는 여러분의 함수 위치를 고려하지 않으며, 어디든 정의만
+되어 있으면 됩니다.
 
-Let’s start a new binary project named *functions* to explore functions
-further. Place the `another_function` example in *src/main.rs* and run it. You
-should see the following output:
+함수에 대해 좀더 알아보기 위해서 *functions* 이라는 이름의 새 바이너리 프로젝트를
+시작해 봅시다. `another_function` 예제를 *src/main.rs* 에 넣고 실행해보면
+다음과 같은 결과를 보게 될 것입니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-16-functions/output.txt}}
 ```
 
-The lines execute in the order in which they appear in the `main` function.
-First, the “Hello, world!” message prints, and then `another_function` is
-called and its message is printed.
+`main` 함수 안의 내용이 순서대로 수행됩니다. 먼저 "Hello, world!"
+메시지가 출력된 다음, `another_function`이 호출되고 그 안의
+메세지가 출력됩니다.
 
-### Function Parameters
+### 함수 매개변수
 
-Functions can also be defined to have *parameters*, which are special variables
-that are part of a function’s signature. When a function has parameters, you
-can provide it with concrete values for those parameters. Technically, the
-concrete values are called *arguments*, but in casual conversation, people tend
-to use the words *parameter* and *argument* interchangeably for either the
-variables in a function’s definition or the concrete values passed in when you
-call a function.
+함수는 *매개변수 (parameter)* 를 갖도록 정의될 수 있으며, 이는 함수
+시그니처 (function signiqure) 의 일부인 특별한 변수입니다.
+함수가 매개변수를 갖고 있으면 이 매개변수를 위한 고정값(concrete value)을
+전달할 수 있습니다. 전문용어로 이런 고정값을 *인자 (argument)* 라고
+부르지만, 사람들은 보통 *매개변수*와 *인자*라는 용어를 함수 정의부 내의
+변수나 함수 호출시 집어넣는 고정값에 대해 말할 때 혼용하는 경향이
+있습니다.
 
-The following rewritten version of `another_function` shows what parameters
-look like in Rust:
+아래의 새롭게 작성된 `another_function`은 러스트에서의 매개변수가
+어떤 식으로 생겼는지 보여줍니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -57,24 +57,24 @@ look like in Rust:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-17-functions-with-parameters/src/main.rs}}
 ```
 
-Try running this program; you should get the following output:
+이 프로그램을 실행하면 다음과 같은 결과를 볼 수 있습니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-17-functions-with-parameters/output.txt}}
 ```
 
-The declaration of `another_function` has one parameter named `x`. The type of
-`x` is specified as `i32`. When `5` is passed to `another_function`, the
-`println!` macro puts `5` where the pair of curly brackets were in the format
-string.
+`another_function` 선언을 보면 `x`라는 이름의 매개변수 하나를 갖고 있습니다.
+`x`의 타입은 `i32`로 명시되어 있습니다. `5`가 `another_function`으로 전달되면,
+`println!` 매크로는 포맷 문자열 내 중괄호 쌍의 위치에 `5`를
+집어넣습니다.
 
-In function signatures, you *must* declare the type of each parameter. This is
-a deliberate decision in Rust’s design: requiring type annotations in function
-definitions means the compiler almost never needs you to use them elsewhere in
-the code to figure out what you mean.
+함수 시그니처에서는 *반드시* 각 매개변수의 타입을 선언해야 합니다.
+이는 러스트를 설계하면서 신중하게 내린 결정사항입니다: 함수의 정의에 타입 명시를
+강제하면 이 함수를 다른 코드에서 사용할 때 여러분이 의도한 바를 컴파일러가 추측하지
+않아도 되게 됩니다.
 
-When you want a function to have multiple parameters, separate the parameter
-declarations with commas, like this:
+함수가 여러 매개변수를 갖도록 하고 싶다면 아래처럼 쉼표 기호로
+파라미터 정의를 구분하세요:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -82,38 +82,38 @@ declarations with commas, like this:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-18-functions-with-multiple-parameters/src/main.rs}}
 ```
 
-This example creates a function with two parameters, both of which are `i32`
-types. The function then prints the values in both of its parameters. Note that
-function parameters don’t all need to be the same type, they just happen to be
-in this example.
+이 예제에서는 `i32` 타입인 두 개의 매개변수를 갖는 함수를 생성합니다.
+함수는 이 두 개의 매개변수의 값을 출력합니다. 주의할 점은,
+함수 매개변수는 이번 예제처럼 굳이 같은 타입이 아니여도 된다는
+것입니다.
 
-Let’s try running this code. Replace the program currently in your *functions*
-project’s *src/main.rs* file with the preceding example and run it using `cargo
-run`:
+한번 코드를 실행해봅시다. 여러분의 *function* 프로젝트의
+*src/main.rs* 내용을 위의 예제로 변경한 뒤에, `cargo run`으로
+실행시키면 됩니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-18-functions-with-multiple-parameters/output.txt}}
 ```
 
-Because we called the function with `5` as the value for  `x` and `6` is passed
-as the value for `y`, the two strings are printed with these values.
+함수의 `x`와 `y`에 `5`와 `6`을 넣어 호출했으므로,
+이 값들을 담은 두 개의 스트링이 출력되었습니다.
 
-### Function Bodies Contain Statements and Expressions
+### 함수 본문은 구문과 표현식으로 구성됩니다
 
-Function bodies are made up of a series of statements optionally ending in an
-expression. So far, we’ve only covered functions without an ending expression,
-but you have seen an expression as part of a statement. Because Rust is an
-expression-based language, this is an important distinction to understand.
-Other languages don’t have the same distinctions, so let’s look at what
-statements and expressions are and how their differences affect the bodies of
-functions.
+함수 본문은 필요에 따라 표현식(expression)으로 종결되는 구문(Statement)의
+나열로 구성됩니다. 지금까지는 종결 표현식이 없는 함수만 다뤘지만, 구문의
+일부분으로 표현식이 쓰인건 보셨습니다. 러스트는 표현식 기반의
+언어이므로, 구문과 표현식의 구분은 러스트 이해에 중요합니다.
+다른 언어들은 이런 구분이 없으므로, 구문과 표현식이 무엇이며
+둘 간의 차이가 함수의 본문에 어떤 영향을 주는지
+살펴보겠습니다.
 
-We’ve actually already used statements and expressions. *Statements* are
-instructions that perform some action and do not return a value. *Expressions*
-evaluate to a resulting value. Let’s look at some examples.
+사실 우리는 이미 구문과 표현식을 사용했습니다. *구문*은 어떤 동작을 수행하고
+값을 반환하지 않는 명령입니다. *표현식*은 결과 값을 산출해냅니다.
+다음 몇 개의 예제를 살펴보도록 합시다. 
 
-Creating a variable and assigning a value to it with the `let` keyword is a
-statement. In Listing 3-1, `let y = 6;` is a statement.
+`let` 키워드로 변수를 만들고 값을 할당하는 것은 구문입니다.
+즉 Listing 3-3의 `let y = 6;`은 구문입니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -123,11 +123,11 @@ statement. In Listing 3-1, `let y = 6;` is a statement.
 
 <span class="caption">Listing 3-1: A `main` function declaration containing one statement</span>
 
-Function definitions are also statements; the entire preceding example is a
-statement in itself.
+또한 함수 정의도 구문입니다; 위 예제는 그 자체로 구문에
+해당됩니다.
 
-Statements do not return values. Therefore, you can’t assign a `let` statement
-to another variable, as the following code tries to do; you’ll get an error:
+구문은 값을 반환하지 않습니다. 따라서 아래와 같이 `let` 구문을 다른 변수에
+할당하려고 하면 에러가 납니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -135,25 +135,25 @@ to another variable, as the following code tries to do; you’ll get an error:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-19-statements-vs-expressions/src/main.rs}}
 ```
 
-When you run this program, the error you’ll get looks like this:
+이 프로그램을 실행하면 다음과 같은 에러를 보게 됩니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-19-statements-vs-expressions/output.txt}}
 ```
 
-The `let y = 6` statement does not return a value, so there isn’t anything for
-`x` to bind to. This is different from what happens in other languages, such as
-C and Ruby, where the assignment returns the value of the assignment. In those
-languages, you can write `x = y = 6` and have both `x` and `y` have the value
-`6`; that is not the case in Rust.
+`let y = 6` 구문은 값을 만환하지 않으므로 `x`에 바인딩시킬
+것이 없습니다. 이것이 C나 Ruby 같은 다른 언어와의 차이점인데,
+이 언어들은 할당문이 할당된 값을 반환하죠. 이런 언어들에서는
+`x = y = 6`라고 작성하여 `x`와 `y`에 모두 `6`을 대입할 수 있지만,
+러스트에서는 이렇지 않습니다.
 
-Expressions evaluate to something and make up most of the rest of the code that
-you’ll write in Rust. Consider a simple math operation, such as `5 + 6`, which
-is an expression that evaluates to the value `11`. Expressions can be part of
-statements: in Listing 3-1, the `6` in the statement `let y = 6;` is an
-expression that evaluates to the value `6`. Calling a function is an
-expression. Calling a macro is an expression. The block that we use to create
-new scopes, `{}`, is an expression, for example:
+여러분이 작성하는 러스트 코드의 대부분은 표현식이며, 이는 어떤 값을 산출합니다.
+`5 + 6`과 같은 간단한 수학 연산을 살펴봅시다. 이 수식은
+`11`이란 값을 산출하는 표현식입니다. 표현식은 구문의 부분일 수 있습니다:
+Listing 3-3의 `let y = 6;`이라는 구문에서 `6`은 `6`이란 값을 
+산출하는 표현식입니다. 함수를 호출하는 것도, 매크로를 호출하는 것도
+표현식입니다. 아래 예제처럼 새로운 스코프 생성을 위해 사용된 `{}`
+코드 블럭도 표현식입니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -161,7 +161,7 @@ new scopes, `{}`, is an expression, for example:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-20-blocks-are-expressions/src/main.rs}}
 ```
 
-This expression:
+아래의 표현식:
 
 ```rust,ignore
 {
@@ -170,22 +170,22 @@ This expression:
 }
 ```
 
-is a block that, in this case, evaluates to `4`. That value gets bound to `y`
-as part of the `let` statement. Note the `x + 1` line without a semicolon at
-the end, which is unlike most of the lines you’ve seen so far. Expressions do
-not include ending semicolons. If you add a semicolon to the end of an
-expression, you turn it into a statement, which will then not return a value.
-Keep this in mind as you explore function return values and expressions next.
+같은 경우에는 `4`를 산출하는 코드 블럭입니다. 이 값이 `let` 구문의 일부로서
+`y`에 바인딩됩니다. 여러분이 지금까지 봐온 것과 다르게 `x + 1` 줄의
+마지막이 세미콜론으로 끝나지 않은 점을 주목하세요. 표현식은
+종결을 나타내는 세미콜론을 쓰지 않습니다. 만약 표현식 끝에 세미콜론을
+추가하면, 표현식은 구문으로 변경되고 값을 반환하지 않게 됩니다.
+이 점을 상기하면서 이후부터 함수의 반환 값과 표현식을 살펴보길 바랍니다.
 
-### Functions with Return Values
+### 반환 값을 갖는 함수
 
-Functions can return values to the code that calls them. We don’t name return
-values, but we do declare their type after an arrow (`->`). In Rust, the return
-value of the function is synonymous with the value of the final expression in
-the block of the body of a function. You can return early from a function by
-using the `return` keyword and specifying a value, but most functions return
-the last expression implicitly. Here’s an example of a function that returns a
-value:
+함수는 호출한 코드에게 값을 반환할 수 있습니다. 반환되는 값을
+명명해야 할 필요는 없지만, 그 값의 타입은 화살표 (`->`) 뒤에
+선언되어야 합니다. 러스트에서 함수의 반환 값은 함수 본문의
+마지막 표현식의 값과 동일합니다. `return` 키워드와 값을 지정하여
+함수로부터 일찍 값을 반환할 수 있지만, 대부분의 함수들은 암묵적으로
+마지막 표현식 값을 반환합니다. 값을 반환하는 함수의 예를
+보겠습니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -193,30 +193,30 @@ value:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-21-function-return-values/src/main.rs}}
 ```
 
-There are no function calls, macros, or even `let` statements in the `five`
-function—just the number `5` by itself. That’s a perfectly valid function in
-Rust. Note that the function’s return type is specified too, as `-> i32`. Try
-running this code; the output should look like this:
+`five` 함수에는 함수 호출, 매크로, 심지어 `let` 구문도 없이
+그저 `5`란 숫자 하나가 있습니다. 러스트에서는 이게 완벽하게 유효한
+함수입니다. 함수 반환 값의 타입도 `-> i32`로 명시되어 있다는 점을
+주목하세요. 결과는 아래와 같이 나와야 합니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-21-function-return-values/output.txt}}
 ```
 
-The `5` in `five` is the function’s return value, which is why the return type
-is `i32`. Let’s examine this in more detail. There are two important bits:
-first, the line `let x = five();` shows that we’re using the return value of a
-function to initialize a variable. Because the function `five` returns a `5`,
-that line is the same as the following:
+`5`는 `five 함수의 반환값이며, 이 때문에 반환 타입을 `i32`으로 한
+것이지요. 좀더 자세히 보자면, 중요한 지점이 두 곳 있습니다: 첫째로,
+`let x = five();` 줄은 함수의 반환 값을 변수의 초기 값으로 사용하는
+것을 보여줍니다. `five`의 반환 값이 `5`이기 때문에, 해당 줄은 다음과 
+동일합니다:
 
 ```rust
 let x = 5;
 ```
 
-Second, the `five` function has no parameters and defines the type of the
-return value, but the body of the function is a lonely `5` with no semicolon
-because it’s an expression whose value we want to return.
+두번째로, `five` 함수는 매개변수 없이 반환 타입만 정의되어 있지만,
+본문에는 `5`만이 세미콜론 없이 외로이 있는데 그 이유는 이 값이
+반환하고자 하는 값에 대한 표현식이기 때문입니다.
 
-Let’s look at another example:
+다른 예제도 살펴봅시다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -224,9 +224,9 @@ Let’s look at another example:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-22-function-parameter-and-return/src/main.rs}}
 ```
 
-Running this code will print `The value of x is: 6`. But if we place a
-semicolon at the end of the line containing `x + 1`, changing it from an
-expression to a statement, we’ll get an error.
+이 코드를 실행하면 `The value of x is: 6`를 출력하게 됩니다.
+만일 `x + 1` 끝에 세미콜론이 추가되어 표현식에서 구문으로 변경되면
+에러를 보게 됩니다.
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -234,16 +234,16 @@ expression to a statement, we’ll get an error.
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-23-statements-dont-return-values/src/main.rs}}
 ```
 
-Compiling this code produces an error, as follows:
+이 코드를 컴파일하면 다음과 같은 에러가 나타납니다:
 
 ```console
 {{#include ../listings/ch03-common-programming-concepts/no-listing-23-statements-dont-return-values/output.txt}}
 ```
 
-The main error message, “mismatched types,” reveals the core issue with this
-code. The definition of the function `plus_one` says that it will return an
-`i32`, but statements don’t evaluate to a value, which is expressed by `()`,
-an empty tuple. Therefore, nothing is returned, which contradicts the function
-definition and results in an error. In this output, Rust provides a message to
-possibly help rectify this issue: it suggests removing the semicolon, which
-would fix the error.
+주 에러 메시지 “mismatched types,”는 이 코드의 핵심 문제를 보여줍니다.
+`plus_one` 함수의 정의에는 `i32` 값을 반환한다고 되어 있지만,
+구문은 값을 산출하지 않기에 `()`로 표현되는 빈 튜플로 표현됩니다.
+따라서 아무것도 반환되지 않아 함수가 정의된 내용과 상충하게 되어
+에러가 발생됩니다. 위의 출력 결과에서 러스트는 이 문제를 바로잡는데
+도움될 수 있는 메세지를 제공합니다: 바로 세미콜론을 제거하여 에러를
+수정하라는 제안이지요.
