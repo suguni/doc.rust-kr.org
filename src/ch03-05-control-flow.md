@@ -315,30 +315,30 @@ ignore -->절의 추측 게임 코드에서 사용자가 정답을 추측하여
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/listing-03-05/src/main.rs}}
 ```
 
-<span class="caption">Listing 3-5: Looping through each element of a collection
-using a `for` loop</span>
+<span class="caption">Listing 3-5: `for` 반복문을 이용하여 콜랙션의
+각 원소 순회하기</span>
 
-When we run this code, we’ll see the same output as in Listing 3-4. More
-importantly, we’ve now increased the safety of the code and eliminated the
-chance of bugs that might result from going beyond the end of the array or not
-going far enough and missing some items.
+이 코드를 실행하면 Listing 3-4의 결과와 동일한 결과를 보게 됩니다.
+그보다 더 중요한 것은 이렇게 함으로써 코드의 안전성이 강화되고
+배열의 끝을 넘어서거나 끝까지 가지 못해서 몇개의 원소를 놓쳐서
+발생할 수도 있는 버그의 가능성을 제거했다는 겁니다.
 
-For example, in the code in Listing 3-4, if you changed the definition of the
-`a` array to have four elements but forgot to update the condition to `while
-index < 4`, the code would panic. Using the `for` loop, you wouldn’t need to
-remember to change any other code if you changed the number of values in the
-array.
+예를 들어 Listing 3-4의 코드에서 `a` 배열이 4개의 원소만 갖도록
+수정해두고 `while index < 4` 라고 수정하는건 잊어버렸다면,
+그 코드는 패닉을 발생시키게 됩니다. `for` 루프를 사용하면
+여러분이 배열 내 값의 개수를 변경시키더라도 수정해야 할 다른 코드를
+기역해둘 필요가 없어질 겁니다.
 
-The safety and conciseness of `for` loops make them the most commonly used loop
-construct in Rust. Even in situations in which you want to run some code a
-certain number of times, as in the countdown example that used a `while` loop
-in Listing 3-3, most Rustaceans would use a `for` loop. The way to do that
-would be to use a `Range`, which is a type provided by the standard library
-that generates all numbers in sequence starting from one number and ending
-before another number.
+이러한 안전성과 간편성 덕분에 `for` 반복문은 러스트에서 가장 흔하게
+사용되는 반복문 구성요소가 되었습니다. 심지어 Listing 3-3에서 `while` 반복문을
+사용했던 카운트다운 예제처럼 어떤 코드를 몇번 정도 반복하고 싶은 경우라도,
+대부분의 러스테이션(Rustacean, 러스트 사용자)은 `for` 반복문을 이용할 겁니다.
+표준 라이브러리가 제공하는 `Range` 타입을 이용하면 그렇게 원하는 횟수에 대한
+반복문을 구현할 수 있는데, `Range`는 어떤 숫자에서 시작하여 다른 숫자 종료
+전까지의 모든 숫자를 차례로 생성해줍니다.
 
-Here’s what the countdown would look like using a `for` loop and another method
-we’ve not yet talked about, `rev`, to reverse the range:
+`for` 반복문을 이용한 카운트다운 구현은 아래처럼 생겼습니다. 여기서 아직 살펴보지
+않았던 `rev` 메소드는 범위값을 역순으로 만들어줍니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -346,22 +346,22 @@ we’ve not yet talked about, `rev`, to reverse the range:
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/no-listing-34-for-range/src/main.rs}}
 ```
 
-This code is a bit nicer, isn’t it?
+이 코드가 좀 더 괜찮죠?
 
-## Summary
+## 정리
 
-You made it! That was a sizable chapter: you learned about variables, scalar
-and compound data types, functions, comments, `if` expressions, and loops! If
-you want to practice with the concepts discussed in this chapter, try building
-programs to do the following:
+해냈군요! 정말 긴 장이었습니다: 여러분은 변수, 스칼라 타입 및
+복합 타입, 함수, 주석, `if` 표현식, 그리고 루프에 대해 배웠습니다!
+이 장에서 다룬 개념들을 연습하고 싶다면 아래 프로그램 만들기에
+도전해보세요:
 
-* Convert temperatures between Fahrenheit and Celsius.
-* Generate the nth Fibonacci number.
-* Print the lyrics to the Christmas carol “The Twelve Days of Christmas,”
-  taking advantage of the repetition in the song.
+* 화씨 온도와 섭씨 온도 간 변환하기
+* n번째 피보나치 수 생성하기
+* 크리스마시 캐롤 “The Twelve Days of Christmas” 노래의 반복성을
+  활용하여 가사 출력해보기
 
-When you’re ready to move on, we’ll talk about a concept in Rust that *doesn’t*
-commonly exist in other programming languages: ownership.
+다음으로 넘어갈 준비가 되셨다면, 이번에는 다른 프로그래밍 언어에는
+흔하지 *않은* 러스트의 개념인 소유권 (ownership) 에 대해 알아보겠습니다.
 
 [comparing-the-guess-to-the-secret-number]:
 ch02-00-guessing-game-tutorial.html#%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%EC%99%80-%EC%B6%94%EB%A6%AC%EA%B0%92%EC%9D%84-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0
