@@ -126,7 +126,7 @@ const MAX_POINTS: u32 = 100_000;
 
 ### 덮어쓰기
 
-2장 추측 게임의 [“추측값과 비밀번호 비교하기”][comparing-the-guess-to-the-secret-number]<!-- 
+2장 추측 게임의 [“비밀번호와 추리값을 비교하기”][comparing-the-guess-to-the-secret-number]<!-- 
 ignore --> 섹션에서 보았듯이, 새 변수를 이전 변
 수명과 같은 이름으로 선언할 수 있고, 새 변수는 이전의 변수를 덮어씁니다.
 러스트인들은 첫 번째 변수가 두 번째 변수에 의해 *덮어쓰였다*라고 표현하며,

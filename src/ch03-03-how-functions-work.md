@@ -41,7 +41,7 @@
 ### 함수 매개변수
 
 함수는 *매개변수 (parameter)* 를 갖도록 정의될 수 있으며, 이는 함수
-시그니처 (function signiqure) 의 일부인 특별한 변수입니다.
+시그니처 (function signiture) 의 일부인 특별한 변수입니다.
 함수가 매개변수를 갖고 있으면 이 매개변수를 위한 고정값(concrete value)을
 전달할 수 있습니다. 전문용어로 이런 고정값을 *인자 (argument)* 라고
 부르지만, 사람들은 보통 *매개변수*와 *인자*라는 용어를 함수 정의부 내의
@@ -100,7 +100,7 @@
 
 ### 함수 본문은 구문과 표현식으로 구성됩니다
 
-함수 본문은 필요에 따라 표현식(expression)으로 종결되는 구문(Statement)의
+함수 본문은 필요에 따라 표현식(expression)으로 종결되는 구문(statement)의
 나열로 구성됩니다. 지금까지는 종결 표현식이 없는 함수만 다뤘지만, 구문의
 일부분으로 표현식이 쓰인건 보셨습니다. 러스트는 표현식 기반의
 언어이므로, 구문과 표현식의 구분은 러스트 이해에 중요합니다.
@@ -113,7 +113,7 @@
 다음 몇 개의 예제를 살펴보도록 합시다. 
 
 `let` 키워드로 변수를 만들고 값을 할당하는 것은 구문입니다.
-즉 Listing 3-3의 `let y = 6;`은 구문입니다:
+즉 Listing 3-1의 `let y = 6;`은 구문입니다:
 
 <span class="filename">Filename: src/main.rs</span>
 
@@ -121,7 +121,7 @@
 {{#rustdoc_include ../listings/ch03-common-programming-concepts/listing-03-01/src/main.rs}}
 ```
 
-<span class="caption">Listing 3-1: A `main` function declaration containing one statement</span>
+<span class="caption">Listing 3-1: 구문 하나로 되어있는 `main` 함수</span>
 
 또한 함수 정의도 구문입니다; 위 예제는 그 자체로 구문에
 해당됩니다.
@@ -150,7 +150,7 @@
 여러분이 작성하는 러스트 코드의 대부분은 표현식이며, 이는 어떤 값을 산출합니다.
 `5 + 6`과 같은 간단한 수학 연산을 살펴봅시다. 이 수식은
 `11`이란 값을 산출하는 표현식입니다. 표현식은 구문의 부분일 수 있습니다:
-Listing 3-3의 `let y = 6;`이라는 구문에서 `6`은 `6`이란 값을 
+Listing 3-1의 `let y = 6;`이라는 구문에서 `6`은 `6`이란 값을 
 산출하는 표현식입니다. 함수를 호출하는 것도, 매크로를 호출하는 것도
 표현식입니다. 아래 예제처럼 새로운 스코프 생성을 위해 사용된 `{}`
 코드 블럭도 표현식입니다:
@@ -202,7 +202,7 @@ Listing 3-3의 `let y = 6;`이라는 구문에서 `6`은 `6`이란 값을
 {{#include ../listings/ch03-common-programming-concepts/no-listing-21-function-return-values/output.txt}}
 ```
 
-`5`는 `five 함수의 반환값이며, 이 때문에 반환 타입을 `i32`으로 한
+`5`는 `five` 함수의 반환값이며, 이 때문에 반환 타입을 `i32`으로 한
 것이지요. 좀더 자세히 보자면, 중요한 지점이 두 곳 있습니다: 첫째로,
 `let x = five();` 줄은 함수의 반환 값을 변수의 초기 값으로 사용하는
 것을 보여줍니다. `five`의 반환 값이 `5`이기 때문에, 해당 줄은 다음과 
