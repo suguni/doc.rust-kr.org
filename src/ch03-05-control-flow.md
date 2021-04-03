@@ -222,7 +222,7 @@ again!
 
 다행히 러스트에서는 보다 안정적으로 루프에서 벗어날 수 있는 방법을 제공합니다.
 루프 안에 `break` 키워드를 집어넣으면 언제 루프를 멈춰야 하는지를 프로그램에게
-알려줄 수 있습니다. 2장의 [“정답 추측 후 종료하기”][quitting-after-a-correct-guess]<!--
+알려줄 수 있습니다. 2장의 [“정답 이후에 종료하기”][quitting-after-a-correct-guess]<!--
 ignore -->절의 추측 게임 코드에서 사용자가 정답을 추측하여
 게임에서 이겼을 경우 프로그램을 종료하기 위해 했었던 일을
 상기해보세요.
@@ -286,7 +286,7 @@ ignore -->절의 추측 게임 코드에서 사용자가 정답을 추측하여
 ```
 
 <span class="caption">Listing 3-4: `while` 반복문을 사용하여 콜렉션의
-각 원소마다 반복 수행하기</span>
+각 원소 순회하기</span>
 
 위의 코드는 배열의 원소들을 훑기 위해 숫자를 셉니다. 인덱스 `0`을 시작으로
 배열의 마지막 인덱스에 도달할 때까지 반복합니다 (위의 경우 `index < 5`가 참이
@@ -364,6 +364,6 @@ When you’re ready to move on, we’ll talk about a concept in Rust that *doesn
 commonly exist in other programming languages: ownership.
 
 [comparing-the-guess-to-the-secret-number]:
-ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number
+ch02-00-guessing-game-tutorial.html#%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%EC%99%80-%EC%B6%94%EB%A6%AC%EA%B0%92%EC%9D%84-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0
 [quitting-after-a-correct-guess]:
-ch02-00-guessing-game-tutorial.html#quitting-after-a-correct-guess
+ch02-00-guessing-game-tutorial.html#%EC%A0%95%EB%8B%B5%20%EC%9D%B4%ED%9B%84%EC%97%90%20%EC%A2%85%EB%A3%8C%ED%95%98%EA%B8%B0
