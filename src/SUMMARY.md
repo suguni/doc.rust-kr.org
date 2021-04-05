@@ -16,9 +16,9 @@
 - [일반적인 프로그래밍 개념](ch03-00-common-programming-concepts.md)
     - [변수와 가변성](ch03-01-variables-and-mutability.md)
     - [데이터 타입](ch03-02-data-types.md)
-    - [Functions](ch03-03-how-functions-work.md)
-    - [Comments](ch03-04-comments.md)
-    - [Control Flow](ch03-05-control-flow.md)
+    - [함수](ch03-03-how-functions-work.md)
+    - [주석](ch03-04-comments.md)
+    - [흐름 제어문](ch03-05-control-flow.md)
 
 - [소유권 이해하기](ch04-00-understanding-ownership.md)
     - [소유권이 뭔가요?](ch04-01-what-is-ownership.md)
