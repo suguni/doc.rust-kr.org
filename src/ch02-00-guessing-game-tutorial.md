@@ -693,7 +693,7 @@ Shadowing은 우리들이 `guess_str`과 `guess`처럼 고유의 변수명을
 32비트의 정수입니다. 이 타입은 작은 양수를 표현하기에는 좋은 선택입니다.
 3장에서 다른 숫자형에 대해 배울 것입니다.
 추가로 이 예시에서 명시했던 `u32`과 `secret_number`와의 비교는
-러스트가 `secret_number`의 타입을 `u32`로 유추한다는것을 의미합니다.
+러스트가 `secret_number`의 타입을 `u32`로 유추한다는 것을 의미합니다.
 이제 이 비교는 같은 타입의 두 값의 비교가 됩니다.
 
 [parse]: ../std/primitive.str.html#method.parse
