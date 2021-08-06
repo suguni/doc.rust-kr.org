@@ -38,9 +38,9 @@ $ cargo new hello_cargo
 $ cd hello_cargo
 ```
 
-첫번째 명령어는 *hello_cargo* 라는 프로젝트를 생성하겠단 의미입니다.
-이 명령어를 실행하면 Cargo 는 *hello_cargo* 디렉토리를 생성하고
-해당 디렉토리 내에 프로젝트명과 동일한 이름의 파일을 생성합니다.
+첫 번째 명령어는 *hello_cargo* 라는 디렉토리를 생성합니다.
+우리는 프로젝트의 이름을 *hello_cargo* 로 지정했고
+Cargo 는 동일한 이름의 디렉토리 안에 파일들을 생성합니다.
 
 *hello_cargo* 디렉토리로 이동해 파일을 살펴보면
 *Cargo.toml* 파일과 *src* 디렉토리를 확인할 수 있으며,
