@@ -164,7 +164,7 @@ let s = String::from("hello");
 `string_from` 같은 함수명 대신 `String` 타입 하위라는 것을 특정해서
 함수를 호출할 수 있도록 하려고 사용하는 네임스페이스 연산자입니다.
 메소드 관련 문법은 5장 [“메소드 문법”][method-syntax]<!-- ignore --> 에서 자세히 다루며,
-모듈 및 네임스페이스는 7장 [“Paths for Referring to an Item in the Module Tree”][paths-module-tree]<!-- ignore -->
+모듈 및 네임스페이스는 7장 [“경로를 사용해 모듈 트리에서 항목 가리키기”][paths-module-tree]<!-- ignore -->
 에서 다루고 있습니다.
 
 이 `String` 문자열은 변경 가능합니다:
