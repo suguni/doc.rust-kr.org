@@ -117,7 +117,7 @@ fn second_word(s: &String) -> (usize, usize) {
 즉 `ending_index` 에서 1을 뺀 위치까지 슬라이스를 생성한다는 의미입니다.
 슬라이스는 내부적으로 시작 위치, 길이를 데이터 구조에 저장하며,
 길이 값은 `ending_index` 값에서 `starting_index` 값을 빼서 계산합니다.
-따라서 `let world = &[6..11];` 의 `world` 는
+따라서 `let world = &s[6..11];` 의 `world` 는
 시작 위치로 `s` 의 (1부터 시작하여) 7번째 바이트를 가리키는 포인터와,
 길이 값 5를 갖는 슬라이스가 되겠죠.
 

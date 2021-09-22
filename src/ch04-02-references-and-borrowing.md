@@ -215,7 +215,7 @@ this function's return type contains a borrowed value, but there is no value for
 
 `s` 는 `dangle` 함수 내에서 생성됐기 때문에,
 함수가 끝날 때 할당 해제됩니다.
-하지만 코드에선 `s` 를 반환하려 했고, 이는 유효하지 않은 `String` 을 가리키는
+하지만 코드에선 `&s` 를 반환하려 했고, 이는 유효하지 않은 `String` 을 가리키는
 참조자를 반환하는 행위이기 때문에 오류가 발생합니다.
 
 따라서, 이런 경우엔 `String` 을 직접 반환해야 합니다:
