@@ -5,7 +5,7 @@
 프로토콜들에 대한 자세한 설명은 이 책의 범주를 넘어가지만,
 간단한 설명은 여러분에게 도움이 될 것입니다.
 
-웹서버의 두 주요 프로토콜은 *HTTP(Hyper Transfer Protocol)* 과
+웹서버의 두 주요 프로토콜은 *HTTP(Hypertext Transfer Protocol)* 과
 *TCP(Transmission Control Protocol)* 입니다.
 이 두 프로토콜은 *요청-응답 (request-response)* 프로토콜입니다.
 요청-응답은 클라이언트가 요청을 생성하면, 서버는 요청을 받고
@@ -116,7 +116,7 @@ Connection established!
 
 또한 서버가 어떠한 데이터도 보내주지 않기 때문에
 브라우저가 여러번 연결을 시도했기 때문일 수도 있습니다.
-`stream` 이 영역를 벗어날 경우와 반복이 끝날때, `drop` 이 실행되는것처럼 연결이 끊어집니다.
+`stream` 이 영역을 벗어날 경우와 반복이 끝날때, `drop` 이 실행되는것처럼 연결이 끊어집니다.
 브라우저는 서버와의 연결 문제가 일시적일 수도 있다고 생각하여
 끊어진 연결을 재시도하기도 합니다.
 여기서 중요한건 우리가 성공적으로 TCP연결을 처리했다는 것입니다.
@@ -216,7 +216,7 @@ Upgrade-Insecure-Requests: 1
 이렇게 요청 데이터를 출력해보았습니다. 이제 여러분은 `Reguest: GET` 뒤의 경로를 보고
 어째서 한 브라우저가 여러번 연결 요청을 보냈는지 알 수 있습니다.
 만약 반복되는 요청들이 모두 `/` 를 요청하고 있다면, 알다시피 브라우저가
-우리의 프로그램에게서 응답을 받지 못했기 대문에 `/` 를 가져오려고 하는 것입니다.
+우리의 프로그램에게서 응답을 받지 못했기 때문에 `/` 를 가져오려고 하는 것입니다.
 
 한번 이 요청 데이터를 분석하며 브라우저가
 우리 프로그램에 뭘 물어보는지 이해해 봅시다.
@@ -376,7 +376,11 @@ fn handle_connection(mut stream: TcpStream) {
     let mut contents = String::new();
     file.read_to_string(&mut contents).unwrap();
 
-    let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
+    let response = format!(
+        "HTTP/1.1 200 OK\r\nContent-Length: {}\r\n\r\n{}",
+        contents.len(),
+        contents
+    );
 
     stream.write(response.as_bytes()).unwrap();
     stream.flush().unwrap();
@@ -391,8 +395,9 @@ body에 넣고 전송하기</span>
 12장 (예제 12-4)의 I/O 프로젝트에서
 파일 내용을 읽을때 작성해봤으니 익숙하실 겁니다.
 
-다음으로, 우린 `format!` 을 이용해 응답 데이터의 body부분에
-파일의 내용을 추가했습니다.
+다음으로, 우린 `format!` 을 이용해 응답 데이터의 body부분에 파일의 내용을 추가했습니다.
+HTTP 응답이 유효함을 확실히 하기 위해 우리는 응답 body의 크기로 설정된 `Content-Length` 헤더를 추가했는데,
+이 경우에는 `hello.html`의 크기입니다.
 
 이 코드를 `cargo run` 을 이용해 실행하고 브라우저로 `127.0.0.1:7878` 로 접속해보세요,
 여러분이 작성한 HTML이 화면에 나타날 것입니다!
@@ -434,7 +439,11 @@ fn handle_connection(mut stream: TcpStream) {
         let mut contents = String::new();
         file.read_to_string(&mut contents).unwrap();
 
-        let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
+        let response = format!(
+            "HTTP/1.1 200 OK\r\nContent-Length: {}\r\n\r\n{}",
+            contents.len(),
+            contents
+        );
 
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
@@ -480,13 +489,18 @@ fn handle_connection(mut stream: TcpStream) {
 // --생략--
 
 } else {
-    let status_line = "HTTP/1.1 404 NOT FOUND\r\n\r\n";
+    let status_line = "HTTP/1.1 404 NOT FOUND";
     let mut file = File::open("404.html").unwrap();
     let mut contents = String::new();
 
     file.read_to_string(&mut contents).unwrap();
 
-    let response = format!("{}{}", status_line, contents);
+    let response = format!(
+        "{}\r\nContent-Length: {}\r\n\r\n{}",
+        status_line,
+        contents.len(),
+        contents
+    );
 
     stream.write(response.as_bytes()).unwrap();
     stream.flush().unwrap();
@@ -553,9 +567,9 @@ fn handle_connection(mut stream: TcpStream) {
     // --생략--
 
     let (status_line, filename) = if buffer.starts_with(get) {
-        ("HTTP/1.1 200 OK\r\n\r\n", "hello.html")
+        ("HTTP/1.1 200 OK", "hello.html")
     } else {
-        ("HTTP/1.1 404 NOT FOUND\r\n\r\n", "404.html")
+        ("HTTP/1.1 404 NOT FOUND", "404.html")
     };
 
     let mut file = File::open(filename).unwrap();
@@ -563,7 +577,12 @@ fn handle_connection(mut stream: TcpStream) {
 
     file.read_to_string(&mut contents).unwrap();
 
-    let response = format!("{}{}", status_line, contents);
+    let response = format!(
+        "{}\r\nContent-Length: {}\r\n\r\n{}",
+        status_line,
+        contents.len(),
+        contents
+    );
 
     stream.write(response.as_bytes()).unwrap();
     stream.flush().unwrap();
